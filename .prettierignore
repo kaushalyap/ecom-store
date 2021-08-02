@@ -1,5 +1,6 @@
 node_modules/
 .cache/
 public/
+.idea/
 yarn.lock
 yarn-error.log
