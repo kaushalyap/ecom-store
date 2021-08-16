@@ -4,11 +4,11 @@ import logo from '../images/logo.svg';
 
 export default function NavBar() {
   return (
-    <nav>
+    <div>
       <Link to="/">
         <img
           src={logo}
-          style={{ width: '100px', height: '100px' }}
+          style={{ width: '40px', height: '40px' }}
           alt="tech stack lk logo"
         />
       </Link>
@@ -18,6 +18,6 @@ export default function NavBar() {
       <Link to="/contact" activeClassName="active-link">
         Contact
       </Link>
-    </nav>
+    </div>
   );
 }
