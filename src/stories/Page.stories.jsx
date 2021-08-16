@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Page } from './Page';
+import Page from './Page';
 import * as HeaderStories from './Header.stories';
 
 export default {
@@ -8,6 +8,7 @@ export default {
   component: Page,
 };
 
+// eslint-disable-next-line react/jsx-props-no-spreading
 const Template = (args) => <Page {...args} />;
 
 export const LoggedIn = Template.bind({});
