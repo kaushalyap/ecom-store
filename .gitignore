@@ -4,3 +4,4 @@ public/
 .idea/
 yarn-error.log
 storybook-static/
+.husky/_

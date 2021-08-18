@@ -1,6 +1,6 @@
 ## Tech Stack LK
 
-* React
-* Gatsby
-* Tailwind CSS
-* HeadlessUI
+- React
+- Gatsby
+- Tailwind CSS
+- HeadlessUI

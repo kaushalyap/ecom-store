@@ -2,5 +2,6 @@ node_modules/
 .cache/
 public/
 .idea/
+storybook-static/
 yarn.lock
 yarn-error.log

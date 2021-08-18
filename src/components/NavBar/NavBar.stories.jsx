@@ -5,7 +5,7 @@ import NavBar from './NavBar';
 
 export default {
   title: 'Navigation/NavBar',
-  component: NavBar
+  component: NavBar,
 };
 
 export const NavBarLight = () => <NavBar />;

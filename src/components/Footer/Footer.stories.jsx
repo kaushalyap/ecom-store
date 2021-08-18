@@ -4,7 +4,7 @@ import Footer from './Footer';
 
 export default {
   title: 'Navigation/Footer',
-  component: Footer
+  component: Footer,
 };
 
 // eslint-disable-next-line react/jsx-props-no-spreading
@@ -13,7 +13,7 @@ const Template = (args) => <Footer {...args} />;
 export const FooterText = Template.bind({});
 
 FooterText.args = {
-  text: 'Footer'
+  text: 'Footer',
 };
 
 export const knobsFooter = () => (
