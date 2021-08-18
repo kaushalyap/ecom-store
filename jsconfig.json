@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
+  },
+  "exclude": [
+    ".cache",
+    ".public",
+    "node_modules",
+    "storybook-static",
+    ".husky/_"
+  ],
+  "checkJs": "true"
+}
