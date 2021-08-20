@@ -1,5 +1,3 @@
-// noinspection JSUnusedGlobalSymbols
-
 import React from 'react';
 import NavBar from './NavBar';
 
@@ -8,7 +6,5 @@ export default {
   component: NavBar,
 };
 
+// noinspection JSUnusedGlobalSymbols
 export const NavBarLight = () => <NavBar />;
-export const NavBarDark = () => <NavBar />;
-export const NavBarSignedOut = () => <NavBar />;
-export const NavBarSignedIn = () => <NavBar />;

@@ -18,12 +18,30 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["react", "react-hooks", "prettier", "flowtype"],
+  "plugins": [
+    "react",
+    "react-hooks",
+    "prettier",
+    "flowtype"
+  ],
   "rules": {
     "prettier/prettier": "error",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
-    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }]
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true
+      }
+    ],
+    "no-restricted-imports": [
+      "error",
+      {
+        "patterns": [
+          "@/features/*/*"
+        ]
+      }
+    ]
   },
   "settings": {
     "flowtype": {
