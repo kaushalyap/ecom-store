@@ -1,3 +1,4 @@
+/* eslint-disable global-require */
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}'],
   darkMode: false, // or 'media' or 'class'
@@ -20,5 +21,8 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('tailwindcss-debug-screens'),
+  ],
 };

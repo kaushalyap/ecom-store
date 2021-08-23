@@ -9,7 +9,8 @@
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:prettier/recommended",
-    "plugin:flowtype/recommended"
+    "plugin:flowtype/recommended",
+    "plugin:tailwindcss/recommended"
   ],
   "parserOptions": {
     "ecmaFeatures": {
@@ -41,7 +42,9 @@
           "@/features/*/*"
         ]
       }
-    ]
+    ],
+    "tailwindcss/classnames-order": "error",
+    "tailwindcss/no-custom-classname": "error"
   },
   "settings": {
     "flowtype": {

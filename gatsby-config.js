@@ -41,5 +41,6 @@ module.exports = {
       resolve: 'gatsby-plugin-robots-txt',
     },
     'gatsby-plugin-postcss',
+    'gatsby-plugin-webpack-bundle-analyser-v2',
   ],
 };
