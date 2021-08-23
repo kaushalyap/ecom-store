@@ -1,0 +1,18 @@
+ls:
+  .js: lowercase | kebabcase
+  src/components/:
+    .dir: pascalcase
+    .jsx: pascalcase
+  src/pages:
+    .jsx: kebabcase
+  .storybook:
+    .js: lowercase
+
+ignore:
+  - .git
+  - node_modules
+  - .cache
+  - public
+  - storybook-static
+  - .husky
+  - dist
