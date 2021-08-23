@@ -8,13 +8,13 @@ import logo from '../../images/full-logo.svg';
 
 export default function NavBar() {
   return (
-    <header className="bg-gray-200 pb-1">
-      <div className="flex justify-between justify-center px-2 py-2 2xl:h-28 2xl:py-4">
+    <header className="pb-1 bg-gray-200">
+      <div className="flex justify-between py-2 2xl:py-4 px-2 2xl:h-28">
         <div className="flex items-center h-12">
           <MenuButton classes="md:hidden" label="" />
-          <Link to="/" className="inline-flex ml-2 mb-1 mr-3 md:mt-5 md:ml-3">
+          <Link to="/" className="inline-flex md:mt-5 mr-3 mb-1 ml-2 md:ml-3">
             <img
-              className="inline w-30 h-8 2xl:h-14"
+              className="inline w-32 h-8 2xl:h-14"
               src={logo}
               alt="tech stack lk logo"
             />

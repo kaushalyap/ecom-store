@@ -21,8 +21,8 @@ const productCategories = [
 ];
 export default function SubNav() {
   return (
-    <div className="hidden md:flex md:justify-between items-center mx-4 pb-1 text-gray-500 h-10 tracking-wider lg:text-xl lg:h-12 xl:tracking-widest 2xl:text-3xl 2xl:pb-4 2xl:mt-4">
-      <div className="h-full flex items-center md:hidden xl:flex">
+    <div className="hidden md:flex md:justify-between items-center pb-1 2xl:pb-4 mx-4 2xl:mt-4 h-10 lg:h-12 lg:text-xl 2xl:text-3xl tracking-wider xl:tracking-widest text-gray-500">
+      <div className="flex md:hidden xl:flex items-center h-full">
         {productCategories.map((category) => {
           return (
             <Link
@@ -39,16 +39,16 @@ export default function SubNav() {
           );
         })}
       </div>
-      <div className="w-50 h-full flex items-center">
-        <Link to="/why-us" className="px-4 py-2" activeClassName=" active-link">
+      <div className="flex items-center w-52 h-full">
+        <Link to="/why-us" className="py-2 px-4" activeClassName=" active-link">
           Why Us?
         </Link>
-        <Link to="/about" className="px-4 py-2" activeClassName=" active-link">
+        <Link to="/about" className="py-2 px-4" activeClassName=" active-link">
           About
         </Link>
         <Link
           to="/contact"
-          className="pl-3 py-2"
+          className="py-2 pl-3"
           activeClassName=" active-link"
         >
           Contact

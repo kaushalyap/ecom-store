@@ -8,15 +8,15 @@ export default function SearchBox({ classes }) {
       id="search-box"
       className={`flex ${classes} p-2 pl-3 pr-3 md:w-4/6 lg:w-2/5`}
     >
-      <form className="flex w-full bg-white rounded-2xl ">
+      <form className=" flex w-full bg-white rounded-2xl">
         <input
           type="text"
           placeholder="Search Tech Stack LK"
-          className="ml-1 w-full rounded-2xl focus:outline-none pl-4 lg:text-xl 2xl:text-2xl 2xl:tracking-wider 2xl:pl-6"
+          className="pl-4 2xl:pl-6 ml-1 w-full lg:text-xl 2xl:text-2xl 2xl:tracking-wider rounded-2xl focus:outline-none"
         />
         <button
           type="submit"
-          className="text-gray-400 align-middle focus:text-gray-500 rounded-2xl hover:text-gray-500 focus:outline-none w-14 h-12 p-2 rounded-r-2xl 2xl:w-16 2xl:h-14"
+          className="p-2 w-14 2xl:w-16 h-12 2xl:h-14 text-gray-400 hover:text-gray-500 focus:text-gray-500 align-middle rounded-2xl rounded-r-2xl focus:outline-none"
         >
           <SearchIcon className="h-full align-middle" />
         </button>
