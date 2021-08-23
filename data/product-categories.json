@@ -1,0 +1,64 @@
+{
+  "Desktops": {
+    "Accessories": "desktops/accessories/",
+    "ASUS": "desktops/asus/",
+    "HP": "desktops/hp/",
+    "DELL": "desktops/lenovo/"
+  },
+  "Laptops": {
+    "Accessories": "laptops/accessories/",
+    "ASUS": "laptops/asus/",
+    "HP": "laptops/hp/",
+    "DELL": "laptops/lenovo/"
+  },
+  "Printers, Fax Machines & Scanners": {
+    "HP": "printers/hp/",
+    "Cannon": "printers/cannon/",
+    "Panten": "printers/panten/",
+    "Brother": "printers/brother/",
+    "Panasonic": "printers/panasonic/",
+    "Sharp": "printers/sharp/"
+  },
+  "Photocopy Machines & Duplicators": {
+    "Toshiba": "photocopy-machines/toshiba/",
+    "Cannon": "photocopy-machines/cannon/",
+    "Konika Minota": "photocopy-machines/konika-minota/",
+    "Riso": "photocopy-machines/riso/",
+    "Richo": "photocopy-machines/richo/",
+    "Kyozera": "photocopy-machines/kyozera/",
+    "Sharp": "photocopy-machines/sharp/"
+  },
+  "Smartphones & Tablets": {
+    "Samsung": "smartphones/toshiba/",
+    "Apple": "smartphones/cannon/",
+    "Lenovo": "smartphones/konika-minota/",
+    "Huawei": "smartphones/riso/",
+    "E-Tel": "smartphones/richo/",
+    "HTC": "smartphones/kyozera/",
+    "Vivo": "smartphones/sharp/"
+  },
+  "Multimedia Projectors": {
+    "Viewsonic": "multimedia-projectors/viewsonic/",
+    "BenQ": "multimedia-projectors/benq/",
+    "Acer": "multimedia-projectors/acer/",
+    "Epson": "multimedia-projectors/epson/",
+    "DCP": "multimedia-projectors/dcp/"
+  },
+  "Toners & Ink Cartridges": {
+    "HP": "toners/hp/",
+    "Cannon": "toners/cannon/",
+    "Samsung": "toners/samsung/",
+    "Toshiba": "toners/toshiba/",
+    "Pantem": "toners/pantem/",
+    "Sharp": "toners/sharp/",
+    "Brother": "toners/brother/",
+    "Epson": "toners/epson/",
+    "Lexmark": "toners/lexmark/",
+    "Konika Monita": "toners/konika-monita/"
+  },
+  "Other": {
+    "Accessories": "other/accessories/",
+    "Smart Class / Board Room Equipment": "other/smart-class-board-room-equipments/",
+    "Cash Counting Machines": "other/cash-counting-machines/"
+  }
+}
