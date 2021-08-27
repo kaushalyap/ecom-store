@@ -5,5 +5,13 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "cSpell.words": ["heroicons"]
+  "cSpell.words": [
+    "flowtype",
+    "gtag",
+    "headlessui",
+    "heroicons",
+    "kebabcase",
+    "pascalcase",
+    "tailwindcss"
+  ]
 }
