@@ -21,8 +21,8 @@ const productCategories = [
 ];
 export default function SubNav() {
   return (
-    <div className="hidden md:flex md:justify-between items-center pb-1 2xl:pb-4 mx-4 2xl:mt-4 h-10 lg:h-12 lg:text-xl 2xl:text-3xl tracking-wider xl:tracking-widest text-gray-500">
-      <div className="flex md:hidden xl:flex items-center h-full">
+    <div className="hidden items-center pb-1 mx-4 h-10 tracking-wider text-gray-500 md:flex md:justify-between lg:h-12 lg:text-xl xl:tracking-widest 2xl:pb-4 2xl:mt-4 2xl:text-3xl">
+      <div className="flex items-center h-full md:hidden xl:flex">
         {productCategories.map((category) => {
           return (
             <Link
