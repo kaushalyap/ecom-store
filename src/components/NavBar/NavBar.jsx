@@ -8,18 +8,17 @@ import logo from '../../images/full-logo.svg';
 
 export default function NavBar() {
   return (
-    <header className="pb-1 bg-gray-200">
-      <div className="flex justify-between py-2 2xl:py-4 px-2 2xl:h-28">
-        <div className="flex items-center h-12">
-          <MenuButton classes="md:hidden" label="" />
-          <Link to="/" className="inline-flex md:mt-5 mr-3 mb-1 ml-2 md:ml-3">
-            <img
-              className="inline w-32 h-8 2xl:h-14"
-              src={logo}
-              alt="tech stack lk logo"
-            />
-          </Link>
-        </div>
+    <header className="pb-1 text-gray-400 bg-gray-200">
+      <div
+        id="nav-level-1"
+        className="flex justify-between p-2 2xl:py-4 2xl:h-28"
+      >
+        {/* <div className="flex items-center h-12" /> */}
+        <MenuButton classes="md:hidden" label="" />
+
+        <Link to="/" className="mx-2 md:mt-5 md:ml-3">
+          <img className="h-10 2xl:h-14" src={logo} alt="tech stack lk logo" />
+        </Link>
         <SearchBox classes="hidden md:flex" />
         <ShoppingCart noItemsInCart={5} />
       </div>

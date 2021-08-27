@@ -22,7 +22,7 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    require('@tailwindcss/forms'),
+    // require('@tailwindcss/forms'),
     require('tailwindcss-debug-screens'),
   ],
 };

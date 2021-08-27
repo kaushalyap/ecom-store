@@ -6,9 +6,9 @@ export default function ShoppingCart({ noItemsInCart }) {
   return (
     <button
       type="submit"
-      className="relative mr-1 w-12 2xl:w-16 text-gray-400 hover:text-gray-500 focus:text-gray-500 focus:outline-none"
+      className="relative flex-none w-10 hover:text-gray-500 focus:text-gray-500 focus:outline-none 2xl:w-16"
     >
-      <span className="absolute right-2 2xl:right-3 bottom-7 md:bottom-6 2xl:bottom-12 z-10 p-px w-4 2xl:w-8 2xl:h-8 text-xs 2xl:text-lg text-center text-white bg-red-500 rounded-3xl">
+      <span className="absolute right-2.5 z-10 p-px w-4 h-4 text-xs text-center text-white bg-red-400 rounded-3xl md:bottom-6 2xl:right-3 2xl:bottom-12 2xl:w-8 2xl:h-8 2xl:text-lg">
         {noItemsInCart}
       </span>
       <ShoppingCartIcon />

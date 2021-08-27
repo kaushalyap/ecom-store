@@ -19,12 +19,7 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": [
-    "react",
-    "react-hooks",
-    "prettier",
-    "flowtype"
-  ],
+  "plugins": ["react", "react-hooks", "prettier", "flowtype"],
   "rules": {
     "prettier/prettier": "error",
     "react-hooks/rules-of-hooks": "error",
@@ -38,9 +33,7 @@
     "no-restricted-imports": [
       "error",
       {
-        "patterns": [
-          "@/features/*/*"
-        ]
+        "patterns": ["@/features/*/*"]
       }
     ],
     "tailwindcss/classnames-order": "error",
@@ -49,6 +42,9 @@
   "settings": {
     "flowtype": {
       "onlyFilesWithFlowAnnotation": true
+    },
+    "tailwindcss": {
+      "groupByResponsive": true
     }
   }
 }
