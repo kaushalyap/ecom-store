@@ -12,6 +12,7 @@
     "heroicons",
     "kebabcase",
     "pascalcase",
-    "tailwindcss"
+    "tailwindcss",
+    "techstack"
   ]
 }

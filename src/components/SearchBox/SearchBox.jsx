@@ -12,7 +12,7 @@ export default function SearchBox({ classes }) {
         <input
           type="text"
           placeholder="Search Tech Stack LK"
-          className="flex-grow pl-5 rounded-2xl focus:outline-none lg:text-xl 2xl:pl-6 2xl:text-2xl 2xl:tracking-wider"
+          className="flex-grow pl-5 text-black rounded-2xl focus:outline-none lg:text-xl 2xl:pl-6 2xl:text-2xl 2xl:tracking-wider"
         />
         <button
           type="submit"
