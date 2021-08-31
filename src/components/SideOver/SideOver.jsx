@@ -96,7 +96,7 @@ export default function SideOver({ refDiv, open, setOpen }) {
 }
 
 SideOver.propTypes = {
-  refDiv: PropTypes.string.isRequired,
+  refDiv: PropTypes.object.isRequired,
   open: PropTypes.bool.isRequired,
   setOpen: PropTypes.func.isRequired,
 };

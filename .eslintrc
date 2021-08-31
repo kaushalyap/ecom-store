@@ -5,12 +5,14 @@
     "es2021": true
   },
   "extends": [
-    "airbnb",
+    "eslint:recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/recommended",
     "plugin:prettier/recommended",
     "plugin:flowtype/recommended",
-    "plugin:tailwindcss/recommended"
+    "plugin:tailwindcss/recommended",
+    "airbnb"
   ],
   "parserOptions": {
     "ecmaFeatures": {
@@ -19,11 +21,12 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["react", "react-hooks", "prettier", "flowtype"],
+  "plugins": ["react", "react-hooks", "jsx-a11y", "prettier", "flowtype"],
   "rules": {
     "prettier/prettier": "error",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
+    "react/forbid-prop-types": "off",
     "import/no-extraneous-dependencies": [
       "error",
       {
