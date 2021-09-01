@@ -4,7 +4,7 @@ import NavBar from './NavBar/NavBar';
 import Footer from './Footer/Footer';
 
 export default function Layout({ children }) {
-  const commonJsxContent = (
+  /* const commonJsxContent = (
     <React.StrictMode>
       <NavBar />
       {children}
@@ -22,6 +22,13 @@ export default function Layout({ children }) {
         )}
       </>
     </>
+  ); */
+  return (
+    <React.StrictMode>
+      <NavBar />
+      {children}
+      <Footer text="Footer" />
+    </React.StrictMode>
   );
 }
 

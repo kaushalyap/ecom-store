@@ -13,6 +13,7 @@ export default function SearchBox({ classes }) {
         />
         <button
           type="submit"
+          aria-label="search"
           className="p-2 w-12 hover:text-gray-500 focus:text-gray-500 align-middle rounded-2xl rounded-r-2xl focus:outline-none 2xl:w-16 2xl:h-14"
         >
           <SearchIcon />
