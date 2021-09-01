@@ -17,19 +17,18 @@ export default function NavBar() {
   return (
     <div ref={refDiv}>
       <header className="pb-1 text-gray-400 bg-gray-200">
-        <div
-          id="nav-level-1"
-          className="flex justify-between p-2 2xl:py-4 2xl:h-28"
-        >
-          <MenuButton classes="md:hidden" label="" clickHandler={setOpen} />
+        <div id="nav-level-1" className="flex p-2 2xl:py-4 2xl:h-28">
+          <div id="nav-level-1-left" className="flex">
+            <MenuButton classes="md:hidden" label="" clickHandler={setOpen} />
+            <Link to="/" className="mx-2 md:mt-5 md:ml-3">
+              <img
+                className="h-10 2xl:h-14"
+                src={logoFull}
+                alt="techstack.lk logo"
+              />
+            </Link>
+          </div>
 
-          <Link to="/" className="mx-2 md:mt-5 md:ml-3">
-            <img
-              className="h-10 2xl:h-14"
-              src={logoFull}
-              alt="techstack.lk logo"
-            />
-          </Link>
           <SearchBox classes="hidden md:flex" />
           <ShoppingCart noItemsInCart={5} />
         </div>
