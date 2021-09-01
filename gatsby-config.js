@@ -42,5 +42,13 @@ module.exports = {
     },
     'gatsby-plugin-postcss',
     'gatsby-plugin-webpack-bundle-analyser-v2',
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Sen', 'Open Sans'],
+        },
+      },
+    },
   ],
 };

@@ -45,18 +45,18 @@ export default function SideOver({ refDiv, open, setOpen }) {
                   className="mt-14 w-44 opacity-80"
                 />
 
-                <h1 className="mt-5 text-2xl font-medium tracking-widest">
+                <h1 className="mt-5 font-headline text-2xl font-medium tracking-widest">
                   TechStack.LK
                 </h1>
                 <Link
                   to="/why-us/"
-                  className="block py-3 mt-10 text-2xl tracking-wider text-gray-500"
+                  className="block py-3 mt-10 font-description text-2xl tracking-wider text-gray-500"
                 >
                   Why Us ?
                 </Link>
                 <button
                   type="button"
-                  className="flex py-3 w-full text-2xl tracking-wider text-gray-500 whitespace-nowrap"
+                  className="flex py-3 w-full font-description text-2xl tracking-wider text-gray-500 whitespace-nowrap"
                 >
                   <p className="">Shop By Categories</p>
 
@@ -64,14 +64,14 @@ export default function SideOver({ refDiv, open, setOpen }) {
                 </button>
                 <Link
                   to="/contact/"
-                  className="block py-3 text-2xl tracking-wider text-gray-500"
+                  className="block py-3 font-description text-2xl tracking-wider text-gray-500"
                 >
                   Contact
                 </Link>
               </div>
 
               <div id="follow-us" className="w-full h-20">
-                <span className="block mb-3 tracking-widest text-gray-500 uppercase">
+                <span className="block mb-3 font-description tracking-widest text-gray-500 uppercase">
                   Follow Us On
                 </span>
                 <div className="flex space-x-5 h-10 opacity-60">

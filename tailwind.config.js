@@ -13,8 +13,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        headline: '',
-        description: '',
+        headline: ['Sen', 'sans-serif'],
+        description: ['Open Sans', 'sans-serif'],
       },
     },
   },

@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { Link } from 'gatsby';
-// import SubNav from '../SubNav/SubNav';
+import SubNav from '../SubNav/SubNav';
 
 import SearchBox from '../SearchBox/SearchBox';
 import ShoppingCart from '../ShoppingCart/ShoppingCart';
@@ -17,10 +17,13 @@ export default function NavBar() {
   return (
     <div ref={refDiv}>
       <header className="pb-1 text-gray-400 bg-gray-200">
-        <div id="nav-level-1" className="flex p-2 2xl:py-4 2xl:h-28">
+        <div
+          id="nav-level-1"
+          className="flex justify-between p-2 h-12 md:mb-2 lg:h-20 2xl:py-4 2xl:h-28"
+        >
           <div id="nav-level-1-left" className="flex">
-            <MenuButton classes="md:hidden" label="" clickHandler={setOpen} />
-            <Link to="/" className="mx-2 md:mt-5 md:ml-3">
+            <MenuButton classes="lg:hidden" label="" clickHandler={setOpen} />
+            <Link to="/" className="mx-2">
               <img
                 className="h-10 2xl:h-14"
                 src={logoFull}
@@ -29,12 +32,11 @@ export default function NavBar() {
             </Link>
           </div>
 
-          <SearchBox classes="hidden md:flex" />
+          <SearchBox classes="hidden lg:flex" />
           <ShoppingCart noItemsInCart={5} />
         </div>
-        <SearchBox classes="hidden" />
-        <SearchBox classes="md:hidden" />
-        {/* <SubNav /> */}
+        <SearchBox classes="md:flex lg:hidden" />
+        <SubNav menuClickHandler={setOpen} />
       </header>
       <SideOver refDiv={refDiv} open={open} setOpen={setOpen} />
     </div>

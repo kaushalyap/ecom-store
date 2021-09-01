@@ -4,10 +4,7 @@ import PropTypes from 'prop-types';
 
 export default function SearchBox({ classes }) {
   return (
-    <div
-      id="search-box"
-      className={`flex h-16 ${classes} p-2 md:w-4/6 lg:w-2/5`}
-    >
+    <div id="search-box" className={`flex h-16 ${classes} p-2 6 lg:w-2/5`}>
       <form className="flex w-full bg-white rounded-2xl">
         <input
           type="text"
