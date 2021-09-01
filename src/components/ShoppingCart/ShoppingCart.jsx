@@ -12,7 +12,7 @@ export default function ShoppingCart({ noItemsInCart }) {
       <span className="absolute right-2.5 z-10 p-px w-4 h-4 text-xs text-center text-white bg-red-400 rounded-3xl md:right-3.5 md:w-5 md:h-5 md:text-sm 2xl:right-3 2xl:bottom-12 2xl:w-8 2xl:h-8 2xl:text-lg">
         {noItemsInCart}
       </span>
-      <ShoppingCartIcon className="object-fill" />
+      <ShoppingCartIcon />
     </button>
   );
 }
