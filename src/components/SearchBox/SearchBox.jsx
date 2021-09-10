@@ -1,6 +1,6 @@
-import { SearchIcon } from '@heroicons/react/outline';
 import React from 'react';
 import PropTypes from 'prop-types';
+import searchIcon from '../../images/search.svg';
 
 export default function SearchBox({ classes }) {
   return (
@@ -16,7 +16,7 @@ export default function SearchBox({ classes }) {
           aria-label="search"
           className="p-2 w-12 hover:text-gray-500 focus:text-gray-500 align-middle rounded-2xl rounded-r-2xl focus:outline-none 2xl:w-16 2xl:h-14"
         >
-          <SearchIcon />
+          <img src={searchIcon} alt="search" />
         </button>
       </form>
     </div>

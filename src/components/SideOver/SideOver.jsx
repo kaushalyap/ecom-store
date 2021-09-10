@@ -1,10 +1,11 @@
 import React from 'react';
 import { Dialog } from '@headlessui/react';
-import { XIcon, ChevronRightIcon } from '@heroicons/react/outline';
 import { Facebook, Instagram, Twitter } from '@icons-pack/react-simple-icons';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
+import closeIcon from '../../images/close.svg';
 import logo from '../../images/logo.svg';
+import cheveronRightIcon from '../../images/cheveron-right.svg';
 
 export default function SideOver({ refDiv, open, setOpen }) {
   return (
@@ -32,7 +33,7 @@ export default function SideOver({ refDiv, open, setOpen }) {
                 onClick={() => setOpen(false)}
               >
                 <span className="sr-only">Close panel</span>
-                <XIcon className="w-6 h-6" aria-hidden="true" />
+                <img src={closeIcon} className="w-6 h-6" alt="close" />
               </button>
             </div>
             {/* End of Close Button */}
@@ -60,7 +61,11 @@ export default function SideOver({ refDiv, open, setOpen }) {
                 >
                   <p className="">Shop By Categories</p>
 
-                  <ChevronRightIcon className="pt-0.5 h-8 text-gray-300" />
+                  <img
+                    src={cheveronRightIcon}
+                    alt="cheveron right"
+                    className="pt-0.5 h-8 text-gray-300"
+                  />
                 </button>
                 <Link
                   to="/contact/"
