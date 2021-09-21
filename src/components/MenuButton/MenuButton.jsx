@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import menuIcon from '../../images/menu.svg';
+import menuIcon from '../../images/menu-alt-outlined.svg';
 
 export default function MenuButton({ classes, label, clickHandler }) {
   return (
@@ -8,10 +8,10 @@ export default function MenuButton({ classes, label, clickHandler }) {
       type="button"
       onClick={() => clickHandler(true)}
       aria-label="menu"
-      className={`flex-none w-10 md:w-12 md:h-12 md:mr-2 h-10 items-center lg:flex  lg:w-24 flex ${classes} focus:text-gray-500 hover:text-gray-500 focus:outline-none`}
+      className={`w-12 p-2.5 ml-1 2xl:ml-0 ${classes} focus:text-gray-500 hover:text-gray-500 2xl:p-2 2xl:w-20`}
     >
-      <img src={menuIcon} alt="menu" />
-      <span className="text-xl tracking-widest text-gray-500 lg:ml-2">
+      <img src={menuIcon} className="mr-3 w-6 h-full" alt="menu" />
+      <span className="text-base font-semibold tracking-widest text-gray-500">
         {label}
       </span>
     </button>

@@ -3,9 +3,9 @@ import { Dialog } from '@headlessui/react';
 import { Facebook, Instagram, Twitter } from '@icons-pack/react-simple-icons';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
-import closeIcon from '../../images/close.svg';
+import closeIcon from '../../images/close-outlined.svg';
 import logo from '../../images/logo.svg';
-import cheveronRightIcon from '../../images/cheveron-right.svg';
+import cheveronRightIcon from '../../images/cheveron-right-outlined.svg';
 
 export default function SideOver({ refDiv, open, setOpen }) {
   return (
@@ -43,7 +43,7 @@ export default function SideOver({ refDiv, open, setOpen }) {
                 <img
                   src={logo}
                   alt="techstack.lk logo"
-                  className="mt-14 w-44 opacity-80"
+                  className=" w-44 opacity-80"
                 />
 
                 <h1 className="mt-5 font-headline text-2xl font-medium tracking-widest">
@@ -51,25 +51,25 @@ export default function SideOver({ refDiv, open, setOpen }) {
                 </h1>
                 <Link
                   to="/why-us/"
-                  className="block py-3 mt-10 font-description text-2xl tracking-wider text-gray-500"
+                  className="block py-2 mt-10 font-description text-xl tracking-wider text-gray-500"
                 >
                   Why Us ?
                 </Link>
                 <button
                   type="button"
-                  className="flex py-3 w-full font-description text-2xl tracking-wider text-gray-500 whitespace-nowrap"
+                  className="flex py-2 w-full font-description text-xl tracking-wider text-gray-500 whitespace-nowrap"
                 >
-                  <p className="">Shop By Categories</p>
+                  <p className="">Shop By Category</p>
 
                   <img
                     src={cheveronRightIcon}
                     alt="cheveron right"
-                    className="pt-0.5 h-8 text-gray-300"
+                    className="p-2"
                   />
                 </button>
                 <Link
                   to="/contact/"
-                  className="block py-3 font-description text-2xl tracking-wider text-gray-500"
+                  className="block py-2 font-description text-xl tracking-wider text-gray-500"
                 >
                   Contact
                 </Link>
