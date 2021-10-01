@@ -16,7 +16,7 @@ export default function NavBar() {
   const [open, setOpen] = useState(false);
   return (
     <div ref={refDiv}>
-      <header className="text-gray-400 bg-gray-200">
+      <header className="p-1 text-gray-700 bg-blue-50 shadow-md">
         <div
           id="nav-level-1"
           className="flex justify-between h-12 2xl:mx-6 2xl:h-16"

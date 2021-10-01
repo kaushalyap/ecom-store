@@ -1,5 +1,7 @@
 ls:
   .js: lowercase | kebabcase
+  data:
+    .js: pascalcase
   src/components/:
     .dir: pascalcase
     .jsx: pascalcase

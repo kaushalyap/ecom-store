@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
-import { Facebook, Instagram, Twitter } from '@icons-pack/react-simple-icons';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import closeIcon from '../../images/close-outlined.svg';
 import logo from '../../images/logo-name-below.svg';
 import cheveronRightIcon from '../../images/cheveron-right-outlined.svg';
+import FollowUs from '../FollowUs/FollowUs';
 
 export default function SideOver({ refDiv, open, setOpen }) {
   return (
@@ -63,7 +63,7 @@ export default function SideOver({ refDiv, open, setOpen }) {
                 </Transition.Child>
                 {/* End of Close Button */}
                 {/* Menu Panel */}
-                <div className="flex flex-col justify-between py-6 pl-6 h-full bg-gray-100 rounded-r-3xl shadow-xl transition duration-1000 ease-in-out">
+                <div className="flex flex-col justify-between py-6 pl-6 h-full bg-blue-50 rounded-r-3xl shadow-2xl transition duration-1000 ease-in-out">
                   <div id="menu-top" className="flex flex-col">
                     <img
                       src={logo}
@@ -72,13 +72,13 @@ export default function SideOver({ refDiv, open, setOpen }) {
                     />
                     <Link
                       to="/blog/why-us/"
-                      className="block py-2 mt-10 font-description text-lg tracking-wider text-gray-500"
+                      className="block py-2 mt-10 text-lg tracking-wider text-gray-500"
                     >
                       Why Us ?
                     </Link>
                     <button
                       type="button"
-                      className="flex justify-between py-2 w-full font-description text-lg tracking-wider text-gray-500"
+                      className="flex justify-between py-2 w-full text-lg tracking-wider text-gray-500"
                     >
                       <p className="">Shop By Category</p>
 
@@ -90,27 +90,16 @@ export default function SideOver({ refDiv, open, setOpen }) {
                     </button>
                     <Link
                       to="/contact/"
-                      className="block py-2 font-description text-lg tracking-wider text-gray-500"
+                      className="block py-2 text-lg tracking-wider text-gray-500"
                     >
                       Contact
                     </Link>
                   </div>
-
-                  <div id="follow-us" className="w-full">
-                    <span className="block mb-3 font-description text-sm tracking-widest text-gray-500 uppercase">
-                      Follow Us On
-                    </span>
-                    <div className="flex space-x-5 opacity-60">
-                      <a href="https://facebook.com/techstacklk" className="">
-                        <Facebook color="#1877F2" size={30} />
-                      </a>
-                      <a href="https://instagram.com/techstacklk">
-                        <Instagram color="#E4405F" size={30} />
-                      </a>
-                      <a href="https://twitter.com/techstacklk">
-                        <Twitter color="#1DA1F2" size={30} />
-                      </a>
-                    </div>
+                  <div>
+                    <p className="mb-3 tracking-wider text-gray-400 uppercase">
+                      Follow US On
+                    </p>
+                    <FollowUs />
                   </div>
                 </div>
                 {/* End of Menu Panel */}
