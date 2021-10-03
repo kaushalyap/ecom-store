@@ -13,7 +13,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        headline: ['Bitter', 'serif'],
+        headline: ['Lexend Deca', 'serif'],
         description: ['Open Sans', 'sans-serif'],
       },
     },

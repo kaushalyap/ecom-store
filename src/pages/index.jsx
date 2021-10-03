@@ -1,16 +1,20 @@
 import React from 'react';
 import Layout from '../components/Layout';
+import Carousel from '../components/Carousel/Carousel';
 
 export default function Index() {
   return (
     <Layout>
-      <h1 className="font-headline text-5xl">Home</h1>
-      <p className="font-description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quia
-        magnam fugit autem velit officia dolores voluptate. Possimus at, eos
-        ipsum sequi tenetur doloremque numquam ut, debitis accusantium cumque
-        vel.
-      </p>
+      <div className="container">
+        <Carousel />
+        <h1 className="font-headline text-3xl">Explore by Category</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea tenetur
+          dolores ipsum, praesentium similique in? Porro voluptatibus earum et.
+          Exercitationem iste fugiat aspernatur. Similique eos mollitia
+          inventore quibusdam perspiciatis odit?
+        </p>
+      </div>
     </Layout>
   );
 }
