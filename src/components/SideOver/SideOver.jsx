@@ -70,7 +70,7 @@ export default function SideOver({ refDiv, open, setOpen }) {
                     <StaticImage
                       src="../../images/logo-name-below.svg"
                       alt="techstack.lk logo"
-                      className="w-44 h-52 opacity-90"
+                      className="w-44 h-52"
                     />
                     <Link
                       to="/blog/why-us/"
@@ -80,15 +80,14 @@ export default function SideOver({ refDiv, open, setOpen }) {
                     </Link>
                     <button
                       type="button"
-                      className="flex justify-between py-2 w-full text-xl tracking-wider text-gray-600"
+                      className="flex justify-between items-center py-2 w-full text-xl tracking-wider text-gray-600"
                     >
                       <p className="">Shop By Category</p>
                       <StaticImage
                         src="../../images/cheveron-right-outlined.svg"
                         alt="cheveron right"
-                        objectFit="none"
-                        className="flex items-center pt-2 mr-3 w-5 h-6"
-                        imgClassName="h-full w-full"
+                        objectFit="contain"
+                        className="mr-3 w-5 h-4"
                       />
                     </button>
                     <Link

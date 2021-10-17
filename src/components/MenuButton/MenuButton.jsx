@@ -15,7 +15,7 @@ export default function MenuButton({ classes, label, clickHandler }) {
         className="mr-3 w-6 h-5 md:w-6 md:h-6"
         alt="menu"
       />
-      <span className="hidden h-5 text-base font-semibold tracking-widest text-gray-500 2xl:flex 2xl:items-center">
+      <span className="hidden h-5 text-base font-medium tracking-widest text-gray-600 2xl:flex 2xl:items-center">
         {label}
       </span>
     </button>

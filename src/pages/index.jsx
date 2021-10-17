@@ -14,8 +14,8 @@ export default function Index() {
         id="explore-categories"
         className="mx-5 mt-10 mb-20 md:mx-10 xl:container xl:mx-auto xl:mt-16"
       >
-        <h2 className="mb-5 font-headline text-xl md:mb-8 md:text-2xl xl:text-2xl">
-          Explore by Category
+        <h2 className="mb-5 font-headline text-xl font-medium md:mb-8 md:text-2xl xl:text-2xl 2xl:text-3xl">
+          Shop by Category
         </h2>
         <div
           id="cards"
