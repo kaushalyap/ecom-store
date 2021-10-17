@@ -1,13 +1,12 @@
 import React, { useState, useRef } from 'react';
 import { Link } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
 import SubNav from '../SubNav/SubNav';
 
 import SearchBox from '../SearchBox/SearchBox';
 import ShoppingCart from '../ShoppingCart/ShoppingCart';
 import MenuButton from '../MenuButton/MenuButton';
 import SideOver from '../SideOver/SideOver';
-import logoFull from '../../images/full-logo.svg';
-
 // import categories from '../../../data/product-categories.json';
 
 export default function NavBar() {
@@ -23,9 +22,11 @@ export default function NavBar() {
           <div id="nav-level-1-left" className="flex">
             <MenuButton classes="2xl:hidden" label="" clickHandler={setOpen} />
             <Link to="/" className="py-2 mx-1 2xl:pt-4 2xl:mx-0">
-              <img
-                className="h-7 2xl:h-8"
-                src={logoFull}
+              <StaticImage
+                objectFit="contain"
+                objectPosition="left"
+                className="h-7 md:h-8 2xl:flex"
+                src="../../images/full-logo.svg"
                 alt="techstack.lk logo"
               />
             </Link>
