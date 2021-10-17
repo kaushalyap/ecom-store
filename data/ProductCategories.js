@@ -1,233 +1,203 @@
 const ProductCategories = [
   {
-    name: 'Desktops',
-    path: '/categories/desktops/',
+    name: 'Computers & Accessories',
+    path: '/computers-accessories/',
     Sub: [
       {
-        name: 'Accessories',
-        path: '/categories/desktops/accessories/',
+        name: 'Laptops',
+        path: '/computers-accessories/laptops/',
       },
       {
-        name: 'ASUS',
-        path: '/categories/desktops/asus/',
+        name: 'Laptop Accessories',
+        path: '/computers-accessories/laptop-accessories/',
       },
       {
-        name: 'HP',
-        path: '/categories/desktops/hp/',
+        name: 'Desktops',
+        path: '/computers-accessories/desktops/',
       },
       {
-        name: 'DELL',
-        path: '/categories/desktops/lenovo/',
+        name: 'Desktop Accessories',
+        path: '/computers-accessories/desktops-accessories/',
+      },
+      {
+        name: 'Tablets',
+        path: '/computers-accessories/tablets/',
+      },
+      {
+        name: 'eBook Readers',
+        path: '/computers-accessories/ebook-readers/',
       },
     ],
   },
   {
-    name: 'Laptops',
-    path: '/categories/laptops/',
-    Sub: [
-      {
-        name: 'Accessories',
-        path: '/categories/laptops/accessories/',
-      },
-      {
-        name: 'ASUS',
-        path: '/categories/laptops/asus/',
-      },
-      {
-        name: 'HP',
-        path: '/categories/laptops/hp/',
-      },
-      {
-        name: 'DELL',
-        path: '/categories/laptops/lenovo/',
-      },
-    ],
-  },
-  {
-    name: 'Printers, Fax Machines & Scanners',
-    path: '/categories/printers-fax-machines-scanners/',
-    Sub: [
-      {
-        name: 'HP',
-        path: '/categories/printers/hp/',
-      },
-      {
-        name: 'Cannon',
-        path: '/categories/printers/cannon/',
-      },
-      {
-        name: 'Panten',
-        path: '/categories/printers/panten/',
-      },
-      {
-        name: 'Brother',
-        path: '/categories/printers/brother/',
-      },
-      {
-        name: 'Panasonic',
-        path: '/categories/printers/panasonic/',
-      },
-      {
-        name: 'SHARP',
-        path: '/categories/printers/sharp/',
-      },
-    ],
-  },
-  {
-    name: 'Photocopy Machines & Duplicators',
-    path: '/categories/photocopy-machines-duplicators/',
-    Sub: [
-      {
-        name: 'Toshiba',
-        path: '/categories/photocopy-machines/toshiba/',
-      },
-      {
-        name: 'Cannon',
-        path: '/categories/photocopy-machines/cannon/',
-      },
-      {
-        name: 'Konika Minota',
-        path: '/categories/photocopy-machines/konika-minota/',
-      },
-      {
-        name: 'Riso',
-        path: '/categories/photocopy-machines/riso/',
-      },
-      {
-        name: 'Richo',
-        path: '/categories/photocopy-machines/richo/',
-      },
-      {
-        name: 'Kyozera',
-        path: '/categories/photocopy-machines/kyozera/',
-      },
-      {
-        name: 'SHARP',
-        path: '/categories/photocopy-machines/sharp/',
-      },
-    ],
-  },
-  {
-    name: 'Smartphones & Tablets',
-    path: '/categories/smartphones-tablets/',
+    name: 'Smartphones',
+    path: '/smartphones/',
     Sub: [
       {
         name: 'Samsung',
-        path: '/categories/smartphones/toshiba/',
+        path: '/smartphones/toshiba/',
       },
       {
         name: 'Apple',
-        path: '/categories/smartphones/apple/',
+        path: '/smartphones/apple/',
       },
       {
         name: 'Lenovo',
-        path: '/categories/smartphones/lenovo/',
+        path: '/smartphones/lenovo/',
       },
       {
         name: 'Huawei',
-        path: '/categories/smartphones/huawei/',
+        path: '/smartphones/huawei/',
       },
       {
         name: 'E-Tel',
-        path: '/categories/smartphones/e-tel/',
+        path: '/smartphones/e-tel/',
       },
       {
         name: 'HTC',
-        path: '/categories/smartphones/htc/',
+        path: '/smartphones/htc/',
       },
       {
         name: 'Vivo',
-        path: '/categories/smartphones/vivo/',
+        path: '/smartphones/vivo/',
+      },
+      {
+        name: 'Accessories',
+        path: '/smartphones/accessories/',
       },
     ],
   },
   {
-    name: 'Multimedia Projectors',
-    path: '/categories/multimedia-projectors/',
+    name: 'Office Electronics',
+    path: '/office-electronics/',
     Sub: [
       {
-        name: 'Viewsonic',
-        path: '/categories/multimedia-projectors/viewsonic/',
+        name: 'Photocopiers',
+        path: '/office-electronics/photocopiers/',
       },
       {
-        name: 'BenQ',
-        path: '/categories/multimedia-projectors/benq/',
+        name: 'Duplicators',
+        path: '/office-electronics/duplicators/',
       },
       {
-        name: 'Acer',
-        path: '/categories/multimedia-projectors/acer/',
+        name: 'Fax Machines',
+        path: '/office-electronics/fax-machines/',
       },
       {
-        name: 'Epson',
-        path: '/categories/multimedia-projectors/epson/',
+        name: 'Scanners',
+        path: '/office-electronics/scanners/',
       },
       {
-        name: 'DCP',
-        path: '/categories/multimedia-projectors/dcp/',
-      },
-    ],
-  },
-  {
-    name: 'Toners & Ink Cartridges',
-    path: '/categories/toners-ink-cartridges/',
-    Sub: [
-      {
-        name: 'HP',
-        path: '/categories/toners/hp/',
+        name: 'Printers',
+        path: '/office-electronics/printers/',
       },
       {
-        name: 'Cannon',
-        path: '/categories/toners/cannon/',
+        name: 'Multimedia Projectors',
+        path: '/office-electronics/projectors/',
       },
       {
-        name: 'Samsung',
-        path: '/categories/toners/samsung/',
+        name: 'Board Room Equipments',
+        path: '/office-electronics/boardroom-equipments/',
       },
       {
-        name: 'Toshiba',
-        path: '/categories/toners/toshiba/',
+        name: 'Cash Counting Machines',
+        path: '/office-electronics/cash-counting-machines/',
       },
       {
-        name: 'Pantem',
-        path: '/categories/toners/pantem/',
+        name: 'Telephones & Accessories',
+        path: '/office-electronics/telephones',
       },
       {
-        name: 'Sharp',
-        path: '/categories/toners/sharp/',
+        name: 'Calculators',
+        path: '/office-electronics/calculators/',
       },
-      {
-        name: 'Brother',
-        path: '/categories/toners/brother/',
-      },
-      {
-        name: 'Epson',
-        path: '/categories/toners/epson/',
-      },
-      {
-        name: 'Lexmark',
-        path: '/categories/toners/lexmark/',
-      },
-      {
-        name: 'Konika Monita',
-        path: '/categories/toners/konika-monita/',
-      },
-    ],
-  },
-  {
-    name: 'Other',
-    path: '/categories/other/',
-    Sub: [
       {
         name: 'Accessories',
         path: '/categories/other/accessories/',
       },
       {
-        name: 'Smart Class / Board Room Equipment',
-        path: '/categories/other/smart-class-board-room-equipments/',
+        name: 'Smart Classroom Equipment',
+        path: '/categories/other/smart-classroom-equipments/',
+      },
+    ],
+  },
+  {
+    name: 'TV and Video',
+    path: '/tv-video/',
+    Sub: [
+      {
+        name: 'Televisions',
+        path: '/tv-video/tv',
       },
       {
-        name: 'Cash Counting Machines',
-        path: '/categories/other/cash-counting-machines/',
+        name: 'Projectors',
+        path: '/tv-video/projectors',
+      },
+      {
+        name: 'DVD Players & Recorders',
+        path: '/tv-video/dvd-players-recorders',
+      },
+      {
+        name: 'Accessories',
+        path: '/tv-video/accessories/',
+      },
+    ],
+  },
+  {
+    name: 'Video Game Consoles & Accessories',
+    path: '/video-game-accessories/',
+    Sub: [
+      {
+        name: 'Televisions',
+        path: '/video-game-accessories/xbox/',
+      },
+      {
+        name: 'Playstation',
+        path: '/video-game-accessories/playstation',
+      },
+      {
+        name: 'Nintendo',
+        path: '/video-game-accessories/nintendo',
+      },
+      {
+        name: 'Sony PSP',
+        path: '/video-game-accessories/sony-psp/',
+      },
+    ],
+  },
+  {
+    name: 'Audio Electronics',
+    path: '/audio-electronics/',
+    Sub: [
+      {
+        name: 'Earphones',
+        path: '/audio-electronics/earphones/',
+      },
+      {
+        name: 'Headphones',
+        path: '/audio-electronics/headphones/',
+      },
+      {
+        name: 'Speakers',
+        path: '/audio-electronics/speakers/',
+      },
+      {
+        name: 'Subwoofers',
+        path: '/audio-electronics/subwoofers/',
+      },
+    ],
+  },
+  {
+    name: 'Security Surveillance',
+    path: '/security-surveillance/',
+    Sub: [
+      {
+        name: 'CCTV',
+        path: '/security-surveillance/cctv/',
+      },
+      {
+        name: 'Fingerprint Scanners',
+        path: '/security-surveillance/fingerprint-scanners/',
       },
     ],
   },

@@ -5,7 +5,7 @@ import searchIcon from '../../images/search-outlined.svg';
 export default function SearchBox({ classes }) {
   return (
     <div id="search-box" className={`flex h-16 ${classes} p-2`}>
-      <form className="flex w-full bg-white rounded-2xl shadow-sm">
+      <form className="flex w-full bg-white rounded-2xl shadow">
         <input
           type="text"
           placeholder="Search Tech Stack LK"

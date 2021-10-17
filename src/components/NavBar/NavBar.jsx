@@ -6,7 +6,6 @@ import SearchBox from '../SearchBox/SearchBox';
 import ShoppingCart from '../ShoppingCart/ShoppingCart';
 import MenuButton from '../MenuButton/MenuButton';
 import SideOver from '../SideOver/SideOver';
-
 import logoFull from '../../images/full-logo.svg';
 
 // import categories from '../../../data/product-categories.json';

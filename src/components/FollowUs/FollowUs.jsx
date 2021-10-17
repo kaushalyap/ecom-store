@@ -6,7 +6,7 @@ export default function FollowUs({ classes }) {
   return (
     <div
       id="follow-on-social-media"
-      className={`flex space-x-5 w-full opacity-70 ${classes}`}
+      className={`flex space-x-5 w-full opacity-80 ${classes}`}
     >
       <a href="https://facebook.com/techstacklk">
         <Facebook color="#1877F2" size={30} />

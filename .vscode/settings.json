@@ -10,6 +10,7 @@
     "ASUS",
     "benq",
     "cheveron",
+    "classname",
     "deca",
     "flowtype",
     "fontsource",
@@ -23,13 +24,14 @@
     "Lexmark",
     "Minota",
     "Monita",
-    "Pantem",
-    "Panten",
+    "Pantum",
     "pascalcase",
     "Richo",
     "Riso",
+    "subwoofers",
     "tailwindcss",
     "techstack",
-    "Viewsonic"
+    "Viewsonic",
+    "webp"
   ]
 }

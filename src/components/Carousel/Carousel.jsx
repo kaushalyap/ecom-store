@@ -2,8 +2,10 @@
 import React from 'react';
 import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
+import { StaticImage } from 'gatsby-plugin-image';
+import { Link } from 'gatsby';
 
-export default function Crousel() {
+export default function Carousel() {
   const [pause, setPause] = React.useState(false);
   const timer = React.useRef();
   const [sliderRef, slider] = useKeenSlider({
@@ -39,15 +41,63 @@ export default function Crousel() {
 
   return (
     <>
-      <div ref={sliderRef} className="h-80 keen-slider">
-        <div className="flex justify-center items-center keen-slider__slide number-slide1">
-          1
+      <div ref={sliderRef} className="keen-slider">
+        <div className="keen-slider__slide">
+          <Link to="/why-us#free-delivery">
+            <StaticImage
+              className="hidden md:block"
+              src="../../images/Slide Free Delivery.webp"
+              alt="free delivery for every item"
+            />
+            <StaticImage
+              className="md:hidden"
+              src="../../images/Slide Free Delivery Mobile.webp"
+              alt="free delivery for every item"
+            />
+          </Link>
         </div>
-        <div className="keen-slider__slide number-slide2">2</div>
-        <div className="keen-slider__slide number-slide3">3</div>
-        <div className="keen-slider__slide number-slide4">4</div>
-        <div className="keen-slider__slide number-slide5">5</div>
-        <div className="keen-slider__slide number-slide6">6</div>
+        <div className="keen-slider__slide">
+          <Link to="/why-us#competitive-pricing">
+            <StaticImage
+              className="hidden md:block"
+              src="../../images/Slide Competitive Pricing.webp"
+              alt="competitive pricing, no lowest price marketing lies"
+            />
+            <StaticImage
+              className="md:hidden"
+              src="../../images/Slide Competitive Pricing Mobile.webp"
+              alt="competitive pricing, no lowest price marketing lies"
+            />
+          </Link>
+        </div>
+        <div className="keen-slider__slide">
+          <Link to="/why-us#help-your-own">
+            <StaticImage
+              className="hidden md:block"
+              src="../../images/Slide Help Your Own.webp"
+              alt="help your own instead of instead of draining profits outside of the country"
+            />
+            <StaticImage
+              className="md:hidden"
+              src="../../images/Slide Help Your Own Mobile.webp"
+              alt="help your own instead of instead of draining profits outside of the country"
+            />
+          </Link>
+        </div>
+        <div className="keen-slider__slide">
+          <Link to="/why-us#honest-customer-support">
+            <StaticImage
+              className="hidden md:block"
+              src="../../images/Slide Honest Customer Support.webp"
+              alt="honest customer support, we are customer happiness driven"
+            />
+            <StaticImage
+              className="md:hidden"
+              src="../../images/Slide Honest Customer Support Mobile.webp"
+              alt="honest customer support, we are customer happiness driven"
+            />
+          </Link>
+        </div>
       </div>
     </>
   );
