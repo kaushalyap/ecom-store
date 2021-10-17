@@ -72,13 +72,13 @@ export default function SideOver({ refDiv, open, setOpen }) {
                     />
                     <Link
                       to="/blog/why-us/"
-                      className="block py-2 mt-10 text-lg tracking-wider text-gray-500"
+                      className="block py-2 mt-10 text-lg tracking-wider text-gray-600"
                     >
                       Why Us ?
                     </Link>
                     <button
                       type="button"
-                      className="flex justify-between py-2 w-full text-lg tracking-wider text-gray-500"
+                      className="flex justify-between py-2 w-full text-lg tracking-wider text-gray-600"
                     >
                       <p className="">Shop By Category</p>
 
@@ -90,13 +90,13 @@ export default function SideOver({ refDiv, open, setOpen }) {
                     </button>
                     <Link
                       to="/contact/"
-                      className="block py-2 text-lg tracking-wider text-gray-500"
+                      className="block py-2 text-lg tracking-wider text-gray-600"
                     >
                       Contact
                     </Link>
                   </div>
                   <div>
-                    <p className="mb-3 tracking-wider text-gray-400 uppercase">
+                    <p className="mb-3 tracking-wider text-gray-500 uppercase">
                       Follow US On
                     </p>
                     <FollowUs />

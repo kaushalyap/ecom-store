@@ -13,7 +13,7 @@ export default function SubNav({ menuClickHandler }) {
       />
       <div
         id="subnav-right"
-        className="flex items-center text-base text-gray-500 2xl:mr-2"
+        className="flex items-center text-base text-gray-600 2xl:mr-2"
       >
         <Link to="/why-us" className="py-2 px-2" activeClassName=" active-link">
           Why Us?

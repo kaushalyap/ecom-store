@@ -24,53 +24,59 @@ export default function Footer() {
           id="footer-column-2"
           className="py-5 border-t border-gray-300 border-solid md:text-left md:border-0 lg:w-3/12 xl:w-1/4"
         >
-          <h2 className="mb-3 font-headline tracking-wider text-gray-800 uppercase">
+          <h2 className="mb-3 font-headline font-medium tracking-wider text-gray-800 uppercase">
             Product Categories
           </h2>
           <nav className="list-none text-gray-600">
-            {categories.map((category) => (
-              <li className="py-1">
-                <Link to={category.path}>{category.name}</Link>
-              </li>
-            ))}
+            <ul>
+              {categories.map((category) => (
+                <li className="py-1">
+                  <Link to={category.path}>{category.name}</Link>
+                </li>
+              ))}
+            </ul>
           </nav>
         </div>
         <div
           id="footer-column-3"
           className="py-5 border-t border-gray-300 border-solid md:pt-8 md:pb-0 md:w-1/2 md:text-left lg:pt-5 lg:w-3/12 lg:border-0 xl:w-1/4"
         >
-          <h2 className="mb-3 font-headline tracking-wider text-gray-800 uppercase">
+          <h2 className="mb-3 font-headline font-medium tracking-wider text-gray-800 uppercase">
             Help & Support
           </h2>
           <nav className="list-none text-gray-600">
-            <li className="py-1">
-              <Link to="/company-orders/">Company Orders</Link>
-            </li>
-            <li className="py-1">
-              <Link to="/faq/">FAQ</Link>
-            </li>
-            <li className="py-1">
-              <Link to="/contact/">Contact</Link>
-            </li>
+            <ul>
+              <li className="py-1">
+                <Link to="/company-orders/">Company Orders</Link>
+              </li>
+              <li className="py-1">
+                <Link to="/faq/">FAQ</Link>
+              </li>
+              <li className="py-1">
+                <Link to="/contact/">Contact</Link>
+              </li>
+            </ul>
           </nav>
         </div>
         <div
           id="footer-column-4"
           className="py-5 border-t border-gray-300 border-solid md:flex-1 md:pt-8 md:w-1/4 md:text-left lg:pt-5 lg:w-3/12 lg:border-0 xl:w-1/4"
         >
-          <h2 className="mb-3 font-headline tracking-wider text-gray-800 uppercase">
+          <h2 className="mb-3 font-headline font-medium tracking-wider text-gray-800 uppercase">
             Company
           </h2>
           <nav className="list-none text-gray-600">
-            <li className="py-1">
-              <Link to="/blog/why-us/">Why Us ?</Link>
-            </li>
-            <li className="py-1">
-              <Link to="/about/">About</Link>
-            </li>
-            <li className="py-1 mb-5 lg:mb-5">
-              <Link to="/blog/">Blog</Link>
-            </li>
+            <ul>
+              <li className="py-1">
+                <Link to="/blog/why-us/">Why Us ?</Link>
+              </li>
+              <li className="py-1">
+                <Link to="/about/">About</Link>
+              </li>
+              <li className="py-1 mb-5 lg:mb-5">
+                <Link to="/blog/">Blog</Link>
+              </li>
+            </ul>
           </nav>
           <p className="mb-3 text-sm tracking-wider text-gray-600 uppercase md:tracking-wider lg:block lg:text-sm">
             Follow Us On
