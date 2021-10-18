@@ -11,7 +11,7 @@ export default function MenuButton({ classes, label, clickHandler }) {
       className={`w-12 p-2.5 ml-1 2xl:ml-0 ${classes} focus:text-gray-500 hover:text-gray-500 2xl:p-2 2xl:w-20`}
     >
       <img src={menuIcon} className="mr-3 w-6 h-full" alt="menu" />
-      <span className="text-base font-semibold tracking-widest text-gray-500">
+      <span className="text-base font-semibold tracking-widest text-gray-600">
         {label}
       </span>
     </button>

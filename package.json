@@ -10,8 +10,10 @@
   "scripts": {
     "develop": "gatsby develop",
     "develop-css": "TAILWIND_MODE=watch postcss -i node_modules/tailwindcss/dis/tailwind.css -o dist/build.css --watch",
+    "clean-develop": "gatsby clean && gatsby develop",
     "build": "gatsby build",
     "build-css": "postcss -i node_modules/tailwindcss/dis/tailwind.css -o --minify dist/build.css",
+    "clean-build": "gatsby clean && gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "",
