@@ -27,6 +27,7 @@ export default function Index() {
                 src="../images/Laptop.webp"
                 alt="laptop"
                 objectFit="contain"
+                placeholder="blurred"
                 className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
               />
               <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
@@ -39,6 +40,7 @@ export default function Index() {
               <StaticImage
                 src="../images/Smartphone.webp"
                 alt="smartphone"
+                placeholder="blurred"
                 objectFit="contain"
                 className="p-10 w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
               />
@@ -53,6 +55,7 @@ export default function Index() {
                 src="../images/Printer.webp"
                 alt="Printer"
                 objectFit="contain"
+                placeholder="blurred"
                 className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
               />
               <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
@@ -65,6 +68,7 @@ export default function Index() {
               <StaticImage
                 src="../images/TV.webp"
                 alt="TV"
+                placeholder="blurred"
                 className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
                 objectFit="contain"
               />
@@ -78,6 +82,7 @@ export default function Index() {
               <StaticImage
                 src="../images/Gaming.webp"
                 alt="XBox"
+                placeholder="blurred"
                 className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
                 objectFit="contain"
               />
@@ -91,6 +96,7 @@ export default function Index() {
               <StaticImage
                 src="../images/Speaker.webp"
                 alt="Speaker"
+                placeholder="blurred"
                 className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
                 objectFit="contain"
               />
@@ -104,6 +110,7 @@ export default function Index() {
               <StaticImage
                 src="../images/Camera.webp"
                 objectFit="contain"
+                placeholder="blurred"
                 className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
               />
               <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
@@ -116,6 +123,7 @@ export default function Index() {
               <StaticImage
                 src="../images/CCTV.webp"
                 alt="CCTV camera"
+                placeholder="blurred"
                 className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
                 objectFit="contain"
               />
@@ -129,6 +137,7 @@ export default function Index() {
               <StaticImage
                 src="../images/Smartwatch.webp"
                 alt="Smartwatch"
+                placeholder="blurred"
                 objectFit="contain"
                 className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
               />
