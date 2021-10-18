@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { StaticImage } from 'gatsby-plugin-image';
+import shoppingCartIcon from '../../images/cart-outlined.svg';
 
 export default function ShoppingCart({ noItemsInCart }) {
   return (
@@ -12,11 +12,7 @@ export default function ShoppingCart({ noItemsInCart }) {
       <span className="absolute top-2 right-6 z-10 p-px w-4 h-4 text-xs text-center text-white bg-red-400 rounded-3xl 2xl:top-4 2xl:right-11">
         {noItemsInCart}
       </span>
-      <StaticImage
-        src="../../images/cart-outlined.svg"
-        className="w-8 h-8"
-        alt="shopping cart"
-      />
+      <img src={shoppingCartIcon} className="w-full" alt="shopping cart" />
     </button>
   );
 }

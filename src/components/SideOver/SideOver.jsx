@@ -2,7 +2,9 @@ import React, { Fragment } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
-import { StaticImage } from 'gatsby-plugin-image';
+import closeIcon from '../../images/close-outlined.svg';
+import logo from '../../images/logo-name-below.svg';
+import cheveronRightIcon from '../../images/cheveron-right-outlined.svg';
 import FollowUs from '../FollowUs/FollowUs';
 
 export default function SideOver({ refDiv, open, setOpen }) {
@@ -56,43 +58,39 @@ export default function SideOver({ refDiv, open, setOpen }) {
                     onClick={() => setOpen(false)}
                   >
                     <span className="sr-only">Close panel</span>
-                    <StaticImage
-                      src="../../images/close-outlined.svg"
-                      className="w-4"
-                      alt="close"
-                    />
+                    <img src={closeIcon} className="w-4" alt="close" />
                   </button>
                 </Transition.Child>
                 {/* End of Close Button */}
                 {/* Menu Panel */}
                 <div className="flex flex-col justify-between py-6 pl-6 h-full bg-blue-50 rounded-r-3xl shadow-2xl transition duration-1000 ease-in-out">
                   <div id="menu-top" className="flex flex-col">
-                    <StaticImage
-                      src="../../images/logo-name-below.svg"
+                    <img
+                      src={logo}
                       alt="techstack.lk logo"
-                      className="w-44 h-52"
+                      className=" w-44 opacity-90"
                     />
                     <Link
                       to="/blog/why-us/"
-                      className="block py-2 mt-10 text-xl tracking-wider text-gray-600"
+                      className="block py-2 mt-10 text-lg tracking-wider text-gray-600"
                     >
                       Why Us ?
                     </Link>
                     <button
                       type="button"
-                      className="flex justify-between items-center py-2 w-full text-xl tracking-wider text-gray-600"
+                      className="flex justify-between py-2 w-full text-lg tracking-wider text-gray-600"
                     >
                       <p className="">Shop By Category</p>
-                      <StaticImage
-                        src="../../images/cheveron-right-outlined.svg"
+
+                      <img
+                        src={cheveronRightIcon}
                         alt="cheveron right"
-                        objectFit="contain"
-                        className="mr-3 w-5 h-4"
+                        className="p-2 mr-2"
                       />
                     </button>
                     <Link
                       to="/contact/"
-                      className="block py-2 text-xl tracking-wider text-gray-600"
+                      className="block py-2 text-lg tracking-wider text-gray-600"
                     >
                       Contact
                     </Link>

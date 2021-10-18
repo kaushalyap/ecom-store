@@ -1,33 +1,21 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
+import { Facebook, Instagram, Twitter } from '@icons-pack/react-simple-icons';
 
 export default function FollowUs({ classes }) {
   return (
     <div
       id="follow-on-social-media"
-      className={`flex space-x-5 w-full opacity-70 ${classes}`}
+      className={`flex space-x-5 w-full opacity-80 ${classes}`}
     >
       <a href="https://facebook.com/techstacklk">
-        <StaticImage
-          src="../../images/Facebook.svg"
-          className="w-8"
-          alt="Facebook logo"
-        />
+        <Facebook color="#1877F2" size={30} />
       </a>
       <a href="https://instagram.com/techstacklk">
-        <StaticImage
-          src="../../images/Instagram.svg"
-          alt="Instagram logo"
-          className="w-8"
-        />
+        <Instagram color="#E4405F" size={30} />
       </a>
       <a href="https://twitter.com/techstacklk">
-        <StaticImage
-          src="../../images/Twitter.svg"
-          alt="Twitter logo"
-          className="w-8"
-        />
+        <Twitter color="#1DA1F2" size={30} />
       </a>
     </div>
   );
