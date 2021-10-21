@@ -1,13 +1,18 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import closeIcon from '../../images/close-outlined.svg';
+import cheveronLeftIcon from '../../images/cheveron-left-outlined.svg';
 import logo from '../../images/logo-name-below.svg';
 import cheveronRightIcon from '../../images/cheveron-right-outlined.svg';
 import FollowUs from '../FollowUs/FollowUs';
+import categories from '../../../data/ProductCategories';
 
 export default function SideOver({ refDiv, open, setOpen }) {
+  const [isCategoryMenuVisible, setCategoryMenuVisible] = useState(false);
+  const [isMainMenuVisible, setMainMenuVisible] = useState('');
+
   return (
     <Transition.Root show={open} as={Fragment}>
       <Dialog
@@ -41,7 +46,9 @@ export default function SideOver({ refDiv, open, setOpen }) {
               leaveFrom="translate-x-0"
               leaveTo="-translate-x-full"
             >
-              <div className=" relative w-screen max-w-md">
+              {/* Menu Panel */}
+              <div className="relative w-screen max-w-md">
+                {/* Close Button */}
                 <Transition.Child
                   as={Fragment}
                   enter="ease-in-out duration-500"
@@ -51,7 +58,6 @@ export default function SideOver({ refDiv, open, setOpen }) {
                   leaveFrom="opacity-100"
                   leaveTo="opacity-0"
                 >
-                  {/* Close Button */}
                   <button
                     type="button"
                     className="absolute top-5 right-1 p-1 -mr-10 -ml-10 text-gray-300 hover:text-white rounded-md focus:ring-2 focus:ring-white focus:outline-none"
@@ -62,7 +68,7 @@ export default function SideOver({ refDiv, open, setOpen }) {
                   </button>
                 </Transition.Child>
                 {/* End of Close Button */}
-                {/* Menu Panel */}
+
                 <div className="flex flex-col justify-between py-6 pl-6 h-full bg-blue-50 rounded-r-3xl shadow-2xl transition duration-1000 ease-in-out">
                   <div id="menu-top" className="flex flex-col">
                     <img
@@ -70,30 +76,36 @@ export default function SideOver({ refDiv, open, setOpen }) {
                       alt="techstack.lk logo"
                       className=" w-44 opacity-90"
                     />
-                    <Link
-                      to="/blog/why-us/"
-                      className="block py-2 mt-10 text-lg tracking-wider text-gray-600"
-                    >
-                      Why Us ?
-                    </Link>
-                    <button
-                      type="button"
-                      className="flex justify-between py-2 w-full text-lg tracking-wider text-gray-600"
-                    >
-                      <p className="">Shop By Category</p>
+                    <nav id="menu-options" className={`${isMainMenuVisible}`}>
+                      <Link
+                        to="/blog/why-us/"
+                        className="block py-2 mt-10 text-lg tracking-wider text-gray-600"
+                      >
+                        Why Us ?
+                      </Link>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setCategoryMenuVisible(true);
+                          setMainMenuVisible('hidden');
+                        }}
+                        className="flex justify-between py-2 w-full text-lg tracking-wider text-gray-600"
+                      >
+                        <p className="">Shop By Category</p>
 
-                      <img
-                        src={cheveronRightIcon}
-                        alt="cheveron right"
-                        className="p-2 mr-2"
-                      />
-                    </button>
-                    <Link
-                      to="/contact/"
-                      className="block py-2 text-lg tracking-wider text-gray-600"
-                    >
-                      Contact
-                    </Link>
+                        <img
+                          src={cheveronRightIcon}
+                          alt="cheveron right"
+                          className="p-2 mr-2"
+                        />
+                      </button>
+                      <Link
+                        to="/contact/"
+                        className="block py-2 text-lg tracking-wider text-gray-600"
+                      >
+                        Contact
+                      </Link>
+                    </nav>
                   </div>
                   <div>
                     <p className="mb-3 tracking-wider text-gray-500 uppercase">
@@ -102,8 +114,52 @@ export default function SideOver({ refDiv, open, setOpen }) {
                     <FollowUs />
                   </div>
                 </div>
-                {/* End of Menu Panel */}
+
+                <Transition
+                  enter="transform transition"
+                  enterFrom="translate-x-0"
+                  enterTo="-translate-x-0"
+                  leave="transform transition"
+                  leaveFrom="-translate-x-full"
+                  leaveTo="-translate-x-0"
+                  show={isCategoryMenuVisible}
+                >
+                  {/* Categories Panel */}
+                  <div className="absolute top-72 w-screen max-w-md">
+                    <div className="flex flex-col justify-between pl-6 mt-3 bg-blue-50 rounded-r-3xl transition ease-in-out">
+                      <div id="menu-top" className="flex flex-col">
+                        <button
+                          type="button"
+                          className="mt-5"
+                          onClick={() => {
+                            setCategoryMenuVisible(false);
+                            setMainMenuVisible('block');
+                          }}
+                        >
+                          <img src={cheveronLeftIcon} alt="back" />
+                        </button>
+                        <nav className="list-none text-gray-600">
+                          <ul>
+                            {categories.map((category) => (
+                              <li className="py-1">
+                                <Link
+                                  to={category.path}
+                                  className="block py-2 text-lg tracking-wider text-gray-600"
+                                  key={category.path}
+                                >
+                                  {category.name}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                  </div>
+                  {/* Categories Panel */}
+                </Transition>
               </div>
+              {/* End of Menu Panel */}
             </Transition.Child>
           </div>
         </div>

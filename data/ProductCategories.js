@@ -188,7 +188,7 @@ const ProductCategories = [
     ],
   },
   {
-    name: 'Security Surveillance',
+    name: 'Security & Surveillance',
     path: '/security-surveillance/',
     Sub: [
       {
