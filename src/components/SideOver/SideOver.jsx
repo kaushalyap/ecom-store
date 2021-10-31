@@ -2,9 +2,9 @@ import React, { Fragment, useState } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
+import { StaticImage } from 'gatsby-plugin-image';
 import closeIcon from '../../images/close-outlined.svg';
 import cheveronLeftIcon from '../../images/cheveron-left-outlined.svg';
-import logo from '../../images/logo-name-below.svg';
 import cheveronRightIcon from '../../images/cheveron-right-outlined.svg';
 import FollowUs from '../FollowUs/FollowUs';
 import categories from '../../../data/ProductCategories';
@@ -71,10 +71,12 @@ export default function SideOver({ refDiv, open, setOpen }) {
 
                 <div className="flex flex-col justify-between py-6 pl-6 h-full bg-blue-50 rounded-r-3xl shadow-2xl transition duration-1000 ease-in-out">
                   <div id="menu-top" className="flex flex-col">
-                    <img
-                      src={logo}
+                    <StaticImage
+                      src="../../images/logo-name-below.svg"
                       alt="techstack.lk logo"
                       className=" w-44 opacity-90"
+                      loading="eager"
+                      placeholder="tracedSVG"
                     />
                     <nav id="menu-options" className={`${isMainMenuVisible}`}>
                       <Link
@@ -109,28 +111,28 @@ export default function SideOver({ refDiv, open, setOpen }) {
                   </div>
                   <div>
                     <p className="mb-3 tracking-wider text-gray-500 uppercase">
-                      Follow US On
+                      Follow Us On
                     </p>
                     <FollowUs />
                   </div>
                 </div>
 
                 <Transition
-                  enter="transform transition"
-                  enterFrom="translate-x-0"
-                  enterTo="-translate-x-0"
-                  leave="transform transition"
-                  leaveFrom="-translate-x-full"
-                  leaveTo="-translate-x-0"
+                  enter="transform transition ease-in-out duration-500 sm:duration-700"
+                  enterFrom="translate-x-full"
+                  enterTo="translate-x-0"
+                  leave="transform transition ease-in-out duration-500 sm:duration-700"
+                  leaveFrom="translate-x-0"
+                  leaveTo="translate-x-full"
                   show={isCategoryMenuVisible}
                 >
                   {/* Categories Panel */}
-                  <div className="absolute top-72 w-screen max-w-md">
-                    <div className="flex flex-col justify-between pl-6 mt-3 bg-blue-50 rounded-r-3xl transition ease-in-out">
+                  <div className="absolute top-72 pr-14 w-screen max-w-md md:pr-0">
+                    <div className="flex flex-col justify-between pl-6 mt-3 transition duration-1000 ease-in-out">
                       <div id="menu-top" className="flex flex-col">
                         <button
                           type="button"
-                          className="mt-5"
+                          className="py-2 mt-5"
                           onClick={() => {
                             setCategoryMenuVisible(false);
                             setMainMenuVisible('block');
@@ -144,7 +146,7 @@ export default function SideOver({ refDiv, open, setOpen }) {
                               <li className="py-1">
                                 <Link
                                   to={category.path}
-                                  className="block py-2 text-lg tracking-wider text-gray-600"
+                                  className="block py-2 text-lg tracking-wider text-gray-600 truncate"
                                   key={category.path}
                                 >
                                   {category.name}

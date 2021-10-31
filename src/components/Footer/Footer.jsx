@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import logo from '../../images/logo-name-below.svg';
+import { StaticImage } from 'gatsby-plugin-image';
 import categories from '../../../data/ProductCategories';
 import FollowUs from '../FollowUs/FollowUs';
 
@@ -13,7 +13,13 @@ export default function Footer() {
           id="footer-column-1"
           className="py-5 text-gray-500 md:pb-8 md:w-1/2 md:text-left lg:mr-14 lg:w-3/12 xl:mr-0 xl:w-1/4"
         >
-          <img src={logo} alt="techstack.lk logo" className="w-52 md:mx-0" />
+          <StaticImage
+            src="../../images/logo-name-below.svg"
+            className="w-52 md:mx-0"
+            alt="techstack.lk logo"
+            loading="eager"
+            placeholder="tracedSVG"
+          />
           <p className="pt-5 text-gray-600 md:mx-0">
             All your tech gear satisfied and
             <br />

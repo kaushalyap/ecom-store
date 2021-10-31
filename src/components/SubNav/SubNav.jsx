@@ -8,11 +8,11 @@ export default function SubNav({ menuClickHandler }) {
     <div className="hidden justify-end mx-2 h-10 tracking-wider md:flex md:text-lg 2xl:justify-between 2xl:mx-4 2xl:h-12">
       <MenuButton
         classes="hidden 2xl:flex 2xl:items-end"
-        label="All"
+        label="Menu"
         clickHandler={menuClickHandler}
       />
       <div
-        id="subnav-right"
+        id="sub-nav-right"
         className="flex items-center text-base text-gray-600 2xl:mr-2"
       >
         <Link to="/why-us" className="py-2 px-2" activeClassName=" active-link">
