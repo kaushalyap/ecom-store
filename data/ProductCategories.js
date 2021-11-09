@@ -1,7 +1,7 @@
 const ProductCategories = [
   {
     name: 'Computers & Accessories',
-    path: '/computers-accessories/',
+    path: '/computers/',
     Sub: [
       {
         name: 'Laptops',
@@ -30,7 +30,7 @@ const ProductCategories = [
     ],
   },
   {
-    name: 'Smartphones',
+    name: 'Smartphones & Accessories',
     path: '/smartphones/',
     Sub: [
       {
@@ -69,7 +69,7 @@ const ProductCategories = [
   },
   {
     name: 'Office Electronics',
-    path: '/office-electronics/',
+    path: '/office/',
     Sub: [
       {
         name: 'Photocopiers',
@@ -145,7 +145,7 @@ const ProductCategories = [
   },
   {
     name: 'Video Game Consoles & Accessories',
-    path: '/video-game-accessories/',
+    path: '/game/',
     Sub: [
       {
         name: 'Televisions',
@@ -167,7 +167,7 @@ const ProductCategories = [
   },
   {
     name: 'Audio Electronics',
-    path: '/audio-electronics/',
+    path: '/audio/',
     Sub: [
       {
         name: 'Earphones',
@@ -188,8 +188,22 @@ const ProductCategories = [
     ],
   },
   {
+    name: 'Camera & Photo',
+    path: '/cameras/',
+    Sub: [
+      {
+        name: 'Cameras',
+        path: '/cameras/cameras',
+      },
+      {
+        name: 'Lenses',
+        path: '/cameras/lenses/',
+      },
+    ],
+  },
+  {
     name: 'Security & Surveillance',
-    path: '/security-surveillance/',
+    path: '/security/',
     Sub: [
       {
         name: 'CCTV',

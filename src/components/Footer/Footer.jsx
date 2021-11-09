@@ -13,13 +13,15 @@ export default function Footer() {
           id="footer-column-1"
           className="py-5 text-gray-500 md:pb-8 md:w-1/2 md:text-left lg:mr-14 lg:w-3/12 xl:mr-0 xl:w-1/4"
         >
-          <StaticImage
-            src="../../images/logo-name-below.svg"
-            className="w-52 md:mx-0"
-            alt="techstack.lk logo"
-            loading="eager"
-            placeholder="tracedSVG"
-          />
+          <Link to="/">
+            <StaticImage
+              src="../../images/logo-name-below.svg"
+              className="w-52 md:mx-0"
+              alt="techstack.lk logo"
+              loading="eager"
+              placeholder="tracedSVG"
+            />
+          </Link>
           <p className="pt-5 text-gray-600 md:mx-0">
             All your tech gear satisfied and
             <br />
@@ -74,7 +76,7 @@ export default function Footer() {
           <nav className="list-none text-gray-600">
             <ul>
               <li className="py-1">
-                <Link to="/blog/why-us/">Why Us ?</Link>
+                <Link to="/why-us/">Why Us ?</Link>
               </li>
               <li className="py-1">
                 <Link to="/about/">About</Link>

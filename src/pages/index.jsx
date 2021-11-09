@@ -12,16 +12,16 @@ export default function Index() {
       </main>
       <section
         id="explore-categories"
-        className="mx-5 mt-10 mb-20 md:mx-10 xl:container xl:mx-auto xl:mt-16"
+        className="mx-5 mb-20 md:mx-10 xl:container xl:mx-auto xl:mt-16"
       >
-        <h2 className="mb-5 font-headline text-xl font-medium md:mb-8 md:text-2xl xl:text-3xl">
+        <h2 className="mt-10 mb-5 font-headline text-xl font-medium md:mb-8 md:text-2xl xl:text-3xl">
           Shop by Category
         </h2>
         <div
           id="cards"
           className="grid grid-cols-2 gap-x-5 gap-y-5 md:grid-cols-3 md:gap-x-10 md:gap-y-10 lg:grid-cols-4"
         >
-          <Link to="/">
+          <Link to="/computers">
             <div>
               <StaticImage
                 src="../images/Laptop.webp"
@@ -35,7 +35,7 @@ export default function Index() {
               </h3>
             </div>
           </Link>
-          <Link to="/">
+          <Link to="/smartphones">
             <div>
               <StaticImage
                 src="../images/Smartphone.webp"
@@ -49,7 +49,7 @@ export default function Index() {
               </h3>
             </div>
           </Link>
-          <Link to="/">
+          <Link to="/office">
             <div>
               <StaticImage
                 src="../images/Printer.webp"
@@ -63,7 +63,7 @@ export default function Index() {
               </h3>
             </div>
           </Link>
-          <Link to="/">
+          <Link to="/tv-video">
             <div>
               <StaticImage
                 src="../images/TV.webp"
@@ -77,7 +77,7 @@ export default function Index() {
               </h3>
             </div>
           </Link>
-          <Link to="/">
+          <Link to="/game">
             <div>
               <StaticImage
                 src="../images/Gaming.webp"
@@ -91,7 +91,7 @@ export default function Index() {
               </h3>
             </div>
           </Link>
-          <Link to="/">
+          <Link to="/audio">
             <div>
               <StaticImage
                 src="../images/Speaker.webp"
@@ -105,7 +105,7 @@ export default function Index() {
               </h3>
             </div>
           </Link>
-          <Link to="/">
+          <Link to="/camera">
             <div>
               <StaticImage
                 src="../images/Camera.webp"
@@ -118,7 +118,7 @@ export default function Index() {
               </h3>
             </div>
           </Link>
-          <Link to="/">
+          <Link to="/security">
             <div>
               <StaticImage
                 src="../images/CCTV.webp"
@@ -132,7 +132,7 @@ export default function Index() {
               </h3>
             </div>
           </Link>
-          <Link to="/">
+          <Link to="/other">
             <div>
               <StaticImage
                 src="../images/Smartwatch.webp"
