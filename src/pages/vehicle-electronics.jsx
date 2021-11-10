@@ -1,102 +1,78 @@
+import React from 'react';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import React from 'react';
 import Layout from '../components/Layout';
 
-export default function Office() {
+export default function VehicleElectronics() {
   return (
     <Layout>
       <main className="container mx-auto mb-20">
         <h1 className="mt-10 mb-5 font-headline text-xl font-medium md:mb-8 md:text-2xl xl:text-3xl">
-          Office Electronics
+          Vehicle Electronics
         </h1>
         <div
           id="cards"
           className="grid grid-cols-2 gap-x-5 gap-y-5 md:grid-cols-3 md:gap-x-10 md:gap-y-10 lg:grid-cols-4"
         >
-          <Link to="/printers">
+          <Link to="/car-audio">
             <StaticImage
-              src="../images/printer.webp"
-              alt="printer"
-              objectFit="contain"
-              placeholder="blurred"
-              className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
-            />
-            <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
-              Printers & Accessories
-            </h3>
-          </Link>
-          <Link to="/photocopier">
-            <StaticImage
-              src="../images/photocopier.png"
-              alt="photocopier"
+              src="../images/car-audio.png"
+              alt="car audio system on dashboard"
               objectFit="contain"
               objectPosition="bottom"
               placeholder="blurred"
               className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
             />
             <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
-              Photocopiers & Duplicators
+              Car Audio
             </h3>
           </Link>
-          <Link to="/scanners">
+          <Link to="/car-video">
             <StaticImage
-              src="../images/scanner.png"
-              alt="scanner"
+              src="../images/car-video.png"
+              alt="car video player"
               objectFit="contain"
               placeholder="blurred"
               className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
             />
             <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
-              Scanners
+              Car Video
             </h3>
           </Link>
-          <Link to="/projectors">
+          <Link to="/gps">
             <StaticImage
-              src="../images/projector.png"
-              alt="video projector"
+              src="../images/gps.png"
+              alt="GPS screen"
               objectFit="contain"
               placeholder="blurred"
               className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
             />
             <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
-              Video Projectors & Accessories
+              GPS
             </h3>
           </Link>
-          <Link to="/telephone-fax-machine">
+          <Link to="/dash-camera">
             <StaticImage
-              src="../images/telephone.png"
-              alt="telephone"
+              src="../images/dash-camera.png"
+              alt="dash camera"
               objectFit="contain"
               placeholder="blurred"
               className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
             />
             <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
-              Telephones & Fax Machines
+              Dashboard Cameras
             </h3>
           </Link>
-          <Link to="/pos">
+          <Link to="/car-alarm-security">
             <StaticImage
-              src="../images/pos.png"
-              alt="point-of-sale system"
-              objectFit="contain"
+              src="../images/car-alarm.png"
+              alt="car alarm"
+              objectFit="scale"
               placeholder="blurred"
               className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
             />
             <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
-              Point-of-Sale Equipment
-            </h3>
-          </Link>
-          <Link to="/cash-counter-other">
-            <StaticImage
-              src="../images/cash-counter.png"
-              alt="cash counter machine with money"
-              objectFit="contain"
-              placeholder="blurred"
-              className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
-            />
-            <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
-              Cash Counters & Other
+              Car Alarms & Security
             </h3>
           </Link>
         </div>

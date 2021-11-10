@@ -16,7 +16,7 @@ export default function TvVideo() {
         >
           <Link to="/televisions">
             <StaticImage
-              src="../images/TV-2.png"
+              src="../images/tv.png"
               alt="television"
               objectFit="contain"
               placeholder="blurred"
@@ -28,8 +28,8 @@ export default function TvVideo() {
           </Link>
           <Link to="/dvd-players">
             <StaticImage
-              src="../images/DVD-Player 1.png"
-              alt="DVD Player"
+              src="../images/dvd-player.png"
+              alt="DVD player"
               objectFit="scale-down"
               objectPosition="center"
               placeholder="blurred"
@@ -42,7 +42,7 @@ export default function TvVideo() {
 
           <Link to="/projectors">
             <StaticImage
-              src="../images/Projector.png"
+              src="../images/projector.png"
               alt="video projector"
               objectFit="contain"
               placeholder="blurred"
@@ -54,7 +54,7 @@ export default function TvVideo() {
           </Link>
           <Link to="/home-theater-setups">
             <StaticImage
-              src="../images/Home-Theatre-2 1.png"
+              src="../images/home-theatre-system.png"
               alt="four tall speakers"
               objectFit="contain"
               placeholder="blurred"
@@ -64,9 +64,34 @@ export default function TvVideo() {
               Home Theatre Systems
             </h3>
           </Link>
+          <Link to="/xbox">
+            <StaticImage
+              src="../images/Xbox.png"
+              alt="xbox console and joystick"
+              objectFit="scale-down"
+              placeholder="blurred"
+              className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
+            />
+            <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
+              Xbox & Accessories
+            </h3>
+          </Link>
+          <Link to="/playstation">
+            <StaticImage
+              src="../images/Playstation-5.png"
+              alt="playstation 5 console"
+              objectFit="contain"
+              objectPosition="bottom"
+              placeholder="blurred"
+              className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
+            />
+            <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
+              Playstation & Accessories
+            </h3>
+          </Link>
           <Link to="/av-cables-other">
             <StaticImage
-              src="../images/Audio-Video-Cable.png"
+              src="../images/audio-video-cable.png"
               alt="one end of an audio video cable"
               objectFit="contain"
               placeholder="blurred"

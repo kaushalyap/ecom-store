@@ -24,7 +24,7 @@ export default function Index() {
           <Link to="/computers">
             <div>
               <StaticImage
-                src="../images/Laptop.webp"
+                src="../images/laptop.webp"
                 alt="laptop"
                 objectFit="contain"
                 placeholder="blurred"
@@ -38,7 +38,7 @@ export default function Index() {
           <Link to="/smartphones">
             <div>
               <StaticImage
-                src="../images/Smartphone.webp"
+                src="../images/smartphone.webp"
                 alt="smartphone"
                 placeholder="blurred"
                 objectFit="contain"
@@ -52,8 +52,8 @@ export default function Index() {
           <Link to="/office">
             <div>
               <StaticImage
-                src="../images/Printer.webp"
-                alt="Printer"
+                src="../images/printer.webp"
+                alt="printer"
                 objectFit="contain"
                 placeholder="blurred"
                 className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
@@ -66,7 +66,7 @@ export default function Index() {
           <Link to="/tv-video">
             <div>
               <StaticImage
-                src="../images/TV.webp"
+                src="../images/tv.webp"
                 alt="TV"
                 placeholder="blurred"
                 className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
@@ -80,7 +80,7 @@ export default function Index() {
           <Link to="/game">
             <div>
               <StaticImage
-                src="../images/Gaming.webp"
+                src="../images/xbox-joystick.webp"
                 alt="XBox"
                 placeholder="blurred"
                 className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
@@ -94,8 +94,8 @@ export default function Index() {
           <Link to="/audio">
             <div>
               <StaticImage
-                src="../images/Speaker.webp"
-                alt="Speaker"
+                src="../images/speaker.webp"
+                alt="speaker"
                 placeholder="blurred"
                 className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
                 objectFit="contain"
@@ -108,7 +108,8 @@ export default function Index() {
           <Link to="/camera">
             <div>
               <StaticImage
-                src="../images/Camera.webp"
+                src="../images/camera.webp"
+                alt="camera"
                 objectFit="contain"
                 placeholder="blurred"
                 className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
@@ -121,7 +122,7 @@ export default function Index() {
           <Link to="/security">
             <div>
               <StaticImage
-                src="../images/CCTV.webp"
+                src="../images/cctv.png"
                 alt="CCTV camera"
                 placeholder="blurred"
                 className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
@@ -132,17 +133,31 @@ export default function Index() {
               </h3>
             </div>
           </Link>
-          <Link to="/other">
+          <Link to="/vehicle-electronics">
             <div>
               <StaticImage
-                src="../images/Smartwatch.webp"
-                alt="Smartwatch"
+                src="../images/gps.png"
+                alt="vehicle gps screen"
+                placeholder="blurred"
+                className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
+                objectFit="contain"
+              />
+              <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
+                Vehicle Electronics
+              </h3>
+            </div>
+          </Link>
+          <Link to="/wearables-smart-home-devices">
+            <div>
+              <StaticImage
+                src="../images/apple-watch.png"
+                alt="apple-watch"
                 placeholder="blurred"
                 objectFit="contain"
                 className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
               />
               <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
-                Wearables & Other
+                Wearables & Smart Home Devices
               </h3>
             </div>
           </Link>

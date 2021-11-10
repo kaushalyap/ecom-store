@@ -5,65 +5,77 @@ const ProductCategories = [
     Sub: [
       {
         name: 'Laptops',
-        path: '/computers-accessories/laptops/',
-      },
-      {
-        name: 'Laptop Accessories',
-        path: '/computers-accessories/laptop-accessories/',
+        path: '/laptops/',
       },
       {
         name: 'Desktops',
-        path: '/computers-accessories/desktops/',
-      },
-      {
-        name: 'Desktop Accessories',
-        path: '/computers-accessories/desktops-accessories/',
+        path: '/desktops/',
       },
       {
         name: 'Tablets',
-        path: '/computers-accessories/tablets/',
+        path: '/tablets/',
       },
       {
-        name: 'eBook Readers',
-        path: '/computers-accessories/ebook-readers/',
+        name: 'Monitors & Accessories',
+        path: '/desktops/',
+      },
+      {
+        name: 'Printers, Scanners & Accessories',
+        path: '/printers-scanners/',
+      },
+      {
+        name: 'Drives & Storage',
+        path: '/computers/drives-storage/',
+      },
+      {
+        name: 'Computer Components',
+        path: '/computer-components/',
+      },
+      {
+        name: 'Networking Hardware',
+        path: '/networking-hardware/',
+      },
+      {
+        name: 'Laptop & Desktop Accessories',
+        path: '/laptops-desktop-accessories/',
       },
     ],
   },
   {
-    name: 'Smartphones & Accessories',
-    path: '/smartphones/',
+    name: 'Mobile Phones & Accessories',
+    path: '/mobile-phones/',
     Sub: [
       {
-        name: 'Samsung',
-        path: '/smartphones/toshiba/',
+        name: 'Smartphones',
+        path: '/smartphones/',
       },
       {
-        name: 'Apple',
-        path: '/smartphones/apple/',
+        name: 'Feature Phones',
+        path: '/feature-phones/',
       },
       {
-        name: 'Lenovo',
-        path: '/smartphones/lenovo/',
+        name: 'Headsets',
+        path: '/headsets/',
       },
       {
-        name: 'Huawei',
-        path: '/smartphones/huawei/',
+        name: 'memory-cards',
+        path: '/memory-cards/',
       },
       {
-        name: 'E-Tel',
-        path: '/smartphones/e-tel/',
+        name: 'Batteries & Chargers',
+        path: '/batteries-chargers/',
       },
       {
-        name: 'HTC',
-        path: '/smartphones/htc/',
+        name: 'Cases & Screen Protectors',
+        path: '/cases-screen-protectors/',
       },
       {
-        name: 'Vivo',
-        path: '/smartphones/vivo/',
+        name: 'mounts-holders',
+        path: '/mounts-holders/',
       },
       {
-        name: 'Accessories',
-        path: '/smartphones/accessories/',
+        name: 'Cables & Other',
+        path: '/cables-other/',
       },
     ],
   },
@@ -72,52 +84,40 @@ const ProductCategories = [
     path: '/office/',
     Sub: [
       {
-        name: 'Photocopiers',
-        path: '/office-electronics/photocopiers/',
+        name: 'Printers & Scanners',
+        path: '/printers-scanners/',
       },
       {
-        name: 'Duplicators',
-        path: '/office-electronics/duplicators/',
-      },
-      {
-        name: 'Fax Machines',
-        path: '/office-electronics/fax-machines/',
+        name: 'Photocopiers & Duplicators',
+        path: '/photocopiers-duplicators/',
       },
       {
         name: 'Scanners',
-        path: '/office-electronics/scanners/',
+        path: '/Scanners/',
       },
       {
-        name: 'Printers',
-        path: '/office-electronics/printers/',
+        name: 'Video Projectors & Accessories',
+        path: '/video-projectors/',
       },
       {
-        name: 'Multimedia Projectors',
-        path: '/office-electronics/projectors/',
+        name: 'Telephones & Fax Machines',
+        path: '/telephones-fax-machines/',
+      },
+      {
+        name: 'Point-of-Sale Equipment',
+        path: '/pos-equipment/',
+      },
+      {
+        name: 'Cash Counters & Other',
+        path: '/cash-counter/',
       },
       {
         name: 'Board Room Equipments',
-        path: '/office-electronics/boardroom-equipments/',
+        path: '/boardroom-equipments/',
       },
       {
         name: 'Cash Counting Machines',
-        path: '/office-electronics/cash-counting-machines/',
-      },
-      {
-        name: 'Telephones & Accessories',
-        path: '/office-electronics/telephones',
-      },
-      {
-        name: 'Calculators',
-        path: '/office-electronics/calculators/',
-      },
-      {
-        name: 'Accessories',
-        path: '/categories/other/accessories/',
-      },
-      {
-        name: 'Smart Classroom Equipment',
-        path: '/categories/other/smart-classroom-equipments/',
+        path: '/cash-counting-machines/',
       },
     ],
   },
@@ -127,41 +127,31 @@ const ProductCategories = [
     Sub: [
       {
         name: 'Televisions',
-        path: '/tv-video/tv',
+        path: '/televisions',
       },
       {
-        name: 'Projectors',
-        path: '/tv-video/projectors',
+        name: 'DVD Players & Setups',
+        path: '/dvd-players-setups/',
       },
       {
-        name: 'DVD Players & Recorders',
-        path: '/tv-video/dvd-players-recorders',
+        name: 'Video Projectors & Accessories',
+        path: '/video-projectors/',
       },
       {
-        name: 'Accessories',
-        path: '/tv-video/accessories/',
-      },
-    ],
-  },
-  {
-    name: 'Video Game Consoles & Accessories',
-    path: '/game/',
-    Sub: [
-      {
-        name: 'Televisions',
-        path: '/video-game-accessories/xbox/',
+        name: 'Home Theatre Systems',
+        path: '/home-theatre-system/',
       },
       {
-        name: 'Playstation',
-        path: '/video-game-accessories/playstation',
+        name: 'XBox & Accessories',
+        path: '/xbox/',
       },
       {
-        name: 'Nintendo',
-        path: '/video-game-accessories/nintendo',
+        name: 'Playstations & Accessories',
+        path: '/playstation/',
       },
       {
-        name: 'Sony PSP',
-        path: '/video-game-accessories/sony-psp/',
+        name: 'AV Cables',
+        path: '/av-cables/',
       },
     ],
   },
@@ -170,34 +160,161 @@ const ProductCategories = [
     path: '/audio/',
     Sub: [
       {
-        name: 'Earphones',
-        path: '/audio-electronics/earphones/',
+        name: 'Speakers',
+        path: '/speakers/',
+      },
+      {
+        name: 'Home Theatre Systems',
+        path: '/home-theatre-systems/',
       },
       {
         name: 'Headphones',
-        path: '/audio-electronics/headphones/',
+        path: '/headphones/',
       },
       {
-        name: 'Speakers',
-        path: '/audio-electronics/speakers/',
+        name: 'Headsets',
+        path: '/headsets/',
       },
       {
-        name: 'Subwoofers',
-        path: '/audio-electronics/subwoofers/',
+        name: 'Microphones',
+        path: '/microphones/',
+      },
+      {
+        name: 'Radios',
+        path: '/radios/',
+      },
+      {
+        name: 'Car Audio',
+        path: '/car-audio/',
+      },
+      {
+        name: 'AV Cables & Other',
+        path: '/av-cables-other/',
       },
     ],
   },
+  {
+    name: 'Video Game Consoles & Accessories',
+    path: '/game/',
+    Sub: [
+      {
+        name: 'Xbox & Accessories',
+        path: '/xbox/',
+      },
+      {
+        name: 'Playstation',
+        path: '/playstation/',
+      },
+      {
+        name: 'Televisions & Monitors',
+        path: '/televisions-monitors/',
+      },
+      {
+        name: 'Gaming Laptops',
+        path: '/gaming-laptops/',
+      },
+      {
+        name: 'Gaming Builds & Accessories',
+        path: '/gaming-builds-accessories/',
+      },
+      {
+        name: 'Headphones',
+        path: '/headphones/',
+      },
+      {
+        name: 'Nintendo Switches',
+        path: '/nintendo-switches/',
+      },
+      {
+        name: 'Gaming Chairs & Other',
+        path: '/gaming-chairs-other/',
+      },
+    ],
+  },
+  {
+    name: 'Wearables & Smart Home Devices',
+    path: '/wearables-smart-home/',
+    Sub: [
+      {
+        name: 'Smartwatches',
+        path: '/smartwatches/',
+      },
+      {
+        name: 'Fitness Bands',
+        path: '/fitness-bands/',
+      },
+      {
+        name: 'VR Headsets',
+        path: '/vr-headsets',
+      },
+      {
+        name: 'Smart Home Assistants',
+        path: '/smart-home-assistants/',
+      },
+    ],
+  },
+  {
+    name: 'Vehicle Electronics',
+    path: '/vehicle-electronics/',
+    Sub: [
+      {
+        name: 'Car Audio',
+        path: '/car-audio/',
+      },
+      {
+        name: 'Car Video',
+        path: '/car-video/',
+      },
+      {
+        name: 'gps',
+        path: '/gps/',
+      },
+      {
+        name: 'Dashboard Cameras',
+        path: '/dash-cams/',
+      },
+      {
+        name: 'Car Alarms & Security',
+        path: '/car-alarms-security/',
+      },
+    ],
+  },
+
   {
     name: 'Camera & Photo',
     path: '/cameras/',
     Sub: [
       {
-        name: 'Cameras',
-        path: '/cameras/cameras',
+        name: 'Film Cameras',
+        path: '/film-cameras',
       },
       {
-        name: 'Lenses',
-        path: '/cameras/lenses/',
+        name: 'Digital Cameras',
+        path: '/digital-cameras',
+      },
+      {
+        name: 'Lenses & Filters',
+        path: '/lenses-filters/',
+      },
+      {
+        name: 'Camcorders & Accessories',
+        path: '/camcorders/',
+      },
+      {
+        name: 'Binoculars & Telescopes',
+        path: '/binoculars-telescopes',
+      },
+      {
+        name: 'Lighting & Accessories',
+        path: '/lighting/',
+      },
+      {
+        name: 'Tripods & Supports',
+        path: '/tripods-supports',
+      },
+      {
+        name: 'Camera Drones',
+        path: '/camera-drones/',
       },
     ],
   },
@@ -206,12 +323,32 @@ const ProductCategories = [
     path: '/security/',
     Sub: [
       {
-        name: 'CCTV',
-        path: '/security-surveillance/cctv/',
+        name: 'Security Camera Equipment',
+        path: '/cctv/',
       },
       {
-        name: 'Fingerprint Scanners',
-        path: '/security-surveillance/fingerprint-scanners/',
+        name: 'Home Security Systems',
+        path: '/home-security-systems/',
+      },
+      {
+        name: 'Biometrics',
+        path: '/biometrics/',
+      },
+      {
+        name: 'Sensors & Detectors',
+        path: '/sensors-detectors/',
+      },
+      {
+        name: 'Alarms & Sirens',
+        path: '/alarm-sirens/',
+      },
+      {
+        name: 'Radio Scanners',
+        path: '/radio-scanners/',
+      },
+      {
+        name: 'Authentication Tokens',
+        path: '/authentication-tokens/',
       },
     ],
   },

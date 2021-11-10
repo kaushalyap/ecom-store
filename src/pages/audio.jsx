@@ -17,7 +17,7 @@ export default function Audio() {
           <Link to="/audio">
             <div>
               <StaticImage
-                src="../images/Speaker2.png"
+                src="../images/speaker.png"
                 alt="Speaker"
                 placeholder="blurred"
                 className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
@@ -30,7 +30,7 @@ export default function Audio() {
           </Link>
           <Link to="/home-theater-setups">
             <StaticImage
-              src="../images/Home-Theatre-2 1.png"
+              src="../images/home-theatre-system.png"
               alt="four tall speakers"
               objectFit="contain"
               placeholder="blurred"
@@ -40,37 +40,9 @@ export default function Audio() {
               Home Theatre Systems
             </h3>
           </Link>
-          <Link to="/audio">
-            <div>
-              <StaticImage
-                src="../images/Microphone.png"
-                alt="Speaker"
-                placeholder="blurred"
-                className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
-                objectFit="contain"
-              />
-              <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
-                Microphones
-              </h3>
-            </div>
-          </Link>
-          <Link to="/radios">
-            <div>
-              <StaticImage
-                src="../images/Radio.png"
-                alt="Radio with an arial"
-                placeholder="blurred"
-                className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
-                objectFit="contain"
-              />
-              <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
-                Radios
-              </h3>
-            </div>
-          </Link>
           <Link to="/headphones">
             <StaticImage
-              src="../images/Headphone.png"
+              src="../images/headphone.png"
               alt="wireless headphone"
               objectFit="contain"
               objectPosition="bottom"
@@ -83,7 +55,7 @@ export default function Audio() {
           </Link>
           <Link to="/headsets">
             <StaticImage
-              src="../images/Headset.png"
+              src="../images/wireless-earbuds.png"
               alt="wireless earbuds"
               objectFit="scale-down"
               placeholder="blurred"
@@ -93,10 +65,51 @@ export default function Audio() {
               Headsets
             </h3>
           </Link>
+          <Link to="/audio">
+            <div>
+              <StaticImage
+                src="../images/microphone.png"
+                alt="microphone"
+                placeholder="blurred"
+                className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
+                objectFit="contain"
+              />
+              <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
+                Microphones
+              </h3>
+            </div>
+          </Link>
+          <Link to="/radios">
+            <div>
+              <StaticImage
+                src="../images/radio.png"
+                alt="Radio with an arial"
+                placeholder="blurred"
+                className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
+                objectFit="contain"
+              />
+              <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
+                Radios
+              </h3>
+            </div>
+          </Link>
 
+          <Link to="/car-audio">
+            <StaticImage
+              src="../images/car-audio.png"
+              alt="wireless headphone"
+              objectFit="contain"
+              objectPosition="bottom"
+              placeholder="blurred"
+              className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
+            />
+            <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
+              Car Audio
+            </h3>
+          </Link>
           <Link to="/av-cables-other">
             <StaticImage
-              src="../images/Audio-Video-Cable.png"
+              src="../images/audio-video-cable.png"
               alt="one end of an audio video cable"
               objectFit="contain"
               placeholder="blurred"

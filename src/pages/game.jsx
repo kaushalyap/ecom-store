@@ -29,7 +29,7 @@ export default function Game() {
           <Link to="/playstation">
             <StaticImage
               src="../images/Playstation-5.png"
-              alt="playstation 5 consoles"
+              alt="playstation 5 console"
               objectFit="contain"
               objectPosition="bottom"
               placeholder="blurred"
@@ -39,10 +39,22 @@ export default function Game() {
               Playstation & Accessories
             </h3>
           </Link>
+          <Link to="/televisions">
+            <StaticImage
+              src="../images/tv.png"
+              alt="television"
+              objectFit="contain"
+              placeholder="blurred"
+              className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
+            />
+            <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
+              Televisions & Monitors
+            </h3>
+          </Link>
           <Link to="/vr-headsets">
             <StaticImage
-              src="../images/VR-Headset 1.png"
-              alt="playstation 5 consoles"
+              src="../images/vr-headset.png"
+              alt="VR headset"
               objectFit="contain"
               placeholder="blurred"
               className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
@@ -51,10 +63,10 @@ export default function Game() {
               VR Headsets
             </h3>
           </Link>
-          <Link to="/gaming-laptop">
+          <Link to="/gaming-laptops">
             <StaticImage
-              src="../images/Gaming-Laptop.png"
-              alt="Razer Gaming Laptop"
+              src="../images/gaming-laptop.png"
+              alt="gaming laptop"
               objectFit="contain"
               placeholder="blurred"
               className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
@@ -65,7 +77,7 @@ export default function Game() {
           </Link>
           <Link to="/gaming-pc">
             <StaticImage
-              src="../images/Gaming-PC.png"
+              src="../images/gaming-pc.png"
               alt="Computer system unit with green lights"
               objectFit="contain"
               placeholder="blurred"
@@ -78,7 +90,7 @@ export default function Game() {
 
           <Link to="/headphones">
             <StaticImage
-              src="../images/Headphone.png"
+              src="../images/headphone.png"
               alt="wireless headphone"
               objectFit="contain"
               objectPosition="bottom"
@@ -89,9 +101,9 @@ export default function Game() {
               Headphones
             </h3>
           </Link>
-          <Link to="/nintendo">
+          <Link to="/nintendo-switches">
             <StaticImage
-              src="../images/Nintendo-Switch.png"
+              src="../images/nintendo-switch.png"
               alt="Nintendo Switch"
               objectFit="contain"
               placeholder="blurred"
@@ -103,8 +115,8 @@ export default function Game() {
           </Link>
           <Link to="/gaming-chair-other">
             <StaticImage
-              src="../images/GC.png"
-              alt="Gaming Chair"
+              src="../images/gaming-chair.png"
+              alt="gaming chair"
               objectFit="contain"
               placeholder="blurred"
               className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
