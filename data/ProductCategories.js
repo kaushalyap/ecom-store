@@ -92,10 +92,6 @@ const ProductCategories = [
         path: '/photocopiers-duplicators/',
       },
       {
-        name: 'Scanners',
-        path: '/Scanners/',
-      },
-      {
         name: 'Video Projectors & Accessories',
         path: '/video-projectors/',
       },

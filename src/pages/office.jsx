@@ -14,7 +14,7 @@ export default function Office() {
           id="cards"
           className="grid grid-cols-2 gap-x-5 gap-y-5 md:grid-cols-3 md:gap-x-10 md:gap-y-10 lg:grid-cols-4"
         >
-          <Link to="/printers">
+          <Link to="/printers-scanners">
             <StaticImage
               src="../images/printer.webp"
               alt="printer"
@@ -23,7 +23,7 @@ export default function Office() {
               className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
             />
             <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
-              Printers & Accessories
+              Printers, Scanners & Accessories
             </h3>
           </Link>
           <Link to="/photocopier">
@@ -39,18 +39,7 @@ export default function Office() {
               Photocopiers & Duplicators
             </h3>
           </Link>
-          <Link to="/scanners">
-            <StaticImage
-              src="../images/scanner.png"
-              alt="scanner"
-              objectFit="contain"
-              placeholder="blurred"
-              className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
-            />
-            <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
-              Scanners
-            </h3>
-          </Link>
+
           <Link to="/projectors">
             <StaticImage
               src="../images/projector.png"
@@ -73,6 +62,19 @@ export default function Office() {
             />
             <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
               Telephones & Fax Machines
+            </h3>
+          </Link>
+          <Link to="/smart-boardroom-equipment">
+            <StaticImage
+              src="../images/smart-board-room.png"
+              alt="board room table with smart panels mikes and etc"
+              objectFit="contain"
+              placeholder="blurred"
+              objectPosition="bottom"
+              className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
+            />
+            <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
+              Smart Board Room Equipment
             </h3>
           </Link>
           <Link to="/pos">
