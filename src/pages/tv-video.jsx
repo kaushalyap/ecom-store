@@ -6,7 +6,7 @@ import Layout from '../components/Layout';
 export default function TvVideo() {
   return (
     <Layout>
-      <main className="container mx-auto mb-20">
+      <main className="mx-5 mb-20 xl:container xl:mx-auto">
         <h1 className="mt-10 mb-5 font-headline text-xl font-medium md:mb-8 md:text-2xl xl:text-3xl">
           TV & Video
         </h1>
@@ -26,7 +26,7 @@ export default function TvVideo() {
               Televisions
             </h3>
           </Link>
-          <Link to="/dvd-players">
+          <Link to="/dvd-players-setups">
             <StaticImage
               src="../images/dvd-player.png"
               alt="DVD player"
@@ -52,7 +52,7 @@ export default function TvVideo() {
               Video Projectors & Accessories
             </h3>
           </Link>
-          <Link to="/home-theater-setups">
+          <Link to="/home-theaters">
             <StaticImage
               src="../images/home-theatre-system.png"
               alt="four tall speakers"
@@ -76,7 +76,7 @@ export default function TvVideo() {
               Xbox & Accessories
             </h3>
           </Link>
-          <Link to="/playstation">
+          <Link to="/playstations">
             <StaticImage
               src="../images/Playstation-5.png"
               alt="playstation 5 console"

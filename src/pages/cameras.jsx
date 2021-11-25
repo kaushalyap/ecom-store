@@ -6,7 +6,7 @@ import Layout from '../components/Layout';
 export default function Camera() {
   return (
     <Layout>
-      <main className="container mx-auto mb-20">
+      <main className="mx-5 mb-20 xl:container xl:mx-auto">
         <h1 className="mt-10 mb-5 font-headline text-xl font-medium md:mb-8 md:text-2xl xl:text-3xl">
           Camera & Photo
         </h1>
@@ -38,7 +38,7 @@ export default function Camera() {
               Digital Cameras
             </h3>
           </Link>
-          <Link to="/camera-lenses-filters">
+          <Link to="/lenses-filters">
             <StaticImage
               src="../images/lense.png"
               alt="camera lense"
@@ -62,7 +62,7 @@ export default function Camera() {
               Camcorders & Accessories
             </h3>
           </Link>
-          <Link to="/binoculars">
+          <Link to="/binoculars-telescopes">
             <StaticImage
               src="../images/binocular.png"
               alt="binoculars"
@@ -86,7 +86,7 @@ export default function Camera() {
               Printers, Scanners & Accessories
             </h3>
           </Link>
-          <Link to="/lighting/">
+          <Link to="/lighting">
             <StaticImage
               src="../images/flash-light.png"
               alt="flash light"

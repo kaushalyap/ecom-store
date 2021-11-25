@@ -3,12 +3,12 @@ import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
 import Layout from '../components/Layout';
 
-export default function Game() {
+export default function Gaming() {
   return (
     <Layout>
-      <main className="container mx-auto mb-20">
+      <main className="mx-5 mb-20 xl:container xl:mx-auto">
         <h1 className="mt-10 mb-5 font-headline text-xl font-medium md:mb-8 md:text-2xl xl:text-3xl">
-          Video Game Consoles & Accessories
+          Game Consoles & Accessories
         </h1>
         <div
           id="cards"
@@ -26,7 +26,7 @@ export default function Game() {
               Xbox & Accessories
             </h3>
           </Link>
-          <Link to="/playstation">
+          <Link to="/playstations">
             <StaticImage
               src="../images/Playstation-5.png"
               alt="playstation 5 console"
@@ -113,7 +113,7 @@ export default function Game() {
               Nintendo Switches
             </h3>
           </Link>
-          <Link to="/gaming-chair-other">
+          <Link to="/gaming-chairs-other">
             <StaticImage
               src="../images/gaming-chair.png"
               alt="gaming chair"

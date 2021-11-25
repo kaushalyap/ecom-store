@@ -6,7 +6,7 @@ import Layout from '../components/Layout';
 export default function Security() {
   return (
     <Layout>
-      <main className="container mx-auto mb-20">
+      <main className="mx-5 mb-20 xl:container xl:mx-auto">
         <h1 className="mt-10 mb-5 font-headline text-xl font-medium md:mb-8 md:text-2xl xl:text-3xl">
           Security & Surveillance
         </h1>
@@ -14,7 +14,7 @@ export default function Security() {
           id="cards"
           className="grid grid-cols-2 gap-x-5 gap-y-5 md:grid-cols-3 md:gap-x-10 md:gap-y-10 lg:grid-cols-4"
         >
-          <Link to="/cctv">
+          <Link to="/security-cameras">
             <StaticImage
               src="../images/cctv.png"
               alt="cctv camera"
@@ -85,7 +85,7 @@ export default function Security() {
               Radio Scanners
             </h3>
           </Link>
-          <Link to="/headphones">
+          <Link to="/authentication-tokens">
             <StaticImage
               src="../images/rsa-token.png"
               alt="USB authentication key"

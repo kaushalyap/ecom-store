@@ -3,10 +3,10 @@ import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
 import Layout from '../components/Layout';
 
-export default function Other() {
+export default function WearablesSmartHome() {
   return (
     <Layout>
-      <main className="container mx-auto mb-20">
+      <main className="mx-5 mb-20 xl:container xl:mx-auto">
         <h1 className="mt-10 mb-5 font-headline text-xl font-medium md:mb-8 md:text-2xl xl:text-3xl">
           Wearables & Smart Home Devices
         </h1>
@@ -40,7 +40,7 @@ export default function Other() {
           </Link>
           <Link to="/vr-headsets">
             <StaticImage
-              src="../images/VR-Headset 1.png"
+              src="../images/VR-Headset.png"
               alt="playstation 5 consoles"
               objectFit="contain"
               placeholder="blurred"
@@ -50,7 +50,7 @@ export default function Other() {
               VR Headsets
             </h3>
           </Link>
-          <Link to="/smart-home-assistant">
+          <Link to="/smart-home-assistants">
             <StaticImage
               src="../images/amazon-alexa.png"
               alt="Alexa smart home assistant"

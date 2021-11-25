@@ -6,7 +6,7 @@ import Layout from '../components/Layout';
 export default function Office() {
   return (
     <Layout>
-      <main className="container mx-auto mb-20">
+      <main className="mx-5 mb-20 xl:container xl:mx-auto">
         <h1 className="mt-10 mb-5 font-headline text-xl font-medium md:mb-8 md:text-2xl xl:text-3xl">
           Office Electronics
         </h1>
@@ -63,7 +63,7 @@ export default function Office() {
               Video Projectors & Accessories
             </h3>
           </Link>
-          <Link to="/telephone-fax-machine">
+          <Link to="/telephones-fax-machines">
             <StaticImage
               src="../images/telephone.png"
               alt="telephone"
@@ -87,7 +87,7 @@ export default function Office() {
               Point-of-Sale Equipment
             </h3>
           </Link>
-          <Link to="/cash-counter-other">
+          <Link to="/cash-counters-other">
             <StaticImage
               src="../images/cash-counter.png"
               alt="cash counter machine with money"

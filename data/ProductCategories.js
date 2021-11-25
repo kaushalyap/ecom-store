@@ -17,7 +17,7 @@ const ProductCategories = [
       },
       {
         name: 'Monitors & Accessories',
-        path: '/desktops/',
+        path: '/monitors/',
       },
       {
         name: 'Printers, Scanners & Accessories',
@@ -25,7 +25,7 @@ const ProductCategories = [
       },
       {
         name: 'Drives & Storage',
-        path: '/computers/drives-storage/',
+        path: '/drives-storage/',
       },
       {
         name: 'Computer Components',
@@ -108,16 +108,12 @@ const ProductCategories = [
         path: '/pos-equipment/',
       },
       {
-        name: 'Cash Counters & Other',
-        path: '/cash-counter/',
-      },
-      {
         name: 'Board Room Equipments',
         path: '/boardroom-equipments/',
       },
       {
-        name: 'Cash Counting Machines',
-        path: '/cash-counting-machines/',
+        name: 'Cash Counters & Other',
+        path: '/cash-counters-other/',
       },
     ],
   },
@@ -127,7 +123,7 @@ const ProductCategories = [
     Sub: [
       {
         name: 'Televisions',
-        path: '/televisions',
+        path: '/televisions/',
       },
       {
         name: 'DVD Players & Setups',
@@ -139,7 +135,7 @@ const ProductCategories = [
       },
       {
         name: 'Home Theatre Systems',
-        path: '/home-theatre-system/',
+        path: '/home-theatres/',
       },
       {
         name: 'XBox & Accessories',
@@ -147,55 +143,17 @@ const ProductCategories = [
       },
       {
         name: 'Playstations & Accessories',
-        path: '/playstation/',
+        path: '/playstations/',
       },
       {
         name: 'AV Cables',
-        path: '/av-cables/',
-      },
-    ],
-  },
-  {
-    name: 'Audio Electronics',
-    path: '/audio/',
-    Sub: [
-      {
-        name: 'Speakers',
-        path: '/speakers/',
-      },
-      {
-        name: 'Home Theatre Systems',
-        path: '/home-theatre-systems/',
-      },
-      {
-        name: 'Headphones',
-        path: '/headphones/',
-      },
-      {
-        name: 'Headsets',
-        path: '/headsets/',
-      },
-      {
-        name: 'Microphones',
-        path: '/microphones/',
-      },
-      {
-        name: 'Radios',
-        path: '/radios/',
-      },
-      {
-        name: 'Car Audio',
-        path: '/car-audio/',
-      },
-      {
-        name: 'AV Cables & Other',
         path: '/av-cables-other/',
       },
     ],
   },
   {
-    name: 'Video Game Consoles & Accessories',
-    path: '/game/',
+    name: 'Game Consoles & Accessories',
+    path: '/gaming/',
     Sub: [
       {
         name: 'Xbox & Accessories',
@@ -203,11 +161,15 @@ const ProductCategories = [
       },
       {
         name: 'Playstation',
-        path: '/playstation/',
+        path: '/playstations/',
       },
       {
         name: 'Televisions & Monitors',
         path: '/televisions-monitors/',
+      },
+      {
+        name: 'VR Headsets',
+        path: '/vr-headsets/',
       },
       {
         name: 'Gaming Laptops',
@@ -232,50 +194,40 @@ const ProductCategories = [
     ],
   },
   {
-    name: 'Wearables & Smart Home Devices',
-    path: '/wearables-smart-home/',
+    name: 'Audio Electronics',
+    path: '/audio/',
     Sub: [
       {
-        name: 'Smartwatches',
-        path: '/smartwatches/',
+        name: 'Speakers',
+        path: '/speakers/',
       },
       {
-        name: 'Fitness Bands',
-        path: '/fitness-bands/',
+        name: 'Home Theatre Systems',
+        path: '/home-theatres/',
       },
       {
-        name: 'VR Headsets',
-        path: '/vr-headsets',
+        name: 'Headphones',
+        path: '/headphones/',
       },
       {
-        name: 'Smart Home Assistants',
-        path: '/smart-home-assistants/',
+        name: 'Headsets',
+        path: '/headsets/',
       },
-    ],
-  },
-  {
-    name: 'Vehicle Electronics',
-    path: '/vehicle-electronics/',
-    Sub: [
+      {
+        name: 'Mikes & Amps',
+        path: '/mikes-amps/',
+      },
+      {
+        name: 'Radios',
+        path: '/radios/',
+      },
       {
         name: 'Car Audio',
         path: '/car-audio/',
       },
       {
-        name: 'Car Video',
-        path: '/car-video/',
-      },
-      {
-        name: 'gps',
-        path: '/gps/',
-      },
-      {
-        name: 'Dashboard Cameras',
-        path: '/dash-cams/',
-      },
-      {
-        name: 'Car Alarms & Security',
-        path: '/car-alarms-security/',
+        name: 'AV Cables & Other',
+        path: '/av-cables-other/',
       },
     ],
   },
@@ -286,11 +238,11 @@ const ProductCategories = [
     Sub: [
       {
         name: 'Film Cameras',
-        path: '/film-cameras',
+        path: '/film-cameras/',
       },
       {
         name: 'Digital Cameras',
-        path: '/digital-cameras',
+        path: '/digital-cameras/',
       },
       {
         name: 'Lenses & Filters',
@@ -302,7 +254,11 @@ const ProductCategories = [
       },
       {
         name: 'Binoculars & Telescopes',
-        path: '/binoculars-telescopes',
+        path: '/binoculars-telescopes/',
+      },
+      {
+        name: 'Printers, Scanners & Accessories',
+        path: '/printers-scanners/',
       },
       {
         name: 'Lighting & Accessories',
@@ -310,7 +266,7 @@ const ProductCategories = [
       },
       {
         name: 'Tripods & Supports',
-        path: '/tripods-supports',
+        path: '/tripods-supports/',
       },
       {
         name: 'Camera Drones',
@@ -349,6 +305,58 @@ const ProductCategories = [
       {
         name: 'Authentication Tokens',
         path: '/authentication-tokens/',
+      },
+    ],
+  },
+  {
+    name: 'Vehicle Electronics',
+    path: '/vehicle-electronics/',
+    Sub: [
+      {
+        name: 'Car Audio',
+        path: '/car-audio/',
+      },
+      {
+        name: 'Car Video',
+        path: '/car-video/',
+      },
+      {
+        name: 'gps',
+        path: '/gps/',
+      },
+      {
+        name: 'Dashboard Cameras',
+        path: '/dash-cams/',
+      },
+      {
+        name: 'Car Alarms & Security',
+        path: '/car-alarms-security/',
+      },
+    ],
+  },
+  {
+    name: 'Wearables & Smart Home',
+    path: '/wearables-smart-home/',
+    Sub: [
+      {
+        name: 'Smartwatches',
+        path: '/smartwatches/',
+      },
+      {
+        name: 'Fitness Bands',
+        path: '/fitness-bands/',
+      },
+      {
+        name: 'VR Headsets',
+        path: '/vr-headsets/',
+      },
+      {
+        name: 'Smart Home Assistants',
+        path: '/smart-home-assistants/',
+      },
+      {
+        name: 'Smart Door Locks',
+        path: '/smart-door-locks/',
       },
     ],
   },

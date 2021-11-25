@@ -6,7 +6,7 @@ import Layout from '../components/Layout';
 export default function Audio() {
   return (
     <Layout>
-      <main className="container mx-auto mb-20">
+      <main className="mx-5 mb-20 xl:container xl:mx-auto">
         <h1 className="mt-10 mb-5 font-headline text-xl font-medium md:mb-8 md:text-2xl xl:text-3xl">
           Audio Electronics
         </h1>
@@ -14,7 +14,7 @@ export default function Audio() {
           id="cards"
           className="grid grid-cols-2 gap-x-5 gap-y-5 md:grid-cols-3 md:gap-x-10 md:gap-y-10 lg:grid-cols-4"
         >
-          <Link to="/audio">
+          <Link to="/speakers">
             <div>
               <StaticImage
                 src="../images/speaker.png"
@@ -28,7 +28,7 @@ export default function Audio() {
               </h3>
             </div>
           </Link>
-          <Link to="/home-theater-setups">
+          <Link to="/home-theaters">
             <StaticImage
               src="../images/home-theatre-system.png"
               alt="four tall speakers"
@@ -65,7 +65,7 @@ export default function Audio() {
               Headsets
             </h3>
           </Link>
-          <Link to="/audio">
+          <Link to="/mikes-amps">
             <div>
               <StaticImage
                 src="../images/microphone.png"
@@ -75,7 +75,7 @@ export default function Audio() {
                 objectFit="contain"
               />
               <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
-                Microphones
+                Mikes & Amps
               </h3>
             </div>
           </Link>
@@ -93,7 +93,6 @@ export default function Audio() {
               </h3>
             </div>
           </Link>
-
           <Link to="/car-audio">
             <StaticImage
               src="../images/car-audio.png"

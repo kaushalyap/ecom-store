@@ -6,7 +6,7 @@ import Layout from '../components/Layout';
 export default function Smartphones() {
   return (
     <Layout>
-      <main className="container mx-auto mb-20">
+      <main className="mx-5 mb-20 xl:container xl:mx-auto">
         <h1 className="mt-10 mb-5 font-headline text-xl font-medium md:mb-8 md:text-2xl xl:text-3xl">
           Smartphones & Accessories
         </h1>
@@ -86,7 +86,7 @@ export default function Smartphones() {
               Cases & Screen Protectors
             </h3>
           </Link>
-          <Link to="/phone-stand">
+          <Link to="/mounts-holders">
             <StaticImage
               src="../images/phone-stand.png"
               alt="iPhone on a phone stand"

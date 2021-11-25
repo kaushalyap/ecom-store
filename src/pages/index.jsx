@@ -24,7 +24,7 @@ export default function Index() {
           <Link to="/computers">
             <div>
               <StaticImage
-                src="../images/laptop.webp"
+                src="../images/laptop-front.webp"
                 alt="laptop"
                 objectFit="contain"
                 placeholder="blurred"
@@ -35,7 +35,7 @@ export default function Index() {
               </h3>
             </div>
           </Link>
-          <Link to="/smartphones">
+          <Link to="/mobile-phones">
             <div>
               <StaticImage
                 src="../images/smartphone.webp"
@@ -45,7 +45,7 @@ export default function Index() {
                 className="p-10 w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
               />
               <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
-                Smartphones & Accessories
+                Mobile Phones & Accessories
               </h3>
             </div>
           </Link>
@@ -77,14 +77,14 @@ export default function Index() {
               </h3>
             </div>
           </Link>
-          <Link to="/game">
+          <Link to="/gaming">
             <div>
               <StaticImage
-                src="../images/xbox-joystick.webp"
+                src="../images/xbox-joystick-black.webp"
                 alt="XBox"
                 placeholder="blurred"
                 className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
-                objectFit="contain"
+                objectFit="scale-down"
               />
               <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
                 Video Game Consoles & Accessories
@@ -105,7 +105,7 @@ export default function Index() {
               </h3>
             </div>
           </Link>
-          <Link to="/camera">
+          <Link to="/cameras">
             <div>
               <StaticImage
                 src="../images/camera.webp"

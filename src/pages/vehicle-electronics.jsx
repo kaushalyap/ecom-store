@@ -6,7 +6,7 @@ import Layout from '../components/Layout';
 export default function VehicleElectronics() {
   return (
     <Layout>
-      <main className="container mx-auto mb-20">
+      <main className="mx-5 mb-20 xl:container xl:mx-auto">
         <h1 className="mt-10 mb-5 font-headline text-xl font-medium md:mb-8 md:text-2xl xl:text-3xl">
           Vehicle Electronics
         </h1>
@@ -67,7 +67,7 @@ export default function VehicleElectronics() {
             <StaticImage
               src="../images/car-alarm.png"
               alt="car alarm"
-              objectFit="scale"
+              objectFit="contain"
               placeholder="blurred"
               className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
             />
