@@ -3,7 +3,7 @@ import { Dialog, Transition } from '@headlessui/react';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import { StaticImage } from 'gatsby-plugin-image';
-import closeIcon from '../../images/close-outlined.svg';
+import closeIcon from '../../images/close-dark-outlined.svg';
 import cheveronLeftIcon from '../../images/cheveron-left-outlined.svg';
 import cheveronRightIcon from '../../images/cheveron-right-outlined.svg';
 import FollowUs from '../FollowUs/FollowUs';
@@ -48,36 +48,26 @@ export default function SideOver({ refDiv, open, setOpen }) {
             >
               {/* Menu Panel */}
               <div className="relative w-screen max-w-md">
-                {/* Close Button */}
-                <Transition.Child
-                  as={Fragment}
-                  enter="ease-in-out duration-500"
-                  enterFrom="opacity-0"
-                  enterTo="opacity-100"
-                  leave="ease-in-out duration-500"
-                  leaveFrom="opacity-100"
-                  leaveTo="opacity-0"
-                >
-                  <button
-                    type="button"
-                    className="absolute top-5 right-1 p-1 -mr-10 -ml-10 text-gray-300 hover:text-white rounded-md focus:ring-2 focus:ring-white focus:outline-none"
-                    onClick={() => setOpen(false)}
-                  >
-                    <span className="sr-only">Close panel</span>
-                    <img src={closeIcon} className="w-4" alt="close" />
-                  </button>
-                </Transition.Child>
-                {/* End of Close Button */}
-
                 <div className="flex flex-col justify-between py-6 pl-6 h-full bg-blue-50 rounded-r-3xl shadow-2xl transition duration-1000 ease-in-out">
                   <div id="menu-top" className="flex flex-col">
-                    <StaticImage
-                      src="../../images/logo-name-below.svg"
-                      alt="techstack.lk logo"
-                      className=" w-44 opacity-90"
-                      loading="eager"
-                      placeholder="tracedSVG"
-                    />
+                    <div className="flex justify-between">
+                      <StaticImage
+                        src="../../images/logo-name-below.svg"
+                        alt="techstack.lk logo"
+                        className=" w-44 opacity-90"
+                        loading="eager"
+                        placeholder="tracedSVG"
+                      />
+                      <button
+                        type="button"
+                        className="p-2 mr-4 h-8 text-gray-300 hover:text-white rounded-md focus:ring-2 focus:ring-white focus:outline-none"
+                        onClick={() => setOpen(false)}
+                      >
+                        <span className="sr-only">Close panel</span>
+                        <img src={closeIcon} className="w-4" alt="close" />
+                      </button>
+                    </div>
+
                     <nav id="menu-options" className={`${isMainMenuVisible}`}>
                       <Link
                         to="/blog/why-us/"
@@ -91,14 +81,14 @@ export default function SideOver({ refDiv, open, setOpen }) {
                           setCategoryMenuVisible(true);
                           setMainMenuVisible('hidden');
                         }}
-                        className="flex justify-between py-2 w-full text-lg tracking-wider text-gray-600"
+                        className="flex py-2 w-full text-lg tracking-wider text-gray-600"
                       >
-                        <p className="">Shop By Category</p>
+                        <p className="mr-2">Shop By Category</p>
 
                         <img
                           src={cheveronRightIcon}
                           alt="cheveron right"
-                          className="p-2 mr-2"
+                          className="p-2"
                         />
                       </button>
                       <Link
