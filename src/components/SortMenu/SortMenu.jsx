@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { Menu, Transition } from '@headlessui/react';
-import closeIcon from '../../images/close-outlined.svg';
+import chevronDownIcon from '../../images/chevron-down-outlined.svg';
 import sortOptions from '../../../data/SortOptions';
 
 function classNames(...classes) {
@@ -9,12 +9,12 @@ function classNames(...classes) {
 
 export default function SortMenu() {
   return (
-    <Menu as="div" className="inline-block relative text-left">
+    <Menu as="div" className="inline-block relative p-3 text-left">
       <div>
-        <Menu.Button className="group inline-flex justify-center text-sm font-medium text-gray-700 hover:text-gray-900">
+        <Menu.Button className="group inline-flex justify-center font-description text-sm font-medium tracking-wide text-gray-700 hover:text-gray-900">
           Sort
           <img
-            src={closeIcon}
+            src={chevronDownIcon}
             alt="close"
             className="flex-shrink-0 -mr-1 ml-1 w-5 h-5 text-gray-400 group-hover:text-gray-500"
             aria-hidden="true"

@@ -7,6 +7,8 @@ ls:
     .jsx: pascalcase
   src/pages:
     .jsx: kebabcase
+  src/utils:
+    .js: pascalcase
   .storybook:
     .js: lowercase
 

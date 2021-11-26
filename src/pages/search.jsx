@@ -11,19 +11,19 @@ export default function SearchResults() {
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
   return (
     <Layout>
-      <div className="mx-5 mb-20 xl:container xl:mx-auto">
+      <div className="mx-3 mb-20 xl:container xl:mx-auto">
         <div>
           <MobileFilterDialog
             open={mobileFiltersOpen}
             setOpen={setMobileFiltersOpen}
           />
-          <main className="px-4 sm:px-6 lg:px-8">
-            <div className="flex relative z-20 justify-end items-baseline py-6 border-b border-gray-200">
+          <main className="">
+            <div className="flex relative z-20 justify-end items-baseline py-1 border-b border-gray-200">
               <div className="flex items-center">
                 <SortMenu />
                 <button
                   type="button"
-                  className="p-2 -m-2 ml-5 text-gray-400 hover:text-gray-500 sm:ml-7"
+                  className="p-3 text-gray-400 hover:text-gray-500 sm:ml-7"
                 >
                   <span className="sr-only">View grid</span>
                   <img
@@ -35,7 +35,7 @@ export default function SearchResults() {
                 </button>
                 <button
                   type="button"
-                  className="p-2 -m-2 ml-4 text-gray-400 hover:text-gray-500 sm:ml-6 lg:hidden"
+                  className="p-3 text-gray-400 hover:text-gray-500 sm:ml-6 lg:hidden"
                   onClick={() => setMobileFiltersOpen(true)}
                 >
                   <span className="sr-only">Filters</span>
