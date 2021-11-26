@@ -1,18 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import shoppingCartIcon from '../../images/cart-outlined.svg';
+import shoppingBagIcon from '../../images/shopping-bag-outlined.svg';
 
 export default function ShoppingCart({ noItemsInCart }) {
   return (
     <button
       type="button"
       aria-label="shopping cart"
-      className="p-2 mr-1.5 w-12 hover:text-gray-500 focus:text-gray-500 2xl:mr-0"
+      className="flex p-2 mr-5 w-12 hover:text-gray-500 focus:text-gray-500 2xl:mr-0"
     >
-      <span className="absolute top-2 right-6 z-10 p-px w-4 h-4 text-xs text-center text-white bg-red-400 rounded-3xl 2xl:top-4 2xl:right-11">
+      <span className="z-10 p-px px-1 w-4 h-4 text-xs text-center text-white bg-red-400 rounded-3xl">
         {noItemsInCart}
       </span>
-      <img src={shoppingCartIcon} className="w-full" alt="shopping cart" />
+      <img src={shoppingBagIcon} className="w-full" alt="shopping cart" />
     </button>
   );
 }
