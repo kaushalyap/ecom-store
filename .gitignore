@@ -6,3 +6,4 @@ yarn-error.log
 storybook-static/
 .husky/_
 .env.production
+.wakatime-project
