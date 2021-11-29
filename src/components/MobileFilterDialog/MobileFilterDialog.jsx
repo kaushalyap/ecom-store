@@ -4,7 +4,7 @@ import { Dialog, Transition, Disclosure } from '@headlessui/react';
 import closeDarkIcon from '../../images/close-dark-outlined.svg';
 import plusSmIcon from '../../images/plus-sm-outlined.svg';
 import minusSmIcon from '../../images/minus-sm-outlined.svg';
-import Filters from '../../../data/Filters';
+import Filters from '../../constants/Filters';
 
 const subCategories = [
   { name: 'Totes', href: '#' },

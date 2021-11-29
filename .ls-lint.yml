@@ -1,13 +1,13 @@
 ls:
   .js: lowercase | kebabcase
-  data:
-    .js: pascalcase
   src/components/:
     .dir: pascalcase
     .jsx: pascalcase
   src/pages:
     .jsx: kebabcase
   src/utils:
+    .js: pascalcase
+  src/constants:
     .js: pascalcase
   .storybook:
     .js: lowercase

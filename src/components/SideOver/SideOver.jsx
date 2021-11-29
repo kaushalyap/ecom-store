@@ -7,7 +7,7 @@ import closeIcon from '../../images/close-dark-outlined.svg';
 import cheveronLeftIcon from '../../images/cheveron-left-outlined.svg';
 import cheveronRightIcon from '../../images/cheveron-right-outlined.svg';
 import FollowUs from '../FollowUs/FollowUs';
-import categories from '../../../data/ProductCategories';
+import categories from '../../constants/ProductCategories';
 
 export default function SideOver({ refDiv, open, setOpen }) {
   const [isCategoryMenuVisible, setCategoryMenuVisible] = useState(false);

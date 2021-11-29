@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import categories from '../../../data/ProductCategories';
+import categories from '../../constants/ProductCategories';
 import FollowUs from '../FollowUs/FollowUs';
 
 export default function Footer() {

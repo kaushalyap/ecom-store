@@ -2,7 +2,7 @@ import React from 'react';
 import { Disclosure } from '@headlessui/react';
 import plusSmIcon from '../../images/plus-sm-outlined.svg';
 import minusSmIcon from '../../images/minus-sm-outlined.svg';
-import filters from '../../../data/Filters';
+import filters from '../../constants/Filters';
 
 const subCategories = [
   { name: 'Totes', href: '#' },
