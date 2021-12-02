@@ -17,7 +17,7 @@ export default function Contact() {
         </h1>
         <div className="lg:flex">
           <div className="mb-10 lg:w-1/2">
-            <p className="mb-6 font-light tracking-wide">
+            <p className="mb-6 font-light tracking-wide xl:text-xl">
               Do not hesitate to reach us
             </p>
             <div className="flex gap-4">
@@ -37,10 +37,10 @@ export default function Contact() {
                 <Twitter color="#1DA1F2" className="w-8 h-8 md:w-12 md:h-12" />
               </a>
             </div>
-            <p className="mt-8 text-sm font-light tracking-wider text-gray-600">
+            <p className="hidden mt-8 text-sm font-light tracking-wider text-gray-600 lg:block">
               Mobile : +94 77 17 90 463
             </p>
-            <p className="mt-2 text-sm font-light tracking-wider text-gray-600">
+            <p className="hidden mt-2 text-sm font-light tracking-wider text-gray-600 lg:block">
               Nugegoda, Colombo, Sri Lanka.
             </p>
           </div>
@@ -49,20 +49,20 @@ export default function Contact() {
             <ContactForm />
           </div>
         </div>
-        <hr className="text-sm border border-gray-200 lg:hidden" />
-        <p className="my-8 font-light tracking-wider text-gray-600 lg:hidden">
-          Or
-        </p>
-        <ContactForm classNames="lg:hidden" />
-        <div className="lg:hidden">
-          <hr className=" mt-10 border border-gray-200" />
+        <div className="md:hidden">
+          <hr className=" text-sm border border-gray-200" />
+          <p className=" my-8 font-light tracking-wider text-gray-600">Or</p>
+          <ContactForm />
+          <div className="">
+            <hr className=" mt-10 border border-gray-200" />
 
-          <p className="mt-8 text-sm font-light tracking-wider text-gray-600">
-            Mobile : +94 77 17 90 463
-          </p>
-          <p className="mt-2 text-sm font-light tracking-wider text-gray-600">
-            Nugegoda, Colombo, Sri Lanka.
-          </p>
+            <p className="mt-8 text-sm font-light tracking-wider text-gray-600">
+              Mobile : +94 77 17 90 463
+            </p>
+            <p className="mt-2 text-sm font-light tracking-wider text-gray-600">
+              Nugegoda, Colombo, Sri Lanka.
+            </p>
+          </div>
         </div>
       </main>
     </Layout>
