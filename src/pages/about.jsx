@@ -10,17 +10,16 @@ export default function About() {
         <h1 className="mt-10 mb-5 font-headline text-xl font-medium md:mb-8 md:text-2xl xl:text-3xl">
           About Us
         </h1>
-        <p className="mb-6 font-light lg:mb-8 xl:text-2xl">
-          We are online only electronic store, based in Colombo, run by Sri
-          Lankans.
+        <p className="mb-6 font-light tracking-wide lg:mb-8 xl:text-2xl">
+          We are online only electronic store, located in Nugegoda, Colombo.
         </p>
         <h2
-          className="mb-5 font-headline text-3xl font-medium lg:mb-8 lg:text-7xl xl:text-8xl"
+          className="mb-5 font-headline text-3xl font-medium lg:mb-8 lg:text-7xl xl:mb-10 xl:text-8xl"
           id="why-us/"
         >
           Why Us?
         </h2>
-        <div className="mb-8 lg:mb-12" id="sri-lankan-owned">
+        <div className="mb-8 lg:mb-12 xl:mb-16" id="sri-lankan-owned">
           <h3 className="mb-2 font-headline text-2xl md:hidden">
             Sri Lankan Owned
           </h3>
@@ -32,7 +31,7 @@ export default function About() {
               />
             </div>
             <div className="md:ml-4 md:w-1/2 lg:ml-8">
-              <h3 className="hidden mt-4 mb-4 font-headline text-5xl leading-tight md:block lg:text-6xl xl:text-7xl">
+              <h3 className="hidden mt-4 mb-4 font-headline text-5xl leading-tight md:block lg:text-6xl xl:text-7xl 2xl:mt-12">
                 Sri Lankan Owned
               </h3>
               <p className="mb-2 font-light lg:text-2xl xl:mb-4 xl:text-3xl">
@@ -48,7 +47,7 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div className="mb-8 lg:mb-12" id="free-delivery">
+        <div className="mb-8 lg:mb-12 xl:mb-16" id="free-delivery">
           <h3 className="mb-4 font-headline text-2xl md:hidden">
             Free Delivery Islandwide
           </h3>
@@ -69,7 +68,7 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div className="mb-8 lg:mb-12" id="customer-happiness-driven">
+        <div className="mb-8 lg:mb-12 xl:mb-16" id="customer-happiness-driven">
           <h3 className="mb-2 font-headline text-2xl md:hidden">
             Customer Happiness over Sales
           </h3>
@@ -83,7 +82,7 @@ export default function About() {
               />
             </div>
             <div className="md:w-1/2 lg:ml-8">
-              <h3 className="hidden mt-3 mb-2 font-headline text-5xl leading-tight md:block lg:text-6xl xl:mb-6 xl:text-7xl">
+              <h3 className="hidden mt-3 mb-2 font-headline text-5xl leading-tight md:block lg:text-6xl xl:mb-6 xl:text-7xl 2xl:mt-8">
                 Customer Joy
                 <br />
                 <span className="text-4xl">over</span>
@@ -118,7 +117,7 @@ export default function About() {
               />
             </div>
             <div className="md:w-1/2 lg:mr-8">
-              <h3 className="hidden mb-4 font-headline text-5xl leading-tight md:block lg:text-6xl xl:mb-6 xl:text-7xl xl:leading-tight">
+              <h3 className="hidden mt-6 mb-4 font-headline text-5xl leading-tight md:block lg:text-6xl xl:mb-6 xl:text-7xl xl:leading-tight 2xl:mt-12">
                 Competitive Pricing
               </h3>
               <p className="mb-2 font-light lg:text-2xl xl:mb-4 xl:text-3xl">
