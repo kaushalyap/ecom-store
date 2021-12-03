@@ -2,10 +2,10 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ]
-    }
+      "@/*": ["./src/*"]
+    },
+    "checkJs": true,
+    "jsx": "react-jsx"
   },
   "exclude": [
     ".cache",
@@ -13,6 +13,5 @@
     "node_modules",
     "storybook-static",
     ".husky/_"
-  ],
-  "checkJs": "true"
+  ]
 }

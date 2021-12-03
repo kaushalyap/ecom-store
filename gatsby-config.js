@@ -47,5 +47,12 @@ module.exports = {
     },
     'gatsby-plugin-postcss',
     'gatsby-plugin-webpack-bundle-analyser-v2',
+    {
+      resolve: 'gatsby-source-storyblok',
+      options: {
+        accessToken: process.env.STORYBLOK_ACCESS_TOKEN,
+        version: 'draft',
+      },
+    },
   ],
 };
