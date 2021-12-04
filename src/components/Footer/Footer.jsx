@@ -96,10 +96,13 @@ export default function Footer() {
         <div className="tracking-wider md:flex md:justify-between">
           <p>{`©  ${new Date().getFullYear()} TechStack Holdings, (Pvt) Ltd.`}</p>
           <p className="mt-2 md:mt-0">
-            <Link to="/terms/" className="mr-2 lg:mr-4">
+            <Link to="/terms/" className="mr-2 md:mr-3 lg:mr-4">
               Terms
             </Link>
-            <Link to="/privacy-policy">Privacy Policy</Link>
+            <Link to="/privacy-policy" className="mr-2 md:mr-3 lg:mr-4">
+              Privacy Policy
+            </Link>
+            <Link to="/refund-policy/">Refund Policy</Link>
           </p>
         </div>
       </div>
