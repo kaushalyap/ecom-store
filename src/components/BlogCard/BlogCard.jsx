@@ -2,11 +2,21 @@
 import PropTypes from 'prop-types';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import React from 'react';
+import { Link } from 'gatsby';
 
-// eslint-disable-next-line object-curly-newline
-export default function BlogCard({ heroImage, altText, title, author, date }) {
+export default function BlogCard({
+  slug,
+  heroImage,
+  altText,
+  title,
+  author,
+  date,
+}) {
   return (
-    <div className="flex mb-4 bg-gray-50 rounded-lg shadow-lg md:mb-6 lg:mb-8">
+    <Link
+      to={slug}
+      className="flex mb-4 bg-gray-50 rounded-lg shadow-lg md:mb-6 lg:mb-8"
+    >
       <GatsbyImage
         image={heroImage}
         alt={altText}
@@ -20,11 +30,12 @@ export default function BlogCard({ heroImage, altText, title, author, date }) {
           `${author}, ${date}`
         </p>
       </div>
-    </div>
+    </Link>
   );
 }
 
 BlogCard.propTypes = {
+  slug: PropTypes.string.isRequired,
   heroImage: PropTypes.object.isRequired,
   altText: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,

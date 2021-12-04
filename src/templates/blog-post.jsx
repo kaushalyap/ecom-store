@@ -50,6 +50,6 @@ export default function BlogPost({ pageContext, location }) {
 BlogPost.propTypes = {
   location: PropTypes.string.isRequired,
   pageContext: PropTypes.shape({
-    story: PropTypes.string.isRequired,
+    story: PropTypes.object.isRequired,
   }).isRequired,
 };
