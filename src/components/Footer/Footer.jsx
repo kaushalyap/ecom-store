@@ -99,10 +99,10 @@ export default function Footer() {
             <Link to="/terms/" className="mr-2 md:mr-3 lg:mr-4">
               Terms
             </Link>
-            <Link to="/privacy-policy" className="mr-2 md:mr-3 lg:mr-4">
-              Privacy Policy
+            <Link to="/refund-policy" className="mr-2 md:mr-3 lg:mr-4">
+              Refund Policy
             </Link>
-            <Link to="/refund-policy/">Refund Policy</Link>
+            <Link to="/privacy-policy/">Privacy Policy</Link>
           </p>
         </div>
       </div>

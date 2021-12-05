@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 export default function PrivacyPolicy() {
   return (
     <Layout>
-      <main className="mx-5 mb-40 lg:mx-auto lg:w-2/3 xl:container xl:w-2/5">
+      <main className="mx-5 mb-40 lg:mx-auto lg:w-2/3 xl:w-2/5">
         <h1 className="mt-10 mb-5 font-headline text-2xl font-medium md:mb-8 md:text-4xl xl:mb-8 xl:text-5xl 2xl:mb-10">
           Privacy Policy
         </h1>
@@ -30,7 +30,9 @@ export default function PrivacyPolicy() {
         <h2 className="mt-8 mb-2 font-headline font-medium md:text-xl xl:text-2xl">
           SECTION 2 - CONSENT
         </h2>
-        <p className="mb-2 text-justify">How do you get my consent?</p>
+        <p className="mb-2 text-justify">
+          <b>How do you get my consent?</b>
+        </p>
         <p className="mb-2 text-justify">
           When you provide us with personal information to complete a
           transaction, verify your credit card, place an order, arrange for a
@@ -40,7 +42,9 @@ export default function PrivacyPolicy() {
           we will either ask you directly for your expressed consent, or provide
           you with an opportunity to say no.
         </p>
-        <p className="mb-2 text-justify">How do I withdraw my consent?</p>
+        <p className="mb-2 text-justify">
+          <b>How do I withdraw my consent?</b>
+        </p>
         <p className="mb-2 text-justify">
           If after you opt-in, you change your mind, you may withdraw your
           consent for us to contact you, for the continued collection, use or
@@ -62,35 +66,31 @@ export default function PrivacyPolicy() {
           SECTION 4 - E-commerce
         </h2>
 
-        <p className="text-justify">
-          Our store is hosted on Shopify Inc. They provide us with the online
-          e-commerce platform that allows us to sell our products and services
-          to you. Your data is stored through Shopify&apos;s data storage,
-          databases and the general Shopify application. They store your data on
-          a secure server behind a firewall.
+        <p className="mb-2 text-justify">
+          Our store is hosted on public cloud. Your data is protected in both
+          transit and rest with SSL and AES encryption respectively. They store
+          your data on a secure server behind a firewall.
         </p>
 
         <p className="mb-2 text-justify">Payment:</p>
         <p className="mb-2 text-justify">
-          If you choose a direct payment gateway to complete your purchase, then
-          Shopify stores your credit card data. It is encrypted through the
-          Payment Card Industry Data Security Standard (PCI-DSS). Your purchase
-          transaction data is stored only as long as is necessary to complete
-          your purchase transaction. After that is complete, your purchase
-          transaction information is deleted.
-        </p>
-        <p className="mb-2 text-justify">
-          All direct payment gateways adhere to the standards set by PCI-DSS as
-          managed by the PCI Security Standards Council, which is a joint effort
-          of brands like Visa, MasterCard, American Express and Discover.
-        </p>
-        <p className="mb-2 text-justify">
-          PCI-DSS requirements help ensure the secure handling of credit card
-          information by our store and its service providers.
+          We do not store your payment information, we delegate payment
+          functionality to&nbsp;
+          <a href="https://www.genie.lk/" className="text-blue-600">
+            Dialog Genie
+          </a>
+          &nbsp; and&nbsp;
+          <a href="https://www.mobitel.lk/mcash" className="text-blue-600">
+            SLT Mobitel mCash
+          </a>
+          . They follow industry standard best practices like encrypting payment
+          info through the Payment Card Industry Data Security Standard
+          (PCI-DSS). PCI-DSS requirements help ensure the secure handling of
+          credit card information by our store and its service providers.
         </p>
         <p className="text-justify">
-          For more insight, you may also want to read Shopify&apos;s Terms of
-          Service here or Privacy Statement here.
+          Your purchase transaction data is stored until you request for
+          deletion. This data is use to make better decisions as a business.
         </p>
         <h2 className="mt-8 mb-2 font-headline font-medium md:text-xl xl:text-2xl">
           SECTION 5 - THIRD-PARTY SERVICES
@@ -114,7 +114,7 @@ export default function PrivacyPolicy() {
           so you can understand the manner in which your personal information
           will be handled by these providers.
         </p>
-        <p>
+        <p className="mb-2 text-justify">
           In particular, remember that certain providers may be located in or
           have facilities that are located a different jurisdiction than either
           you or us. So if you elect to proceed with a transaction that involves
@@ -123,14 +123,14 @@ export default function PrivacyPolicy() {
           service provider or its facilities are located.
         </p>
 
-        <p>
+        <p className="mb-2 text-justify">
           As an example, if you are located in Canada and your transaction is
           processed by a payment gateway located in the United States, then your
           personal information used in completing that transaction may be
           subject to disclosure under United States legislation, including the
           Patriot Act.
         </p>
-        <p>
+        <p className="mb-2 text-justify">
           Once you leave our store&apos;s website or are redirected to a
           third-party website or application, you are no longer governed by this
           Privacy Policy or our website&apos;s Terms of Service.
@@ -167,8 +167,8 @@ export default function PrivacyPolicy() {
 
         <ul className="list-disc list-inside">
           <li>
-            _session_id, unique token, sessional, Allows Shopify to store
-            information about your session (referrer, landing page, etc).
+            _session_id, unique token, sessional, Allows us to store information
+            about your session (referrer, landing page, etc).
           </li>
           <li>
             _shopify_visit, no data held, Persistent for 30 minutes from the
