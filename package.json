@@ -31,6 +31,7 @@
     "@fontsource/open-sans": "^4.5.0",
     "@headlessui/react": "^1.4.0",
     "@icons-pack/react-simple-icons": "^4.6.1",
+    "@sentry/gatsby": "^6.15.0",
     "@tailwindcss/aspect-ratio": "^0.3.0",
     "@tailwindcss/forms": "^0.3.3",
     "gatsby": "^3.10.2",
