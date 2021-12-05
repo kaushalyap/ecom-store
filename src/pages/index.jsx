@@ -3,10 +3,15 @@ import { StaticImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby';
 import Layout from '../components/Layout';
 import Carousel from '../components/Carousel/Carousel';
+import SEO from '../components/SEO/SEO';
 
 export default function Index() {
   return (
     <Layout>
+      <SEO
+        title="TechStack.LK"
+        description="All your tech gear satisfied and freely delivered to your doorstep"
+      />
       <main className="container mx-auto">
         <Carousel />
       </main>

@@ -2,10 +2,15 @@ import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby';
 import Layout from '../components/Layout';
+import SEO from '../components/SEO/SEO';
 
 export default function Smartphones() {
   return (
     <Layout>
+      <SEO
+        title="Smartphones & Accessories"
+        description="Your next smartphone is waiting for you, in a click of button which will be delivered to you for free"
+      />
       <main className="mx-5 mb-20 xl:container xl:mx-auto">
         <h1 className="mt-10 mb-5 font-headline text-xl font-medium md:mb-8 md:text-2xl xl:text-3xl">
           Smartphones & Accessories

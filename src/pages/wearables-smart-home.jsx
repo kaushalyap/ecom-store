@@ -1,11 +1,16 @@
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
+import SEO from '../components/SEO/SEO';
 import Layout from '../components/Layout';
 
 export default function WearablesSmartHome() {
   return (
     <Layout>
+      <SEO
+        title="Wearables & Smart Home Devices"
+        description="Have a comfortable digital experience on the go with Smartwatches, Fitness bands. Automate and save your time buy ordering a Smart Home assistant"
+      />
       <main className="mx-5 mb-20 xl:container xl:mx-auto">
         <h1 className="mt-10 mb-5 font-headline text-xl font-medium md:mb-8 md:text-2xl xl:text-3xl">
           Wearables & Smart Home Devices

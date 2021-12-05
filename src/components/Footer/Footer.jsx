@@ -25,7 +25,7 @@ export default function Footer() {
           <p className="pt-5 text-gray-600 md:mx-0">
             All your tech gear satisfied and
             <br />
-            delivered to your door step.
+            freely delivered to your door step.
           </p>
         </div>
         <div

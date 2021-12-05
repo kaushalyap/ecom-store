@@ -1,11 +1,13 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
+import SEO from '../components/SEO/SEO';
 import Layout from '../components/Layout';
 
 export default function NotFoundPage() {
   return (
     <Layout>
+      <SEO title="Page not found" />
       <main className="mx-5 mb-20 md:mb-40 md:text-center xl:container xl:mx-auto">
         <h1 className="mt-10 mb-8 font-headline text-4xl font-bold md:mt-20 md:mb-10 md:text-5xl md:text-center lg:mb-12 xl:mb-16 xl:text-7xl">
           Ooops!

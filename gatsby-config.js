@@ -6,7 +6,17 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     siteUrl: 'https://techstack.lk',
-    title: 'Tech Stack LK',
+    title: 'TechStack LK',
+    titleTemplate: '%s - TechStack.LK',
+    headline: 'headline',
+    description:
+      'Sri Lankan owned online only electronic store with free deliveries for which value customer happiness over sales',
+    siteLanguage: 'en',
+    image: 'src/images/logo.svg',
+    ogLanguage: 'en_US',
+    author: 'TechStack.LK',
+    twitterUsername: '@techstacklk',
+    facebookUsername: 'techstacklk',
   },
   plugins: [
     'gatsby-plugin-image',

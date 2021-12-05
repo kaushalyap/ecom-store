@@ -1,11 +1,16 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby';
+import SEO from '../components/SEO/SEO';
 import Layout from '../components/Layout';
 
 export default function Computers() {
   return (
     <Layout>
+      <SEO
+        title="Computers & Accessories"
+        description="Just get your next laptop, tablet, desktop, etc freely delivered to you for a competitive price"
+      />
       <main className="mx-5 mb-20 xl:container xl:mx-auto">
         <h1 className="mt-10 mb-5 font-headline text-xl font-medium md:mb-8 md:text-2xl xl:text-3xl">
           Computers & Accessories
@@ -62,7 +67,6 @@ export default function Computers() {
               Monitors & Accessories
             </h3>
           </Link>
-
           <Link to="/printers-scanners">
             <StaticImage
               src="../images/printer.webp"

@@ -2,15 +2,19 @@ import React, { useState } from 'react';
 import SortMenu from '../components/SortMenu/SortMenu';
 import ProductGrid from '../components/ProductGrid/ProductGrid';
 import Layout from '../components/Layout';
+// @ts-ignore
 import filterIcon from '../images/filter-outlined.svg';
+// @ts-ignore
 import gridViewIcon from '../images/grid-view-outlined.svg';
 import MobileFilterDialog from '../components/MobileFilterDialog/MobileFilterDialog';
 import DesktopFilters from '../components/DesktopFilters/DesktopFilters';
+import SEO from '../components/SEO/SEO';
 
 export default function SearchResults() {
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
   return (
     <Layout>
+      <SEO title="Search" />
       <div className="mx-3 mb-20 xl:container xl:mx-auto">
         <div>
           <MobileFilterDialog

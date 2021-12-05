@@ -1,11 +1,16 @@
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
+import SEO from '../components/SEO/SEO';
 import Layout from '../components/Layout';
 
 export default function Audio() {
   return (
     <Layout>
+      <SEO
+        title="Audio Electronics"
+        description="Music to your ears with speakers, home theaters, headphones, headsets, radios and etc"
+      />
       <main className="mx-5 mb-20 xl:container xl:mx-auto">
         <h1 className="mt-10 mb-5 font-headline text-xl font-medium md:mb-8 md:text-2xl xl:text-3xl">
           Audio Electronics

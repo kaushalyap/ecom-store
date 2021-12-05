@@ -1,11 +1,16 @@
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
+import SEO from '../components/SEO/SEO';
 import Layout from '../components/Layout';
 
 export default function Office() {
   return (
     <Layout>
+      <SEO
+        title="Office Electronics"
+        description="Make your office life more easier with next-gen office equipment"
+      />
       <main className="mx-5 mb-20 xl:container xl:mx-auto">
         <h1 className="mt-10 mb-5 font-headline text-xl font-medium md:mb-8 md:text-2xl xl:text-3xl">
           Office Electronics

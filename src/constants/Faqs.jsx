@@ -4,6 +4,7 @@ import { Link } from 'gatsby';
 
 const Faqs = [
   {
+    key: 1,
     question: 'Where is my order?',
     answer: (
       <p className="text-justify">
@@ -16,6 +17,7 @@ const Faqs = [
     ),
   },
   {
+    key: 2,
     question: 'How the order disputes are handled?',
     answer: (
       <p className="text-justify">
@@ -31,6 +33,7 @@ const Faqs = [
     ),
   },
   {
+    key: 3,
     question: 'Can I cancel or change my order?',
     answer: (
       <p className="text-justify">
@@ -40,6 +43,7 @@ const Faqs = [
     ),
   },
   {
+    key: 4,
     question: 'I am not sure whether this product suitable for me?',
     answer: (
       <p className="text-justify">
@@ -52,6 +56,7 @@ const Faqs = [
     ),
   },
   {
+    key: 5,
     question: 'How can claim warranties for a purchased item?',
     answer: (
       <p className="text-justify">
@@ -63,6 +68,7 @@ const Faqs = [
     ),
   },
   {
+    key: 6,
     question: 'Can TechStack.LK be trusted?',
     answer: (
       <p className="text-justify">
@@ -72,6 +78,7 @@ const Faqs = [
     ),
   },
   {
+    key: 7,
     question: 'Is my payment info secured?',
     answer: (
       <p className="text-justify">
@@ -89,6 +96,7 @@ const Faqs = [
     ),
   },
   {
+    key: 8,
     question: 'What payment methods do you accept?',
     answer: (
       <p className="text-justify">
@@ -107,6 +115,7 @@ const Faqs = [
     ),
   },
   {
+    key: 9,
     question: 'How does the item deliveries happen?',
     answer: (
       <p className="text-justify">
@@ -117,6 +126,7 @@ const Faqs = [
     ),
   },
   {
+    key: 10,
     question: 'How many days to deliver?',
     answer: (
       <p className="text-justify">
@@ -128,6 +138,7 @@ const Faqs = [
     ),
   },
   {
+    key: 11,
     question: 'Do you offer tech support?',
     answer: (
       <p className="text-justify">

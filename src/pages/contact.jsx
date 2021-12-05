@@ -7,11 +7,16 @@ import {
 } from '@icons-pack/react-simple-icons';
 import ContactForm from '../components/ContactForm/ContactForm';
 import Layout from '../components/Layout';
+import SEO from '../components/SEO/SEO';
 
 export default function Contact() {
   return (
     <Layout>
-      <main main className="mx-5 mb-40 xl:container xl:mx-auto">
+      <SEO
+        title="Contact Us"
+        description="Any questions, doubts, want to whether a product fit your needs?, do not hesitate to reach us through the contact form, social media and WhatsApp"
+      />
+      <main className="mx-5 mb-40 xl:container xl:mx-auto">
         <h1 className="mt-20 mb-5 font-headline text-xl font-medium md:mb-8 md:text-2xl lg:text-3xl xl:text-7xl">
           Get in Touch
         </h1>

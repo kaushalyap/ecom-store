@@ -1,11 +1,16 @@
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
+import SEO from '../components/SEO/SEO';
 import Layout from '../components/Layout';
 
 export default function About() {
   return (
     <Layout>
+      <SEO
+        title="About"
+        description="Sri Lankan owned online only electronic store with free deliveries which value customer happiness over sales"
+      />
       <main className="mx-5 mb-20 xl:container xl:mx-auto">
         <h1 className="mt-10 mb-5 font-headline text-xl font-medium md:mb-8 md:text-2xl xl:text-3xl">
           About Us
@@ -26,6 +31,7 @@ export default function About() {
           <div className="md:flex">
             <div className="mb-4 md:mb-0 md:w-1/2">
               <StaticImage
+                alt="Colombo Galle face from distance"
                 src="../images/colombo-galle-face.jpg"
                 className="w-full rounded-lg"
               />
@@ -54,6 +60,7 @@ export default function About() {
           <div className="mb-4 md:flex md:flex-row-reverse">
             <div className="mb-4 md:mb-0 md:ml-4 md:w-1/2">
               <StaticImage
+                alt="two hands giving set of parcel to other two hands"
                 src="../images/free-delivery-hands.jpg"
                 className="w-full rounded-lg"
               />
@@ -112,6 +119,7 @@ export default function About() {
           <div className="mb-4 md:flex md:flex-row-reverse md:mb-0">
             <div className="mb-4 md:ml-4 md:w-1/2">
               <StaticImage
+                alt="price tags hagging from strings"
                 src="../images/competitive-pricing.jpg"
                 className="w-full rounded-lg"
               />
