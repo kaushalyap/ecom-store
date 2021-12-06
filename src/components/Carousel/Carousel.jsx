@@ -6,21 +6,36 @@ import { StaticImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby';
 
 export default function Carousel() {
-  const animation = { duration: 50000, easing: (t) => t };
-  const [sliderRef] = useKeenSlider({
+  const [pause, setPause] = React.useState(false);
+  const timer = React.useRef();
+  const [sliderRef, slider] = useKeenSlider({
     loop: true,
-    renderMode: 'performance',
-    drag: true,
     created(s) {
-      s.moveToIdx(5, true, animation);
+      s.container.addEventListener('mouseover', () => {
+        setPause(true);
+      });
+      s.container.addEventListener('mouseout', () => {
+        setPause(false);
+      });
     },
-    updated(s) {
-      s.moveToIdx(s.track.details.abs + 5, true, animation);
+    dragStarted: () => {
+      setPause(true);
     },
-    animationEnded(s) {
-      s.moveToIdx(s.track.details.abs + 5, true, animation);
+    dragEnded: () => {
+      setPause(false);
     },
   });
+
+  React.useEffect(() => {
+    timer.current = setInterval(() => {
+      if (!pause && slider && !document.hidden) {
+        slider.current?.next();
+      }
+    }, 3000);
+    return () => {
+      clearInterval(timer.current);
+    };
+  }, [pause, slider]);
 
   return (
     <>
