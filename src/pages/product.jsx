@@ -5,7 +5,7 @@ import Layout from '../components/Layout';
 export default function Product() {
   return (
     <Layout>
-      <main className="mx-5 mt-6 mb-10 xl:container xl:flex xl:gap-6 xl:mx-auto">
+      <main className="mx-5 mt-6 mb-10 xl:container xl:flex xl:gap-6 xl:mx-auto xl:mt-20">
         <ProductCarousel />
         <div className="hidden xl:block xl:w-1/2">
           <img
