@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     // eslint-disable-next-line react/jsx-props-no-spreading
     <footer className="p-6 bg-blue-50 md:p-10">
-      <div className="md:flex md:flex-wrap lg:flex lg:flex-nowrap">
+      <div className="container mx-auto md:flex md:flex-wrap lg:flex lg:flex-nowrap">
         <div
           id="footer-column-1"
           className="py-5 text-gray-500 md:pb-8 md:w-1/2 md:text-left lg:mr-14 lg:w-3/12 xl:mr-0 xl:w-1/4"
