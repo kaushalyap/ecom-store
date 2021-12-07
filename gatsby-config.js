@@ -42,7 +42,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-google-gtag',
       options: {
-        trackingIds: ['G-NRCT1ZFWG3'],
+        trackingIds: [process.env.GOOGLE_ANALYTICS],
         gtagConfig: {
           anonymize_ip: true,
           cookie_expires: 0,
@@ -61,7 +61,8 @@ module.exports = {
       resolve: 'gatsby-source-storyblok',
       options: {
         accessToken: process.env.STORYBLOK_ACCESS_TOKEN,
-        version: 'draft',
+        version:
+          process.env.GATSBY_MODE === 'production' ? 'published' : 'draft',
       },
     },
     {

@@ -21,7 +21,7 @@ export default function ProductCarousel() {
 
   return (
     <div className="xl:hidden">
-      <div className="xl:hidden navigation-wrapper">
+      <div className="relative xl:hidden">
         <div ref={sliderRef} className="md:h-96 keen-slider">
           <div className="keen-slider__slide number-slide1">1</div>
           <div className="keen-slider__slide number-slide2">2</div>
@@ -32,7 +32,7 @@ export default function ProductCarousel() {
         </div>
       </div>
       {loaded && instanceRef.current && (
-        <div className="dots">
+        <div className="flex justify-center py-2">
           {[
             // @ts-ignore
             ...Array(instanceRef.current.track.details.slides.length).keys(),
@@ -44,7 +44,7 @@ export default function ProductCarousel() {
               onClick={() => {
                 instanceRef.current?.moveToIdx(idx);
               }}
-              className={`dot${currentSlide === idx ? ' active' : ''}`}
+              className={`dot${currentSlide === idx ? ' active' : ' '}`}
             />
           ))}
         </div>

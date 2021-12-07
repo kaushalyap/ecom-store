@@ -76,16 +76,6 @@ body {
   );
 }
 
-.navigation-wrapper {
-  position: relative;
-}
-
-.dots {
-  display: flex;
-  padding: 10px 0;
-  justify-content: center;
-}
-
 .dot {
   border: none;
   width: 10px;

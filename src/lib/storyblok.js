@@ -9,6 +9,7 @@ export default function useStoryblok(originalStory, location) {
 
   // see https://www.storyblok.com/docs/Guides/storyblok-latest-js
   function initEventListeners() {
+    // @ts-ignore
     const { StoryblokBridge } = window;
 
     if (typeof StoryblokBridge !== 'undefined') {

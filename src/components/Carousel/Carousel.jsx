@@ -6,36 +6,43 @@ import { StaticImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby';
 
 export default function Carousel() {
-  const [pause, setPause] = React.useState(false);
-  const timer = React.useRef();
-  const [sliderRef, slider] = useKeenSlider({
-    loop: true,
-    created(s) {
-      s.container.addEventListener('mouseover', () => {
-        setPause(true);
-      });
-      s.container.addEventListener('mouseout', () => {
-        setPause(false);
-      });
+  const [sliderRef] = useKeenSlider(
+    {
+      // @ts-ignore
+      loop: true,
     },
-    dragStarted: () => {
-      setPause(true);
-    },
-    dragEnded: () => {
-      setPause(false);
-    },
-  });
-
-  React.useEffect(() => {
-    timer.current = setInterval(() => {
-      if (!pause && slider && !document.hidden) {
-        slider.current?.next();
-      }
-    }, 3000);
-    return () => {
-      clearInterval(timer.current);
-    };
-  }, [pause, slider]);
+    [
+      (slider) => {
+        let timeout;
+        let mouseOver = false;
+        function clearNextTimeout() {
+          clearTimeout(timeout);
+        }
+        function nextTimeout() {
+          clearTimeout(timeout);
+          if (mouseOver) return;
+          timeout = setTimeout(() => {
+            slider.next();
+          }, 3000);
+        }
+        slider.on('created', () => {
+          slider.container.addEventListener('mouseover', () => {
+            mouseOver = true;
+            clearNextTimeout();
+          });
+          slider.container.addEventListener('mouseout', () => {
+            mouseOver = false;
+            nextTimeout();
+          });
+          nextTimeout();
+        });
+        slider.on('dragStarted', clearNextTimeout);
+        slider.on('animationEnded', nextTimeout);
+        slider.on('updated', nextTimeout);
+      },
+      // eslint-disable-next-line comma-dangle
+    ]
+  );
 
   return (
     <>

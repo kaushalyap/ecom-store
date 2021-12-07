@@ -8,7 +8,7 @@
     "gatsby"
   ],
   "scripts": {
-    "develop": "ENABLE_GATSBY_REFRESH_ENDPOINT=true gatsby develop",
+    "develop": "gatsby develop",
     "develop-css": "TAILWIND_MODE=watch postcss -i node_modules/tailwindcss/dis/tailwind.css -o dist/build.css --watch",
     "clean-develop": "gatsby clean && gatsby develop",
     "build": "gatsby build",
