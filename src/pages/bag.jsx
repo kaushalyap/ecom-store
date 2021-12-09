@@ -14,8 +14,14 @@ export default function Bag() {
         </h1>
         <div className="xl:flex xl:gap-20">
           <div className="mb-8 xl:mb-0 xl:w-2/3">
-            <ShoppingItemCard />
-            <ShoppingItemCard />
+            <ShoppingItemCard
+              title="Oculus - Quest 2 Advanced All-In-One Virtual Reality Headset - 128GB"
+              price={5800}
+            />
+            <ShoppingItemCard
+              title="Oculus - Quest 2 Advanced All-In-One Virtual Reality Headset - 128GB"
+              price={5800}
+            />
           </div>
           <div className="tracking-wider md:text-lg lg:mb-6 xl:mt-4 xl:w-1/3">
             <p className="flex justify-between text-gray-600 xl:mb-1 xl:text-xl">

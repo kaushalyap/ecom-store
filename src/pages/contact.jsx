@@ -1,10 +1,11 @@
-import React from 'react';
 import {
   Facebook,
   Instagram,
+  Pinterest,
   Twitter,
   Whatsapp,
 } from '@icons-pack/react-simple-icons';
+import React from 'react';
 import ContactForm from '../components/ContactForm/ContactForm';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO/SEO';
@@ -27,19 +28,34 @@ export default function Contact() {
             </p>
             <div className="flex gap-4">
               <a href="https://wa.me/+94771790463">
-                <Whatsapp color="#25D366" className="w-8 h-8 md:w-12 md:h-12" />
+                <Whatsapp
+                  color="#25D366"
+                  className="w-8 h-8 opacity-70 hover:opacity-100 md:w-12 md:h-12"
+                />
               </a>
               <a href="https://facebook.com/techstacklk">
-                <Facebook color="#1877F2" className="w-8 h-8 md:w-12 md:h-12" />
+                <Facebook
+                  color="#1877F2"
+                  className="w-8 h-8 opacity-70 hover:opacity-100 md:w-12 md:h-12"
+                />
               </a>
               <a href="https://instagram.com/techstacklk">
                 <Instagram
                   color="#E4405F"
-                  className="w-8 h-8 md:w-12 md:h-12"
+                  className="w-8 h-8 opacity-70 hover:opacity-100 md:w-12 md:h-12"
+                />
+              </a>
+              <a href="https://pinterest.com/techstacklk">
+                <Pinterest
+                  color="#BD081C"
+                  className="w-8 h-8 opacity-50 hover:opacity-100 md:w-12 md:h-12"
                 />
               </a>
               <a href="https://twitter.com/techstacklk">
-                <Twitter color="#1DA1F2" className="w-8 h-8 md:w-12 md:h-12" />
+                <Twitter
+                  color="#1DA1F2"
+                  className="w-8 h-8 opacity-70 hover:opacity-100 md:w-12 md:h-12"
+                />
               </a>
             </div>
             <p className="hidden mt-8 text-sm font-light tracking-wider text-gray-600 lg:block lg:text-lg">
