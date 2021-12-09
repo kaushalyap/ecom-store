@@ -12064,10 +12064,10 @@ junk@^3.1.0:
   resolved "https://registry.yarnpkg.com/junk/-/junk-3.1.0.tgz#31499098d902b7e98c5d9b9c80f43457a88abfa1"
   integrity sha512-pBxcB3LFc8QVgdggvZWyeys+hnrNWg4OcZIU/1X59k5jQdLBlCsYGRQaz234SqoRLTCgMH00fY0xRJH+F9METQ==
 
-keen-slider@^6.0.4:
-  version "6.3.1"
-  resolved "https://registry.yarnpkg.com/keen-slider/-/keen-slider-6.3.1.tgz#4f4e9c8b13878ad376d8cd8cbe91c643e4e6d218"
-  integrity sha512-BAiRtgXNIoXizgpZt8ENpnkjQrPnJx4Qn7iBcD9xLI2xwNr1F5aQbmaSWJTKDIo2Z8X12jJTfz5T+yxUEHrMSw==
+keen-slider@^6.3.3:
+  version "6.3.4"
+  resolved "https://registry.yarnpkg.com/keen-slider/-/keen-slider-6.3.4.tgz#31122ded9d89101c03c482b5c892cfbd944a6ced"
+  integrity sha512-IkG5YCsV+lbOfZ9nQkJWt7JDTrQ7YmeNMXo1UuFeWNNd4oj1MVM8fjQcO9Zo2OrO8dpmuPtq4MUyCKb7W46aYQ==
 
 keyv@3.0.0:
   version "3.0.0"

@@ -1,13 +1,12 @@
-import React, { useState, useRef } from 'react';
 import { Link } from 'gatsby';
-import SubNav from '../SubNav/SubNav';
-
-import SearchBox from '../SearchBox/SearchBox';
-import ShoppingCart from '../ShoppingCart/ShoppingCart';
-import MenuButton from '../MenuButton/MenuButton';
-import SideOver from '../SideOver/SideOver';
+import React, { useRef, useState } from 'react';
 // @ts-ignore
 import logoFull from '../../images/full-logo.svg';
+import MenuButton from '../MenuButton/MenuButton';
+import SearchBox from '../SearchBox/SearchBox';
+import ShoppingBag from '../ShoppingBag/ShoppingBag';
+import SideOver from '../SideOver/SideOver';
+import SubNav from '../SubNav/SubNav';
 
 // import categories from '../../../data/product-categories.json';
 
@@ -31,9 +30,8 @@ export default function NavBar() {
               />
             </Link>
           </div>
-
           <SearchBox classes="hidden 2xl:flex 2xl:w-1/2" />
-          <ShoppingCart noItemsInCart={5} />
+          <ShoppingBag noItemsInCart={5} />
         </div>
         <SearchBox classes="md:flex 2xl:hidden" />
         <SubNav menuClickHandler={setOpen} />

@@ -1,11 +1,11 @@
 import React from 'react';
-import ShoppingCart from './ShoppingCart';
+import ShoppingBag from './ShoppingBag';
 
 // noinspection JSUnusedGlobalSymbols
 export default {
   title: 'Buttons/ShoppingCart',
-  component: ShoppingCart,
+  component: ShoppingBag,
 };
 
 // noinspection JSUnusedGlobalSymbols
-export const ShoppingCartLight = () => <ShoppingCart noItemsInCart={5} />;
+export const ShoppingCartLight = () => <ShoppingBag noItemsInCart={5} />;

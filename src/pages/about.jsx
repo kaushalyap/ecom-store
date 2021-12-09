@@ -1,8 +1,8 @@
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
-import SEO from '../components/SEO/SEO';
 import Layout from '../components/Layout';
+import SEO from '../components/SEO/SEO';
 
 export default function About() {
   return (

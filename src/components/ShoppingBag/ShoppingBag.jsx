@@ -1,11 +1,13 @@
-import React from 'react';
+import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
+import React from 'react';
+// @ts-ignore
 import shoppingBagIcon from '../../images/shopping-bag-outlined.svg';
 
-export default function ShoppingCart({ noItemsInCart }) {
+export default function ShoppingBag({ noItemsInCart }) {
   return (
-    <button
-      type="button"
+    <Link
+      to="/bag"
       aria-label="shopping cart"
       className="flex p-2 mr-5 w-12 hover:text-gray-500 focus:text-gray-500 2xl:mr-0"
     >
@@ -13,10 +15,10 @@ export default function ShoppingCart({ noItemsInCart }) {
         {noItemsInCart}
       </span>
       <img src={shoppingBagIcon} className="w-full" alt="shopping cart" />
-    </button>
+    </Link>
   );
 }
 
-ShoppingCart.propTypes = {
+ShoppingBag.propTypes = {
   noItemsInCart: PropTypes.number.isRequired,
 };

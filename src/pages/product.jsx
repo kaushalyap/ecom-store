@@ -11,7 +11,7 @@ export default function Product() {
           <img
             src="https://dummyimage.com/600x400"
             alt="placeholder"
-            className="rounded-xl"
+            className="w-full rounded-xl"
           />
           <div className="flex gap-4 mt-4">
             <img

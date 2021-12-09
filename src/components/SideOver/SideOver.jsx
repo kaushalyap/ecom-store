@@ -1,13 +1,17 @@
-import React, { Fragment, useState } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 import { Link } from 'gatsby';
-import PropTypes from 'prop-types';
 import { StaticImage } from 'gatsby-plugin-image';
-import closeIcon from '../../images/close-dark-outlined.svg';
-import cheveronLeftIcon from '../../images/cheveron-left-outlined.svg';
-import cheveronRightIcon from '../../images/cheveron-right-outlined.svg';
-import FollowUs from '../FollowUs/FollowUs';
+import PropTypes from 'prop-types';
+// @ts-ignore
+import React, { Fragment, useState } from 'react';
 import categories from '../../constants/ProductCategories';
+// @ts-ignore
+import cheveronLeftIcon from '../../images/chevron-left-outlined.svg';
+// @ts-ignore
+import cheveronRightIcon from '../../images/chevron-right-outlined.svg';
+// @ts-ignore
+import closeIcon from '../../images/close-dark-outlined.svg';
+import FollowUs from '../FollowUs/FollowUs';
 
 export default function SideOver({ refDiv, open, setOpen }) {
   const [isCategoryMenuVisible, setCategoryMenuVisible] = useState(false);
