@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+/* import PropTypes from 'prop-types';
 import * as React from 'react';
 
 const Teaser = ({ blok }) => (
@@ -16,3 +16,4 @@ Teaser.propTypes = {
 };
 
 export default Teaser;
+ */

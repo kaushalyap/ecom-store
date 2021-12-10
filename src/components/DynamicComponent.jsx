@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+/* import PropTypes from 'prop-types';
 import SbEditable from 'storyblok-react';
 import React from 'react';
 import Teaser from './Teaser';
@@ -32,3 +32,4 @@ DynamicComponent.propTypes = {
 };
 
 export default DynamicComponent;
+ */
