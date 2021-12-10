@@ -1,9 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Helmet } from 'react-helmet';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { useLocation } from '@reach/router';
-import { useStaticQuery, graphql } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
+import PropTypes from 'prop-types';
+import React from 'react';
+import { Helmet } from 'react-helmet';
 import FacebookMeta from './FacebookMeta';
 import TwitterMeta from './TwitterMeta';
 
@@ -28,7 +28,14 @@ const query = graphql`
 `;
 
 // eslint-disable-next-line object-curly-newline
-export default function SEO({ title, description, image, article, node }) {
+export default function SEO({
+  title,
+  description,
+  image,
+  article,
+  node,
+  index,
+}) {
   const { pathname } = useLocation();
   const { site } = useStaticQuery(query);
   const year = new Date().getFullYear;
@@ -164,6 +171,7 @@ export default function SEO({ title, description, image, article, node }) {
         <html lang={siteLanguage} />
         <meta name="description" content={seo.description} />
         <meta name="image" content={seo.image} />
+        {index ? <meta name="robots" content="noindex" /> : null}
         {!article && (
           <script type="application/ld+json">
             {JSON.stringify(schemaOrgWebPage)}
@@ -200,6 +208,7 @@ SEO.propTypes = {
   description: PropTypes.string,
   image: PropTypes.string,
   article: PropTypes.bool,
+  index: PropTypes.bool,
   node: PropTypes.shape({
     first_publication_date: PropTypes.string.isRequired,
     last_publication_date: PropTypes.string.isRequired,
@@ -211,4 +220,5 @@ SEO.defaultProps = {
   image: null,
   article: false,
   node: null,
+  index: true,
 };

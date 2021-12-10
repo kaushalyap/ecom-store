@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+/* import PropTypes from 'prop-types';
 import * as React from 'react';
 import { graphql } from 'gatsby';
 import SbEditable from 'storyblok-react';
@@ -45,3 +45,4 @@ export const query = graphql`
     }
   }
 `;
+ */

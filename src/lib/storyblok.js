@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+/* import { useEffect, useState } from 'react';
 
 export default function useStoryblok(originalStory, location) {
   const [story, setStory] = useState(originalStory);
@@ -62,3 +62,4 @@ export default function useStoryblok(originalStory, location) {
 
   return story;
 }
+ */

@@ -56,20 +56,19 @@ module.exports = {
       resolve: 'gatsby-plugin-robots-txt',
     },
     'gatsby-plugin-postcss',
-    'gatsby-plugin-webpack-bundle-analyser-v2',
-    {
-      resolve: 'gatsby-source-storyblok',
-      options: {
-        accessToken: process.env.STORYBLOK_ACCESS_TOKEN,
-        version:
-          process.env.GATSBY_MODE === 'production' ? 'published' : 'draft',
-      },
-    },
+    'gatsby-plugin-webpack-bundle-analyser-v2' /*  {      resolve: 'gatsby-source-storyblok',      options: {        accessToken: process.env.STORYBLOK_ACCESS_TOKEN,        version:          process.env.GATSBY_MODE === 'production' ? 'published' : 'draft',      },} */,
     {
       resolve: '@sentry/gatsby',
       options: {
         dsn: process.env.SENTRY_DSN,
         tracesSampleRate: 1,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-page-creator',
+      options: {
+        path: `${__dirname}/src/pages`,
+        ignore: ['editor.jsx'],
       },
     },
   ],

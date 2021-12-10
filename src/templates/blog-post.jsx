@@ -1,4 +1,4 @@
-/* eslint-disable react/jsx-one-expression-per-line */
+/*
 import { GatsbyImage } from 'gatsby-plugin-image';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -14,7 +14,8 @@ export default function BlogPost({ pageContext, location }) {
     <Layout>
       <SEO title={story.name} description={story.metaDescription} />
       <article className="mx-5 mb-20 md:mb-40 lg:mx-auto lg:w-2/3 xl:w-1/2 2xl:w-1/3">
-        <h1 className="mt-10 mb-2 font-headline text-2xl font-medium md:mt-20 md:mb-6 md:text-5xl xl:mb-6 2xl:mb-4">
+        <h1 className="mt-10 mb-2 font-headline text-2xl
+        font-medium md:mt-20 md:mb-6 md:text-5xl xl:mb-6 2xl:mb-4">
           {story.name}
         </h1>
         <GatsbyImage
@@ -55,3 +56,4 @@ BlogPost.propTypes = {
     story: PropTypes.object.isRequired,
   }).isRequired,
 };
+ */

@@ -1,4 +1,5 @@
 /* eslint-disable comma-dangle */
+/*
 const path = require('path');
 
 exports.createPages = ({ graphql, actions }) => {
@@ -50,3 +51,4 @@ exports.createPages = ({ graphql, actions }) => {
     );
   });
 };
+ */
