@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
-import SortMenu from '../components/SortMenu/SortMenu';
-import ProductGrid from '../components/ProductGrid/ProductGrid';
+import DesktopFilters from '../components/DesktopFilters/DesktopFilters';
 import Layout from '../components/Layout';
+import MobileFilterDialog from '../components/MobileFilterDialog/MobileFilterDialog';
+import ProductGrid from '../components/ProductGrid/ProductGrid';
+import SEO from '../components/SEO/SEO';
+import SortMenu from '../components/SortMenu/SortMenu';
 // @ts-ignore
 import filterIcon from '../images/filter-outlined.svg';
-// @ts-ignore
-import gridViewIcon from '../images/grid-view-outlined.svg';
-import MobileFilterDialog from '../components/MobileFilterDialog/MobileFilterDialog';
-import DesktopFilters from '../components/DesktopFilters/DesktopFilters';
-import SEO from '../components/SEO/SEO';
 
 export default function SearchResults() {
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
@@ -25,18 +23,6 @@ export default function SearchResults() {
             <div className="flex relative z-20 justify-end items-baseline py-1 border-b border-gray-200">
               <div className="flex items-center">
                 <SortMenu />
-                <button
-                  type="button"
-                  className="p-3 text-gray-400 hover:text-gray-500 sm:ml-7"
-                >
-                  <span className="sr-only">View grid</span>
-                  <img
-                    src={gridViewIcon}
-                    alt="grid view"
-                    className="w-5 h-5"
-                    aria-hidden="true"
-                  />
-                </button>
                 <button
                   type="button"
                   className="p-3 text-gray-400 hover:text-gray-500 sm:ml-6 lg:hidden"
