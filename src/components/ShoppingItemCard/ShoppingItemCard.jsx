@@ -4,6 +4,12 @@ import React from 'react';
 import trimText from '../../utils/Utils';
 import ListBox from '../ListBox/ListBox';
 
+const itemCount = [
+  { id: 1, count: '1' },
+  { id: 2, count: '2' },
+  { id: 3, count: '3' },
+];
+
 export default function ShoppingItemCard({ title, price }) {
   return (
     <div className="flex gap-4 mb-4 bg-green-50 rounded-lg shadow-lg md:mb-6 md:h-44">
@@ -17,7 +23,7 @@ export default function ShoppingItemCard({ title, price }) {
           <h3 className="mb-2 font-headline md:text-xl">{trimText(title)}</h3>
         </Link>
         <div className="flex justify-between items-end mb-2">
-          <ListBox />
+          <ListBox options={itemCount} />
           <span className="text-lg tracking-wide md:text-xl">
             {`Rs. ${price}`}
           </span>

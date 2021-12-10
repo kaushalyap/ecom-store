@@ -1,24 +1,21 @@
 /* eslint-disable no-shadow */
 import { Listbox, Transition } from '@headlessui/react';
+import PropTypes from 'prop-types';
 import React, { Fragment, useState } from 'react';
 // @ts-ignore
 import chevronDownIcon from '../../images/chevron-down-outlined.svg';
 
-const itemCount = [
-  { id: 1, count: '1' },
-  { id: 2, count: '2' },
-  { id: 3, count: '3' },
-];
-
-export default function ListBox() {
-  const [selected, setSelected] = useState(itemCount[0]);
+export default function ListBox({ id, options, classes }) {
+  const [selected, setSelected] = useState(options[0]);
 
   return (
-    <div>
+    <div id={id}>
       <Listbox value={selected} onChange={setSelected}>
         <div className="relative mt-1">
-          <Listbox.Button className="flex p-1 w-full bg-white rounded-lg shadow-md cursor-default">
-            <span className="px-1">{selected.count}</span>
+          <Listbox.Button
+            className={`flex p-1 bg-white rounded-lg border-brand shadow-md cursor-default ${classes} bg-green-100 items-center`}
+          >
+            <span className="px-2 text-lg">{selected.count}</span>
 
             <img
               src={chevronDownIcon}
@@ -33,11 +30,11 @@ export default function ListBox() {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <Listbox.Options className="overflow-auto absolute py-1 px-2 mt-1 w-full max-h-60 text-base bg-white rounded-md shadow-lg sm:text-sm">
-              {itemCount.map((item) => (
+            <Listbox.Options className="overflow-auto absolute py-1 px-2 mt-1 w-12 max-h-60 text-base bg-white rounded-md shadow-lg sm:text-sm">
+              {options.map((item) => (
                 <Listbox.Option
                   key={item.id}
-                  className={({ active }) => `${
+                  className={({ active }) => `text-lg ${
                     active ? 'text-amber-900 bg-amber-100' : 'text-gray-900'
                   }
                           cursor-default select-none relative py-2`}
@@ -59,3 +56,13 @@ export default function ListBox() {
     </div>
   );
 }
+
+ListBox.propTypes = {
+  id: PropTypes.string.isRequired,
+  options: PropTypes.object.isRequired,
+  classes: PropTypes.string,
+};
+
+ListBox.defaultProps = {
+  classes: '',
+};

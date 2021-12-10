@@ -32,7 +32,7 @@ export default function ContactForm() {
           id="message"
           name="message"
           placeholder="Your Message"
-          rows="10"
+          rows={10}
           className="p-4 mt-1 mb-4 w-full rounded-xl border border-brand xl:p-6 xl:rounded-3xl"
         />
       </label>
