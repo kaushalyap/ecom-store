@@ -2271,6 +2271,14 @@
     "@prismicio/types" "^0.1.19"
     escape-html "^1.0.3"
 
+"@prismicio/react@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@prismicio/react/-/react-2.0.0.tgz#f833a111752df07c157f40b0416df626e6bb7075"
+  integrity sha512-e/C+I1OwUkeK84yOc+8aT3pQ/vSW6pKTHB20WRysbx4Ez757EFu0Nn/GNLyQ1qCq2ffEFElGTzhxNTgQhAuy0g==
+  dependencies:
+    "@prismicio/helpers" "^2.0.0-beta.6"
+    "@prismicio/richtext" "^2.0.0-beta.3"
+
 "@prismicio/richtext@^2.0.0-beta.3":
   version "2.0.0-beta.3"
   resolved "https://registry.yarnpkg.com/@prismicio/richtext/-/richtext-2.0.0-beta.3.tgz#ea885972205eeb7dcfb15fa2bc8b40be2470e131"

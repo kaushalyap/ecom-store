@@ -71,5 +71,16 @@ module.exports = {
         ignore: ['editor.jsx'],
       },
     },
+    {
+      resolve: 'gatsby-source-prismic',
+      options: {
+        repositoryName: process.env.GATSBY_PRISMIC_REPO_NAME,
+        schemas: {
+          // @ts-ignore
+          // eslint-disable-next-line global-require
+          product: require('./custom_types/product.json'),
+        },
+      },
+    },
   ],
 };
