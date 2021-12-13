@@ -8,9 +8,9 @@ export default {
 };
 
 // noinspection JSUnusedGlobalSymbols
-export const SearchBoxHiddenOnMobile = () => (
-  <SearchBox classes="hidden md:flex" />
-);
-export const SearchBoxHiddenOnMediumLarge = () => (
-  <SearchBox classes="md:hidden lg:hidden" />
-);
+export const SearchBoxHiddenOnMobile = function () {
+  return <SearchBox classes="hidden md:flex" />;
+};
+export const SearchBoxHiddenOnMediumLarge = function () {
+  return <SearchBox classes="md:hidden lg:hidden" />;
+};

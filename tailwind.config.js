@@ -1,8 +1,7 @@
 /* eslint-disable global-require */
 module.exports = {
   important: true,
-  purge: ['./src/**/*.{js,jsx,ts,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
       colors: {
@@ -19,11 +18,7 @@ module.exports = {
       },
     },
   },
-  variants: {
-    extend: {
-      opacity: ['disabled'],
-    },
-  },
+
   plugins: [
     require('@tailwindcss/aspect-ratio'),
     // require('@tailwindcss/forms'),

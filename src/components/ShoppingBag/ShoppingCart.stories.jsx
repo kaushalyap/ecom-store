@@ -8,4 +8,6 @@ export default {
 };
 
 // noinspection JSUnusedGlobalSymbols
-export const ShoppingCartLight = () => <ShoppingBag noItemsInCart={5} />;
+export const ShoppingCartLight = function () {
+  return <ShoppingBag noItemsInCart={5} />;
+};

@@ -1,8 +1,8 @@
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
-import SEO from '../components/SEO/SEO';
 import Layout from '../components/Layout';
+import SEO from '../components/SEO/SEO';
 
 export default function Gaming() {
   return (
@@ -33,7 +33,7 @@ export default function Gaming() {
           </Link>
           <Link to="/playstations">
             <StaticImage
-              src="../images/Playstation-5.png"
+              src="../images/playstation-5.png"
               alt="playstation 5 console"
               objectFit="contain"
               objectPosition="bottom"

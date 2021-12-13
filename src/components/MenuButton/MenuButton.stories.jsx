@@ -8,4 +8,6 @@ export default {
 };
 
 // noinspection JSUnusedGlobalSymbols
-export const MenuButtonLight = () => <MenuButton />;
+export const MenuButtonLight = function () {
+  return <MenuButton />;
+};

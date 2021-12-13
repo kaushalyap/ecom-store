@@ -4,6 +4,7 @@
     "commonjs": true,
     "es2021": true
   },
+  "parser": "@babel/eslint-parser",
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
@@ -19,7 +20,8 @@
       "jsx": true
     },
     "ecmaVersion": 12,
-    "sourceType": "module"
+    "sourceType": "module",
+    "requireConfigFile": false
   },
   "plugins": ["react", "react-hooks", "jsx-a11y", "prettier", "flowtype"],
   "rules": {
@@ -40,7 +42,8 @@
       }
     ],
     "tailwindcss/classnames-order": "error",
-    "tailwindcss/no-custom-classname": "error"
+    "tailwindcss/no-custom-classname": "error",
+    "react/function-component-definition": "off"
   },
   "settings": {
     "flowtype": {

@@ -7,4 +7,6 @@ export default {
 };
 
 // noinspection JSUnusedGlobalSymbols
-export const NavBarLight = () => <NavBar />;
+export const NavBarLight = function () {
+  return <NavBar />;
+};

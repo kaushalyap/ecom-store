@@ -1,6 +1,6 @@
-import React from 'react';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
+import React from 'react';
 import categories from '../../constants/ProductCategories';
 import FollowUs from '../FollowUs/FollowUs';
 
@@ -76,7 +76,7 @@ export default function Footer() {
           <nav className="list-none text-gray-600">
             <ul>
               <li className="py-1">
-                <Link to="/why-us/">Why Us ?</Link>
+                <Link to="/about#why-us/">Why Us ?</Link>
               </li>
               <li className="py-1">
                 <Link to="/about/">About</Link>

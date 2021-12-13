@@ -1,8 +1,8 @@
-import React from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby';
-import Layout from '../components/Layout';
+import { StaticImage } from 'gatsby-plugin-image';
+import React from 'react';
 import Carousel from '../components/Carousel/Carousel';
+import Layout from '../components/Layout';
 import SEO from '../components/SEO/SEO';
 
 export default function Index() {
@@ -152,7 +152,7 @@ export default function Index() {
               </h3>
             </div>
           </Link>
-          <Link to="/wearables-smart-home-devices">
+          <Link to="/wearables-smart-home">
             <div>
               <StaticImage
                 src="../images/apple-watch.png"

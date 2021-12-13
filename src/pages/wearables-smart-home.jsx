@@ -45,7 +45,7 @@ export default function WearablesSmartHome() {
           </Link>
           <Link to="/vr-headsets">
             <StaticImage
-              src="../images/VR-Headset.png"
+              src="../images/vr-headset.png"
               alt="playstation 5 consoles"
               objectFit="contain"
               placeholder="blurred"

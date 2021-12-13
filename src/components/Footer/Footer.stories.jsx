@@ -1,5 +1,5 @@
-import React from 'react';
 import { text } from '@storybook/addon-knobs';
+import React from 'react';
 import Footer from './Footer';
 
 export default {
@@ -7,8 +7,10 @@ export default {
   component: Footer,
 };
 
-// eslint-disable-next-line react/jsx-props-no-spreading
-const Template = (args) => <Footer {...args} />;
+const Template = function (args) {
+  // eslint-disable-next-line react/jsx-props-no-spreading
+  return <Footer {...args} />;
+};
 
 export const FooterText = Template.bind({});
 
