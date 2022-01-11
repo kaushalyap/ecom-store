@@ -28,7 +28,7 @@ export default function Index() {
           <Link to="/computers">
             <div>
               <StaticImage
-                src="../images/laptop-front.webp"
+                src="../images/categories/laptop-front.png"
                 alt="laptop"
                 objectFit="contain"
                 placeholder="blurred"
@@ -42,7 +42,7 @@ export default function Index() {
           <Link to="/mobile-phones">
             <div>
               <StaticImage
-                src="../images/smartphone.webp"
+                src="../images/categories/smartphone.png"
                 alt="smartphone"
                 placeholder="blurred"
                 objectFit="contain"
@@ -56,7 +56,7 @@ export default function Index() {
           <Link to="/office">
             <div>
               <StaticImage
-                src="../images/printer.webp"
+                src="../images/categories/printer.png"
                 alt="printer"
                 objectFit="contain"
                 placeholder="blurred"
@@ -70,7 +70,7 @@ export default function Index() {
           <Link to="/tv-video">
             <div>
               <StaticImage
-                src="../images/tv.webp"
+                src="../images/categories/tv.png"
                 alt="TV"
                 placeholder="blurred"
                 className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
@@ -84,7 +84,7 @@ export default function Index() {
           <Link to="/gaming">
             <div>
               <StaticImage
-                src="../images/xbox-joystick-black.webp"
+                src="../images/categories/xbox-joystick-black.png"
                 alt="XBox"
                 placeholder="blurred"
                 className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
@@ -98,7 +98,7 @@ export default function Index() {
           <Link to="/audio">
             <div>
               <StaticImage
-                src="../images/speaker.webp"
+                src="../images/categories/speaker.png"
                 alt="speaker"
                 placeholder="blurred"
                 className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
@@ -112,7 +112,7 @@ export default function Index() {
           <Link to="/cameras">
             <div>
               <StaticImage
-                src="../images/camera.webp"
+                src="../images/categories/camera.png"
                 alt="camera"
                 objectFit="contain"
                 placeholder="blurred"
@@ -126,7 +126,7 @@ export default function Index() {
           <Link to="/security">
             <div>
               <StaticImage
-                src="../images/cctv.png"
+                src="../images/categories/cctv.png"
                 alt="CCTV camera"
                 placeholder="blurred"
                 className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
@@ -140,7 +140,7 @@ export default function Index() {
           <Link to="/vehicle-electronics">
             <div>
               <StaticImage
-                src="../images/gps.png"
+                src="../images/categories/gps.png"
                 alt="vehicle gps screen"
                 placeholder="blurred"
                 className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
@@ -154,7 +154,7 @@ export default function Index() {
           <Link to="/wearables-smart-home">
             <div>
               <StaticImage
-                src="../images/apple-watch.png"
+                src="../images/categories/apple-watch.png"
                 alt="apple-watch"
                 placeholder="blurred"
                 objectFit="contain"

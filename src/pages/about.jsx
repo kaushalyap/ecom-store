@@ -32,7 +32,7 @@ export default function About() {
             <div className="mb-4 md:mb-0 md:w-1/2">
               <StaticImage
                 alt="Colombo Galle face from distance"
-                src="../images/colombo-galle-face.jpg"
+                src="../images/about/colombo-galle-face.jpg"
                 className="w-full rounded-lg"
               />
             </div>
@@ -61,7 +61,7 @@ export default function About() {
             <div className="mb-4 md:mb-0 md:ml-4 md:w-1/2">
               <StaticImage
                 alt="two hands giving set of parcel to other two hands"
-                src="../images/free-delivery-hands.jpg"
+                src="../images/about/free-delivery-hands.jpg"
                 className="w-full rounded-lg"
               />
             </div>
@@ -82,7 +82,7 @@ export default function About() {
           <div className="md:flex">
             <div className="mb-4 md:mr-4 md:mb-0 md:w-1/2">
               <StaticImage
-                src="../images/happy-customer.jpg"
+                src="../images/about/happy-customer.jpg"
                 alt="man smiling on the call"
                 className="w-full h-full rounded-lg"
                 objectPosition="top right"
@@ -120,7 +120,7 @@ export default function About() {
             <div className="mb-4 md:ml-4 md:w-1/2">
               <StaticImage
                 alt="price tags hagging from strings"
-                src="../images/competitive-pricing.jpg"
+                src="../images/about/competitive-pricing.jpg"
                 className="w-full rounded-lg"
               />
             </div>

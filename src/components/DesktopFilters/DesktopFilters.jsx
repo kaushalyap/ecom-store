@@ -1,8 +1,10 @@
-import React from 'react';
 import { Disclosure } from '@headlessui/react';
-import plusSmIcon from '../../images/plus-sm-outlined.svg';
-import minusSmIcon from '../../images/minus-sm-outlined.svg';
+import React from 'react';
 import filters from '../../constants/Filters';
+// @ts-ignore
+import minusSmIcon from '../../images/icons/minus-sm-outlined.svg';
+// @ts-ignore
+import plusSmIcon from '../../images/icons/plus-sm-outlined.svg';
 
 const subCategories = [
   { name: 'Totes', href: '#' },

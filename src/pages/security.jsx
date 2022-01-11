@@ -20,7 +20,7 @@ export default function Security() {
         >
           <Link to="/security-cameras">
             <StaticImage
-              src="../images/cctv.png"
+              src="../images/categories/cctv.png"
               alt="cctv camera"
               objectFit="contain"
               placeholder="blurred"
@@ -32,7 +32,7 @@ export default function Security() {
           </Link>
           <Link to="/home-security-systems/">
             <StaticImage
-              src="../images/smart-door-lock.png"
+              src="../images/categories/smart-door-lock.png"
               alt="smart door lock"
               placeholder="blurred"
               className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
@@ -43,7 +43,7 @@ export default function Security() {
           </Link>
           <Link to="/biometrics">
             <StaticImage
-              src="../images/fingerprint-reader-circle.png"
+              src="../images/categories/fingerprint-reader-circle.png"
               alt="fingerprint reader"
               objectFit="contain"
               placeholder="blurred"
@@ -55,7 +55,7 @@ export default function Security() {
           </Link>
           <Link to="/sensors-detectors">
             <StaticImage
-              src="../images/motion-detector.png"
+              src="../images/categories/motion-detector.png"
               alt="motion detector"
               objectFit="contain"
               placeholder="blurred"
@@ -67,7 +67,7 @@ export default function Security() {
           </Link>
           <Link to="/alarms-sirens">
             <StaticImage
-              src="../images/fire-alarm.png"
+              src="../images/categories/fire-alarm.png"
               alt="wireless headphone"
               objectFit="scale-down"
               placeholder="blurred"
@@ -79,7 +79,7 @@ export default function Security() {
           </Link>
           <Link to="/radio-scanners">
             <StaticImage
-              src="../images/radio-scanner.png"
+              src="../images/categories/radio-scanner.png"
               alt="walkie talkie"
               objectFit="scale-down"
               placeholder="blurred"
@@ -91,7 +91,7 @@ export default function Security() {
           </Link>
           <Link to="/authentication-tokens">
             <StaticImage
-              src="../images/rsa-token.png"
+              src="../images/categories/rsa-token.png"
               alt="USB authentication key"
               placeholder="blurred"
               objectFit="contain"

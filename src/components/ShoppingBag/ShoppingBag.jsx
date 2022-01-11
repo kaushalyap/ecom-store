@@ -2,7 +2,7 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 // @ts-ignore
-import shoppingBagIcon from '../../images/shopping-bag-outlined.svg';
+import shoppingBagIcon from '../../images/icons/shopping-bag-outlined.svg';
 
 export default function ShoppingBag({ noItemsInCart }) {
   return (

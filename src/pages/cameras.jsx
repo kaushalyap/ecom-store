@@ -20,7 +20,7 @@ export default function Camera() {
         >
           <Link to="/film-cameras/">
             <StaticImage
-              src="../images/film-camera.png"
+              src="../images/categories/film-camera.png"
               alt="film camera"
               objectFit="contain"
               placeholder="blurred"
@@ -32,7 +32,7 @@ export default function Camera() {
           </Link>
           <Link to="/digital-cameras/">
             <StaticImage
-              src="../images/digital-camera.png"
+              src="../images/categories/digital-camera.png"
               alt="digital cameras"
               objectFit="contain"
               placeholder="blurred"
@@ -44,7 +44,7 @@ export default function Camera() {
           </Link>
           <Link to="/lenses-filters">
             <StaticImage
-              src="../images/lense.png"
+              src="../images/categories/lense.png"
               alt="camera lense"
               objectFit="contain"
               placeholder="blurred"
@@ -56,7 +56,7 @@ export default function Camera() {
           </Link>
           <Link to="/camcorders">
             <StaticImage
-              src="../images/camcorder.png"
+              src="../images/categories/camcorder.png"
               alt="camcorder"
               objectFit="contain"
               placeholder="blurred"
@@ -68,7 +68,7 @@ export default function Camera() {
           </Link>
           <Link to="/binoculars-telescopes">
             <StaticImage
-              src="../images/binocular.png"
+              src="../images/categories/binocular.png"
               alt="binoculars"
               objectFit="scale-down"
               placeholder="blurred"
@@ -80,7 +80,7 @@ export default function Camera() {
           </Link>
           <Link to="/printers-scanners">
             <StaticImage
-              src="../images/printer.webp"
+              src="../images/categories/printer.png"
               alt="printer"
               objectFit="contain"
               placeholder="blurred"
@@ -92,7 +92,7 @@ export default function Camera() {
           </Link>
           <Link to="/lighting">
             <StaticImage
-              src="../images/flash-light.png"
+              src="../images/categories/flash-light.png"
               alt="flash light"
               objectFit="contain"
               placeholder="blurred"
@@ -104,7 +104,7 @@ export default function Camera() {
           </Link>
           <Link to="/tripods-supports">
             <StaticImage
-              src="../images/tripod.png"
+              src="../images/categories/tripod.png"
               alt="camera on a tripod"
               objectFit="contain"
               placeholder="blurred"
@@ -116,7 +116,7 @@ export default function Camera() {
           </Link>
           <Link to="/camera-drones">
             <StaticImage
-              src="../images/camera-drone.png"
+              src="../images/categories/camera-drone.png"
               alt="camera-drone"
               objectFit="contain"
               placeholder="blurred"

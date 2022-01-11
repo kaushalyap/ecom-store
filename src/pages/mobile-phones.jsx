@@ -20,7 +20,7 @@ export default function Smartphones() {
         >
           <Link to="/smartphones">
             <StaticImage
-              src="../images/smartphone.png"
+              src="../images/categories/smartphone.png"
               alt="iphone"
               objectFit="contain"
               placeholder="blurred"
@@ -32,7 +32,7 @@ export default function Smartphones() {
           </Link>
           <Link to="/feature-phones">
             <StaticImage
-              src="../images/feature-phone.png"
+              src="../images/categories/feature-phone.png"
               alt="feature phone"
               objectFit="scale-down"
               placeholder="blurred"
@@ -44,7 +44,7 @@ export default function Smartphones() {
           </Link>
           <Link to="/headsets">
             <StaticImage
-              src="../images/wireless-earbuds.png"
+              src="../images/categories/wireless-earbuds.png"
               alt="wireless earbuds"
               objectFit="contain"
               placeholder="blurred"
@@ -56,7 +56,7 @@ export default function Smartphones() {
           </Link>
           <Link to="/memory-cards">
             <StaticImage
-              src="../images/memory-card.png"
+              src="../images/categories/memory-card.png"
               alt="SD card"
               objectFit="scale-down"
               placeholder="blurred"
@@ -68,7 +68,7 @@ export default function Smartphones() {
           </Link>
           <Link to="/batteries-chargers">
             <StaticImage
-              src="../images/phone-charger.png"
+              src="../images/categories/phone-charger.png"
               alt="Smartphone connected to a charger"
               objectFit="contain"
               placeholder="blurred"
@@ -80,7 +80,7 @@ export default function Smartphones() {
           </Link>
           <Link to="/phone-cases">
             <StaticImage
-              src="../images/phone-cases.png"
+              src="../images/categories/phone-cases.png"
               alt="Phone cases in four colors"
               objectFit="contain"
               placeholder="blurred"
@@ -92,7 +92,7 @@ export default function Smartphones() {
           </Link>
           <Link to="/mounts-holders">
             <StaticImage
-              src="../images/phone-stand.png"
+              src="../images/categories/phone-stand.png"
               alt="iPhone on a phone stand"
               objectFit="contain"
               placeholder="blurred"
@@ -104,7 +104,7 @@ export default function Smartphones() {
           </Link>
           <Link to="/cables-other">
             <StaticImage
-              src="../images/data-cables.png"
+              src="../images/categories/data-cables.png"
               alt="coiled data Cable"
               placeholder="blurred"
               className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"

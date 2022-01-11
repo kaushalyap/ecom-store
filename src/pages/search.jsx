@@ -6,7 +6,7 @@ import ProductGrid from '../components/ProductGrid/ProductGrid';
 import SEO from '../components/SEO/SEO';
 import SortMenu from '../components/SortMenu/SortMenu';
 // @ts-ignore
-import filterIcon from '../images/filter-outlined.svg';
+import filterIcon from '../images/icons/filter-outlined.svg';
 
 export default function SearchResults() {
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);

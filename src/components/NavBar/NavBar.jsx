@@ -1,7 +1,7 @@
 import { Link } from 'gatsby';
 import React, { useRef, useState } from 'react';
 // @ts-ignore
-import logoFull from '../../images/full-logo.svg';
+import logoFull from '../../images/logos/full-logo.svg';
 import MenuButton from '../MenuButton/MenuButton';
 import SearchBox from '../SearchBox/SearchBox';
 import ShoppingBag from '../ShoppingBag/ShoppingBag';

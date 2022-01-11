@@ -20,7 +20,7 @@ export default function TvVideo() {
         >
           <Link to="/televisions">
             <StaticImage
-              src="../images/tv.png"
+              src="../images/categories/tv.png"
               alt="television"
               objectFit="contain"
               placeholder="blurred"
@@ -32,7 +32,7 @@ export default function TvVideo() {
           </Link>
           <Link to="/dvd-players-setups">
             <StaticImage
-              src="../images/dvd-player.png"
+              src="../images/categories/dvd-player.png"
               alt="DVD player"
               objectFit="scale-down"
               objectPosition="center"
@@ -46,7 +46,7 @@ export default function TvVideo() {
 
           <Link to="/projectors">
             <StaticImage
-              src="../images/projector.png"
+              src="../images/categories/projector.png"
               alt="video projector"
               objectFit="contain"
               placeholder="blurred"
@@ -58,7 +58,7 @@ export default function TvVideo() {
           </Link>
           <Link to="/home-theaters">
             <StaticImage
-              src="../images/home-theatre-system.png"
+              src="../images/categories/home-theatre-system.png"
               alt="four tall speakers"
               objectFit="contain"
               placeholder="blurred"
@@ -70,7 +70,7 @@ export default function TvVideo() {
           </Link>
           <Link to="/xbox">
             <StaticImage
-              src="../images/Xbox.png"
+              src="../images/categories/Xbox.png"
               alt="xbox console and joystick"
               objectFit="scale-down"
               placeholder="blurred"
@@ -82,7 +82,7 @@ export default function TvVideo() {
           </Link>
           <Link to="/playstations">
             <StaticImage
-              src="../images/playstation-5.png"
+              src="../images/categories/playstation-5.png"
               alt="playstation 5 console"
               objectFit="contain"
               objectPosition="bottom"
@@ -95,7 +95,7 @@ export default function TvVideo() {
           </Link>
           <Link to="/av-cables-other">
             <StaticImage
-              src="../images/audio-video-cable.png"
+              src="../images/categories/audio-video-cable.png"
               alt="one end of an audio video cable"
               objectFit="contain"
               placeholder="blurred"

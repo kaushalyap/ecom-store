@@ -20,7 +20,7 @@ export default function Gaming() {
         >
           <Link to="/xbox">
             <StaticImage
-              src="../images/Xbox.png"
+              src="../images/categories/Xbox.png"
               alt="xbox console and joystick"
               objectFit="scale-down"
               placeholder="blurred"
@@ -32,7 +32,7 @@ export default function Gaming() {
           </Link>
           <Link to="/playstations">
             <StaticImage
-              src="../images/playstation-5.png"
+              src="../images/categories/playstation-5.png"
               alt="playstation 5 console"
               objectFit="contain"
               objectPosition="bottom"
@@ -45,7 +45,7 @@ export default function Gaming() {
           </Link>
           <Link to="/televisions">
             <StaticImage
-              src="../images/tv.png"
+              src="../images/categories/tv.png"
               alt="television"
               objectFit="contain"
               placeholder="blurred"
@@ -57,7 +57,7 @@ export default function Gaming() {
           </Link>
           <Link to="/vr-headsets">
             <StaticImage
-              src="../images/vr-headset.png"
+              src="../images/categories/vr-headset.png"
               alt="VR headset"
               objectFit="contain"
               placeholder="blurred"
@@ -69,7 +69,7 @@ export default function Gaming() {
           </Link>
           <Link to="/gaming-laptops">
             <StaticImage
-              src="../images/gaming-laptop.png"
+              src="../images/categories/gaming-laptop.png"
               alt="gaming laptop"
               objectFit="contain"
               placeholder="blurred"
@@ -81,7 +81,7 @@ export default function Gaming() {
           </Link>
           <Link to="/gaming-pc">
             <StaticImage
-              src="../images/gaming-pc.png"
+              src="../images/categories/gaming-pc.png"
               alt="Computer system unit with green lights"
               objectFit="contain"
               placeholder="blurred"
@@ -94,7 +94,7 @@ export default function Gaming() {
 
           <Link to="/headphones">
             <StaticImage
-              src="../images/headphone.png"
+              src="../images/categories/headphone.png"
               alt="wireless headphone"
               objectFit="contain"
               objectPosition="bottom"
@@ -107,7 +107,7 @@ export default function Gaming() {
           </Link>
           <Link to="/nintendo-switches">
             <StaticImage
-              src="../images/nintendo-switch.png"
+              src="../images/categories/nintendo-switch.png"
               alt="Nintendo Switch"
               objectFit="contain"
               placeholder="blurred"
@@ -119,7 +119,7 @@ export default function Gaming() {
           </Link>
           <Link to="/gaming-chairs-other">
             <StaticImage
-              src="../images/gaming-chair.png"
+              src="../images/categories/gaming-chair.png"
               alt="gaming chair"
               objectFit="contain"
               placeholder="blurred"

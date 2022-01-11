@@ -20,7 +20,7 @@ export default function Office() {
         >
           <Link to="/printers-scanners">
             <StaticImage
-              src="../images/printer.webp"
+              src="../images/categories/printer.png"
               alt="printer"
               objectFit="contain"
               placeholder="blurred"
@@ -32,7 +32,7 @@ export default function Office() {
           </Link>
           <Link to="/photocopier">
             <StaticImage
-              src="../images/photocopier.png"
+              src="../images/categories/photocopier.png"
               alt="photocopier"
               objectFit="contain"
               objectPosition="bottom"
@@ -46,7 +46,7 @@ export default function Office() {
 
           <Link to="/projectors">
             <StaticImage
-              src="../images/projector.png"
+              src="../images/categories/projector.png"
               alt="video projector"
               objectFit="contain"
               placeholder="blurred"
@@ -58,7 +58,7 @@ export default function Office() {
           </Link>
           <Link to="/telephones-fax-machines">
             <StaticImage
-              src="../images/telephone.png"
+              src="../images/categories/telephone.png"
               alt="telephone"
               objectFit="contain"
               placeholder="blurred"
@@ -70,7 +70,7 @@ export default function Office() {
           </Link>
           <Link to="/smart-boardroom-equipment">
             <StaticImage
-              src="../images/smart-board-room.png"
+              src="../images/categories/smart-board-room.png"
               alt="board room table with smart panels mikes and etc"
               objectFit="contain"
               placeholder="blurred"
@@ -83,7 +83,7 @@ export default function Office() {
           </Link>
           <Link to="/pos">
             <StaticImage
-              src="../images/pos.png"
+              src="../images/categories/pos.png"
               alt="point-of-sale system"
               objectFit="contain"
               placeholder="blurred"
@@ -95,7 +95,7 @@ export default function Office() {
           </Link>
           <Link to="/cash-counters-other">
             <StaticImage
-              src="../images/cash-counter.png"
+              src="../images/categories/cash-counter.png"
               alt="cash counter machine with money"
               objectFit="contain"
               placeholder="blurred"

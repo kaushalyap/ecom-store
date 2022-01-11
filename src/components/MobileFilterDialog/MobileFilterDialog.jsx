@@ -1,10 +1,13 @@
+import { Dialog, Disclosure, Transition } from '@headlessui/react';
 import PropTypes from 'prop-types';
 import React, { Fragment } from 'react';
-import { Dialog, Transition, Disclosure } from '@headlessui/react';
-import closeDarkIcon from '../../images/close-dark-outlined.svg';
-import plusSmIcon from '../../images/plus-sm-outlined.svg';
-import minusSmIcon from '../../images/minus-sm-outlined.svg';
 import Filters from '../../constants/Filters';
+// @ts-ignore
+import closeDarkIcon from '../../images/icons/close-dark-outlined.svg';
+// @ts-ignore
+import minusSmIcon from '../../images/icons/minus-sm-outlined.svg';
+// @ts-ignore
+import plusSmIcon from '../../images/icons/plus-sm-outlined.svg';
 
 const subCategories = [
   { name: 'Totes', href: '#' },
@@ -81,7 +84,10 @@ export default function MobileFilterDialog({ open, setOpen }) {
                   key={section.id}
                   className="py-6 px-4 border-t border-gray-200"
                 >
-                  {({ disclosureOpen }) => (
+                  {({
+                    // @ts-ignore
+                    disclosureOpen,
+                  }) => (
                     <>
                       <h3 className="flow-root -my-3 -mx-2">
                         <Disclosure.Button className="flex justify-between items-center py-3 px-2 w-full text-gray-400 hover:text-gray-500 bg-white">

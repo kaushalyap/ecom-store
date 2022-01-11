@@ -20,7 +20,7 @@ export default function WearablesSmartHome() {
         >
           <Link to="/smartwatches">
             <StaticImage
-              src="../images/apple-watch-horizontal.png"
+              src="../images/categories/apple-watch-horizontal.png"
               alt="Apple smartwatch"
               objectFit="contain"
               placeholder="blurred"
@@ -32,7 +32,7 @@ export default function WearablesSmartHome() {
           </Link>
           <Link to="/fitness-bands">
             <StaticImage
-              src="../images/fitness-band.png"
+              src="../images/categories/fitness-band.png"
               alt="fitness band"
               objectFit="contain"
               placeholder="blurred"
@@ -44,7 +44,7 @@ export default function WearablesSmartHome() {
           </Link>
           <Link to="/vr-headsets">
             <StaticImage
-              src="../images/vr-headset.png"
+              src="../images/categories/vr-headset.png"
               alt="playstation 5 consoles"
               objectFit="contain"
               placeholder="blurred"
@@ -56,7 +56,7 @@ export default function WearablesSmartHome() {
           </Link>
           <Link to="/smart-home-assistants">
             <StaticImage
-              src="../images/amazon-alexa.png"
+              src="../images/categories/amazon-alexa.png"
               alt="Alexa smart home assistant"
               objectFit="contain"
               placeholder="blurred"
@@ -68,7 +68,7 @@ export default function WearablesSmartHome() {
           </Link>
           <Link to="/home-door-locks/">
             <StaticImage
-              src="../images/smart-door-lock.png"
+              src="../images/categories/smart-door-lock.png"
               alt="smart door lock"
               placeholder="blurred"
               className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"

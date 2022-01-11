@@ -21,7 +21,7 @@ export default function Audio() {
           <Link to="/speakers">
             <div>
               <StaticImage
-                src="../images/speaker.png"
+                src="../images/categories/speaker.png"
                 alt="Speaker"
                 placeholder="blurred"
                 className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
@@ -34,7 +34,7 @@ export default function Audio() {
           </Link>
           <Link to="/home-theaters">
             <StaticImage
-              src="../images/home-theatre-system.png"
+              src="../images/categories/home-theatre-system.png"
               alt="four tall speakers"
               objectFit="contain"
               placeholder="blurred"
@@ -46,7 +46,7 @@ export default function Audio() {
           </Link>
           <Link to="/headphones">
             <StaticImage
-              src="../images/headphone.png"
+              src="../images/categories/headphone.png"
               alt="wireless headphone"
               objectFit="contain"
               objectPosition="bottom"
@@ -59,7 +59,7 @@ export default function Audio() {
           </Link>
           <Link to="/headsets">
             <StaticImage
-              src="../images/wireless-earbuds.png"
+              src="../images/categories/wireless-earbuds.png"
               alt="wireless earbuds"
               objectFit="scale-down"
               placeholder="blurred"
@@ -72,7 +72,7 @@ export default function Audio() {
           <Link to="/mikes-amps">
             <div>
               <StaticImage
-                src="../images/microphone.png"
+                src="../images/categories/microphone.png"
                 alt="microphone"
                 placeholder="blurred"
                 className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
@@ -86,7 +86,7 @@ export default function Audio() {
           <Link to="/radios">
             <div>
               <StaticImage
-                src="../images/radio.png"
+                src="../images/categories/radio.png"
                 alt="Radio with an arial"
                 placeholder="blurred"
                 className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
@@ -99,7 +99,7 @@ export default function Audio() {
           </Link>
           <Link to="/car-audio">
             <StaticImage
-              src="../images/car-audio.png"
+              src="../images/categories/car-audio.png"
               alt="wireless headphone"
               objectFit="contain"
               objectPosition="bottom"
@@ -112,7 +112,7 @@ export default function Audio() {
           </Link>
           <Link to="/av-cables-other">
             <StaticImage
-              src="../images/audio-video-cable.png"
+              src="../images/categories/audio-video-cable.png"
               alt="one end of an audio video cable"
               objectFit="contain"
               placeholder="blurred"

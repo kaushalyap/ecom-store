@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // @ts-ignore
-import filterIcon from '../images/filter-outlined.svg';
+import filterIcon from '../images/icons/filter-outlined.svg';
 import DesktopFilters from './DesktopFilters/DesktopFilters';
 import MobileFilterDialog from './MobileFilterDialog/MobileFilterDialog';
 import ProductGrid from './ProductGrid/ProductGrid';

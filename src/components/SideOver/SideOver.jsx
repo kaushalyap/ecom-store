@@ -6,11 +6,11 @@ import PropTypes from 'prop-types';
 import React, { Fragment, useState } from 'react';
 import categories from '../../constants/ProductCategories';
 // @ts-ignore
-import cheveronLeftIcon from '../../images/chevron-left-outlined.svg';
+import cheveronLeftIcon from '../../images/icons/chevron-left-outlined.svg';
 // @ts-ignore
-import cheveronRightIcon from '../../images/chevron-right-outlined.svg';
+import cheveronRightIcon from '../../images/icons/chevron-right-outlined.svg';
 // @ts-ignore
-import closeIcon from '../../images/close-dark-outlined.svg';
+import closeIcon from '../../images/icons/close-dark-outlined.svg';
 import FollowUs from '../FollowUs/FollowUs';
 
 export default function SideOver({ refDiv, open, setOpen }) {
@@ -56,7 +56,7 @@ export default function SideOver({ refDiv, open, setOpen }) {
                   <div id="menu-top" className="flex flex-col">
                     <div className="flex justify-between">
                       <StaticImage
-                        src="../../images/logo-name-below.svg"
+                        src="../../images/logos/logo-name-below.svg"
                         alt="techstack.lk logo"
                         className=" w-44 opacity-90"
                         loading="eager"

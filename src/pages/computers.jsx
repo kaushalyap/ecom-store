@@ -20,7 +20,7 @@ export default function Computers() {
         >
           <Link to="/laptops">
             <StaticImage
-              src="../images/laptop-angled.webp"
+              src="../images/categories/laptop-angled.png"
               alt="laptop"
               objectFit="contain"
               placeholder="blurred"
@@ -32,7 +32,7 @@ export default function Computers() {
           </Link>
           <Link to="/desktops">
             <StaticImage
-              src="../images/desktops.png"
+              src="../images/categories/desktops.png"
               alt="desktop"
               objectFit="contain"
               placeholder="blurred"
@@ -44,7 +44,7 @@ export default function Computers() {
           </Link>
           <Link to="/tablets">
             <StaticImage
-              src="../images/tablet.png"
+              src="../images/categories/tablet.png"
               alt="tablet"
               objectFit="contain"
               placeholder="blurred"
@@ -56,7 +56,7 @@ export default function Computers() {
           </Link>
           <Link to="/monitors">
             <StaticImage
-              src="../images/monitors.png"
+              src="../images/categories/monitors.png"
               alt="monitor"
               objectFit="contain"
               placeholder="blurred"
@@ -68,7 +68,7 @@ export default function Computers() {
           </Link>
           <Link to="/printers-scanners">
             <StaticImage
-              src="../images/printer.webp"
+              src="../images/categories/printer.png"
               alt="printer"
               objectFit="contain"
               placeholder="blurred"
@@ -80,7 +80,7 @@ export default function Computers() {
           </Link>
           <Link to="/drives-storage">
             <StaticImage
-              src="../images/storage.png"
+              src="../images/categories/storage.png"
               alt="external hard disk on a stand"
               objectFit="contain"
               placeholder="blurred"
@@ -92,7 +92,7 @@ export default function Computers() {
           </Link>
           <Link to="/computer-components">
             <StaticImage
-              src="../images/cpu.png"
+              src="../images/categories/cpu.png"
               alt="Ryzen CPU"
               objectFit="contain"
               placeholder="blurred"
@@ -104,7 +104,7 @@ export default function Computers() {
           </Link>
           <Link to="/networking-hardware">
             <StaticImage
-              src="../images/router.png"
+              src="../images/categories/router.png"
               alt="router"
               objectFit="contain"
               placeholder="blurred"
@@ -116,7 +116,7 @@ export default function Computers() {
           </Link>
           <Link to="/laptop-desktop-accessories">
             <StaticImage
-              src="../images/keyboard-mouse.png"
+              src="../images/categories/keyboard-mouse.png"
               alt="keyboard and mouse"
               objectFit="scale-down"
               placeholder="blurred"

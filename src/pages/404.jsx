@@ -14,7 +14,7 @@ export default function NotFoundPage() {
         </h1>
 
         <StaticImage
-          src="../images/404.svg"
+          src="../images/illustrations/404.svg"
           className="md:max-w-md"
           placeholder="blurred"
           alt="ship captain looking with telescope"

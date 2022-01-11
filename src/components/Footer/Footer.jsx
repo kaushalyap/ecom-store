@@ -15,7 +15,7 @@ export default function Footer() {
         >
           <Link to="/">
             <StaticImage
-              src="../../images/logo-name-below.svg"
+              src="../../images/logos/logo-name-below.svg"
               className="w-52 md:mx-0"
               alt="techstack.lk logo"
               loading="eager"

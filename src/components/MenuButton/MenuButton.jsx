@@ -1,6 +1,7 @@
-import React from 'react';
 import PropTypes from 'prop-types';
-import menuIcon from '../../images/menu-alt-outlined.svg';
+import React from 'react';
+// @ts-ignore
+import menuIcon from '../../images/icons/menu-alt-outlined.svg';
 
 export default function MenuButton({ classes, label, clickHandler }) {
   return (

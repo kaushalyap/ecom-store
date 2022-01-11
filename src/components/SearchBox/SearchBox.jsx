@@ -1,6 +1,7 @@
-import React from 'react';
 import PropTypes from 'prop-types';
-import searchIcon from '../../images/search-outlined.svg';
+import React from 'react';
+// @ts-ignore
+import searchIcon from '../../images/icons/search-outlined.svg';
 
 export default function SearchBox({ classes }) {
   return (

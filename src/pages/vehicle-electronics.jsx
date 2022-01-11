@@ -20,7 +20,7 @@ export default function VehicleElectronics() {
         >
           <Link to="/car-audio">
             <StaticImage
-              src="../images/car-audio.png"
+              src="../images/categories/car-audio.png"
               alt="car audio system on dashboard"
               objectFit="contain"
               objectPosition="bottom"
@@ -33,7 +33,7 @@ export default function VehicleElectronics() {
           </Link>
           <Link to="/car-video">
             <StaticImage
-              src="../images/car-video.png"
+              src="../images/categories/car-video.png"
               alt="car video player"
               objectFit="contain"
               placeholder="blurred"
@@ -45,7 +45,7 @@ export default function VehicleElectronics() {
           </Link>
           <Link to="/gps">
             <StaticImage
-              src="../images/gps.png"
+              src="../images/categories/gps.png"
               alt="GPS screen"
               objectFit="contain"
               placeholder="blurred"
@@ -57,7 +57,7 @@ export default function VehicleElectronics() {
           </Link>
           <Link to="/dash-camera">
             <StaticImage
-              src="../images/dash-camera.png"
+              src="../images/categories/dash-camera.png"
               alt="dash camera"
               objectFit="contain"
               placeholder="blurred"
@@ -69,7 +69,7 @@ export default function VehicleElectronics() {
           </Link>
           <Link to="/car-alarm-security">
             <StaticImage
-              src="../images/car-alarm.png"
+              src="../images/categories/car-alarm.png"
               alt="car alarm"
               objectFit="contain"
               placeholder="blurred"
