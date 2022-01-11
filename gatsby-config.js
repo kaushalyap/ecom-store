@@ -78,9 +78,40 @@ module.exports = {
         schemas: {
           // @ts-ignore
           // eslint-disable-next-line global-require
-          product: require('./custom_types/product.json'),
+          main_categories: require('./custom_types/main.json'),
+          // @ts-ignore
+          // eslint-disable-next-line global-require
+          computer_sub_categories: require('./custom_types/computer.json'),
+          // @ts-ignore
+          // eslint-disable-next-line global-require
+          mobile_sub_categories: require('./custom_types/mobile.json'),
+          // @ts-ignore
+          // eslint-disable-next-line global-require
+          office_sub_categories: require('./custom_types/office.json'),
+          // @ts-ignore
+          // eslint-disable-next-line global-require
+          tv_sub_categories: require('./custom_types/tv.json'),
+          // @ts-ignore
+          // eslint-disable-next-line global-require
+          gaming_sub_categories: require('./custom_types/gaming.json'),
+          // @ts-ignore
+          // eslint-disable-next-line global-require
+          audio_sub_categories: require('./custom_types/audio.json'),
+          // @ts-ignore
+          // eslint-disable-next-line global-require
+          camera_sub_categories: require('./custom_types/camera.json'),
+          // @ts-ignore
+          // eslint-disable-next-line global-require
+          security_sub_categories: require('./custom_types/security.json'),
+          // @ts-ignore
+          // eslint-disable-next-line global-require
+          vehicle_sub_categories: require('./custom_types/vehicle.json'),
+          // @ts-ignore
+          // eslint-disable-next-line global-require
+          wearables_sub_categories: require('./custom_types/wearable.json'),
         },
       },
+      // @ts-ignore
     },
     {
       resolve: 'gatsby-source-google-spreadsheets',
@@ -101,5 +132,7 @@ module.exports = {
         },
       },
     },
+    // @ts-ignore
   ],
+  // @ts-ignore
 };

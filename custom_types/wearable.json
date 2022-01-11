@@ -1,0 +1,44 @@
+{
+  "Main": {
+    "smartwatches": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Smartwatches"
+      }
+    },
+    "fitness_bands": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Fitness Bands"
+      }
+    },
+    "vr_headsets": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "VR Headsets"
+      }
+    },
+    "smarthome_assistants": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Smarthome Assistants"
+      }
+    },
+    "smart_door_locks": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Smart Door Locks"
+      }
+    }
+  }
+}

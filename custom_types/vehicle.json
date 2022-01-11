@@ -1,0 +1,44 @@
+{
+  "Main": {
+    "car_audio": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Car Audio"
+      }
+    },
+    "car_video": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Car Video"
+      }
+    },
+    "gps": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "GPS"
+      }
+    },
+    "dashboard_cameras": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Dashboard Cameras"
+      }
+    },
+    "car_alarms": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Car Alarms"
+      }
+    }
+  }
+}

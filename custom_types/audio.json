@@ -1,0 +1,68 @@
+{
+  "Main": {
+    "speakers": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Speakers"
+      }
+    },
+    "home_theatres": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Home Theatres"
+      }
+    },
+    "headphones": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Headphones"
+      }
+    },
+    "headsets": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Headsets"
+      }
+    },
+    "mikes": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Mikes"
+      }
+    },
+    "radios": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Radios"
+      }
+    },
+    "car_audio": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Car Audio"
+      }
+    },
+    "av_cables": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "AV Cables"
+      }
+    }
+  }
+}

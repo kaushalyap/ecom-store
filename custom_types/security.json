@@ -1,0 +1,60 @@
+{
+  "Main": {
+    "security_cameras": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Security Cameras"
+      }
+    },
+    "home_security": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Home Security"
+      }
+    },
+    "biometrics": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Biometrics"
+      }
+    },
+    "sensors": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Sensors"
+      }
+    },
+    "alarms": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Alarms"
+      }
+    },
+    "radio_scanners": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Radio Scanners"
+      }
+    },
+    "authentication_tokens": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Authentication Tokens"
+      }
+    }
+  }
+}

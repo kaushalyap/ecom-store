@@ -1,0 +1,76 @@
+{
+  "Main": {
+    "film_cameras": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Film Cameras"
+      }
+    },
+    "digital_cameras": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Digital Cameras"
+      }
+    },
+    "lenses": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Lenses"
+      }
+    },
+    "camcorders": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Camcorders"
+      }
+    },
+    "binoculars": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Binoculars"
+      }
+    },
+    "printers": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Printers"
+      }
+    },
+    "lighting": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Lighting"
+      }
+    },
+    "tripods": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Tripods"
+      }
+    },
+    "drones": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Drones"
+      }
+    }
+  }
+}

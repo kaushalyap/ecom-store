@@ -1,0 +1,68 @@
+{
+  "Main": {
+    "smartphones": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Smartphones"
+      }
+    },
+    "feature_phones": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Feature Phones"
+      }
+    },
+    "headsets": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Headsets"
+      }
+    },
+    "memory_cards": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Memory Cards"
+      }
+    },
+    "batteries_chargers": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Batteries Chargers"
+      }
+    },
+    "cases": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Cases Protectors"
+      }
+    },
+    "mounts": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Mounts Holders"
+      }
+    },
+    "cables": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Cables"
+      }
+    }
+  }
+}

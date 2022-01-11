@@ -1,0 +1,76 @@
+{
+  "Main": {
+    "xbox": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Xbox"
+      }
+    },
+    "playstations": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Playstations"
+      }
+    },
+    "tvs": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "TVs"
+      }
+    },
+    "vr_headsets": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "VR Headsets"
+      }
+    },
+    "gaming_laptops": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Gaming Laptops"
+      }
+    },
+    "gaming_builds": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Gaming Builds"
+      }
+    },
+    "headphones": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Headphones"
+      }
+    },
+    "nintendo_switches": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Nintendo Switches"
+      }
+    },
+    "gaming_chairs": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Gaming Chairs"
+      }
+    }
+  }
+}
