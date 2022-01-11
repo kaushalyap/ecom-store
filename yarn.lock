@@ -9040,14 +9040,6 @@ gatsby-source-prismic@^5.2.3:
     node-fetch "^2.6.5"
     tiny-hashes "^1.0.1"
 
-gatsby-source-storyblok@^3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/gatsby-source-storyblok/-/gatsby-source-storyblok-3.0.2.tgz#5ace6225c33ce2a9bca6e071343afe95956f76c4"
-  integrity sha512-yapwuKcmT8vWmAWESalOL/GQ8kOlPeX8py3OISR6yg8VmGKogcQvyOamdTVnJf+nffZ3AIo3zkC+bg44FV4JjA==
-  dependencies:
-    json-stringify-safe "^5.0.1"
-    storyblok-js-client "^4.0.6"
-
 gatsby-telemetry@^3.3.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/gatsby-telemetry/-/gatsby-telemetry-3.3.0.tgz#7658093996a50055218443374c3f570ba134f2ba"
@@ -11234,11 +11226,6 @@ json-stable-stringify-without-jsonify@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/json-stable-stringify-without-jsonify/-/json-stable-stringify-without-jsonify-1.0.1.tgz#9db7b59496ad3f3cfef30a75142d2d930ad72651"
   integrity sha1-nbe1lJatPzz+8wp1FC0tkwrXJlE=
-
-json-stringify-safe@^5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
-  integrity sha1-Epai1Y/UXxmg9s4B1lcB4sc1tus=
 
 json5@^1.0.1:
   version "1.0.1"
@@ -15818,18 +15805,6 @@ store2@^2.12.0:
   version "2.12.0"
   resolved "https://registry.yarnpkg.com/store2/-/store2-2.12.0.tgz#e1f1b7e1a59b6083b2596a8d067f6ee88fd4d3cf"
   integrity sha512-7t+/wpKLanLzSnQPX8WAcuLCCeuSHoWdQuh9SB3xD0kNOM38DNf+0Oa+wmvxmYueRzkmh6IcdKFtvTa+ecgPDw==
-
-storyblok-js-client@^4.0.6, storyblok-js-client@^4.1.5:
-  version "4.1.5"
-  resolved "https://registry.yarnpkg.com/storyblok-js-client/-/storyblok-js-client-4.1.5.tgz#d0ceb811a9b4847850bf4856046e01816ac221c6"
-  integrity sha512-0cd9AtU1JE0Q7lyda7NSyfwasvuy3X5v9z1kMm4TWmcbUiQEjUjiNaZ9o0bu7iTpgVeatoa2j6XGLRqPQKz8dw==
-  dependencies:
-    qs "^6.9.4"
-
-storyblok-react@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/storyblok-react/-/storyblok-react-0.1.2.tgz#798672e1111cec68dc487985b1fbba15129fc90d"
-  integrity sha512-68KtSgkAT/0XZ9diz3wfoPl6xOt3WJmCv03qZOZUNPs1uDFh1FHF7P9OHt6TfMcxPrv3ldjTypkQXbFdT7JnvA==
 
 stream-browserify@^2.0.1:
   version "2.0.2"

@@ -56,7 +56,7 @@ module.exports = {
       resolve: 'gatsby-plugin-robots-txt',
     },
     'gatsby-plugin-postcss',
-    'gatsby-plugin-webpack-bundle-analyser-v2' /*  {      resolve: 'gatsby-source-storyblok',      options: {        accessToken: process.env.STORYBLOK_ACCESS_TOKEN,        version:          process.env.GATSBY_MODE === 'production' ? 'published' : 'draft',      },} */,
+    'gatsby-plugin-webpack-bundle-analyser-v2',
     {
       resolve: '@sentry/gatsby',
       options: {
