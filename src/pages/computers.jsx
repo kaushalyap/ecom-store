@@ -1,8 +1,8 @@
-import React from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby';
-import SEO from '../components/SEO/SEO';
+import { StaticImage } from 'gatsby-plugin-image';
+import React from 'react';
 import Layout from '../components/Layout';
+import SEO from '../components/SEO/SEO';
 
 export default function Computers() {
   return (
@@ -11,7 +11,7 @@ export default function Computers() {
         title="Computers & Accessories"
         description="Just get your next laptop, tablet, desktop, etc freely delivered to you for a competitive price"
       />
-      <main className="mx-5 mb-20 xl:container xl:mx-auto">
+      <main>
         <h1 className="mt-10 mb-5 font-headline text-xl font-medium md:mb-8 md:text-2xl xl:text-3xl">
           Computers & Accessories
         </h1>

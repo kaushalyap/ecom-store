@@ -1,6 +1,6 @@
 import React from 'react';
-import SEO from '../components/SEO/SEO';
 import Layout from '../components/Layout';
+import SEO from '../components/SEO/SEO';
 
 export default function RefundPolicy() {
   return (
@@ -9,7 +9,7 @@ export default function RefundPolicy() {
         title="Refund Policy"
         description="Know in which cases you can receive refunds for your orders"
       />
-      <main className="mx-5 mb-40 lg:mx-auto lg:w-2/3 xl:container xl:w-2/5">
+      <main className="lg:w-2/3 xl:w-2/5">
         <h1 className="mt-10 mb-5 font-headline text-2xl font-medium md:mb-8 md:text-4xl xl:mb-8 xl:text-5xl 2xl:mb-10">
           Refund Policy
         </h1>

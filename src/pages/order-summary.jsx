@@ -1,3 +1,4 @@
+import { Link } from '@reach/router';
 import React from 'react';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO/SEO';
@@ -7,7 +8,7 @@ export default function OrderSummary() {
   return (
     <Layout>
       <SEO title="Checkout" index={false} />
-      <main className="mx-5 mb-20 lg:mx-auto lg:w-2/3 xl:container xl:mx-auto xl:w-full">
+      <main className="lg:mx-auto lg:w-2/3 xl:w-full">
         <h1 className="mt-10 mb-5 font-headline text-xl font-medium md:mb-8 md:text-2xl xl:text-3xl">
           Thank you for choosing us!
         </h1>
@@ -18,7 +19,7 @@ export default function OrderSummary() {
             </p>
             <div className="mb-6">
               <h2 className="mb-2 font-headline text-lg tracking-wide md:text-xl">
-                Your Cart
+                Your Cart was
               </h2>
 
               <ShoppingItemCard
@@ -77,6 +78,15 @@ export default function OrderSummary() {
                 <p>Colombo,</p>
                 <p>10250</p>
               </div>
+              <p className="mt-12 text-gray-500">
+                Please&nbsp;
+                <span>
+                  <Link to="contact/" className="tracking-wide text-blue-500">
+                    contact us
+                  </Link>
+                </span>
+                &nbsp;if shown information is incorrect.
+              </p>
             </div>
           </div>
         </div>

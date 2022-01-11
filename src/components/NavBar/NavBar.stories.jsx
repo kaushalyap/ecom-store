@@ -7,6 +7,7 @@ export default {
 };
 
 // noinspection JSUnusedGlobalSymbols
+// eslint-disable-next-line func-names
 export const NavBarLight = function () {
   return <NavBar />;
 };

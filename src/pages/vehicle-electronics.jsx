@@ -1,8 +1,8 @@
-import React from 'react';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import SEO from '../components/SEO/SEO';
+import React from 'react';
 import Layout from '../components/Layout';
+import SEO from '../components/SEO/SEO';
 
 export default function VehicleElectronics() {
   return (
@@ -11,7 +11,7 @@ export default function VehicleElectronics() {
         title="Vehicle Electronics"
         description="Modernize your car with latest car audio / video, GPS. Secure your life and car with vehicle security systems"
       />
-      <main className="mx-5 mb-20 xl:container xl:mx-auto">
+      <main>
         <h1 className="mt-10 mb-5 font-headline text-xl font-medium md:mb-8 md:text-2xl xl:text-3xl">
           Vehicle Electronics
         </h1>

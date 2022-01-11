@@ -1,3 +1,4 @@
+/* eslint-disable tailwindcss/no-custom-classname */
 import 'keen-slider/keen-slider.min.css';
 import { useKeenSlider } from 'keen-slider/react';
 import React, { useState } from 'react';

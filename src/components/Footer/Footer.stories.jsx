@@ -7,6 +7,7 @@ export default {
   component: Footer,
 };
 
+// eslint-disable-next-line func-names
 const Template = function (args) {
   // eslint-disable-next-line react/jsx-props-no-spreading
   return <Footer {...args} />;

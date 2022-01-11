@@ -13,7 +13,7 @@ export default function SearchResults() {
   return (
     <Layout>
       <SEO title="Search" />
-      <div className="mx-3 mb-20 xl:container xl:mx-auto">
+      <div>
         <div>
           <MobileFilterDialog
             open={mobileFiltersOpen}

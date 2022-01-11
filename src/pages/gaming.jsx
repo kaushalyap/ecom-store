@@ -11,7 +11,7 @@ export default function Gaming() {
         title="Gaming Gear"
         description="Enjoy the next level gaming experience with latest Playstations, XBoxes, VR-headsets, gaming laptops and etc."
       />
-      <main className="mx-5 mb-20 xl:container xl:mx-auto">
+      <main>
         <h1 className="mt-10 mb-5 font-headline text-xl font-medium md:mb-8 md:text-2xl xl:text-3xl">
           Game Consoles & Accessories
         </h1>

@@ -1,8 +1,8 @@
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
-import SEO from '../components/SEO/SEO';
 import Layout from '../components/Layout';
+import SEO from '../components/SEO/SEO';
 
 export default function Security() {
   return (
@@ -11,7 +11,7 @@ export default function Security() {
         title="Security & Surveillance"
         description="Secure home, office, shop, computers, vehicles from intruders and hackers"
       />
-      <main className="mx-5 mb-20 xl:container xl:mx-auto">
+      <main>
         <h1 className="mt-10 mb-5 font-headline text-xl font-medium md:mb-8 md:text-2xl xl:text-3xl">
           Security & Surveillance
         </h1>

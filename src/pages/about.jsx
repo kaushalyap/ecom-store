@@ -11,7 +11,7 @@ export default function About() {
         title="About"
         description="Sri Lankan owned online only electronic store with free deliveries which value customer happiness over sales"
       />
-      <main className="mx-5 mb-20 xl:container xl:mx-auto">
+      <main>
         <h1 className="mt-10 mb-5 font-headline text-xl font-medium md:mb-8 md:text-2xl xl:text-3xl">
           About Us
         </h1>

@@ -8,6 +8,7 @@ export default {
 };
 
 // noinspection JSUnusedGlobalSymbols
+// eslint-disable-next-line func-names
 export const ShoppingCartLight = function () {
   return <ShoppingBag noItemsInCart={5} />;
 };

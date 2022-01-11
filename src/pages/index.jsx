@@ -12,12 +12,12 @@ export default function Index() {
         title="TechStack.LK"
         description="All your tech gear satisfied and freely delivered to your doorstep"
       />
-      <main className="container mx-auto">
+      <main className="-mx-5">
         <Carousel />
       </main>
       <section
         id="explore-categories"
-        className="mx-5 mb-20 md:mx-10 xl:container xl:mx-auto xl:mt-16"
+        className="mb-20 md:mx-10 xl:container xl:mx-auto xl:mt-16"
       >
         <h2 className="mt-10 mb-5 font-headline text-xl font-medium md:mb-8 md:text-2xl xl:text-3xl">
           Shop by Category
