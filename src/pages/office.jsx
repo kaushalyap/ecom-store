@@ -1,6 +1,7 @@
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
+import HeadingCategory from '../components/Heading/HeadingCategory';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO/SEO';
 
@@ -12,9 +13,7 @@ export default function Office() {
         description="Make your office life more easier with next-gen office equipment"
       />
       <main>
-        <h1 className="mt-10 mb-5 font-headline text-xl font-medium md:mb-8 md:text-2xl xl:text-3xl">
-          Office Electronics
-        </h1>
+        <HeadingCategory>Office Electronics</HeadingCategory>
         <div
           id="cards"
           className="grid grid-cols-2 gap-x-5 gap-y-5 md:grid-cols-3 md:gap-x-10 md:gap-y-10 lg:grid-cols-4"
