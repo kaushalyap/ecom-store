@@ -12,7 +12,7 @@ module.exports = {
     description:
       'Sri Lankan owned online only electronic store with free deliveries for which value customer happiness over sales',
     siteLanguage: 'en',
-    image: 'src/images/logo.svg',
+    image: 'src/images/logos/logo.svg',
     ogLanguage: 'en_US',
     author: 'TechStack.LK',
     twitterUsername: '@techstacklk',
