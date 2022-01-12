@@ -39,7 +39,7 @@ export default function ContactForm() {
       <input type="text" name="_gotcha" className="hidden" />
       <button
         type="submit"
-        className="py-2 px-3 font-bold tracking-widest text-white bg-brand rounded-xl md:py-3 md:px-4 md:text-lg"
+        className="py-2 px-3 w-32 font-bold tracking-widest text-white bg-brand rounded-xl md:py-3 md:px-4 md:text-lg"
       >
         Send
       </button>

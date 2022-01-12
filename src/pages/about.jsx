@@ -1,6 +1,7 @@
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
+import HeadingCategory from '../components/Heading/HeadingCategory';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO/SEO';
 
@@ -12,9 +13,7 @@ export default function About() {
         description="Sri Lankan owned online only electronic store with free deliveries which value customer happiness over sales"
       />
       <main>
-        <h1 className="mt-10 mb-5 font-headline text-xl font-medium md:mb-8 md:text-2xl xl:text-3xl">
-          About Us
-        </h1>
+        <HeadingCategory>About Us</HeadingCategory>
         <p className="mb-6 font-light tracking-wide lg:mb-8 xl:text-2xl">
           We are online only electronic store, located in Nugegoda, Colombo.
         </p>
@@ -40,10 +39,10 @@ export default function About() {
               <h3 className="hidden mt-4 mb-4 font-headline text-5xl leading-tight md:block lg:text-6xl xl:text-7xl 2xl:mt-12">
                 Sri Lankan Owned
               </h3>
-              <p className="mb-2 font-light lg:text-2xl xl:mb-4 xl:text-3xl">
+              <p className="mb-2 font-light tracking-wide lg:text-2xl xl:mb-4 xl:text-3xl">
                 No draining of profits outside to our motherland.
               </p>
-              <p className="font-light lg:text-2xl xl:text-3xl">
+              <p className="font-light tracking-wide lg:text-2xl xl:text-3xl">
                 <Link to="/" className="text-blue-600">
                   TechStack.LK
                 </Link>
@@ -69,7 +68,7 @@ export default function About() {
               <h3 className="hidden mt-8 mb-2 font-headline text-5xl leading-tight md:block lg:text-6xl xl:text-7xl">
                 Free Delivery Islandwide
               </h3>
-              <p className="font-light lg:text-2xl xl:text-3xl">
+              <p className="font-light tracking-wide lg:text-2xl xl:text-3xl">
                 For Every single item.
               </p>
             </div>
@@ -95,14 +94,14 @@ export default function About() {
                 <span className="text-4xl">over</span>
                 &nbsp;Sales
               </h3>
-              <p className="my-2 font-light lg:text-2xl xl:text-3xl">
+              <p className="my-2 font-light tracking-wide lg:text-2xl xl:text-3xl">
                 Not&nbsp;
                 <Link to="/blog/" className="text-blue-600">
                   sales driven
                 </Link>
                 , but customer happiness driven.
               </p>
-              <p className="mb-5 font-light lg:text-2xl xl:text-3xl">
+              <p className="mb-5 font-light tracking-wide lg:text-2xl xl:text-3xl">
                 Not a techie, contact us we will respond to you&nbsp;
                 <Link to="/blog/" className="text-blue-600">
                   honestly.
@@ -128,13 +127,13 @@ export default function About() {
               <h3 className="hidden mt-6 mb-4 font-headline text-5xl leading-tight md:block lg:text-6xl xl:mb-6 xl:text-7xl xl:leading-tight 2xl:mt-12">
                 Competitive Pricing
               </h3>
-              <p className="mb-2 font-light lg:text-2xl xl:mb-4 xl:text-3xl">
+              <p className="mb-2 font-light tracking-wide lg:text-2xl xl:mb-4 xl:text-3xl">
                 No lowest price or 20% off&nbsp;
                 <Link to="/blog/" className="text-blue-600">
                   marketing gimmicks.
                 </Link>
               </p>
-              <p className="font-light lg:text-2xl xl:text-3xl">
+              <p className="font-light tracking-wide lg:text-2xl xl:text-3xl">
                 We may have the lowest prices due to the way we&nbsp;
                 <Link to="/blog/" className="text-blue-600">
                   operate.

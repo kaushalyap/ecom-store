@@ -66,7 +66,9 @@ export default function Contact() {
             </p>
           </div>
           <div className="hidden md:block xl:w-1/2">
-            <h2 className="mb-4 font-headline text-xl">Send us a message</h2>
+            <h2 className="mb-4 font-headline text-lg tracking-wider lg:text-xl xl:text-2xl">
+              Send us a message
+            </h2>
             <ContactForm />
           </div>
         </div>

@@ -1,4 +1,7 @@
+import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
+import HeadingCategory from '../components/Heading/HeadingCategory';
+import HeadingSection from '../components/HeadingSection/HeadingSection';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO/SEO';
 
@@ -10,35 +13,33 @@ export default function PrivacyPolicy() {
         description="Know how we protect your privacy when you are on TechStack.LK"
       />
       <main className="lg:mx-auto lg:w-2/3 xl:w-2/5">
-        <h1 className="mt-10 mb-5 font-headline text-2xl font-medium md:mb-8 md:text-4xl xl:mb-8 xl:text-5xl 2xl:mb-10">
-          Privacy Policy
-        </h1>
+        <HeadingCategory>Privacy Policy</HeadingCategory>
 
-        <h2 className="mt-8 mb-2 font-headline font-medium md:text-xl xl:text-2xl">
+        <HeadingSection extraClasses="uppercase">
           SECTION 1 - WHAT DO WE DO WITH YOUR INFORMATION?
-        </h2>
-        <p className="mb-2 text-justify">
+        </HeadingSection>
+        <p className="mb-2 tracking-wide text-justify">
           When you purchase something from our store, as part of the buying and
           selling process, we collect the personal information you give us such
           as your name, address and email address.
         </p>
-        <p className="mb-2 text-justify">
+        <p className="mb-2 tracking-wide text-justify">
           When you browse our store, we also automatically receive your
           computer&apos;s internet protocol (IP) address in order to provide us
           with information that helps us learn about your browser and operating
           system.
         </p>
-        <p className="text-justify">
+        <p className="tracking-wide text-justify">
           Email marketing (if applicable): With your permission, we may send you
           emails about our store, new products and other updates.
         </p>
-        <h2 className="mt-8 mb-2 font-headline font-medium md:text-xl xl:text-2xl">
+        <HeadingSection extraClasses="uppercase">
           SECTION 2 - CONSENT
-        </h2>
-        <p className="mb-2 text-justify">
+        </HeadingSection>
+        <p className="mb-2 tracking-wide text-justify">
           <b>How do you get my consent?</b>
         </p>
-        <p className="mb-2 text-justify">
+        <p className="mb-2 tracking-wide text-justify">
           When you provide us with personal information to complete a
           transaction, verify your credit card, place an order, arrange for a
           delivery or return a purchase, we imply that you consent to our
@@ -47,10 +48,10 @@ export default function PrivacyPolicy() {
           we will either ask you directly for your expressed consent, or provide
           you with an opportunity to say no.
         </p>
-        <p className="mb-2 text-justify">
+        <p className="mb-2 tracking-wide text-justify">
           <b>How do I withdraw my consent?</b>
         </p>
-        <p className="mb-2 text-justify">
+        <p className="mb-2 tracking-wide text-justify">
           If after you opt-in, you change your mind, you may withdraw your
           consent for us to contact you, for the continued collection, use or
           disclosure of your information, at anytime, by contacting us by
@@ -58,27 +59,27 @@ export default function PrivacyPolicy() {
         </p>
         <p>techstacklk@gmail.com</p>
 
-        <h2 className="mt-8 mb-2 font-headline font-medium md:text-xl xl:text-2xl">
+        <HeadingSection extraClasses="uppercase">
           SECTION 3 - DISCLOSURE
-        </h2>
+        </HeadingSection>
 
-        <p className="mb-2 text-justify">
+        <p className="mb-2 tracking-wide text-justify">
           We may disclose your personal information if we are required by law to
           do so or if you violate our Terms of Service.
         </p>
 
-        <h2 className="mt-8 mb-2 font-headline font-medium md:text-xl xl:text-2xl">
+        <HeadingSection extraClasses="uppercase">
           SECTION 4 - E-commerce
-        </h2>
+        </HeadingSection>
 
-        <p className="mb-2 text-justify">
+        <p className="mb-2 tracking-wide text-justify">
           Our store is hosted on public cloud. Your data is protected in both
           transit and rest with SSL and AES encryption respectively. They store
           your data on a secure server behind a firewall.
         </p>
 
-        <p className="mb-2 text-justify">Payment:</p>
-        <p className="mb-2 text-justify">
+        <p className="mb-2 tracking-wide text-justify">Payment:</p>
+        <p className="mb-2 tracking-wide text-justify">
           We do not store your payment information, we delegate payment
           functionality to&nbsp;
           <a href="https://www.genie.lk/" className="text-blue-600">
@@ -93,33 +94,33 @@ export default function PrivacyPolicy() {
           (PCI-DSS). PCI-DSS requirements help ensure the secure handling of
           credit card information by our store and its service providers.
         </p>
-        <p className="text-justify">
+        <p className="tracking-wide text-justify">
           Your purchase transaction data is stored until you request for
           deletion. This data is use to make better decisions as a business.
         </p>
-        <h2 className="mt-8 mb-2 font-headline font-medium md:text-xl xl:text-2xl">
+        <HeadingSection extraClasses="uppercase tracking-wide">
           SECTION 5 - THIRD-PARTY SERVICES
-        </h2>
+        </HeadingSection>
 
-        <p className="mb-2 text-justify">
+        <p className="mb-2 tracking-wide text-justify">
           In general, the third-party providers used by us will only collect,
           use and disclose your information to the extent necessary to allow
           them to perform the services they provide to us.
         </p>
 
-        <p className="mb-2 text-justify">
+        <p className="mb-2 tracking-wide text-justify">
           However, certain third-party service providers, such as payment
           gateways and other payment transaction processors, have their own
           privacy policies in respect to the information we are required to
           provide to them for your purchase-related transactions.
         </p>
 
-        <p className="mb-2 text-justify">
+        <p className="mb-2 tracking-wide text-justify">
           For these providers, we recommend that you read their privacy policies
           so you can understand the manner in which your personal information
           will be handled by these providers.
         </p>
-        <p className="mb-2 text-justify">
+        <p className="mb-2 tracking-wide text-justify">
           In particular, remember that certain providers may be located in or
           have facilities that are located a different jurisdiction than either
           you or us. So if you elect to proceed with a transaction that involves
@@ -128,29 +129,29 @@ export default function PrivacyPolicy() {
           service provider or its facilities are located.
         </p>
 
-        <p className="mb-2 text-justify">
+        <p className="mb-2 tracking-wide text-justify">
           As an example, if you are located in Canada and your transaction is
           processed by a payment gateway located in the United States, then your
           personal information used in completing that transaction may be
           subject to disclosure under United States legislation, including the
           Patriot Act.
         </p>
-        <p className="mb-2 text-justify">
+        <p className="mb-2 tracking-wide text-justify">
           Once you leave our store&apos;s website or are redirected to a
           third-party website or application, you are no longer governed by this
           Privacy Policy or our website&apos;s Terms of Service.
         </p>
-        <p className="mb-2 italic text-justify">Links</p>
-        <p className="mb-2 text-justify">
+        <p className="mb-2 italic tracking-wide text-justify">Links</p>
+        <p className="mb-2 tracking-wide text-justify">
           When you click on links on our store, they may direct you away from
           our site. We are not responsible for the privacy practices of other
           sites and encourage you to read their privacy statements.
         </p>
-        <h2 className="mt-8 mb-2 font-headline font-medium md:text-xl xl:text-2xl">
+        <HeadingSection extraClasses="uppercase">
           SECTION 6 - SECURITY
-        </h2>
+        </HeadingSection>
 
-        <p className="mb-2 text-justify">
+        <p className="mb-2 tracking-wide text-justify">
           To protect your personal information, we take reasonable precautions
           and follow industry best practices to make sure it is not
           inappropriately lost, misused, accessed, disclosed, altered or
@@ -162,15 +163,15 @@ export default function PrivacyPolicy() {
           accepted industry standards.
         </p>
 
-        <h2 className="mt-8 mb-2 font-headline font-medium md:text-xl xl:text-2xl">
+        <HeadingSection extraClasses="uppercase">
           SECTION 7 - COOKIES
-        </h2>
-        <p className="mb-2 text-justify">
+        </HeadingSection>
+        <p className="mb-2 tracking-wide text-justify">
           Here is a list of cookies that we use. We&apos;ve listed them here so
           you that you can choose if you want to opt-out of cookies or not.
         </p>
 
-        <ul className="list-disc list-inside">
+        <ul className="ml-8 list-disc list-outside">
           <li>
             _session_id, unique token, sessional, Allows us to store information
             about your session (referrer, landing page, etc).
@@ -193,11 +194,11 @@ export default function PrivacyPolicy() {
           </li>
         </ul>
 
-        <h2 className="mt-8 mb-2 font-headline font-medium md:text-xl xl:text-2xl">
+        <HeadingSection extraClasses="uppercase">
           SECTION 8 - AGE OF CONSENT
-        </h2>
+        </HeadingSection>
 
-        <p className="mb-2 text-justify">
+        <p className="mb-2 tracking-wide text-justify">
           By using this site, you represent that you are at least the age of
           majority in your state or shop_contact_province_state of residence, or
           that you are the age of majority in your state or
@@ -205,11 +206,11 @@ export default function PrivacyPolicy() {
           consent to allow any of your minor dependents to use this site.
         </p>
 
-        <h2 className="mt-8 mb-2 font-headline font-medium md:text-xl xl:text-2xl">
+        <HeadingSection extraClasses="uppercase">
           SECTION 9 - CHANGES TO THIS PRIVACY POLICY
-        </h2>
+        </HeadingSection>
 
-        <p className="text-justify">
+        <p className="tracking-wide text-justify">
           We reserve the right to modify this privacy policy at any time, so
           please review it frequently. Changes and clarifications will take
           effect immediately upon their posting on the website. If we make
@@ -221,16 +222,16 @@ export default function PrivacyPolicy() {
           continue to sell products to you.
         </p>
 
-        <h2 className="mt-8 mb-2 font-headline font-medium md:text-xl xl:text-2xl">
+        <HeadingSection extraClasses="uppercase">
           QUESTIONS AND CONTACT INFORMATION
-        </h2>
+        </HeadingSection>
 
-        <p className="mb-2 text-justify">
+        <p className="mb-2 tracking-wide text-justify">
           If you would like to: access, correct, amend or delete any personal
           information we have about you, register a complaint, or simply want
           more information send us an email to following address :
         </p>
-        <p>techstacklk@gmail.com</p>
+        <StaticImage src="../images/other/email.png" alt="email of the email" />
       </main>
     </Layout>
   );

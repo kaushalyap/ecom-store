@@ -22,7 +22,7 @@ export default function Footer() {
               placeholder="tracedSVG"
             />
           </Link>
-          <p className="pt-5 text-gray-600 md:mx-0">
+          <p className="pt-5 tracking-wide text-gray-600 md:mx-0">
             All your tech gear satisfied and
             <br />
             freely delivered to your door step.
@@ -39,7 +39,9 @@ export default function Footer() {
             <ul>
               {categories.map((category) => (
                 <li className="py-1">
-                  <Link to={category.path}>{category.name}</Link>
+                  <Link to={category.path} className="tracking-wide">
+                    {category.name}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -53,7 +55,7 @@ export default function Footer() {
             Help & Support
           </h2>
           <nav className="list-none text-gray-600">
-            <ul>
+            <ul className="tracking-wide">
               <li className="py-1">
                 <Link to="/company-orders/">Company Orders</Link>
               </li>
@@ -74,7 +76,7 @@ export default function Footer() {
             Company
           </h2>
           <nav className="list-none text-gray-600">
-            <ul>
+            <ul className="tracking-wide">
               <li className="py-1">
                 <Link to="/about#why-us/">Why Us ?</Link>
               </li>
