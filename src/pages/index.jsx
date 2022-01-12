@@ -1,172 +1,79 @@
-import { Link } from 'gatsby';
-import { StaticImage } from 'gatsby-plugin-image';
+import { graphql, StaticQuery } from 'gatsby';
 import React from 'react';
 import Carousel from '../components/Carousel/Carousel';
+import CategoryCard from '../components/CategoryCard/CategoryCard';
 import HeadingCategory from '../components/Heading/HeadingCategory';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO/SEO';
 
 export default function Index() {
   return (
-    <Layout>
-      <SEO
-        title="TechStack.LK"
-        description="All your tech gear satisfied and freely delivered to your doorstep"
-      />
-      <main className="-mx-5">
-        <Carousel />
-      </main>
-      <section
-        id="explore-categories"
-        className="mb-20 md:mx-10 xl:container xl:mx-auto xl:mt-16"
-      >
-        <HeadingCategory>Shop by Category</HeadingCategory>
-        <div
-          id="cards"
-          className="grid grid-cols-2 gap-x-5 gap-y-5 md:grid-cols-3 md:gap-x-10 md:gap-y-10 lg:grid-cols-4"
-        >
-          <Link to="/computers">
-            <div>
-              <StaticImage
-                src="../images/categories/laptop-front.png"
-                alt="laptop"
-                objectFit="contain"
-                placeholder="blurred"
-                className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
-              />
-              <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
-                Computers & Accessories
-              </h3>
+    <StaticQuery
+      query={graphql`
+        query MainCategoriesQuery {
+          allPrismicCategories(
+            filter: { id: { eq: "ff87bf10-db57-5b54-a7f4-6a9da8976b54" } }
+          ) {
+            nodes {
+              data {
+                category {
+                  href {
+                    text
+                  }
+                  image {
+                    alt
+                    gatsbyImageData(placeholder: BLURRED)
+                  }
+                  object_fit {
+                    text
+                  }
+                  object_position {
+                    text
+                  }
+                  title {
+                    text
+                  }
+                }
+              }
+            }
+          }
+        }
+      `}
+      render={(categories) => (
+        <Layout>
+          <SEO
+            title="TechStack.LK"
+            description="All your tech gear satisfied and freely delivered to your doorstep"
+          />
+          <main className="-mx-5">
+            <Carousel />
+          </main>
+          <section
+            id="explore-categories"
+            className="mb-20 md:mx-10 xl:container xl:mx-auto xl:mt-16"
+          >
+            <HeadingCategory>Shop by Category</HeadingCategory>
+            <div
+              id="cards"
+              className="grid grid-cols-2 gap-x-5 gap-y-5 md:grid-cols-3 md:gap-x-10 md:gap-y-10 lg:grid-cols-4"
+            >
+              {categories.allPrismicCategories.nodes[0].data.category.map(
+                (item) => (
+                  <CategoryCard
+                    to={item.href.text}
+                    title={item.title.text}
+                    image={item.image.gatsbyImageData}
+                    alt={item.image.alt}
+                    objectFit={item.object_fit.text}
+                    objectPosition={item.object_position.text}
+                  />
+                  // eslint-disable-next-line comma-dangle
+                )
+              )}
             </div>
-          </Link>
-          <Link to="/mobile-phones">
-            <div>
-              <StaticImage
-                src="../images/categories/smartphone.png"
-                alt="smartphone"
-                placeholder="blurred"
-                objectFit="contain"
-                className="p-10 w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
-              />
-              <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
-                Mobile Phones & Accessories
-              </h3>
-            </div>
-          </Link>
-          <Link to="/office">
-            <div>
-              <StaticImage
-                src="../images/categories/printer.png"
-                alt="printer"
-                objectFit="contain"
-                placeholder="blurred"
-                className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
-              />
-              <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
-                Office Electronics
-              </h3>
-            </div>
-          </Link>
-          <Link to="/tv-video">
-            <div>
-              <StaticImage
-                src="../images/categories/tv.png"
-                alt="TV"
-                placeholder="blurred"
-                className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
-                objectFit="contain"
-              />
-              <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
-                TV & Video
-              </h3>
-            </div>
-          </Link>
-          <Link to="/gaming">
-            <div>
-              <StaticImage
-                src="../images/categories/xbox-joystick-black.png"
-                alt="XBox"
-                placeholder="blurred"
-                className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
-                objectFit="scale-down"
-              />
-              <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
-                Video Game Consoles & Accessories
-              </h3>
-            </div>
-          </Link>
-          <Link to="/audio">
-            <div>
-              <StaticImage
-                src="../images/categories/speaker.png"
-                alt="speaker"
-                placeholder="blurred"
-                className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
-                objectFit="contain"
-              />
-              <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
-                Audio Electronics
-              </h3>
-            </div>
-          </Link>
-          <Link to="/cameras">
-            <div>
-              <StaticImage
-                src="../images/categories/camera.png"
-                alt="camera"
-                objectFit="contain"
-                placeholder="blurred"
-                className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
-              />
-              <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
-                Camera & Photo
-              </h3>
-            </div>
-          </Link>
-          <Link to="/security">
-            <div>
-              <StaticImage
-                src="../images/categories/cctv.png"
-                alt="CCTV camera"
-                placeholder="blurred"
-                className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
-                objectFit="contain"
-              />
-              <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
-                Security & Surveillance
-              </h3>
-            </div>
-          </Link>
-          <Link to="/vehicle-electronics">
-            <div>
-              <StaticImage
-                src="../images/categories/gps.png"
-                alt="vehicle gps screen"
-                placeholder="blurred"
-                className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
-                objectFit="contain"
-              />
-              <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
-                Vehicle Electronics
-              </h3>
-            </div>
-          </Link>
-          <Link to="/wearables-smart-home">
-            <div>
-              <StaticImage
-                src="../images/categories/apple-watch.png"
-                alt="apple-watch"
-                placeholder="blurred"
-                objectFit="contain"
-                className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
-              />
-              <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
-                Wearables & Smart Home Devices
-              </h3>
-            </div>
-          </Link>
-        </div>
-      </section>
-    </Layout>
+          </section>
+        </Layout>
+      )}
+    />
   );
 }

@@ -1,133 +1,72 @@
-import { Link } from 'gatsby';
-import { StaticImage } from 'gatsby-plugin-image';
+import { graphql, StaticQuery } from 'gatsby';
 import React from 'react';
+import CategoryCard from '../components/CategoryCard/CategoryCard';
 import HeadingCategory from '../components/Heading/HeadingCategory';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO/SEO';
 
 export default function Computers() {
   return (
-    <Layout>
-      <SEO
-        title="Computers & Accessories"
-        description="Just get your next laptop, tablet, desktop, etc freely delivered to you for a competitive price"
-      />
-      <main>
-        <HeadingCategory>Computers & Accessories</HeadingCategory>
-        <div
-          id="cards"
-          className="grid grid-cols-2 gap-x-5 gap-y-5 md:grid-cols-3 md:gap-x-10 md:gap-y-10 lg:grid-cols-4"
-        >
-          <Link to="/laptops">
-            <StaticImage
-              src="../images/categories/laptop-angled.png"
-              alt="laptop"
-              objectFit="contain"
-              placeholder="blurred"
-              className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
-            />
-            <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
-              Laptops
-            </h3>
-          </Link>
-          <Link to="/desktops">
-            <StaticImage
-              src="../images/categories/desktops.png"
-              alt="desktop"
-              objectFit="contain"
-              placeholder="blurred"
-              className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
-            />
-            <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
-              Desktops
-            </h3>
-          </Link>
-          <Link to="/tablets">
-            <StaticImage
-              src="../images/categories/tablet.png"
-              alt="tablet"
-              objectFit="contain"
-              placeholder="blurred"
-              className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
-            />
-            <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
-              Tablets & eBook Readers
-            </h3>
-          </Link>
-          <Link to="/monitors">
-            <StaticImage
-              src="../images/categories/monitors.png"
-              alt="monitor"
-              objectFit="contain"
-              placeholder="blurred"
-              className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
-            />
-            <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
-              Monitors & Accessories
-            </h3>
-          </Link>
-          <Link to="/printers-scanners">
-            <StaticImage
-              src="../images/categories/printer.png"
-              alt="printer"
-              objectFit="contain"
-              placeholder="blurred"
-              className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
-            />
-            <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
-              Printers, Scanners & Accessories
-            </h3>
-          </Link>
-          <Link to="/drives-storage">
-            <StaticImage
-              src="../images/categories/storage.png"
-              alt="external hard disk on a stand"
-              objectFit="contain"
-              placeholder="blurred"
-              className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
-            />
-            <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
-              Drives & Storage
-            </h3>
-          </Link>
-          <Link to="/computer-components">
-            <StaticImage
-              src="../images/categories/cpu.png"
-              alt="Ryzen CPU"
-              objectFit="contain"
-              placeholder="blurred"
-              className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
-            />
-            <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
-              Computer Components
-            </h3>
-          </Link>
-          <Link to="/networking-hardware">
-            <StaticImage
-              src="../images/categories/router.png"
-              alt="router"
-              objectFit="contain"
-              placeholder="blurred"
-              className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
-            />
-            <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
-              Networking Hardware
-            </h3>
-          </Link>
-          <Link to="/laptop-desktop-accessories">
-            <StaticImage
-              src="../images/categories/keyboard-mouse.png"
-              alt="keyboard and mouse"
-              objectFit="scale-down"
-              placeholder="blurred"
-              className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
-            />
-            <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
-              Laptop & Desktop Accessories
-            </h3>
-          </Link>
-        </div>
-      </main>
-    </Layout>
+    <StaticQuery
+      query={graphql`
+        query ComputersCategoriesQuery {
+          allPrismicCategories(
+            filter: { id: { eq: "94b32c2e-7517-5971-a161-caae200b8718" } }
+          ) {
+            nodes {
+              data {
+                category {
+                  href {
+                    text
+                  }
+                  image {
+                    alt
+                    gatsbyImageData(placeholder: BLURRED)
+                  }
+                  object_fit {
+                    text
+                  }
+                  object_position {
+                    text
+                  }
+                  title {
+                    text
+                  }
+                }
+              }
+            }
+          }
+        }
+      `}
+      render={(categories) => (
+        <Layout>
+          <SEO
+            title="Computers & Accessories"
+            description="Just get your next laptop, tablet, desktop, etc freely delivered to you for a competitive price"
+          />
+          <main>
+            <HeadingCategory>Computers & Accessories</HeadingCategory>
+            <div
+              id="cards"
+              className="grid grid-cols-2 gap-x-5 gap-y-5 md:grid-cols-3 md:gap-x-10 md:gap-y-10 lg:grid-cols-4"
+            >
+              {categories.allPrismicCategories.nodes[0].data.category.map(
+                (item) => (
+                  <CategoryCard
+                    to={item.href.text}
+                    title={item.title.text}
+                    image={item.image.gatsbyImageData}
+                    alt={item.image.alt}
+                    objectFit={item.object_fit.text}
+                    objectPosition={item.object_position.text}
+                  />
+                  // eslint-disable-next-line comma-dangle
+                )
+              )}
+            </div>
+          </main>
+        </Layout>
+      )}
+    />
   );
 }

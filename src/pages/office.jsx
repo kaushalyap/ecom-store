@@ -1,112 +1,72 @@
-import { Link } from 'gatsby';
-import { StaticImage } from 'gatsby-plugin-image';
+import { graphql, StaticQuery } from 'gatsby';
 import React from 'react';
+import CategoryCard from '../components/CategoryCard/CategoryCard';
 import HeadingCategory from '../components/Heading/HeadingCategory';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO/SEO';
 
 export default function Office() {
   return (
-    <Layout>
-      <SEO
-        title="Office Electronics"
-        description="Make your office life more easier with next-gen office equipment"
-      />
-      <main>
-        <HeadingCategory>Office Electronics</HeadingCategory>
-        <div
-          id="cards"
-          className="grid grid-cols-2 gap-x-5 gap-y-5 md:grid-cols-3 md:gap-x-10 md:gap-y-10 lg:grid-cols-4"
-        >
-          <Link to="/printers-scanners">
-            <StaticImage
-              src="../images/categories/printer.png"
-              alt="printer"
-              objectFit="contain"
-              placeholder="blurred"
-              className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
-            />
-            <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
-              Printers, Scanners & Accessories
-            </h3>
-          </Link>
-          <Link to="/photocopier">
-            <StaticImage
-              src="../images/categories/photocopier.png"
-              alt="photocopier"
-              objectFit="contain"
-              objectPosition="bottom"
-              placeholder="blurred"
-              className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
-            />
-            <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
-              Photocopiers & Duplicators
-            </h3>
-          </Link>
-
-          <Link to="/projectors">
-            <StaticImage
-              src="../images/categories/projector.png"
-              alt="video projector"
-              objectFit="contain"
-              placeholder="blurred"
-              className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
-            />
-            <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
-              Video Projectors & Accessories
-            </h3>
-          </Link>
-          <Link to="/telephones-fax-machines">
-            <StaticImage
-              src="../images/categories/telephone.png"
-              alt="telephone"
-              objectFit="contain"
-              placeholder="blurred"
-              className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
-            />
-            <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
-              Telephones & Fax Machines
-            </h3>
-          </Link>
-          <Link to="/smart-boardroom-equipment">
-            <StaticImage
-              src="../images/categories/smart-board-room.png"
-              alt="board room table with smart panels mikes and etc"
-              objectFit="contain"
-              placeholder="blurred"
-              objectPosition="bottom"
-              className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
-            />
-            <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
-              Smart Board Room Equipment
-            </h3>
-          </Link>
-          <Link to="/pos">
-            <StaticImage
-              src="../images/categories/pos.png"
-              alt="point-of-sale system"
-              objectFit="contain"
-              placeholder="blurred"
-              className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
-            />
-            <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
-              Point-of-Sale Equipment
-            </h3>
-          </Link>
-          <Link to="/cash-counters-other">
-            <StaticImage
-              src="../images/categories/cash-counter.png"
-              alt="cash counter machine with money"
-              objectFit="contain"
-              placeholder="blurred"
-              className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
-            />
-            <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
-              Cash Counters & Other
-            </h3>
-          </Link>
-        </div>
-      </main>
-    </Layout>
+    <StaticQuery
+      query={graphql`
+        query OfficeElectronicsCategoriesQuery {
+          allPrismicCategories(
+            filter: { id: { eq: "80fe99d9-e67f-59b5-93b8-54b024e88fc8" } }
+          ) {
+            nodes {
+              data {
+                category {
+                  href {
+                    text
+                  }
+                  image {
+                    alt
+                    gatsbyImageData(placeholder: BLURRED)
+                  }
+                  object_fit {
+                    text
+                  }
+                  object_position {
+                    text
+                  }
+                  title {
+                    text
+                  }
+                }
+              }
+            }
+          }
+        }
+      `}
+      render={(categories) => (
+        <Layout>
+          <SEO
+            title="Office Electronics"
+            description="Make your office life more easier with next-gen office equipment"
+          />
+          <main>
+            <HeadingCategory>Office Electronics</HeadingCategory>
+            <div
+              id="cards"
+              className="grid grid-cols-2 gap-x-5 gap-y-5 md:grid-cols-3 md:gap-x-10 md:gap-y-10 lg:grid-cols-4"
+            >
+              {categories.allPrismicCategories.nodes[0].data.category.map(
+                (item) => (
+                  <CategoryCard
+                    to={item.href.text}
+                    title={item.title.text}
+                    image={item.image.gatsbyImageData}
+                    alt={item.image.alt}
+                    objectFit={item.object_fit.text}
+                    objectPosition={item.object_position.text}
+                  />
+                  // eslint-disable-next-line comma-dangle
+                )
+              )}
+            </div>
+          </main>
+        </Layout>
+      )}
+    />
   );
 }
