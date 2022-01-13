@@ -26,6 +26,7 @@
   "plugins": ["react", "react-hooks", "jsx-a11y", "prettier", "flowtype"],
   "rules": {
     "prettier/prettier": "error",
+    "react/jsx-key": "error",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "error",
     "react/forbid-prop-types": "off",

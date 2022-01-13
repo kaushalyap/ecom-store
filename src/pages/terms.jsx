@@ -1,6 +1,6 @@
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
-import HeadingCategory from '../components/Heading/HeadingCategory';
+import HeadingPage from '../components/HeadingPage/HeadingPage';
 import HeadingSection from '../components/HeadingSection/HeadingSection';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO/SEO';
@@ -13,7 +13,7 @@ export default function Terms() {
         description="Terms and conditions that you should adhere when using TechStack.LK"
       />
       <main className="lg:mx-auto lg:w-2/3 xl:w-2/5">
-        <HeadingCategory>Terms and Conditions</HeadingCategory>
+        <HeadingPage>Terms and Conditions</HeadingPage>
         <HeadingSection extraClasses="uppercase">OVERVIEW</HeadingSection>
         <p className="mb-2 tracking-wide text-justify">
           This website is operated by TechStack Holdings (Pvt) Ltd. Throughout
@@ -83,15 +83,16 @@ export default function Terms() {
         <p className="mb-2 tracking-wide text-justify">
           You understand that your content (not including credit card
           information), may be transferred unencrypted and involve
-          <ol className="ml-8 list-outside">
-            <li>(a) transmissions over various networks; and</li>
-            <li>
-              (b) changes to conform and adapt to technical requirements of
-              connecting networks or devices. Credit card information is always
-              encrypted during transfer over networks.
-            </li>
-          </ol>
         </p>
+        <ol className="ml-8 list-outside">
+          <li>(a) transmissions over various networks; and</li>
+          <li>
+            (b) changes to conform and adapt to technical requirements of
+            connecting networks or devices. Credit card information is always
+            encrypted during transfer over networks.
+          </li>
+        </ol>
+
         <p className="mb-2 tracking-wide text-justify">
           You agree not to reproduce, duplicate, copy, sell, resell or exploit
           any portion of the Service, use of the Service, or access to the

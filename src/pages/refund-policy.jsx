@@ -1,5 +1,5 @@
 import React from 'react';
-import HeadingCategory from '../components/Heading/HeadingCategory';
+import HeadingPage from '../components/HeadingPage/HeadingPage';
 import HeadingSection from '../components/HeadingSection/HeadingSection';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO/SEO';
@@ -12,7 +12,7 @@ export default function RefundPolicy() {
         description="Know in which cases you can receive refunds for your orders"
       />
       <main className="lg:mx-auto lg:w-2/3 xl:w-2/5">
-        <HeadingCategory>Refund Policy</HeadingCategory>
+        <HeadingPage>Refund Policy</HeadingPage>
         <p className="mb-2 tracking-wide text-justify">
           Our policy lasts 30 days. If 30 days have gone by since your purchase,
           unfortunately we can&apos;t offer you a refund or exchange.

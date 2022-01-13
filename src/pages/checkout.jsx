@@ -1,6 +1,7 @@
 import { Tab } from '@headlessui/react';
 import { Link } from 'gatsby';
 import React from 'react';
+import HeadingPage from '../components/HeadingPage/HeadingPage';
 import Layout from '../components/Layout';
 import ListBox from '../components/ListBox/ListBox';
 import SEO from '../components/SEO/SEO';
@@ -25,9 +26,7 @@ export default function Checkout() {
     <Layout>
       <SEO title="Checkout" index={false} />
       <main className="lg:mx-auto lg:w-2/3 xl:w-full">
-        <h1 className="mt-10 mb-5 font-headline text-xl font-medium md:mb-8 md:text-2xl xl:text-3xl">
-          Checkout
-        </h1>
+        <HeadingPage>Checkout</HeadingPage>
 
         <div className="md:flex md:gap-16">
           <Tab.Group as="div" className="xl:w-1/2">

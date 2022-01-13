@@ -13,5 +13,7 @@ export default function HeadingSection({ children, extraClasses }) {
 
 HeadingSection.propTypes = {
   children: PropTypes.string.isRequired,
-  extraClasses: PropTypes.string.isRequired,
+  extraClasses: PropTypes.string,
 };
+
+HeadingSection.defaultProps = { extraClasses: '' };

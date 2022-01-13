@@ -1,5 +1,6 @@
 import { Link } from '@reach/router';
 import React from 'react';
+import HeadingPage from '../components/HeadingPage/HeadingPage';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO/SEO';
 import ShoppingItemCard from '../components/ShoppingItemCard/ShoppingItemCard';
@@ -9,9 +10,7 @@ export default function OrderSummary() {
     <Layout>
       <SEO title="Checkout" index={false} />
       <main className="lg:mx-auto lg:w-2/3 xl:w-full">
-        <h1 className="mt-10 mb-5 font-headline text-xl font-medium md:mb-8 md:text-2xl xl:text-3xl">
-          Thank you for choosing us!
-        </h1>
+        <HeadingPage>Thank you for choosing us!</HeadingPage>
         <div className="xl:flex xl:gap-16">
           <div className="xl:w-3/5">
             <p className="p-3 mb-4 bg-green-100 rounded-xl shadow-lg md:px-4 md:mb-6 md:tracking-wide">

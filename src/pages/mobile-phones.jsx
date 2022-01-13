@@ -1,7 +1,7 @@
 import { graphql, StaticQuery } from 'gatsby';
 import React from 'react';
 import CategoryCard from '../components/CategoryCard/CategoryCard';
-import HeadingCategory from '../components/Heading/HeadingCategory';
+import HeadingPage from '../components/HeadingPage/HeadingPage';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO/SEO';
 
@@ -48,7 +48,7 @@ export default function Smartphones() {
             description="Your next smartphone is waiting for you, in a click of button which will be delivered to you for free"
           />
           <main>
-            <HeadingCategory>Smartphones & Accessories</HeadingCategory>
+            <HeadingPage>Smartphones & Accessories</HeadingPage>
             <div
               id="cards"
               className="grid grid-cols-2 gap-x-5 gap-y-5 md:grid-cols-3 md:gap-x-10 md:gap-y-10 lg:grid-cols-4"

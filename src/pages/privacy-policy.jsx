@@ -1,6 +1,6 @@
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
-import HeadingCategory from '../components/Heading/HeadingCategory';
+import HeadingPage from '../components/HeadingPage/HeadingPage';
 import HeadingSection from '../components/HeadingSection/HeadingSection';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO/SEO';
@@ -13,7 +13,7 @@ export default function PrivacyPolicy() {
         description="Know how we protect your privacy when you are on TechStack.LK"
       />
       <main className="lg:mx-auto lg:w-2/3 xl:w-2/5">
-        <HeadingCategory>Privacy Policy</HeadingCategory>
+        <HeadingPage>Privacy Policy</HeadingPage>
 
         <HeadingSection extraClasses="uppercase">
           SECTION 1 - WHAT DO WE DO WITH YOUR INFORMATION?

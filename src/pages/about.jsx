@@ -1,7 +1,7 @@
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
-import HeadingCategory from '../components/Heading/HeadingCategory';
+import HeadingPage from '../components/HeadingPage/HeadingPage';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO/SEO';
 
@@ -13,7 +13,7 @@ export default function About() {
         description="Sri Lankan owned online only electronic store with free deliveries which value customer happiness over sales"
       />
       <main>
-        <HeadingCategory>About Us</HeadingCategory>
+        <HeadingPage>About Us</HeadingPage>
         <p className="mb-6 font-light tracking-wide lg:mb-8 xl:text-2xl">
           We are online only electronic store, located in Nugegoda, Colombo.
         </p>

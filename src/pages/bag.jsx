@@ -1,5 +1,6 @@
 import { Link } from 'gatsby';
 import React from 'react';
+import HeadingPage from '../components/HeadingPage/HeadingPage';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO/SEO';
 import ShoppingItemCard from '../components/ShoppingItemCard/ShoppingItemCard';
@@ -9,9 +10,7 @@ export default function Bag() {
     <Layout>
       <SEO title="Shopping Bag" index={false} />
       <main className="lg:mx-auto lg:w-2/3 xl:w-full">
-        <h1 className="mt-10 mb-5 font-headline text-xl font-medium md:mb-8 md:text-2xl xl:text-3xl">
-          Bag
-        </h1>
+        <HeadingPage>Bag</HeadingPage>
         <div className="xl:flex xl:gap-20">
           <div className="mb-8 xl:mb-0 xl:w-2/3">
             <ShoppingItemCard
