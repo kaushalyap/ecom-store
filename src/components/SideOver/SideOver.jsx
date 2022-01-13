@@ -137,11 +137,10 @@ export default function SideOver({ refDiv, open, setOpen }) {
                         <nav className="list-none text-gray-600">
                           <ul>
                             {categories.map((category) => (
-                              <li className="py-1">
+                              <li className="py-1" key={category.path}>
                                 <Link
                                   to={category.path}
                                   className="block py-2 text-lg tracking-wider text-gray-600 truncate"
-                                  key={category.path}
                                 >
                                   {category.name}
                                 </Link>

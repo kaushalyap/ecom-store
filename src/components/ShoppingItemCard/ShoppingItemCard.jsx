@@ -60,5 +60,7 @@ export default function ShoppingItemCard({ title, price, editable }) {
 ShoppingItemCard.propTypes = {
   price: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
-  editable: PropTypes.bool.isRequired,
+  editable: PropTypes.bool,
 };
+
+ShoppingItemCard.defaultProps = { editable: false };

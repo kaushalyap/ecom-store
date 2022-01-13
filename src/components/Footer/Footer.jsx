@@ -38,7 +38,7 @@ export default function Footer() {
           <nav className="list-none text-gray-600">
             <ul>
               {categories.map((category) => (
-                <li className="py-1">
+                <li className="py-1" key={category.path}>
                   <Link to={category.path} className="tracking-wide">
                     {category.name}
                   </Link>

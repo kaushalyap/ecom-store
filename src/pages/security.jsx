@@ -16,6 +16,9 @@ export default function Security() {
             nodes {
               data {
                 category {
+                  list_key {
+                    text
+                  }
                   href {
                     text
                   }
@@ -54,6 +57,7 @@ export default function Security() {
               {categories.allPrismicCategories.nodes[0].data.category.map(
                 (item) => (
                   <CategoryCard
+                    key={item.list_key.text}
                     to={item.href.text}
                     title={item.title.text}
                     image={item.image.gatsbyImageData}

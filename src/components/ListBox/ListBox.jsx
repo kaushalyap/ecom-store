@@ -59,7 +59,7 @@ export default function ListBox({ id, options, classes }) {
 
 ListBox.propTypes = {
   id: PropTypes.string.isRequired,
-  options: PropTypes.object.isRequired,
+  options: PropTypes.array.isRequired,
   classes: PropTypes.string,
 };
 

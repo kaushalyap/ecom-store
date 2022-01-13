@@ -45,4 +45,6 @@ export default function FollowUs({ classes }) {
   );
 }
 
-FollowUs.propTypes = { classes: PropTypes.string.isRequired };
+FollowUs.propTypes = { classes: PropTypes.string };
+
+FollowUs.defaultProps = { classes: '' };

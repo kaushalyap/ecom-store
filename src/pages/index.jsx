@@ -17,6 +17,9 @@ export default function Index() {
             nodes {
               data {
                 category {
+                  list_key {
+                    text
+                  }
                   href {
                     text
                   }
@@ -60,6 +63,7 @@ export default function Index() {
               {categories.allPrismicCategories.nodes[0].data.category.map(
                 (item) => (
                   <CategoryCard
+                    key={item.list_key.text}
                     to={item.href.text}
                     title={item.title.text}
                     image={item.image.gatsbyImageData}
