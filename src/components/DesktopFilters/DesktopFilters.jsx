@@ -7,11 +7,26 @@ import minusSmIcon from '../../images/icons/minus-sm-outlined.svg';
 import plusSmIcon from '../../images/icons/plus-sm-outlined.svg';
 
 const subCategories = [
-  { name: 'Totes', href: '#' },
-  { name: 'Backpacks', href: '#' },
-  { name: 'Travel Bags', href: '#' },
-  { name: 'Hip Bags', href: '#' },
-  { name: 'Laptop Sleeves', href: '#' },
+  {
+    name: 'Totes',
+    href: '#',
+  },
+  {
+    name: 'Backpacks',
+    href: '#',
+  },
+  {
+    name: 'Travel Bags',
+    href: '#',
+  },
+  {
+    name: 'Hip Bags',
+    href: '#',
+  },
+  {
+    name: 'Laptop Sleeves',
+    href: '#',
+  },
 ];
 
 export default function DesktopFilters() {

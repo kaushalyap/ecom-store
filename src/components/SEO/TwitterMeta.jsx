@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
-// eslint-disable-next-line object-curly-newline
 export default function TwitterMeta({ type, username, title, desc, image }) {
   return (
     <Helmet>

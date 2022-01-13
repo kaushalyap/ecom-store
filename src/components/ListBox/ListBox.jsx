@@ -63,6 +63,4 @@ ListBox.propTypes = {
   classes: PropTypes.string,
 };
 
-ListBox.defaultProps = {
-  classes: '',
-};
+ListBox.defaultProps = { classes: '' };

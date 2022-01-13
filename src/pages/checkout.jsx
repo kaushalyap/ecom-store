@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
 import { Tab } from '@headlessui/react';
 import { Link } from 'gatsby';
 import React from 'react';
@@ -8,9 +7,18 @@ import SEO from '../components/SEO/SEO';
 import ShoppingItemCard from '../components/ShoppingItemCard/ShoppingItemCard';
 
 const itemCount = [
-  { id: 1, count: '1' },
-  { id: 2, count: '2' },
-  { id: 3, count: '3' },
+  {
+    id: 1,
+    count: '1',
+  },
+  {
+    id: 2,
+    count: '2',
+  },
+  {
+    id: 3,
+    count: '3',
+  },
 ];
 export default function Checkout() {
   return (
@@ -123,38 +131,38 @@ export default function Checkout() {
                 </Tab.Panel>
                 <Tab.Panel>
                   <div className="pl-2 mb-1">
-                    <input
-                      type="radio"
-                      id="genie"
-                      value="genie"
-                      name="payment-method"
-                      className="w-4 h-4"
-                    />
-                    <label htmlFor="genie" className="ml-2 xl:text-lg">
+                    <label htmlFor="genie" className="xl:text-lg">
+                      <input
+                        type="radio"
+                        id="genie"
+                        value="genie"
+                        name="payment-method"
+                        className="mr-2 w-4 h-4"
+                      />
                       Genie
                     </label>
                   </div>
                   <div className="pl-2 mb-1">
-                    <input
-                      type="radio"
-                      id="mcash"
-                      value="mcash"
-                      name="payment-method"
-                      className="w-4 h-4"
-                    />
-                    <label htmlFor="mcash" className="ml-2 xl:text-lg">
+                    <label htmlFor="mcash" className="xl:text-lg">
+                      <input
+                        type="radio"
+                        id="mcash"
+                        value="mcash"
+                        name="payment-method"
+                        className="mr-2 w-4 h-4"
+                      />
                       mCash
                     </label>
                   </div>
                   <div className="pl-2 mb-4 xl:mb-6">
-                    <input
-                      type="radio"
-                      id="bank-transfer"
-                      value="bank-transfer"
-                      name="payment-method"
-                      className="w-4 h-4"
-                    />
-                    <label htmlFor="direct" className="ml-2 xl:text-lg">
+                    <label htmlFor="direct" className="xl:text-lg">
+                      <input
+                        type="radio"
+                        id="bank-transfer"
+                        value="bank-transfer"
+                        name="payment-method"
+                        className="mr-2 w-4 h-4"
+                      />
                       Bank Transfer
                       <span> (Additional 2% off)</span>
                     </label>

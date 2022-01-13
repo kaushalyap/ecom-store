@@ -1,7 +1,5 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
-require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`,
-});
+require('dotenv').config({ path: `.env.${process.env.NODE_ENV}` });
 
 module.exports = {
   siteMetadata: {
@@ -24,9 +22,7 @@ module.exports = {
     'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-plugin-manifest',
-      options: {
-        icon: 'src/images/logos/logo.png',
-      },
+      options: { icon: 'src/images/logos/logo.png' },
     },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
@@ -47,14 +43,10 @@ module.exports = {
           anonymize_ip: true,
           cookie_expires: 0,
         },
-        pluginConfig: {
-          head: false,
-        },
+        pluginConfig: { head: false },
       },
     },
-    {
-      resolve: 'gatsby-plugin-robots-txt',
-    },
+    { resolve: 'gatsby-plugin-robots-txt' },
     'gatsby-plugin-postcss',
     'gatsby-plugin-webpack-bundle-analyser-v2',
     {

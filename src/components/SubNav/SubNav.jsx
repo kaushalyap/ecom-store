@@ -37,6 +37,4 @@ export default function SubNav({ menuClickHandler }) {
   );
 }
 
-SubNav.propTypes = {
-  menuClickHandler: PropTypes.func.isRequired,
-};
+SubNav.propTypes = { menuClickHandler: PropTypes.func.isRequired };

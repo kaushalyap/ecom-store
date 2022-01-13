@@ -1,4 +1,3 @@
-import { text } from '@storybook/addon-knobs';
 import React from 'react';
 import Footer from './Footer';
 
@@ -13,12 +12,9 @@ const Template = function (args) {
   return <Footer {...args} />;
 };
 
+// eslint-disable-next-line object-curly-newline
 export const FooterText = Template.bind({});
 
-FooterText.args = {
-  text: 'Footer',
-};
+FooterText.args = { text: 'Footer' };
 
-export const knobsFooter = () => (
-  <Footer text={text('Label', 'knobs footer')}> </Footer>
-);
+export const knobsFooter = () => <Footer />;

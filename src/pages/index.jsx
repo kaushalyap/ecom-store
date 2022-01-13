@@ -67,8 +67,7 @@ export default function Index() {
                     objectFit={item.object_fit.text}
                     objectPosition={item.object_position.text}
                   />
-                  // eslint-disable-next-line comma-dangle
-                )
+                ),
               )}
             </div>
           </section>

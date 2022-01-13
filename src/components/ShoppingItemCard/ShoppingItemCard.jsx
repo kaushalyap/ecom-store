@@ -5,9 +5,18 @@ import trimText from '../../utils/Utils';
 import ListBox from '../ListBox/ListBox';
 
 const itemCount = [
-  { id: 1, count: '1' },
-  { id: 2, count: '2' },
-  { id: 3, count: '3' },
+  {
+    id: 1,
+    count: '1',
+  },
+  {
+    id: 2,
+    count: '2',
+  },
+  {
+    id: 3,
+    count: '3',
+  },
 ];
 
 export default function ShoppingItemCard({ title, price, editable }) {

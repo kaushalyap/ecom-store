@@ -9,6 +9,4 @@ export default function HeadingCategory({ children }) {
   );
 }
 
-HeadingCategory.propTypes = {
-  children: PropTypes.string.isRequired,
-};
+HeadingCategory.propTypes = { children: PropTypes.string.isRequired };

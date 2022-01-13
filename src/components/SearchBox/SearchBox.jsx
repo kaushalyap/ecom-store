@@ -27,6 +27,4 @@ export default function SearchBox({ classes }) {
   );
 }
 
-SearchBox.propTypes = {
-  classes: PropTypes.string.isRequired,
-};
+SearchBox.propTypes = { classes: PropTypes.string.isRequired };

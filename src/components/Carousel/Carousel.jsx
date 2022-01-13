@@ -40,8 +40,7 @@ export default function Carousel() {
         slider.on('animationEnded', nextTimeout);
         slider.on('updated', nextTimeout);
       },
-      // eslint-disable-next-line comma-dangle
-    ]
+    ],
   );
 
   return (

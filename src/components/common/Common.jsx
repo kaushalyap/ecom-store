@@ -15,6 +15,4 @@ export default function Common({ children }) {
   );
 }
 
-Common.propTypes = {
-  children: PropTypes.node.isRequired,
-};
+Common.propTypes = { children: PropTypes.node.isRequired };

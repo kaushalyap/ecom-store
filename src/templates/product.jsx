@@ -11,6 +11,4 @@ export default function Product({ pageContext }) {
     </Layout>
   );
 }
-Product.propTypes = {
-  pageContext: PropTypes.object.isRequired,
-};
+Product.propTypes = { pageContext: PropTypes.object.isRequired };

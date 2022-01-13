@@ -44,7 +44,7 @@ export default function SortMenu() {
                         : 'text-gray-500',
                       active ? 'bg-gray-100' : '',
                       // eslint-disable-next-line comma-dangle
-                      'block px-4 py-2 text-sm'
+                      'block px-4 py-2 text-sm',
                     )}
                   >
                     {option.name}

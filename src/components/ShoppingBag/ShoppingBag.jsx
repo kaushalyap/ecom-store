@@ -19,6 +19,4 @@ export default function ShoppingBag({ noItemsInCart }) {
   );
 }
 
-ShoppingBag.propTypes = {
-  noItemsInCart: PropTypes.number.isRequired,
-};
+ShoppingBag.propTypes = { noItemsInCart: PropTypes.number.isRequired };
