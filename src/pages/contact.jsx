@@ -93,7 +93,7 @@ export default function Contact() {
             <hr className=" mt-10 border border-gray-200" />
 
             <p className="mt-8 text-sm font-light tracking-wider text-gray-600">
-              Mobile : +94 77 17 90 463
+              Mobile : +94 74 05 55 919
             </p>
             <p className="mt-2 text-sm font-light tracking-wider text-gray-600">
               Nugegoda, Colombo, Sri Lanka.

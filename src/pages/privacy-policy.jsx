@@ -1,4 +1,3 @@
-import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
 import HeadingPage from '../components/HeadingPage/HeadingPage';
 import HeadingSection from '../components/HeadingSection/HeadingSection';
@@ -231,7 +230,9 @@ export default function PrivacyPolicy() {
           information we have about you, register a complaint, or simply want
           more information send us an email to following address :
         </p>
-        <StaticImage src="../images/other/email.png" alt="email of the email" />
+        <a className="tracking-wide" href="mailto:techstacklk+legal@gmail.com">
+          techstacklk+legal@gmail.com
+        </a>
       </main>
     </Layout>
   );

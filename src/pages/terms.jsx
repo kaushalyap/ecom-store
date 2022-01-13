@@ -1,4 +1,3 @@
-import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
 import HeadingPage from '../components/HeadingPage/HeadingPage';
 import HeadingSection from '../components/HeadingSection/HeadingSection';
@@ -491,8 +490,12 @@ export default function Terms() {
         <HeadingSection extraClasses="uppercase">
           SECTION 20 - CONTACT INFORMATION
         </HeadingSection>
-        <p>Questions about the Terms of Service should be sent to us at</p>
-        <StaticImage src="../images/other/email.png" alt="email of the email" />
+        <p className="tracking-wide">
+          Questions about the Terms of Service should be sent to us at
+        </p>
+        <a className="tracking-wide" href="mailto:techstacklk+legal@gmail.com">
+          techstacklk+legal@gmail.com
+        </a>
       </main>
     </Layout>
   );
