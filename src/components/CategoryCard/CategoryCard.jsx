@@ -20,9 +20,9 @@ export default function CategoryCard({
         objectPosition={objectPosition}
         className="w-full h-40 bg-blue-50 rounded-3xl xl:h-64 2xl:h-72"
       />
-      <h3 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
+      <h2 className="mt-2 text-sm tracking-wide text-center truncate xl:mt-3 xl:text-base xl:tracking-normal">
         {title}
-      </h3>
+      </h2>
     </Link>
   );
 }

@@ -48,13 +48,13 @@ export default function Carousel() {
       <div className="keen-slider__slide">
         <Link to="/why-us#free-delivery">
           <StaticImage
-            className="hidden md:block"
+            className="hidden w-full md:block"
             src="../../images/banners/Slide Free Delivery.webp"
             placeholder="blurred"
             alt="free delivery for every item"
           />
           <StaticImage
-            className="md:hidden"
+            className="w-full md:hidden"
             src="../../images/banners/Slide Free Delivery Mobile.webp"
             placeholder="blurred"
             alt="free delivery for every item"
