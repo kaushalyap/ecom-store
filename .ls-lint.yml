@@ -9,14 +9,11 @@ ls:
     .js: pascalcase
   src/constants:
     .js: pascalcase
-  .storybook:
-    .js: lowercase
 
 ignore:
   - .git
   - node_modules
   - .cache
   - public
-  - storybook-static
   - .husky
   - dist

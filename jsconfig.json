@@ -7,11 +7,5 @@
     "checkJs": true,
     "jsx": "react-jsx"
   },
-  "exclude": [
-    ".cache",
-    ".public",
-    "node_modules",
-    "storybook-static",
-    ".husky/_"
-  ]
+  "exclude": [".cache", ".public", "node_modules", ".husky/_"]
 }
