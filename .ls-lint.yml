@@ -20,4 +20,3 @@ ignore:
   - storybook-static
   - .husky
   - dist
-  - flow-typed/npm/

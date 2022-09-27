@@ -34,18 +34,6 @@ module.exports = {
       },
       __key: 'images',
     },
-    'gatsby-plugin-flow',
-    {
-      resolve: 'gatsby-plugin-google-gtag',
-      options: {
-        trackingIds: [process.env.GOOGLE_ANALYTICS],
-        gtagConfig: {
-          anonymize_ip: true,
-          cookie_expires: 0,
-        },
-        pluginConfig: { head: false },
-      },
-    },
     { resolve: 'gatsby-plugin-robots-txt' },
     'gatsby-plugin-postcss',
     'gatsby-plugin-webpack-bundle-analyser-v2',

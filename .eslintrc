@@ -11,7 +11,6 @@
     "plugin:react-hooks/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:prettier/recommended",
-    "plugin:flowtype/recommended",
     "plugin:tailwindcss/recommended",
     "airbnb"
   ],
@@ -23,7 +22,7 @@
     "sourceType": "module",
     "requireConfigFile": false
   },
-  "plugins": ["react", "react-hooks", "jsx-a11y", "prettier", "flowtype"],
+  "plugins": ["react", "react-hooks", "jsx-a11y", "prettier"],
   "rules": {
     "prettier/prettier": "error",
     "react/jsx-key": "error",
@@ -58,9 +57,6 @@
     ]
   },
   "settings": {
-    "flowtype": {
-      "onlyFilesWithFlowAnnotation": true
-    },
     "tailwindcss": {
       "groupByResponsive": true
     }

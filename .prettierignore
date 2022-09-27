@@ -3,6 +3,5 @@ node_modules/
 public/
 .idea/
 storybook-static/
-flow-typed/npm/
 yarn.lock
 yarn-error.log
