@@ -1,7 +1,7 @@
 import { graphql, StaticQuery } from 'gatsby';
 import CategoryCard from '../components/CategoryCard';
 import HeadingPage from '../components/HeadingPage';
-import Layout from '../components/Layouts/MainLayout';
+import MainLayout from '../components/Layouts/MainLayout';
 import SEO from '../components/SEO';
 
 export default function Smartphones() {
@@ -41,7 +41,7 @@ export default function Smartphones() {
         }
       `}
       render={(categories) => (
-        <Layout>
+        <MainLayout>
           <main>
             <HeadingPage>Smartphones & Accessories</HeadingPage>
             <div
@@ -63,7 +63,7 @@ export default function Smartphones() {
               )}
             </div>
           </main>
-        </Layout>
+        </MainLayout>
       )}
     />
   );

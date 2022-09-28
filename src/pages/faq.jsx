@@ -1,11 +1,11 @@
 import DisclosureItem from '../components/DisclosureItem';
-import Layout from '../components/Layouts/MainLayout';
+import MainLayout from '../components/Layouts/MainLayout';
 import SEO from '../components/SEO';
 import Faqs from '../constants/Faqs';
 
 export default function Faq() {
   return (
-    <Layout>
+    <MainLayout>
       <main className="mb-40">
         <h1 className="mt-10 mb-5 font-headline text-2xl font-medium text-center md:mb-8 md:text-4xl xl:mb-8 xl:text-6xl">
           FAQs
@@ -18,7 +18,7 @@ export default function Faq() {
           ))}
         </div>
       </main>
-    </Layout>
+    </MainLayout>
   );
 }
 

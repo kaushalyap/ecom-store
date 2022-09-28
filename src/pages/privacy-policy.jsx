@@ -1,11 +1,11 @@
 import HeadingPage from '../components/HeadingPage';
 import HeadingSection from '../components/HeadingSection';
-import Layout from '../components/Layouts/MainLayout';
+import MainLayout from '../components/Layouts/MainLayout';
 import SEO from '../components/SEO';
 
 export default function PrivacyPolicy() {
   return (
-    <Layout>
+    <MainLayout>
       <main className="lg:mx-auto lg:w-2/3 xl:w-2/5">
         <HeadingPage>Privacy Policy</HeadingPage>
 
@@ -229,7 +229,7 @@ export default function PrivacyPolicy() {
           techstacklk+legal@gmail.com
         </a>
       </main>
-    </Layout>
+    </MainLayout>
   );
 }
 

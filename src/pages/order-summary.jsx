@@ -1,12 +1,12 @@
 import { Link } from '@reach/router';
 import HeadingPage from '../components/HeadingPage';
-import Layout from '../components/Layouts/MainLayout';
+import MainLayout from '../components/Layouts/MainLayout';
 import SEO from '../components/SEO';
 import ShoppingItemCard from '../components/ShoppingItemCard';
 
 export default function OrderSummary() {
   return (
-    <Layout>
+    <MainLayout>
       <main className="lg:mx-auto lg:w-2/3 xl:w-full">
         <HeadingPage>Thank you for choosing us!</HeadingPage>
         <div className="xl:flex xl:gap-16">
@@ -88,7 +88,7 @@ export default function OrderSummary() {
           </div>
         </div>
       </main>
-    </Layout>
+    </MainLayout>
   );
 }
 

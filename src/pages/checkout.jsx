@@ -1,7 +1,7 @@
 import { Tab } from '@headlessui/react';
 import { Link } from 'gatsby';
 import HeadingPage from '../components/HeadingPage';
-import Layout from '../components/Layouts/MainLayout';
+import MainLayout from '../components/Layouts/MainLayout';
 import ListBox from '../components/ListBox';
 import SEO from '../components/SEO';
 import ShoppingItemCard from '../components/ShoppingItemCard';
@@ -22,7 +22,7 @@ const itemCount = [
 ];
 export default function Checkout() {
   return (
-    <Layout>
+    <MainLayout>
       <main className="lg:mx-auto lg:w-2/3 xl:w-full">
         <HeadingPage>Checkout</HeadingPage>
 
@@ -209,7 +209,7 @@ export default function Checkout() {
           </div>
         </div>
       </main>
-    </Layout>
+    </MainLayout>
   );
 }
 

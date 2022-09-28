@@ -1,9 +1,9 @@
-import Layout from '../components/Layouts/MainLayout';
-import ProductCarousel from '../components/ProductCarousel/ProductCarousel';
+import MainLayout from '../components/Layouts/MainLayout';
+import ProductCarousel from '../components/Carousel/ProductCarousel';
 
 export default function Product() {
   return (
-    <Layout>
+    <MainLayout>
       <main className="xl:flex xl:gap-6 xl:mt-20">
         <ProductCarousel />
         <div className="hidden xl:block xl:w-1/2">
@@ -77,6 +77,6 @@ export default function Product() {
           repellendus? Inventore, ad doloremque.
         </p>
       </section>
-    </Layout>
+    </MainLayout>
   );
 }

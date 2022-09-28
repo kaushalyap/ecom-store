@@ -1,11 +1,11 @@
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import Layout from '../components/Layouts/MainLayout';
+import MainLayout from '../components/Layouts/MainLayout';
 import { SEO } from '../components/SEO';
 
 export default function NotFoundPage() {
   return (
-    <Layout>
+    <MainLayout>
       <main className="md:text-center">
         <h1 className="mt-10 mb-8 font-headline text-4xl font-bold md:mt-20 md:mb-10 md:text-5xl md:text-center lg:mb-12 xl:mb-16 xl:text-7xl">
           Ooops!
@@ -27,7 +27,7 @@ export default function NotFoundPage() {
           Go to Home Page
         </Link>
       </main>
-    </Layout>
+    </MainLayout>
   );
 }
 

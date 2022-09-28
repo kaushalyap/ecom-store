@@ -1,10 +1,10 @@
 import BlogCard from '../components/BlogCard';
-import Layout from '../components/Layouts/MainLayout';
+import MainLayout from '../components/Layouts/MainLayout';
 import SEO from '../components/SEO';
 
 export default function Blog() {
   return (
-    <Layout>
+    <MainLayout>
       <main>
         <h1 className="mt-10 mb-5 font-headline text-2xl font-medium md:mb-8 md:text-4xl xl:mb-8 xl:text-6xl">
           Blog
@@ -26,7 +26,7 @@ export default function Blog() {
           date={undefined}
         />
       </main>
-    </Layout>
+    </MainLayout>
   );
 }
 

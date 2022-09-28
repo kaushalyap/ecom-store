@@ -1,11 +1,11 @@
-import Layout from '../components/Layouts/MainLayout';
+import MainLayout from '../components/Layouts/MainLayout';
 import SEO from '../components/SEO';
 
 export default function Product() {
   return (
-    <Layout>
+    <MainLayout>
       <main />
-    </Layout>
+    </MainLayout>
   );
 }
 

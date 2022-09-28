@@ -1,11 +1,11 @@
 import HeadingPage from '../components/HeadingPage';
 import HeadingSection from '../components/HeadingSection';
-import Layout from '../components/Layouts/MainLayout';
+import MainLayout from '../components/Layouts/MainLayout';
 import SEO from '../components/SEO';
 
 export default function RefundPolicy() {
   return (
-    <Layout>
+    <MainLayout>
       <main className="lg:mx-auto lg:w-2/3 xl:w-2/5">
         <HeadingPage>Refund Policy</HeadingPage>
         <p className="mb-2 tracking-wide text-justify">
@@ -131,7 +131,7 @@ export default function RefundPolicy() {
           don&apos;t guarantee that we will receive your returned item.
         </p>
       </main>
-    </Layout>
+    </MainLayout>
   );
 }
 

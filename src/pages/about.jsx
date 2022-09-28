@@ -1,12 +1,12 @@
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import HeadingPage from '../components/HeadingPage';
-import Layout from '../components/Layouts/MainLayout';
+import MainLayout from '../components/Layouts/MainLayout';
 import { SEO } from '../components/SEO';
 
 export default function About() {
   return (
-    <Layout>
+    <MainLayout>
       <main>
         <HeadingPage>About Us</HeadingPage>
         <p className="mb-6 font-light tracking-wide lg:mb-8 xl:text-2xl">
@@ -138,7 +138,7 @@ export default function About() {
           </div>
         </div>
       </main>
-    </Layout>
+    </MainLayout>
   );
 }
 

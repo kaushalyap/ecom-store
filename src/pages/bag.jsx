@@ -1,12 +1,12 @@
 import { Link } from 'gatsby';
 import HeadingPage from '../components/HeadingPage';
-import Layout from '../components/Layouts/MainLayout';
+import MainLayout from '../components/Layouts/MainLayout';
 import SEO from '../components/SEO';
 import ShoppingItemCard from '../components/ShoppingItemCard';
 
 export default function Bag() {
   return (
-    <Layout>
+    <MainLayout>
       <main className="lg:mx-auto lg:w-2/3 xl:w-full">
         <HeadingPage>Bag</HeadingPage>
         <div className="xl:flex xl:gap-20">
@@ -49,7 +49,7 @@ export default function Bag() {
           </div>
         </div>
       </main>
-    </Layout>
+    </MainLayout>
   );
 }
 

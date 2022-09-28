@@ -7,12 +7,12 @@ import {
 } from '@icons-pack/react-simple-icons';
 import { StaticImage } from 'gatsby-plugin-image';
 import ContactForm from '../components/ContactForm';
-import Layout from '../components/Layouts/MainLayout';
+import MainLayout from '../components/Layouts/MainLayout';
 import SEO from '../components/SEO';
 
 export default function Contact() {
   return (
-    <Layout>
+    <MainLayout>
       <main>
         <h1 className="mt-10 mb-5 font-headline text-xl font-medium md:mb-8 md:text-2xl lg:text-3xl xl:text-7xl">
           Get in Touch
@@ -96,7 +96,7 @@ export default function Contact() {
           </div>
         </div>
       </main>
-    </Layout>
+    </MainLayout>
   );
 }
 

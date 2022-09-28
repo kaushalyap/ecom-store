@@ -71,6 +71,8 @@ export const SEO = ({
   );
 };
 
+// TODO: check social previews of products
+
 const TwitterMeta = ({ seo }) => {
   return (
     <>

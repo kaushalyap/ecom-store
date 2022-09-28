@@ -1,6 +1,5 @@
 import { Link } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
-import React from 'react';
 
 export default function CategoryCard({
   to,

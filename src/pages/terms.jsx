@@ -1,11 +1,11 @@
 import HeadingPage from '../components/HeadingPage';
 import HeadingSection from '../components/HeadingSection';
-import Layout from '../components/Layouts/MainLayout';
+import MainLayout from '../components/Layouts/MainLayout';
 import SEO from '../components/SEO';
 
 export default function Terms() {
   return (
-    <Layout>
+    <MainLayout>
       <main className="lg:mx-auto lg:w-2/3 xl:w-2/5">
         <HeadingPage>Terms and Conditions</HeadingPage>
         <HeadingSection extraClasses="uppercase">OVERVIEW</HeadingSection>
@@ -492,7 +492,7 @@ export default function Terms() {
           techstacklk+legal@gmail.com
         </a>
       </main>
-    </Layout>
+    </MainLayout>
   );
 }
 

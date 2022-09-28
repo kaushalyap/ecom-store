@@ -3,12 +3,10 @@ import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import 'keen-slider/keen-slider.min.css';
 import { useKeenSlider } from 'keen-slider/react';
-import React from 'react';
 
-export default function Carousel() {
+export default function HomeCarousel() {
   const [sliderRef] = useKeenSlider(
     {
-      // @ts-ignore
       loop: true,
     },
     [

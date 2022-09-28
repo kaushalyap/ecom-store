@@ -1,8 +1,8 @@
 import { graphql, StaticQuery } from 'gatsby';
-import Carousel from '../components/Carousel';
 import CategoryCard from '../components/CategoryCard';
 import HeadingPage from '../components/HeadingPage';
-import Layout from '../components/Layouts/MainLayout';
+import HomeCarousel from '../components/Carousel/HomeCarousel';
+import MainLayout from '../components/Layouts/MainLayout';
 import SEO from '../components/SEO';
 
 export default function Index() {
@@ -42,10 +42,10 @@ export default function Index() {
         }
       `}
       render={(categories) => (
-        <Layout>
-          <main className="-mx-5">
-            <Carousel />
-          </main>
+        <MainLayout>
+          <section className="-mx-5">
+            <HomeCarousel />
+          </section>
           <section
             id="explore-categories"
             className="mb-20 md:mx-10 xl:container xl:mx-auto xl:mt-16"
@@ -70,7 +70,7 @@ export default function Index() {
               )}
             </div>
           </section>
-        </Layout>
+        </MainLayout>
       )}
     />
   );
