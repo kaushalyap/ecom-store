@@ -1,6 +1,5 @@
-import React from 'react';
 // @ts-ignore
-import menuIcon from '../../images/icons/menu-alt-outlined.svg';
+import menuIcon from '../images/icons/menu-alt-outlined.svg';
 
 export default function MenuButton({ classes, label, clickHandler }) {
   return (

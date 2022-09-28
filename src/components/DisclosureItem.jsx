@@ -1,7 +1,6 @@
 import { Disclosure } from '@headlessui/react';
-import React from 'react';
 // @ts-ignore
-import chevronDown from '../../images/icons/chevron-down-outlined.svg';
+import chevronDown from '../images/icons/chevron-down-outlined.svg';
 
 export default function DisclosureItem({ question, children }) {
   return (

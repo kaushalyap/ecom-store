@@ -1,5 +1,4 @@
-import React from 'react';
-import Common from './common/Common';
+import Common from './Common';
 
 export default function Layout({ children }) {
   return (

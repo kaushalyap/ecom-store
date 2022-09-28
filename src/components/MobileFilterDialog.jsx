@@ -1,12 +1,12 @@
 import { Dialog, Disclosure, Transition } from '@headlessui/react';
-import React, { Fragment } from 'react';
-import Filters from '../../constants/Filters';
+import { Fragment } from 'react';
+import Filters from '../constants/Filters';
 // @ts-ignore
-import closeDarkIcon from '../../images/icons/close-dark-outlined.svg';
+import closeDarkIcon from '../images/icons/close-dark-outlined.svg';
 // @ts-ignore
-import minusSmIcon from '../../images/icons/minus-sm-outlined.svg';
+import minusSmIcon from '../images/icons/minus-sm-outlined.svg';
 // @ts-ignore
-import plusSmIcon from '../../images/icons/plus-sm-outlined.svg';
+import plusSmIcon from '../images/icons/plus-sm-outlined.svg';
 
 const subCategories = [
   {

@@ -1,6 +1,6 @@
-import DisclosureItem from '../components/DisclosureItem/DisclosureItem';
-import Layout from '../components/Layout';
-import SEO from '../components/SEO/SEO';
+import DisclosureItem from '../components/DisclosureItem';
+import Layout from '../components/Layouts/MainLayout';
+import SEO from '../components/SEO';
 import Faqs from '../constants/Faqs';
 
 export default function Faq() {

@@ -1,6 +1,6 @@
 import React from 'react';
-import Footer from '../Footer/Footer';
-import NavBar from '../NavBar/NavBar';
+import Footer from '../Footer';
+import NavBar from '../NavBar';
 
 export default function Common({ children }) {
   return (

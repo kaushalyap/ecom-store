@@ -1,7 +1,7 @@
-import HeadingPage from '../components/HeadingPage/HeadingPage';
-import HeadingSection from '../components/HeadingSection/HeadingSection';
-import Layout from '../components/Layout';
-import SEO from '../components/SEO/SEO';
+import HeadingPage from '../components/HeadingPage';
+import HeadingSection from '../components/HeadingSection';
+import Layout from '../components/Layouts/MainLayout';
+import SEO from '../components/SEO';
 
 export default function PrivacyPolicy() {
   return (

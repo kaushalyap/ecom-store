@@ -1,6 +1,5 @@
-import React from 'react';
 import { Link } from 'gatsby';
-import MenuButton from '../MenuButton/MenuButton';
+import MenuButton from './MenuButton';
 
 export default function SubNav({ menuClickHandler }) {
   return (

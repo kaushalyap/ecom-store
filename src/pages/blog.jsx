@@ -1,6 +1,6 @@
-import BlogCard from '../components/BlogCard/BlogCard';
-import Layout from '../components/Layout';
-import SEO from '../components/SEO/SEO';
+import BlogCard from '../components/BlogCard';
+import Layout from '../components/Layouts/MainLayout';
+import SEO from '../components/SEO';
 
 export default function Blog() {
   return (

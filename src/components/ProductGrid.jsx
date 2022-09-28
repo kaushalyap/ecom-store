@@ -1,5 +1,4 @@
-import React from 'react';
-import LongProductCard from '../LongProductCard/LongProductCard';
+import LongProductCard from './LongProductCard';
 // import ShortProductCard from '../ShortProductCard/ShortProductCard';
 
 export default function ProductGrid() {

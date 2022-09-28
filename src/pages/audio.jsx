@@ -1,8 +1,8 @@
 import { graphql, StaticQuery } from 'gatsby';
-import CategoryCard from '../components/CategoryCard/CategoryCard';
-import HeadingPage from '../components/HeadingPage/HeadingPage';
-import Layout from '../components/Layout';
-import { SEO } from '../components/SEO/SEO';
+import CategoryCard from '../components/CategoryCard';
+import HeadingPage from '../components/HeadingPage';
+import Layout from '../components/Layouts/MainLayout';
+import { SEO } from '../components/SEO';
 
 export default function Audio() {
   return (

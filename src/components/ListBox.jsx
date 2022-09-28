@@ -2,9 +2,9 @@
 import { Listbox, Transition } from '@headlessui/react';
 import { Fragment, useState } from 'react';
 // @ts-ignore
-import chevronDownIcon from '../../images/icons/chevron-down-outlined.svg';
+import chevronDownIcon from '../images/icons/chevron-down-outlined.svg';
 
-export default function ListBox({ id, options, classes }) {
+export default function ListBox({ id = '', options, classes = '' }) {
   const [selected, setSelected] = useState(options[0]);
 
   return (

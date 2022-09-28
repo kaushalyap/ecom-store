@@ -1,8 +1,8 @@
 import { Link } from 'gatsby';
-import HeadingPage from '../components/HeadingPage/HeadingPage';
-import Layout from '../components/Layout';
-import SEO from '../components/SEO/SEO';
-import ShoppingItemCard from '../components/ShoppingItemCard/ShoppingItemCard';
+import HeadingPage from '../components/HeadingPage';
+import Layout from '../components/Layouts/MainLayout';
+import SEO from '../components/SEO';
+import ShoppingItemCard from '../components/ShoppingItemCard';
 
 export default function Bag() {
   return (

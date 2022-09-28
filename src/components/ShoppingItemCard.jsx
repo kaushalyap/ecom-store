@@ -1,7 +1,6 @@
 import { Link } from 'gatsby';
-import React from 'react';
-import trimText from '../../utils/Utils';
-import ListBox from '../ListBox/ListBox';
+import trimText from '../utils/Utils';
+import ListBox from './ListBox';
 
 const itemCount = [
   {

@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import DesktopFilters from '../components/DesktopFilters/DesktopFilters';
-import Layout from '../components/Layout';
-import MobileFilterDialog from '../components/MobileFilterDialog/MobileFilterDialog';
-import ProductGrid from '../components/ProductGrid/ProductGrid';
-import SEO from '../components/SEO/SEO';
-import SortMenu from '../components/SortMenu/SortMenu';
+import DesktopFilters from '../components/DesktopFilters';
+import Layout from '../components/Layouts/MainLayout';
+import MobileFilterDialog from '../components/MobileFilterDialog';
+import ProductGrid from '../components/ProductGrid';
+import SEO from '../components/SEO';
+import SortMenu from '../components/SortMenu';
 // @ts-ignore
 import filterIcon from '../images/icons/filter-outlined.svg';
 

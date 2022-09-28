@@ -1,12 +1,12 @@
 import { Link } from 'gatsby';
-import React, { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 // @ts-ignore
-import logoFull from '../../images/logos/full-logo.svg';
-import MenuButton from '../MenuButton/MenuButton';
-import SearchBox from '../SearchBox/SearchBox';
-import ShoppingBag from '../ShoppingBag/ShoppingBag';
-import SideOver from '../SideOver/SideOver';
-import SubNav from '../SubNav/SubNav';
+import logoFull from '../images/logos/full-logo.svg';
+import MenuButton from './MenuButton';
+import SearchBox from './SearchBox';
+import ShoppingBag from './ShoppingBag';
+import SideOver from './SideOver';
+import SubNav from './SubNav';
 
 // import categories from '../../../data/product-categories.json';
 

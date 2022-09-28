@@ -1,10 +1,10 @@
 import { Tab } from '@headlessui/react';
 import { Link } from 'gatsby';
-import HeadingPage from '../components/HeadingPage/HeadingPage';
-import Layout from '../components/Layout';
-import ListBox from '../components/ListBox/ListBox';
-import SEO from '../components/SEO/SEO';
-import ShoppingItemCard from '../components/ShoppingItemCard/ShoppingItemCard';
+import HeadingPage from '../components/HeadingPage';
+import Layout from '../components/Layouts/MainLayout';
+import ListBox from '../components/ListBox';
+import SEO from '../components/SEO';
+import ShoppingItemCard from '../components/ShoppingItemCard';
 
 const itemCount = [
   {

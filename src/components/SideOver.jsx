@@ -3,14 +3,14 @@ import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 // @ts-ignore
 import { Fragment, useState } from 'react';
-import categories from '../../constants/ProductCategories';
+import categories from '../constants/ProductCategories';
 // @ts-ignore
-import cheveronLeftIcon from '../../images/icons/chevron-left-outlined.svg';
+import cheveronLeftIcon from '../images/icons/chevron-left-outlined.svg';
 // @ts-ignore
-import cheveronRightIcon from '../../images/icons/chevron-right-outlined.svg';
+import cheveronRightIcon from '../images/icons/chevron-right-outlined.svg';
 // @ts-ignore
-import closeIcon from '../../images/icons/close-dark-outlined.svg';
-import FollowUs from '../FollowUs/FollowUs';
+import closeIcon from '../images/icons/close-dark-outlined.svg';
+import FollowUs from './FollowUs';
 
 export default function SideOver({ refDiv, open, setOpen }) {
   const [isCategoryMenuVisible, setCategoryMenuVisible] = useState(false);

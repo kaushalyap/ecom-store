@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 // @ts-ignore
 import filterIcon from '../images/icons/filter-outlined.svg';
-import DesktopFilters from './DesktopFilters/DesktopFilters';
-import MobileFilterDialog from './MobileFilterDialog/MobileFilterDialog';
-import ProductGrid from './ProductGrid/ProductGrid';
-import SortMenu from './SortMenu/SortMenu';
+import DesktopFilters from '../DesktopFilters';
+import MobileFilterDialog from '../MobileFilterDialog';
+import ProductGrid from '../ProductGrid';
+import SortMenu from '../SortMenu';
 
 export default function CategoryLayout() {
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);

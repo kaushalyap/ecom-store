@@ -1,5 +1,4 @@
-import React from 'react';
-import Layout from '../components/Layout';
+import Layout from '../components/Layouts/MainLayout';
 import ProductCarousel from '../components/ProductCarousel/ProductCarousel';
 
 export default function Product() {

@@ -1,8 +1,8 @@
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import HeadingPage from '../components/HeadingPage/HeadingPage';
-import Layout from '../components/Layout';
-import { SEO } from '../components/SEO/SEO';
+import HeadingPage from '../components/HeadingPage';
+import Layout from '../components/Layouts/MainLayout';
+import { SEO } from '../components/SEO';
 
 export default function About() {
   return (

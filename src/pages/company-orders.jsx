@@ -1,5 +1,5 @@
-import Layout from '../components/Layout';
-import SEO from '../components/SEO/SEO';
+import Layout from '../components/Layouts/MainLayout';
+import SEO from '../components/SEO';
 
 export default function CompanyOrders() {
   return (

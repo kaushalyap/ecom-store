@@ -6,9 +6,9 @@ import {
   Whatsapp,
 } from '@icons-pack/react-simple-icons';
 import { StaticImage } from 'gatsby-plugin-image';
-import ContactForm from '../components/ContactForm/ContactForm';
-import Layout from '../components/Layout';
-import SEO from '../components/SEO/SEO';
+import ContactForm from '../components/ContactForm';
+import Layout from '../components/Layouts/MainLayout';
+import SEO from '../components/SEO';
 
 export default function Contact() {
   return (
