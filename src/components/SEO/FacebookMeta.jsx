@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
@@ -24,18 +23,3 @@ export default function FacebookMeta({
     </Helmet>
   );
 }
-
-FacebookMeta.propTypes = {
-  url: PropTypes.string.isRequired,
-  name: PropTypes.string,
-  type: PropTypes.string,
-  title: PropTypes.string.isRequired,
-  desc: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
-  locale: PropTypes.string.isRequired,
-};
-
-FacebookMeta.defaultProps = {
-  type: 'website',
-  name: null,
-};

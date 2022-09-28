@@ -1,8 +1,6 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { useLocation } from '@reach/router';
 import { graphql, useStaticQuery } from 'gatsby';
-import PropTypes from 'prop-types';
-import React from 'react';
 import { Helmet } from 'react-helmet';
 import FacebookMeta from './FacebookMeta';
 import TwitterMeta from './TwitterMeta';
@@ -202,23 +200,3 @@ export default function SEO({
     </>
   );
 }
-
-SEO.propTypes = {
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string,
-  image: PropTypes.string,
-  article: PropTypes.bool,
-  index: PropTypes.bool,
-  node: PropTypes.shape({
-    first_publication_date: PropTypes.string.isRequired,
-    last_publication_date: PropTypes.string.isRequired,
-  }),
-};
-
-SEO.defaultProps = {
-  description: '',
-  image: null,
-  article: false,
-  node: null,
-  index: true,
-};

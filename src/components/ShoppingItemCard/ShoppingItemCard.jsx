@@ -1,5 +1,4 @@
 import { Link } from 'gatsby';
-import PropTypes from 'prop-types';
 import React from 'react';
 import trimText from '../../utils/Utils';
 import ListBox from '../ListBox/ListBox';
@@ -56,11 +55,3 @@ export default function ShoppingItemCard({ title, price, editable }) {
     </div>
   );
 }
-
-ShoppingItemCard.propTypes = {
-  price: PropTypes.number.isRequired,
-  title: PropTypes.string.isRequired,
-  editable: PropTypes.bool,
-};
-
-ShoppingItemCard.defaultProps = { editable: false };

@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 import Common from './common/Common';
 
@@ -17,5 +16,3 @@ export default function Layout({ children }) {
     </>
   );
 }
-
-Layout.propTypes = { children: PropTypes.node.isRequired };

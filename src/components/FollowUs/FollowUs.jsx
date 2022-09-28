@@ -4,8 +4,6 @@ import {
   Pinterest,
   Twitter,
 } from '@icons-pack/react-simple-icons';
-import PropTypes from 'prop-types';
-import React from 'react';
 
 export default function FollowUs({ classes }) {
   return (
@@ -44,7 +42,5 @@ export default function FollowUs({ classes }) {
     </div>
   );
 }
-
-FollowUs.propTypes = { classes: PropTypes.string };
 
 FollowUs.defaultProps = { classes: '' };

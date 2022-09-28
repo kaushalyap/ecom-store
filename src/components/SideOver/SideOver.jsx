@@ -1,9 +1,8 @@
 import { Dialog, Transition } from '@headlessui/react';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import PropTypes from 'prop-types';
 // @ts-ignore
-import React, { Fragment, useState } from 'react';
+import { Fragment, useState } from 'react';
 import categories from '../../constants/ProductCategories';
 // @ts-ignore
 import cheveronLeftIcon from '../../images/icons/chevron-left-outlined.svg';
@@ -162,9 +161,3 @@ export default function SideOver({ refDiv, open, setOpen }) {
     </Transition.Root>
   );
 }
-
-SideOver.propTypes = {
-  refDiv: PropTypes.object.isRequired,
-  open: PropTypes.bool.isRequired,
-  setOpen: PropTypes.func.isRequired,
-};

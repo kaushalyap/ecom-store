@@ -1,5 +1,3 @@
-import PropTypes from 'prop-types';
-import React from 'react';
 // @ts-ignore
 import searchIcon from '../../images/icons/search-outlined.svg';
 
@@ -26,5 +24,3 @@ export default function SearchBox({ classes }) {
     </div>
   );
 }
-
-SearchBox.propTypes = { classes: PropTypes.string.isRequired };

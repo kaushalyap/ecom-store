@@ -1,6 +1,5 @@
 import { Link } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
-import PropTypes from 'prop-types';
 import React from 'react';
 
 export default function LongProductCard({
@@ -32,12 +31,3 @@ export default function LongProductCard({
     </Link>
   );
 }
-
-LongProductCard.propTypes = {
-  href: PropTypes.string.isRequired,
-  id: PropTypes.string.isRequired,
-  imageAlt: PropTypes.string.isRequired,
-  imageSrc: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  price: PropTypes.number.isRequired,
-};

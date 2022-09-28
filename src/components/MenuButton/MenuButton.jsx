@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 // @ts-ignore
 import menuIcon from '../../images/icons/menu-alt-outlined.svg';
@@ -16,9 +15,3 @@ export default function MenuButton({ classes, label, clickHandler }) {
     </button>
   );
 }
-
-MenuButton.propTypes = {
-  classes: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired,
-  clickHandler: PropTypes.func.isRequired,
-};

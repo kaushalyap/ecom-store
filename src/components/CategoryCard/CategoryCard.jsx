@@ -1,6 +1,5 @@
 import { Link } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
-import PropTypes from 'prop-types';
 import React from 'react';
 
 export default function CategoryCard({
@@ -26,12 +25,3 @@ export default function CategoryCard({
     </Link>
   );
 }
-
-CategoryCard.propTypes = {
-  alt: PropTypes.string.isRequired,
-  image: PropTypes.object.isRequired,
-  objectFit: PropTypes.string.isRequired,
-  objectPosition: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  to: PropTypes.string.isRequired,
-};

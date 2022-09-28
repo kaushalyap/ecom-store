@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 import Footer from '../Footer/Footer';
 import NavBar from '../NavBar/NavBar';
@@ -14,5 +13,3 @@ export default function Common({ children }) {
     </React.StrictMode>
   );
 }
-
-Common.propTypes = { children: PropTypes.node.isRequired };

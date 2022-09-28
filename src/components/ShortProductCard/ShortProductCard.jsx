@@ -1,6 +1,4 @@
-import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
-import React from 'react';
 import { GatsbyImage } from 'gatsby-plugin-image';
 
 export default function ShortProductCard({
@@ -25,12 +23,3 @@ export default function ShortProductCard({
     </Link>
   );
 }
-
-ShortProductCard.propTypes = {
-  id: PropTypes.string.isRequired,
-  href: PropTypes.string.isRequired,
-  imageAlt: PropTypes.string.isRequired,
-  imageSrc: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  price: PropTypes.string.isRequired,
-};

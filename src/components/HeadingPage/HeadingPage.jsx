@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 
 export default function HeadingPage({ children }) {
@@ -8,5 +7,3 @@ export default function HeadingPage({ children }) {
     </h1>
   );
 }
-
-HeadingPage.propTypes = { children: PropTypes.string.isRequired };

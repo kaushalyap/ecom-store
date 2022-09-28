@@ -1,7 +1,6 @@
 /* eslint-disable no-shadow */
 import { Listbox, Transition } from '@headlessui/react';
-import PropTypes from 'prop-types';
-import React, { Fragment, useState } from 'react';
+import { Fragment, useState } from 'react';
 // @ts-ignore
 import chevronDownIcon from '../../images/icons/chevron-down-outlined.svg';
 
@@ -56,11 +55,3 @@ export default function ListBox({ id, options, classes }) {
     </div>
   );
 }
-
-ListBox.propTypes = {
-  id: PropTypes.string.isRequired,
-  options: PropTypes.array.isRequired,
-  classes: PropTypes.string,
-};
-
-ListBox.defaultProps = { classes: '' };

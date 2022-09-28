@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
@@ -15,16 +14,3 @@ export default function TwitterMeta({ type, username, title, desc, image }) {
     </Helmet>
   );
 }
-
-TwitterMeta.propTypes = {
-  type: PropTypes.string,
-  username: PropTypes.string,
-  title: PropTypes.string.isRequired,
-  desc: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
-};
-
-TwitterMeta.defaultProps = {
-  type: 'summary_large_image',
-  username: null,
-};

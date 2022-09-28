@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import PropTypes from 'prop-types';
 import MenuButton from '../MenuButton/MenuButton';
 
 export default function SubNav({ menuClickHandler }) {
@@ -36,5 +35,3 @@ export default function SubNav({ menuClickHandler }) {
     </div>
   );
 }
-
-SubNav.propTypes = { menuClickHandler: PropTypes.func.isRequired };

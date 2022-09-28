@@ -1,5 +1,4 @@
 import { Dialog, Disclosure, Transition } from '@headlessui/react';
-import PropTypes from 'prop-types';
 import React, { Fragment } from 'react';
 import Filters from '../../constants/Filters';
 // @ts-ignore
@@ -164,8 +163,3 @@ export default function MobileFilterDialog({ open, setOpen }) {
     </Transition.Root>
   );
 }
-
-MobileFilterDialog.propTypes = {
-  open: PropTypes.bool.isRequired,
-  setOpen: PropTypes.func.isRequired,
-};

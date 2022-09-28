@@ -1,8 +1,5 @@
-/* eslint-disable react/jsx-one-expression-per-line */
-import PropTypes from 'prop-types';
-import { GatsbyImage } from 'gatsby-plugin-image';
-import React from 'react';
 import { Link } from 'gatsby';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 export default function BlogCard({
   slug,
@@ -27,18 +24,10 @@ export default function BlogCard({
           {title}
         </h2>
         <p className="text-xs text-gray-400 md:text-base lg:tracking-wide xl:text-lg">
-          `${author}, ${date}`
+          `$
+          {author}, ${date}`
         </p>
       </div>
     </Link>
   );
 }
-
-BlogCard.propTypes = {
-  slug: PropTypes.string.isRequired,
-  heroImage: PropTypes.object.isRequired,
-  altText: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  author: PropTypes.string.isRequired,
-  date: PropTypes.string.isRequired,
-};

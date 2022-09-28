@@ -1,6 +1,4 @@
 import { Link } from 'gatsby';
-import PropTypes from 'prop-types';
-import React from 'react';
 // @ts-ignore
 import shoppingBagIcon from '../../images/icons/shopping-bag-outlined.svg';
 
@@ -18,5 +16,3 @@ export default function ShoppingBag({ noItemsInCart }) {
     </Link>
   );
 }
-
-ShoppingBag.propTypes = { noItemsInCart: PropTypes.number.isRequired };

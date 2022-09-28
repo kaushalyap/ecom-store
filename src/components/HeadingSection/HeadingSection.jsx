@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 
 export default function HeadingSection({ children, extraClasses }) {
@@ -10,10 +9,3 @@ export default function HeadingSection({ children, extraClasses }) {
     </h2>
   );
 }
-
-HeadingSection.propTypes = {
-  children: PropTypes.string.isRequired,
-  extraClasses: PropTypes.string,
-};
-
-HeadingSection.defaultProps = { extraClasses: '' };
