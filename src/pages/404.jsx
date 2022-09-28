@@ -1,13 +1,11 @@
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import React from 'react';
 import Layout from '../components/Layout';
-import SEO from '../components/SEO/SEO';
+import { SEO } from '../components/SEO/SEO';
 
 export default function NotFoundPage() {
   return (
     <Layout>
-      <SEO title="Page not found" />
       <main className="md:text-center">
         <h1 className="mt-10 mb-8 font-headline text-4xl font-bold md:mt-20 md:mb-10 md:text-5xl md:text-center lg:mb-12 xl:mb-16 xl:text-7xl">
           Ooops!
@@ -32,3 +30,11 @@ export default function NotFoundPage() {
     </Layout>
   );
 }
+
+export const Head = ({ location }) => (
+  <SEO
+    title="Page not found"
+    isIndexable={false}
+    pathname={location.pathname}
+  />
+);

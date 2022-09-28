@@ -1,5 +1,4 @@
 import { graphql, StaticQuery } from 'gatsby';
-import React from 'react';
 import CategoryCard from '../components/CategoryCard/CategoryCard';
 import HeadingPage from '../components/HeadingPage/HeadingPage';
 import Layout from '../components/Layout';
@@ -43,10 +42,6 @@ export default function Smartphones() {
       `}
       render={(categories) => (
         <Layout>
-          <SEO
-            title="Smartphones & Accessories"
-            description="Your next smartphone is waiting for you, in a click of button which will be delivered to you for free"
-          />
           <main>
             <HeadingPage>Smartphones & Accessories</HeadingPage>
             <div
@@ -73,3 +68,11 @@ export default function Smartphones() {
     />
   );
 }
+
+export const Head = ({ location }) => (
+  <SEO
+    title="Smartphones & Accessories"
+    description="Your next smartphone is waiting for you, in a click of button which will be delivered to you for free"
+    pathname={location.pathname}
+  />
+);

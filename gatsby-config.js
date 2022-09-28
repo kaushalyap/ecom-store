@@ -16,9 +16,9 @@ module.exports = {
     twitterUsername: '@techstacklk',
     facebookUsername: 'techstacklk',
   },
+  jsxRuntime: 'automatic',
   plugins: [
     'gatsby-plugin-image',
-    'gatsby-plugin-react-helmet',
     'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-plugin-manifest',

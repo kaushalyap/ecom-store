@@ -1,5 +1,4 @@
 import { Link } from '@reach/router';
-import React from 'react';
 import HeadingPage from '../components/HeadingPage/HeadingPage';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO/SEO';
@@ -8,7 +7,6 @@ import ShoppingItemCard from '../components/ShoppingItemCard/ShoppingItemCard';
 export default function OrderSummary() {
   return (
     <Layout>
-      <SEO title="Checkout" index={false} />
       <main className="lg:mx-auto lg:w-2/3 xl:w-full">
         <HeadingPage>Thank you for choosing us!</HeadingPage>
         <div className="xl:flex xl:gap-16">
@@ -93,3 +91,7 @@ export default function OrderSummary() {
     </Layout>
   );
 }
+
+export const Head = ({ location }) => (
+  <SEO title="Checkout" isIndexable={false} pathname={location.pathname} />
+);

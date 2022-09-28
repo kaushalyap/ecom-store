@@ -1,4 +1,3 @@
-import React from 'react';
 import HeadingPage from '../components/HeadingPage/HeadingPage';
 import HeadingSection from '../components/HeadingSection/HeadingSection';
 import Layout from '../components/Layout';
@@ -7,10 +6,6 @@ import SEO from '../components/SEO/SEO';
 export default function Terms() {
   return (
     <Layout>
-      <SEO
-        title="Terms & Conditions"
-        description="Terms and conditions that you should adhere when using TechStack.LK"
-      />
       <main className="lg:mx-auto lg:w-2/3 xl:w-2/5">
         <HeadingPage>Terms and Conditions</HeadingPage>
         <HeadingSection extraClasses="uppercase">OVERVIEW</HeadingSection>
@@ -500,3 +495,11 @@ export default function Terms() {
     </Layout>
   );
 }
+
+export const Head = ({ location }) => (
+  <SEO
+    title="Terms & Conditions"
+    description="Terms and conditions that you should adhere when using TechStack.LK"
+    pathname={location.pathname}
+  />
+);

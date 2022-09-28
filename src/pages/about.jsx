@@ -1,17 +1,12 @@
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import React from 'react';
 import HeadingPage from '../components/HeadingPage/HeadingPage';
 import Layout from '../components/Layout';
-import SEO from '../components/SEO/SEO';
+import { SEO } from '../components/SEO/SEO';
 
 export default function About() {
   return (
     <Layout>
-      <SEO
-        title="About"
-        description="Sri Lankan owned online only electronic store with free deliveries which value customer happiness over sales"
-      />
       <main>
         <HeadingPage>About Us</HeadingPage>
         <p className="mb-6 font-light tracking-wide lg:mb-8 xl:text-2xl">
@@ -146,3 +141,11 @@ export default function About() {
     </Layout>
   );
 }
+
+export const Head = ({ location }) => (
+  <SEO
+    title="About"
+    description="Sri Lankan owned online only electronic store with free deliveries which value customer happiness over sales"
+    pathname={location.pathname}
+  />
+);

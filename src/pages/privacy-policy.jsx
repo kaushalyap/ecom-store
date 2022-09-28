@@ -1,4 +1,3 @@
-import React from 'react';
 import HeadingPage from '../components/HeadingPage/HeadingPage';
 import HeadingSection from '../components/HeadingSection/HeadingSection';
 import Layout from '../components/Layout';
@@ -7,10 +6,6 @@ import SEO from '../components/SEO/SEO';
 export default function PrivacyPolicy() {
   return (
     <Layout>
-      <SEO
-        title="Privacy Policy"
-        description="Know how we protect your privacy when you are on TechStack.LK"
-      />
       <main className="lg:mx-auto lg:w-2/3 xl:w-2/5">
         <HeadingPage>Privacy Policy</HeadingPage>
 
@@ -237,3 +232,11 @@ export default function PrivacyPolicy() {
     </Layout>
   );
 }
+
+export const Head = ({ location }) => (
+  <SEO
+    title="Privacy Policy"
+    description="Know how we protect your privacy when you are on TechStack.LK"
+    pathname={location.pathname}
+  />
+);

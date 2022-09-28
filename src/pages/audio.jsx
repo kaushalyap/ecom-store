@@ -1,9 +1,8 @@
 import { graphql, StaticQuery } from 'gatsby';
-import React from 'react';
 import CategoryCard from '../components/CategoryCard/CategoryCard';
 import HeadingPage from '../components/HeadingPage/HeadingPage';
 import Layout from '../components/Layout';
-import SEO from '../components/SEO/SEO';
+import { SEO } from '../components/SEO/SEO';
 
 export default function Audio() {
   return (
@@ -43,10 +42,6 @@ export default function Audio() {
       `}
       render={(categories) => (
         <Layout>
-          <SEO
-            title="Audio Electronics"
-            description="Music to your ears with speakers, home theaters, headphones, headsets, radios and etc"
-          />
           <main>
             <HeadingPage>Audio Electronics</HeadingPage>
             <div
@@ -73,3 +68,11 @@ export default function Audio() {
     />
   );
 }
+
+export const Head = ({ location }) => (
+  <SEO
+    title="Audio Electronics"
+    description="Music to your ears with speakers, home theaters, headphones, headsets, radios and etc"
+    pathname={location.pathname}
+  />
+);

@@ -1,4 +1,3 @@
-import React from 'react';
 import HeadingPage from '../components/HeadingPage/HeadingPage';
 import HeadingSection from '../components/HeadingSection/HeadingSection';
 import Layout from '../components/Layout';
@@ -7,10 +6,6 @@ import SEO from '../components/SEO/SEO';
 export default function RefundPolicy() {
   return (
     <Layout>
-      <SEO
-        title="Refund Policy"
-        description="Know in which cases you can receive refunds for your orders"
-      />
       <main className="lg:mx-auto lg:w-2/3 xl:w-2/5">
         <HeadingPage>Refund Policy</HeadingPage>
         <p className="mb-2 tracking-wide text-justify">
@@ -139,3 +134,11 @@ export default function RefundPolicy() {
     </Layout>
   );
 }
+
+export const Head = ({ location }) => (
+  <SEO
+    title="Refund Policy"
+    description="Know in which cases you can receive refunds for your orders"
+    pathname={location.pathname}
+  />
+);

@@ -6,7 +6,6 @@ import {
   Whatsapp,
 } from '@icons-pack/react-simple-icons';
 import { StaticImage } from 'gatsby-plugin-image';
-import React from 'react';
 import ContactForm from '../components/ContactForm/ContactForm';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO/SEO';
@@ -14,10 +13,6 @@ import SEO from '../components/SEO/SEO';
 export default function Contact() {
   return (
     <Layout>
-      <SEO
-        title="Contact Us"
-        description="Any questions, doubts, want to whether a product fit your needs?, do not hesitate to reach us through the contact form, social media and WhatsApp"
-      />
       <main>
         <h1 className="mt-10 mb-5 font-headline text-xl font-medium md:mb-8 md:text-2xl lg:text-3xl xl:text-7xl">
           Get in Touch
@@ -104,3 +99,11 @@ export default function Contact() {
     </Layout>
   );
 }
+
+export const Head = ({ location }) => (
+  <SEO
+    title="Contact Us"
+    description="Any questions, doubts, want to whether a product fit your needs?, do not hesitate to reach us through the contact form, social media and WhatsApp"
+    pathname={location.pathname}
+  />
+);

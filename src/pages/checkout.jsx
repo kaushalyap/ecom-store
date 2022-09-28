@@ -1,6 +1,5 @@
 import { Tab } from '@headlessui/react';
 import { Link } from 'gatsby';
-import React from 'react';
 import HeadingPage from '../components/HeadingPage/HeadingPage';
 import Layout from '../components/Layout';
 import ListBox from '../components/ListBox/ListBox';
@@ -24,7 +23,6 @@ const itemCount = [
 export default function Checkout() {
   return (
     <Layout>
-      <SEO title="Checkout" index={false} />
       <main className="lg:mx-auto lg:w-2/3 xl:w-full">
         <HeadingPage>Checkout</HeadingPage>
 
@@ -181,10 +179,12 @@ export default function Checkout() {
               <ShoppingItemCard
                 title="Oculus - Quest 2 Advanced All-In-One Virtual Reality Headset - 128GB"
                 price={5800}
+                editable={true}
               />
               <ShoppingItemCard
                 title="Oculus - Quest 2 Advanced All-In-One Virtual Reality Headset - 128GB"
                 price={5800}
+                editable={true}
               />
             </div>
             <h3 className="mb-4 font-headline font-medium tracking-wide xl:hidden">
@@ -212,3 +212,7 @@ export default function Checkout() {
     </Layout>
   );
 }
+
+export const Head = ({ location }) => (
+  <SEO title="Checkout" isIndexable={false} pathname={location.pathname} />
+);

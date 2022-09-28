@@ -1,5 +1,4 @@
 import { graphql, StaticQuery } from 'gatsby';
-import React from 'react';
 import CategoryCard from '../components/CategoryCard/CategoryCard';
 import HeadingPage from '../components/HeadingPage/HeadingPage';
 import Layout from '../components/Layout';
@@ -43,10 +42,6 @@ export default function WearablesSmartHome() {
       `}
       render={(categories) => (
         <Layout>
-          <SEO
-            title="Wearables & Smart Home Devices"
-            description="Have a comfortable digital experience on the go with Smartwatches, Fitness bands. Automate and save your time buy ordering a Smart Home assistant"
-          />
           <main>
             <HeadingPage>Wearables & Smart Home Devices</HeadingPage>
             <div
@@ -73,3 +68,11 @@ export default function WearablesSmartHome() {
     />
   );
 }
+
+export const Head = ({ location }) => (
+  <SEO
+    title="Wearables & Smart Home Devices"
+    description="Have a comfortable digital experience on the go with Smartwatches, Fitness bands. Automate and save your time buy ordering a Smart Home assistant"
+    pathname={location.pathname}
+  />
+);

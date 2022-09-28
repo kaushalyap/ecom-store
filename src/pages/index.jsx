@@ -1,5 +1,4 @@
 import { graphql, StaticQuery } from 'gatsby';
-import React from 'react';
 import Carousel from '../components/Carousel/Carousel';
 import CategoryCard from '../components/CategoryCard/CategoryCard';
 import HeadingPage from '../components/HeadingPage/HeadingPage';
@@ -44,10 +43,6 @@ export default function Index() {
       `}
       render={(categories) => (
         <Layout>
-          <SEO
-            title="TechStack.LK"
-            description="All your tech gear satisfied and freely delivered to your doorstep"
-          />
           <main className="-mx-5">
             <Carousel />
           </main>
@@ -80,3 +75,11 @@ export default function Index() {
     />
   );
 }
+
+export const Head = ({ location }) => (
+  <SEO
+    title="TechStack.LK"
+    description="All your tech gear satisfied and freely delivered to your doorstep"
+    pathname={location.pathname}
+  />
+);

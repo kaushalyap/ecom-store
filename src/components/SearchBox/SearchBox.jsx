@@ -1,5 +1,6 @@
 // @ts-ignore
 import searchIcon from '../../images/icons/search-outlined.svg';
+import React from 'react';
 
 export default function SearchBox({ classes }) {
   return (

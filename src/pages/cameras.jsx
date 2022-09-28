@@ -1,5 +1,4 @@
 import { graphql, StaticQuery } from 'gatsby';
-import React from 'react';
 import CategoryCard from '../components/CategoryCard/CategoryCard';
 import HeadingPage from '../components/HeadingPage/HeadingPage';
 import Layout from '../components/Layout';
@@ -43,10 +42,6 @@ export default function Camera() {
       `}
       render={(categories) => (
         <Layout>
-          <SEO
-            title="Camera & Photo"
-            description="Record your life with the perfect camera, camcoders under the perfect settings. See what is out of reach with binoculars and telescopes"
-          />
           <main>
             <HeadingPage>Camera & Photo</HeadingPage>
             <div
@@ -73,3 +68,11 @@ export default function Camera() {
     />
   );
 }
+
+export const Head = ({ location }) => (
+  <SEO
+    title="Camera & Photo"
+    description="Record your life with the perfect camera, camcoders under the perfect settings. See what is out of reach with binoculars and telescopes"
+    pathname={location.pathname}
+  />
+);

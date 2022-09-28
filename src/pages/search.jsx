@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import DesktopFilters from '../components/DesktopFilters/DesktopFilters';
 import Layout from '../components/Layout';
 import MobileFilterDialog from '../components/MobileFilterDialog/MobileFilterDialog';
@@ -12,7 +12,6 @@ export default function SearchResults() {
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
   return (
     <Layout>
-      <SEO title="Search" />
       <div>
         <div>
           <MobileFilterDialog
@@ -53,3 +52,7 @@ export default function SearchResults() {
     </Layout>
   );
 }
+
+export const Head = ({ location }) => (
+  <SEO title="Search" isIndexable={false} pathname={location.pathname} />
+);

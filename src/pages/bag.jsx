@@ -1,5 +1,4 @@
 import { Link } from 'gatsby';
-import React from 'react';
 import HeadingPage from '../components/HeadingPage/HeadingPage';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO/SEO';
@@ -8,7 +7,6 @@ import ShoppingItemCard from '../components/ShoppingItemCard/ShoppingItemCard';
 export default function Bag() {
   return (
     <Layout>
-      <SEO title="Shopping Bag" index={false} />
       <main className="lg:mx-auto lg:w-2/3 xl:w-full">
         <HeadingPage>Bag</HeadingPage>
         <div className="xl:flex xl:gap-20">
@@ -16,10 +14,12 @@ export default function Bag() {
             <ShoppingItemCard
               title="Oculus - Quest 2 Advanced All-In-One Virtual Reality Headset - 128GB"
               price={5800}
+              editable={true}
             />
             <ShoppingItemCard
               title="Oculus - Quest 2 Advanced All-In-One Virtual Reality Headset - 128GB"
               price={5800}
+              editable={true}
             />
           </div>
           <div className="tracking-wider md:text-lg lg:mb-6 xl:mt-4 xl:w-1/3">
@@ -52,3 +52,7 @@ export default function Bag() {
     </Layout>
   );
 }
+
+export const Head = ({ location }) => (
+  <SEO title="Shopping Bag" isIndexable={false} pathname={location.pathname} />
+);

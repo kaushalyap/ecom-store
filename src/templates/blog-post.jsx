@@ -1,7 +1,6 @@
 /*
 import { GatsbyImage } from 'gatsby-plugin-image';
 import React from 'react';
-import SEO from '../components/SEO/SEO';
 import Layout from '../components/Layout';
 import useStoryblok from '../lib/storyblok';
 
@@ -11,7 +10,6 @@ export default function BlogPost({ pageContext, location }) {
 
   return (
     <Layout>
-      <SEO title={story.name} description={story.metaDescription} />
       <article className="mx-5 mb-20 md:mb-40 lg:mx-auto lg:w-2/3 xl:w-1/2 2xl:w-1/3">
         <h1 className="mt-10 mb-2 font-headline text-2xl
         font-medium md:mt-20 md:mb-6 md:text-5xl xl:mb-6 2xl:mb-4">

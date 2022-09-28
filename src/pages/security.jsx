@@ -1,5 +1,4 @@
 import { graphql, StaticQuery } from 'gatsby';
-import React from 'react';
 import CategoryCard from '../components/CategoryCard/CategoryCard';
 import HeadingPage from '../components/HeadingPage/HeadingPage';
 import Layout from '../components/Layout';
@@ -43,11 +42,6 @@ export default function Security() {
       `}
       render={(categories) => (
         <Layout>
-          <SEO
-            title="Security & Surveillance"
-            description="Secure home, office, shop, computers, vehicles from intruders and hackers"
-          />
-
           <main>
             <HeadingPage>Security & Surveillance</HeadingPage>
             <div
@@ -74,3 +68,11 @@ export default function Security() {
     />
   );
 }
+
+export const Head = ({ location }) => (
+  <SEO
+    title="Security & Surveillance"
+    description="Secure home, office, shop, computers, vehicles from intruders and hackers"
+    pathname={location.pathname}
+  />
+);

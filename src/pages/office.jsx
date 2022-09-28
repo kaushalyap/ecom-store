@@ -1,5 +1,4 @@
 import { graphql, StaticQuery } from 'gatsby';
-import React from 'react';
 import CategoryCard from '../components/CategoryCard/CategoryCard';
 import HeadingPage from '../components/HeadingPage/HeadingPage';
 import Layout from '../components/Layout';
@@ -43,10 +42,6 @@ export default function Office() {
       `}
       render={(categories) => (
         <Layout>
-          <SEO
-            title="Office Electronics"
-            description="Make your office life more easier with next-gen office equipment"
-          />
           <main>
             <HeadingPage>Office Electronics</HeadingPage>
             <div
@@ -73,3 +68,11 @@ export default function Office() {
     />
   );
 }
+
+export const Head = ({ location }) => (
+  <SEO
+    title="Office Electronics"
+    description="Make your office life more easier with next-gen office equipment"
+    pathname={location.pathname}
+  />
+);

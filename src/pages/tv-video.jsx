@@ -1,5 +1,4 @@
 import { graphql, StaticQuery } from 'gatsby';
-import React from 'react';
 import CategoryCard from '../components/CategoryCard/CategoryCard';
 import HeadingPage from '../components/HeadingPage/HeadingPage';
 import Layout from '../components/Layout';
@@ -43,10 +42,6 @@ export default function TvVideo() {
       `}
       render={(categories) => (
         <Layout>
-          <SEO
-            title="TV & Video"
-            description="Order your next TV, DVD, home theatre now to brighten up your home entertainment"
-          />
           <main>
             <HeadingPage>TV & Video</HeadingPage>
             <div
@@ -73,3 +68,11 @@ export default function TvVideo() {
     />
   );
 }
+
+export const Head = ({ location }) => (
+  <SEO
+    title="TV & Video"
+    description="Order your next TV, DVD, home theatre now to brighten up your home entertainment"
+    pathname={location.pathname}
+  />
+);

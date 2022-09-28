@@ -4,14 +4,12 @@ import filterIcon from '../images/icons/filter-outlined.svg';
 import DesktopFilters from './DesktopFilters/DesktopFilters';
 import MobileFilterDialog from './MobileFilterDialog/MobileFilterDialog';
 import ProductGrid from './ProductGrid/ProductGrid';
-import SEO from './SEO/SEO';
 import SortMenu from './SortMenu/SortMenu';
 
 export default function CategoryLayout() {
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
   return (
     <>
-      <SEO title="Search" />
       <div className="mx-3 mb-20 xl:container xl:mx-auto">
         <div>
           <MobileFilterDialog
