@@ -31,6 +31,17 @@ export default function NotFoundPage() {
   );
 }
 
+//  TODO: Pass required fonts as children
+/* 
+<link
+      key="open-sans-bold"
+      rel="preload"
+      href="/fonts/open-sans-latin-300-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossOrigin="anonymous"
+    />
+*/
 export const Head = ({ location }) => (
   <SEO
     title="Page not found"

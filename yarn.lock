@@ -2785,20 +2785,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fontsource/lexend-deca@npm:^4.5.11":
-  version: 4.5.11
-  resolution: "@fontsource/lexend-deca@npm:4.5.11"
-  checksum: 78148e39722d9a25ad66c9a4357996d85171825b980d4c503cfc13218c6560f45295a74c2cffb51ba8ada660f8b4b1bddf1edb37ad765d9add9dd39cc5e20c37
-  languageName: node
-  linkType: hard
-
-"@fontsource/open-sans@npm:^4.5.11":
-  version: 4.5.11
-  resolution: "@fontsource/open-sans@npm:4.5.11"
-  checksum: 63196b563006474104b9487570b8e39f923d645cc608a02eb1bcc2adaeb1c1f0e97bdd8e80e4e8c87d9677c429066a95a1f9afbe11fecac3136df6943cd54d6b
-  languageName: node
-  linkType: hard
-
 "@gar/promisify@npm:^1.1.3":
   version: 1.1.3
   resolution: "@gar/promisify@npm:1.1.3"
@@ -17638,8 +17624,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "tech-stack-lk@workspace:."
   dependencies:
-    "@fontsource/lexend-deca": ^4.5.11
-    "@fontsource/open-sans": ^4.5.11
     "@headlessui/react": ^1.7.2
     "@icons-pack/react-simple-icons": ^4.7.2
     "@ls-lint/ls-lint": ^1.11.2

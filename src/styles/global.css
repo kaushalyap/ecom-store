@@ -2,6 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
+/*  TODO: remove unused fonts and add .woff if necessary */
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/fonts/open-sans-latin-300-normal.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/open-sans-latin-400-normal.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/fonts/lexend-deca-latin-300-normal.woff) format('woff2');
+}
+
+@font-face {
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/lexend-deca-latin-400-normal.woff) format('woff2');
+}
+
+@font-face {
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts/lexend-deca-latin-500-normal.woff) format('woff2');
+}
+
+@font-face {
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts/lexend-deca-latin-600-normal.woff) format('woff2');
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
 }

@@ -27,8 +27,6 @@
     "validate": "yarn format && yarn lint"
   },
   "dependencies": {
-    "@fontsource/lexend-deca": "^4.5.11",
-    "@fontsource/open-sans": "^4.5.11",
     "@headlessui/react": "^1.7.2",
     "@icons-pack/react-simple-icons": "^4.7.2",
     "@prismicio/react": "^2.5.0",
