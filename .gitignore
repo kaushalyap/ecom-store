@@ -7,3 +7,6 @@ yarn-error.log
 .env.development
 .env.production
 .wakatime-project
+/test-results/
+/playwright-report/
+/playwright/.cache/
