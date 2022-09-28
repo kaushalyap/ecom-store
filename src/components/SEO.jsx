@@ -1,3 +1,4 @@
+import { Partytown } from '@builder.io/partytown/react';
 import { useSiteMetadata } from '../hooks/use-site-metadata';
 
 export const SEO = ({
@@ -31,9 +32,28 @@ export const SEO = ({
     facebookUsername,
   };
 
+  const ORIGIN = 'https://www.googletagmanager.com';
+
   return (
     <>
       <title>{seo.title}</title>
+      <Partytown key="partytown" forward={['gtag']} />,
+      <script
+        key="google-analytics"
+        type="text/partytown"
+        src={`${ORIGIN}/gtag/js?id=${process.env.GOOGLE_ANALYTICS_ID}`}
+      />
+      ,
+      <script
+        key="google-analytics-config"
+        type="text/partytown"
+        dangerouslySetInnerHTML={{
+          __html: `window.dataLayer = window.dataLayer || [];
+        window.gtag = function gtag(){ window.dataLayer.push(arguments);}
+        gtag('js', new Date()); 
+        gtag('config', '${process.env.GOOGLE_ANALYTICS_ID}', { send_page_view: false })`,
+        }}
+      />
       {description !== '' && (
         <meta name="description" content={seo.description} />
       )}
@@ -46,7 +66,6 @@ export const SEO = ({
       ) : (
         <meta name="robots" content="none" />
       )}
-
       {children}
     </>
   );

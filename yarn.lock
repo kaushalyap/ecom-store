@@ -2709,6 +2709,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@builder.io/partytown@npm:^0.7.0":
+  version: 0.7.0
+  resolution: "@builder.io/partytown@npm:0.7.0"
+  bin:
+    partytown: bin/partytown.cjs
+  checksum: fac24fbe8f223e3e36dec5a729cda8ce4f4db6cd8547bda61455d247d7d01438ebd7708aea215961aa7adb64c83145a60383f7b0f8455ccbea4dcc8a0adce752
+  languageName: node
+  linkType: hard
+
 "@changesets/changelog-github@npm:^0.4.4":
   version: 0.4.6
   resolution: "@changesets/changelog-github@npm:0.4.6"
@@ -9871,20 +9880,6 @@ __metadata:
   peerDependencies:
     "@parcel/core": ^2.0.0
   checksum: 8663bdfc005d2f2d95e4dccfea1f54350a2def0787abd2f8d1fc7bc2a4bf150c5c909c36b1edeffa9553bc628a78098d8ff8b9173dd1da15848854a4bfb5ec47
-  languageName: node
-  linkType: hard
-
-"gatsby-plugin-google-gtag@npm:^4.24.0":
-  version: 4.24.0
-  resolution: "gatsby-plugin-google-gtag@npm:4.24.0"
-  dependencies:
-    "@babel/runtime": ^7.15.4
-    minimatch: ^3.1.2
-  peerDependencies:
-    gatsby: ^4.0.0-next
-    react: ^16.9.0 || ^17.0.0 || ^18.0.0 || ^0.0.0
-    react-dom: ^16.9.0 || ^17.0.0 || ^18.0.0 || ^0.0.0
-  checksum: 1649f6e7fcf280aa615233df198eca79f770e96f66c8145dd376581283453025cf5ea8b250d65af93971b140595fdd1657d3653aa95bc860096f338f6280e483
   languageName: node
   linkType: hard
 
@@ -17624,6 +17619,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "tech-stack-lk@workspace:."
   dependencies:
+    "@builder.io/partytown": ^0.7.0
     "@headlessui/react": ^1.7.2
     "@icons-pack/react-simple-icons": ^4.7.2
     "@ls-lint/ls-lint": ^1.11.2
@@ -17644,7 +17640,6 @@ __metadata:
     eslint-config-react-app: ^7.0.1
     eslint-plugin-tailwindcss: ^1.17.2
     gatsby: ^4.24.0
-    gatsby-plugin-google-gtag: ^4.24.0
     gatsby-plugin-image: ^2.24.0
     gatsby-plugin-manifest: ^4.24.0
     gatsby-plugin-page-creator: ^4.24.0
