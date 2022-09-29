@@ -1,16 +1,16 @@
-import { graphql, StaticQuery } from 'gatsby';
+import { graphql, HeadProps, StaticQuery } from 'gatsby';
 import CategoryCard from '../components/CategoryCard';
 import HeadingPage from '../components/HeadingPage';
 import MainLayout from '../components/Layouts/MainLayout';
 import SEO from '../components/SEO';
 
-export default function Security() {
+export default function Computers() {
   return (
     <StaticQuery
       query={graphql`
-        query SecurityCategoriesQuery {
+        query ComputersCategoriesQuery {
           allPrismicCategories(
-            filter: { id: { eq: "831c339e-4ea6-5206-8426-3494ce573826" } }
+            filter: { id: { eq: "94b32c2e-7517-5971-a161-caae200b8718" } }
           ) {
             nodes {
               data {
@@ -43,13 +43,13 @@ export default function Security() {
       render={(categories) => (
         <MainLayout>
           <main>
-            <HeadingPage>Security & Surveillance</HeadingPage>
+            <HeadingPage>Computers & Accessories</HeadingPage>
             <div
               id="cards"
               className="grid grid-cols-2 gap-x-5 gap-y-5 md:grid-cols-3 md:gap-x-10 md:gap-y-10 lg:grid-cols-4"
             >
               {categories.allPrismicCategories.nodes[0].data.category.map(
-                (item) => (
+                (item: any) => (
                   <CategoryCard
                     key={item.list_key.text}
                     to={item.href.text}
@@ -69,10 +69,10 @@ export default function Security() {
   );
 }
 
-export const Head = ({ location }) => (
+export const Head = ({ location }: HeadProps) => (
   <SEO
-    title="Security & Surveillance"
-    description="Secure home, office, shop, computers, vehicles from intruders and hackers"
+    title="Computers & Accessories"
+    description="ust get your next laptop, tablet, desktop, etc freely delivered to you for a competitive price"
     pathname={location.pathname}
   />
 );

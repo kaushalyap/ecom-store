@@ -1,16 +1,16 @@
-import { graphql, StaticQuery } from 'gatsby';
+import { graphql, HeadProps, StaticQuery } from 'gatsby';
 import CategoryCard from '../components/CategoryCard';
 import HeadingPage from '../components/HeadingPage';
 import MainLayout from '../components/Layouts/MainLayout';
 import SEO from '../components/SEO';
 
-export default function WearablesSmartHome() {
+export default function VehicleElectronics() {
   return (
     <StaticQuery
       query={graphql`
-        query WearablesCategoriesQuery {
+        query VehicleElectronicsCategoriesQuery {
           allPrismicCategories(
-            filter: { id: { eq: "990f719f-335a-52d8-8511-15412ddffeb6" } }
+            filter: { id: { eq: "106d79a0-adc4-56e5-8d13-9af0df9b8dae" } }
           ) {
             nodes {
               data {
@@ -43,13 +43,13 @@ export default function WearablesSmartHome() {
       render={(categories) => (
         <MainLayout>
           <main>
-            <HeadingPage>Wearables & Smart Home Devices</HeadingPage>
+            <HeadingPage>Vehicle Electronics</HeadingPage>
             <div
               id="cards"
               className="grid grid-cols-2 gap-x-5 gap-y-5 md:grid-cols-3 md:gap-x-10 md:gap-y-10 lg:grid-cols-4"
             >
               {categories.allPrismicCategories.nodes[0].data.category.map(
-                (item) => (
+                (item: any) => (
                   <CategoryCard
                     key={item.list_key.text}
                     to={item.href.text}
@@ -69,10 +69,10 @@ export default function WearablesSmartHome() {
   );
 }
 
-export const Head = ({ location }) => (
+export const Head = ({ location }: HeadProps) => (
   <SEO
-    title="Wearables & Smart Home Devices"
-    description="Have a comfortable digital experience on the go with Smartwatches, Fitness bands. Automate and save your time buy ordering a Smart Home assistant"
+    title="Vehicle Electronics"
+    description="Modernize your car with latest car audio / video, GPS. Secure your life and car with vehicle security systems"
     pathname={location.pathname}
   />
 );

@@ -1,16 +1,16 @@
-import { graphql, StaticQuery } from 'gatsby';
+import { graphql, HeadProps, StaticQuery } from 'gatsby';
 import CategoryCard from '../components/CategoryCard';
 import HeadingPage from '../components/HeadingPage';
 import MainLayout from '../components/Layouts/MainLayout';
 import SEO from '../components/SEO';
 
-export default function Office() {
+export default function Camera() {
   return (
     <StaticQuery
       query={graphql`
-        query OfficeElectronicsCategoriesQuery {
+        query CameraPhotoCategoriesQuery {
           allPrismicCategories(
-            filter: { id: { eq: "80fe99d9-e67f-59b5-93b8-54b024e88fc8" } }
+            filter: { id: { eq: "270f9891-f6ef-542b-8b18-2ae292cf6bc2" } }
           ) {
             nodes {
               data {
@@ -43,13 +43,13 @@ export default function Office() {
       render={(categories) => (
         <MainLayout>
           <main>
-            <HeadingPage>Office Electronics</HeadingPage>
+            <HeadingPage>Camera & Photo</HeadingPage>
             <div
               id="cards"
               className="grid grid-cols-2 gap-x-5 gap-y-5 md:grid-cols-3 md:gap-x-10 md:gap-y-10 lg:grid-cols-4"
             >
               {categories.allPrismicCategories.nodes[0].data.category.map(
-                (item) => (
+                (item: any) => (
                   <CategoryCard
                     key={item.list_key.text}
                     to={item.href.text}
@@ -69,10 +69,10 @@ export default function Office() {
   );
 }
 
-export const Head = ({ location }) => (
+export const Head = ({ location }: HeadProps) => (
   <SEO
-    title="Office Electronics"
-    description="Make your office life more easier with next-gen office equipment"
+    title="Camera & Photo"
+    description="Record your life with the perfect camera, camcoders under the perfect settings. See what is out of reach with binoculars and telescopes"
     pathname={location.pathname}
   />
 );

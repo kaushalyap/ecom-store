@@ -1,5 +1,5 @@
-import MainLayout from '../components/Layouts/MainLayout';
 import ProductCarousel from '../components/Carousel/ProductCarousel';
+import MainLayout from '../components/Layouts/MainLayout';
 
 export default function Product() {
   return (
@@ -65,18 +65,18 @@ export default function Product() {
             </div>
           </div>
         </div>
+        <section className="mx-5 mb-20 border-t border-gray-300 xl:container xl:mx-auto">
+          <h2 className="mt-4 mb-4 font-headline text-xl tracking-wider lg:mt-8 lg:mb-6 lg:text-2xl">
+            Technical Specification
+          </h2>
+          <p className="tracking-wide text-gray-600 lg:text-xl xl:w-2/3">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Consequatur magni repellat libero est sit numquam sed obcaecati
+            minima reprehenderit harum, exercitationem veritatis animi enim non
+            et repellendus? Inventore, ad doloremque.
+          </p>
+        </section>
       </main>
-      <section className="mx-5 mb-20 border-t border-gray-300 xl:container xl:mx-auto">
-        <h2 className="mt-4 mb-4 font-headline text-xl tracking-wider lg:mt-8 lg:mb-6 lg:text-2xl">
-          Technical Specification
-        </h2>
-        <p className="tracking-wide text-gray-600 lg:text-xl xl:w-2/3">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur
-          magni repellat libero est sit numquam sed obcaecati minima
-          reprehenderit harum, exercitationem veritatis animi enim non et
-          repellendus? Inventore, ad doloremque.
-        </p>
-      </section>
     </MainLayout>
   );
 }

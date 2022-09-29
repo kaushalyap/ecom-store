@@ -1,16 +1,16 @@
-import { graphql, StaticQuery } from 'gatsby';
+import { graphql, HeadProps, StaticQuery } from 'gatsby';
 import CategoryCard from '../components/CategoryCard';
 import HeadingPage from '../components/HeadingPage';
 import MainLayout from '../components/Layouts/MainLayout';
-import { SEO } from '../components/SEO';
+import SEO from '../components/SEO';
 
-export default function Audio() {
+export default function Smartphones() {
   return (
     <StaticQuery
       query={graphql`
-        query AudioElectronicsCategoriesQuery {
+        query MobilePhonesCategoriesQuery {
           allPrismicCategories(
-            filter: { id: { eq: "69ebf7cb-86a1-5942-b70f-609be59128cf" } }
+            filter: { id: { eq: "e581c59a-50b2-5f44-a242-ed9fbbc5aff2" } }
           ) {
             nodes {
               data {
@@ -43,13 +43,13 @@ export default function Audio() {
       render={(categories) => (
         <MainLayout>
           <main>
-            <HeadingPage>Audio Electronics</HeadingPage>
+            <HeadingPage>Smartphones & Accessories</HeadingPage>
             <div
               id="cards"
               className="grid grid-cols-2 gap-x-5 gap-y-5 md:grid-cols-3 md:gap-x-10 md:gap-y-10 lg:grid-cols-4"
             >
               {categories.allPrismicCategories.nodes[0].data.category.map(
-                (item) => (
+                (item: any) => (
                   <CategoryCard
                     key={item.list_key.text}
                     to={item.href.text}
@@ -69,10 +69,10 @@ export default function Audio() {
   );
 }
 
-export const Head = ({ location }) => (
+export const Head = ({ location }: HeadProps) => (
   <SEO
-    title="Audio Electronics"
-    description="Music to your ears with speakers, home theaters, headphones, headsets, radios and etc"
+    title="Smartphones & Accessories"
+    description="Your next smartphone is waiting for you, in a click of button which will be delivered to you for free"
     pathname={location.pathname}
   />
 );

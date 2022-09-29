@@ -1,16 +1,16 @@
-import { graphql, StaticQuery } from 'gatsby';
+import { graphql, HeadProps, StaticQuery } from 'gatsby';
 import CategoryCard from '../components/CategoryCard';
 import HeadingPage from '../components/HeadingPage';
 import MainLayout from '../components/Layouts/MainLayout';
 import SEO from '../components/SEO';
 
-export default function VehicleElectronics() {
+export default function Office() {
   return (
     <StaticQuery
       query={graphql`
-        query VehicleElectronicsCategoriesQuery {
+        query OfficeElectronicsCategoriesQuery {
           allPrismicCategories(
-            filter: { id: { eq: "106d79a0-adc4-56e5-8d13-9af0df9b8dae" } }
+            filter: { id: { eq: "80fe99d9-e67f-59b5-93b8-54b024e88fc8" } }
           ) {
             nodes {
               data {
@@ -43,13 +43,13 @@ export default function VehicleElectronics() {
       render={(categories) => (
         <MainLayout>
           <main>
-            <HeadingPage>Vehicle Electronics</HeadingPage>
+            <HeadingPage>Office Electronics</HeadingPage>
             <div
               id="cards"
               className="grid grid-cols-2 gap-x-5 gap-y-5 md:grid-cols-3 md:gap-x-10 md:gap-y-10 lg:grid-cols-4"
             >
               {categories.allPrismicCategories.nodes[0].data.category.map(
-                (item) => (
+                (item: any) => (
                   <CategoryCard
                     key={item.list_key.text}
                     to={item.href.text}
@@ -69,10 +69,10 @@ export default function VehicleElectronics() {
   );
 }
 
-export const Head = ({ location }) => (
+export const Head = ({ location }: HeadProps) => (
   <SEO
-    title="Vehicle Electronics"
-    description="Modernize your car with latest car audio / video, GPS. Secure your life and car with vehicle security systems"
+    title="Office Electronics"
+    description="Make your office life more easier with next-gen office equipment"
     pathname={location.pathname}
   />
 );

@@ -1,16 +1,16 @@
-import { graphql, StaticQuery } from 'gatsby';
+import { graphql, HeadProps, StaticQuery } from 'gatsby';
 import CategoryCard from '../components/CategoryCard';
 import HeadingPage from '../components/HeadingPage';
 import MainLayout from '../components/Layouts/MainLayout';
-import SEO from '../components/SEO';
+import { SEO } from '../components/SEO';
 
-export default function TvVideo() {
+export default function Audio() {
   return (
     <StaticQuery
       query={graphql`
-        query TvVideoCategoriesQuery {
+        query AudioElectronicsCategoriesQuery {
           allPrismicCategories(
-            filter: { id: { eq: "99714dd9-ec2f-5167-934d-78a7385e8352" } }
+            filter: { id: { eq: "69ebf7cb-86a1-5942-b70f-609be59128cf" } }
           ) {
             nodes {
               data {
@@ -43,13 +43,15 @@ export default function TvVideo() {
       render={(categories) => (
         <MainLayout>
           <main>
-            <HeadingPage>TV & Video</HeadingPage>
+            <HeadingPage>Audio Electronics</HeadingPage>
             <div
               id="cards"
               className="grid grid-cols-2 gap-x-5 gap-y-5 md:grid-cols-3 md:gap-x-10 md:gap-y-10 lg:grid-cols-4"
             >
               {categories.allPrismicCategories.nodes[0].data.category.map(
-                (item) => (
+                (
+                  item: any, // TODO: Remove any on category pages
+                ) => (
                   <CategoryCard
                     key={item.list_key.text}
                     to={item.href.text}
@@ -69,10 +71,10 @@ export default function TvVideo() {
   );
 }
 
-export const Head = ({ location }) => (
+export const Head = ({ location }: HeadProps) => (
   <SEO
-    title="TV & Video"
-    description="Order your next TV, DVD, home theatre now to brighten up your home entertainment"
+    title="Audio Electronics"
+    description="Music to your ears with speakers, home theaters, headphones, headsets, radios and etc"
     pathname={location.pathname}
   />
 );
