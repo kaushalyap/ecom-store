@@ -22,7 +22,7 @@
   "include": [
     "./src/**/*",
     "./gatsby-node.ts",
-    "./gatsby-config.ts",
+    "gatsby-config.js",
     "./plugins/**/*"
   ],
   "exclude": [".cache", ".public", "node_modules", ".husky/_"]

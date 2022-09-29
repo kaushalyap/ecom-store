@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
 require('dotenv').config({ path: `.env.${process.env.NODE_ENV}` });
 
 module.exports = {
@@ -56,12 +55,10 @@ module.exports = {
       options: {
         repositoryName: process.env.GATSBY_PRISMIC_REPO_NAME,
         schemas: {
-          // @ts-ignore
           // eslint-disable-next-line global-require
           categories: require('./custom_types/categories.json'),
         },
       },
-      // @ts-ignore
     },
     {
       resolve: 'gatsby-source-google-spreadsheets',
@@ -82,7 +79,5 @@ module.exports = {
         },
       },
     },
-    // @ts-ignore
   ],
-  // @ts-ignore
 };

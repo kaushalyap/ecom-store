@@ -10214,6 +10214,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gatsby-transformer-json@npm:^4.24.0":
+  version: 4.24.0
+  resolution: "gatsby-transformer-json@npm:4.24.0"
+  dependencies:
+    "@babel/runtime": ^7.15.4
+    bluebird: ^3.7.2
+  peerDependencies:
+    gatsby: ^4.0.0-next
+  checksum: 10612013309d589cc1ed91fbfdf9787e839160ad62fbbcaf509479260fcd64d7280013fc49c3d7b468e554b72fe072d56f02ab033924918af9753ab4b718ca17
+  languageName: node
+  linkType: hard
+
 "gatsby-transformer-sharp@npm:^4.24.0":
   version: 4.24.0
   resolution: "gatsby-transformer-sharp@npm:4.24.0"
@@ -17645,6 +17657,7 @@ __metadata:
     gatsby-source-filesystem: ^4.24.0
     gatsby-source-google-spreadsheets: ^3.0.8
     gatsby-source-prismic: ^5.2.10
+    gatsby-transformer-json: ^4.24.0
     gatsby-transformer-sharp: ^4.24.0
     husky: ^7.0.4
     keen-slider: ^6.8.2
