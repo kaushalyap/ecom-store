@@ -11,7 +11,7 @@ export default function HomeCarousel() {
     },
     [
       (slider) => {
-        let timeout;
+        let timeout: NodeJS.Timeout;
         let mouseOver = false;
         function clearNextTimeout() {
           clearTimeout(timeout);

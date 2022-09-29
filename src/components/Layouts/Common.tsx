@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import Footer from '../Footer';
 import NavBar from '../NavBar';
 
-export default function Common({ children }) {
+type Props = {
+  children: ReactElement;
+};
+
+export default function Common({ children }: Props) {
   return (
     <React.StrictMode>
       <NavBar />

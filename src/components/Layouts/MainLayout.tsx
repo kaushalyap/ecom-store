@@ -1,6 +1,11 @@
+import { ReactElement } from 'react';
 import Common from './Common';
 
-export default function MainLayout({ children }) {
+type Props = {
+  children: ReactElement;
+};
+
+export default function MainLayout({ children }: Props) {
   return (
     <>
       <main>
