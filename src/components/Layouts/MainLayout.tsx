@@ -1,5 +1,7 @@
+import React from 'react';
 import { ReactElement } from 'react';
-import Common from './Common';
+import Footer from '../Footer';
+import NavBar from '../NavBar';
 
 type Props = {
   children: ReactElement;
@@ -19,5 +21,17 @@ export default function MainLayout({ children }: Props) {
         )}
       </main>
     </>
+  );
+}
+
+function Common({ children }: Props) {
+  return (
+    <React.StrictMode>
+      <NavBar />
+      <div className="mx-5 mb-20 md:mb-28 xl:container xl:mx-auto">
+        {children}
+      </div>
+      <Footer />
+    </React.StrictMode>
   );
 }
