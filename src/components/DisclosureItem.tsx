@@ -1,8 +1,14 @@
 import { Disclosure } from '@headlessui/react';
+import { ReactElement } from 'react';
 // @ts-ignore
 import chevronDown from '../images/icons/chevron-down-outlined.svg';
 
-export default function DisclosureItem({ question, children }) {
+type Props = {
+  question: string;
+  children: ReactElement;
+};
+
+export default function DisclosureItem({ question, children }: Props) {
   return (
     <Disclosure>
       {({ open }) => (

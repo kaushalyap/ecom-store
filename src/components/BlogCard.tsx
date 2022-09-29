@@ -1,5 +1,14 @@
 import { Link } from 'gatsby';
-import { GatsbyImage } from 'gatsby-plugin-image';
+import { GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image';
+
+type Props = {
+  slug: string;
+  heroImage: IGatsbyImageData;
+  altText: string;
+  title: string;
+  author: string;
+  date: string;
+};
 
 export default function BlogCard({
   slug,
@@ -8,7 +17,7 @@ export default function BlogCard({
   title,
   author,
   date,
-}) {
+}: Props) {
   return (
     <Link
       to={slug}

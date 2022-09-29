@@ -1,5 +1,14 @@
 import { Link } from 'gatsby';
-import { GatsbyImage } from 'gatsby-plugin-image';
+import { GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image';
+
+type Props = {
+  to: string;
+  title: string;
+  image: IGatsbyImageData;
+  alt: string;
+  objectFit: any | undefined; // TODO: remove any
+  objectPosition: string;
+};
 
 export default function CategoryCard({
   to,
@@ -8,7 +17,7 @@ export default function CategoryCard({
   alt,
   objectFit,
   objectPosition,
-}) {
+}: Props) {
   return (
     <Link to={to}>
       <GatsbyImage

@@ -5,7 +5,11 @@ import {
   Twitter,
 } from '@icons-pack/react-simple-icons';
 
-export default function FollowUs({ classes }) {
+type Props = {
+  classes: string;
+};
+
+export default function FollowUs({ classes }: Props) {
   return (
     <div
       id="follow-on-social-media"
