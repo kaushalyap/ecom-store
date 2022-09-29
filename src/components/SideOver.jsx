@@ -55,7 +55,7 @@ export default function SideOver({ refDiv, open, setOpen }) {
                   <div id="menu-top" className="flex flex-col">
                     <div className="flex justify-between">
                       <StaticImage
-                        src="../../images/logos/logo-name-below.svg"
+                        src="../images/logos/logo-name-below.svg"
                         alt="techstack.lk logo"
                         className=" w-44 opacity-90"
                         loading="eager"
