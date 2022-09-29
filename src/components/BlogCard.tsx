@@ -3,7 +3,7 @@ import { GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image';
 
 type Props = {
   slug: string;
-  heroImage: IGatsbyImageData;
+  heroImage: IGatsbyImageData; // TODO: remove null
   altText: string;
   title: string;
   author: string;
@@ -33,8 +33,7 @@ export default function BlogCard({
           {title}
         </h2>
         <p className="text-xs text-gray-400 md:text-base lg:tracking-wide xl:text-lg">
-          `$
-          {author}, ${date}`
+          {author}, {date}
         </p>
       </div>
     </Link>

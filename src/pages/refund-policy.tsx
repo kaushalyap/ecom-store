@@ -1,3 +1,4 @@
+import { HeadProps } from 'gatsby';
 import HeadingPage from '../components/HeadingPage';
 import HeadingSection from '../components/HeadingSection';
 import MainLayout from '../components/Layouts/MainLayout';
@@ -135,7 +136,7 @@ export default function RefundPolicy() {
   );
 }
 
-export const Head = ({ location }) => (
+export const Head = ({ location }: HeadProps) => (
   <SEO
     title="Refund Policy"
     description="Know in which cases you can receive refunds for your orders"

@@ -1,3 +1,4 @@
+import { HeadProps } from 'gatsby';
 import HeadingPage from '../components/HeadingPage';
 import HeadingSection from '../components/HeadingSection';
 import MainLayout from '../components/Layouts/MainLayout';
@@ -233,7 +234,7 @@ export default function PrivacyPolicy() {
   );
 }
 
-export const Head = ({ location }) => (
+export const Head = ({ location }: HeadProps) => (
   <SEO
     title="Privacy Policy"
     description="Know how we protect your privacy when you are on TechStack.LK"

@@ -1,3 +1,4 @@
+import { HeadProps } from 'gatsby';
 import MainLayout from '../components/Layouts/MainLayout';
 import SEO from '../components/SEO';
 
@@ -13,7 +14,7 @@ export default function CompanyOrders() {
   );
 }
 
-export const Head = ({ location }) => (
+export const Head = ({ location }: HeadProps) => (
   <SEO
     title="Company Orders"
     description="Get your company electronics freely delivered to you in bulk for lower cost than retail value"

@@ -1,4 +1,4 @@
-import { Link } from 'gatsby';
+import { HeadProps, Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import HeadingPage from '../components/HeadingPage';
 import MainLayout from '../components/Layouts/MainLayout';
@@ -142,7 +142,7 @@ export default function About() {
   );
 }
 
-export const Head = ({ location }) => (
+export const Head = ({ location }: HeadProps) => (
   <SEO
     title="About"
     description="Sri Lankan owned online only electronic store with free deliveries which value customer happiness over sales"

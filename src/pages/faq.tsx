@@ -1,3 +1,4 @@
+import { HeadProps } from 'gatsby';
 import DisclosureItem from '../components/DisclosureItem';
 import MainLayout from '../components/Layouts/MainLayout';
 import SEO from '../components/SEO';
@@ -22,7 +23,7 @@ export default function Faq() {
   );
 }
 
-export const Head = ({ location }) => (
+export const Head = ({ location }: HeadProps) => (
   <SEO
     title="FAQ"
     description="Questions that you may have may be already answered here, check them out before reaching us"

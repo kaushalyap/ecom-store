@@ -1,5 +1,5 @@
 import { Tab } from '@headlessui/react';
-import { Link } from 'gatsby';
+import { HeadProps, Link } from 'gatsby';
 import HeadingPage from '../components/HeadingPage';
 import MainLayout from '../components/Layouts/MainLayout';
 import ListBox from '../components/ListBox';
@@ -213,6 +213,6 @@ export default function Checkout() {
   );
 }
 
-export const Head = ({ location }) => (
+export const Head = ({ location }: HeadProps) => (
   <SEO title="Checkout" isIndexable={false} pathname={location.pathname} />
 );

@@ -1,7 +1,7 @@
-import { graphql, StaticQuery } from 'gatsby';
+import { graphql, HeadProps, StaticQuery } from 'gatsby';
+import HomeCarousel from '../components/Carousel/HomeCarousel';
 import CategoryCard from '../components/CategoryCard';
 import HeadingPage from '../components/HeadingPage';
-import HomeCarousel from '../components/Carousel/HomeCarousel';
 import MainLayout from '../components/Layouts/MainLayout';
 import SEO from '../components/SEO';
 
@@ -43,40 +43,42 @@ export default function Index() {
       `}
       render={(categories) => (
         <MainLayout>
-          <section className="-mx-5">
-            <HomeCarousel />
-          </section>
-          <section
-            id="explore-categories"
-            className="mb-20 md:mx-10 xl:container xl:mx-auto xl:mt-16"
-          >
-            <HeadingPage>Shop by Category</HeadingPage>
-            <div
-              id="cards"
-              className="grid grid-cols-2 gap-x-5 gap-y-5 md:grid-cols-3 md:gap-x-10 md:gap-y-10 lg:grid-cols-4"
+          <>
+            <section className="-mx-5">
+              <HomeCarousel />
+            </section>
+            <section
+              id="explore-categories"
+              className="mb-20 md:mx-10 xl:container xl:mx-auto xl:mt-16"
             >
-              {categories.allPrismicCategories.nodes[0].data.category.map(
-                (item) => (
-                  <CategoryCard
-                    key={item.list_key.text}
-                    to={item.href.text}
-                    title={item.title.text}
-                    image={item.image.gatsbyImageData}
-                    alt={item.image.alt}
-                    objectFit={item.object_fit.text}
-                    objectPosition={item.object_position.text}
-                  />
-                ),
-              )}
-            </div>
-          </section>
+              <HeadingPage>Shop by Category</HeadingPage>
+              <div
+                id="cards"
+                className="grid grid-cols-2 gap-x-5 gap-y-5 md:grid-cols-3 md:gap-x-10 md:gap-y-10 lg:grid-cols-4"
+              >
+                {categories.allPrismicCategories.nodes[0].data.category.map(
+                  (item: any) => (
+                    <CategoryCard
+                      key={item.list_key.text}
+                      to={item.href.text}
+                      title={item.title.text}
+                      image={item.image.gatsbyImageData}
+                      alt={item.image.alt}
+                      objectFit={item.object_fit.text}
+                      objectPosition={item.object_position.text}
+                    />
+                  ),
+                )}
+              </div>
+            </section>
+          </>
         </MainLayout>
       )}
     />
   );
 }
 
-export const Head = ({ location }) => (
+export const Head = ({ location }: HeadProps) => (
   <SEO
     title="TechStack.LK"
     description="All your tech gear satisfied and freely delivered to your doorstep"

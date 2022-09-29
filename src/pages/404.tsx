@@ -1,4 +1,4 @@
-import { Link } from 'gatsby';
+import { HeadProps, Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import MainLayout from '../components/Layouts/MainLayout';
 import { SEO } from '../components/SEO';
@@ -42,7 +42,7 @@ export default function NotFoundPage() {
       crossOrigin="anonymous"
     />
 */
-export const Head = ({ location }) => (
+export const Head = ({ location }: HeadProps) => (
   <SEO
     title="Page not found"
     isIndexable={false}

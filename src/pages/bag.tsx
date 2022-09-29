@@ -1,4 +1,4 @@
-import { Link } from 'gatsby';
+import { HeadProps, Link } from 'gatsby';
 import HeadingPage from '../components/HeadingPage';
 import MainLayout from '../components/Layouts/MainLayout';
 import SEO from '../components/SEO';
@@ -53,6 +53,6 @@ export default function Bag() {
   );
 }
 
-export const Head = ({ location }) => (
+export const Head = ({ location }: HeadProps) => (
   <SEO title="Shopping Bag" isIndexable={false} pathname={location.pathname} />
 );

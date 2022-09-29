@@ -1,3 +1,4 @@
+import { HeadProps } from 'gatsby';
 import HeadingPage from '../components/HeadingPage';
 import HeadingSection from '../components/HeadingSection';
 import MainLayout from '../components/Layouts/MainLayout';
@@ -496,7 +497,7 @@ export default function Terms() {
   );
 }
 
-export const Head = ({ location }) => (
+export const Head = ({ location }: HeadProps) => (
   <SEO
     title="Terms & Conditions"
     description="Terms and conditions that you should adhere when using TechStack.LK"

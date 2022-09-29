@@ -1,4 +1,5 @@
 import { Link } from '@reach/router';
+import { HeadProps } from 'gatsby';
 import HeadingPage from '../components/HeadingPage';
 import MainLayout from '../components/Layouts/MainLayout';
 import SEO from '../components/SEO';
@@ -92,6 +93,6 @@ export default function OrderSummary() {
   );
 }
 
-export const Head = ({ location }) => (
+export const Head = ({ location }: HeadProps) => (
   <SEO title="Checkout" isIndexable={false} pathname={location.pathname} />
 );

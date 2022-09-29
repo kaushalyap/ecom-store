@@ -1,8 +1,8 @@
+import { HeadProps } from 'gatsby';
 import { useState } from 'react';
 import DesktopFilters from '../components/DesktopFilters';
 import MainLayout from '../components/Layouts/MainLayout';
 import MobileFilterDialog from '../components/MobileFilterDialog';
-import ProductGrid from '../components/ProductGrid';
 import SEO from '../components/SEO';
 import SortMenu from '../components/SortMenu';
 // @ts-ignore
@@ -43,7 +43,7 @@ export default function SearchResults() {
               </h2>
               <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-4">
                 <DesktopFilters />
-                <ProductGrid />
+                {/* <ProductGrid /> */}
               </div>
             </section>
           </main>
@@ -53,6 +53,6 @@ export default function SearchResults() {
   );
 }
 
-export const Head = ({ location }) => (
+export const Head = ({ location }: HeadProps) => (
   <SEO title="Search" isIndexable={false} pathname={location.pathname} />
 );

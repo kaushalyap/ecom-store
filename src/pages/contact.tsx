@@ -5,6 +5,7 @@ import {
   Twitter,
   Whatsapp,
 } from '@icons-pack/react-simple-icons';
+import { HeadProps } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import ContactForm from '../components/ContactForm';
 import MainLayout from '../components/Layouts/MainLayout';
@@ -100,7 +101,7 @@ export default function Contact() {
   );
 }
 
-export const Head = ({ location }) => (
+export const Head = ({ location }: HeadProps) => (
   <SEO
     title="Contact Us"
     description="Any questions, doubts, want to whether a product fit your needs?, do not hesitate to reach us through the contact form, social media and WhatsApp"
