@@ -1,10 +1,20 @@
-/* eslint-disable no-shadow */
 import { Listbox, Transition } from '@headlessui/react';
 import { Fragment, useState } from 'react';
 // @ts-ignore
 import chevronDownIcon from '../images/icons/chevron-down-outlined.svg';
 
-export default function ListBox({ id = '', options, classes = '' }) {
+type Item = {
+  id: number;
+  count: string;
+};
+
+type Props = {
+  id?: string;
+  options: Array<Item>;
+  classes?: string;
+};
+
+export default function ListBox({ id = '', options, classes = '' }: Props) {
   const [selected, setSelected] = useState(options[0]);
 
   return (

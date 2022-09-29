@@ -13,6 +13,7 @@ import SubNav from './SubNav';
 export default function NavBar() {
   const refDiv = useRef(null);
   const [open, setOpen] = useState(false);
+
   return (
     <div ref={refDiv}>
       <header className="p-1 text-gray-700 bg-blue-50 shadow-md">

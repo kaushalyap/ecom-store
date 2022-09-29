@@ -1,5 +1,14 @@
 import { Link } from 'gatsby';
-import { GatsbyImage } from 'gatsby-plugin-image';
+import { GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image';
+
+type Props = {
+  id: string;
+  href: string;
+  imageSrc: IGatsbyImageData;
+  imageAlt: string;
+  name: string;
+  price: number;
+};
 
 export default function LongProductCard({
   id,
@@ -8,7 +17,7 @@ export default function LongProductCard({
   imageAlt,
   name,
   price,
-}) {
+}: Props) {
   return (
     <Link
       key={id}

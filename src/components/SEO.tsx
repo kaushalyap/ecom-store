@@ -1,5 +1,14 @@
 import { Partytown } from '@builder.io/partytown/react';
+import { ReactElement } from 'react';
 import { useSiteMetadata } from '../hooks/use-site-metadata';
+
+type Props = {
+  title: string;
+  description?: string;
+  isIndexable?: boolean;
+  pathname: string;
+  children?: ReactElement | null;
+};
 
 export const SEO = ({
   title,
@@ -7,7 +16,7 @@ export const SEO = ({
   isIndexable = true,
   pathname,
   children = null,
-}) => {
+}: Props) => {
   const {
     title: defaultTitle,
     description: defaultDescription,
@@ -73,7 +82,7 @@ export const SEO = ({
 
 // TODO: check social previews of products
 
-const TwitterMeta = ({ seo }) => {
+const TwitterMeta = ({ seo }: any) => {
   return (
     <>
       <meta name="twitter:card" content="summary_large_image" />
@@ -88,7 +97,7 @@ const TwitterMeta = ({ seo }) => {
   );
 };
 
-const FacebookMeta = ({ seo }) => {
+const FacebookMeta = ({ seo }: any) => {
   return (
     <>
       <meta property="og:site_name" content={seo.facebookUsername} />

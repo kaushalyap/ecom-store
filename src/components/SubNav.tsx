@@ -1,7 +1,11 @@
 import { Link } from 'gatsby';
 import MenuButton from './MenuButton';
 
-export default function SubNav({ menuClickHandler }) {
+type Props = {
+  menuClickHandler: Function;
+};
+
+export default function SubNav({ menuClickHandler }: Props) {
   return (
     <div className="hidden justify-end mx-2 h-10 tracking-wider md:flex md:text-lg 2xl:justify-between 2xl:mx-4 2xl:h-12">
       <MenuButton

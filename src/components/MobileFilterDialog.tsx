@@ -31,7 +31,12 @@ const subCategories = [
   },
 ];
 
-export default function MobileFilterDialog({ open, setOpen }) {
+type Props = {
+  open: boolean;
+  setOpen: any;
+};
+
+export default function MobileFilterDialog({ open, setOpen }: Props) {
   return (
     <Transition.Root show={open} as={Fragment}>
       <Dialog

@@ -2,7 +2,7 @@ import { Dialog, Transition } from '@headlessui/react';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 // @ts-ignore
-import { Fragment, useState } from 'react';
+import { Fragment, MutableRefObject, useState } from 'react';
 import categories from '../constants/ProductCategories';
 // @ts-ignore
 import cheveronLeftIcon from '../images/icons/chevron-left-outlined.svg';
@@ -12,7 +12,13 @@ import cheveronRightIcon from '../images/icons/chevron-right-outlined.svg';
 import closeIcon from '../images/icons/close-dark-outlined.svg';
 import FollowUs from './FollowUs';
 
-export default function SideOver({ refDiv, open, setOpen }) {
+type Props = {
+  refDiv: MutableRefObject<null | HTMLElement>;
+  open: boolean;
+  setOpen: any;
+};
+
+export default function SideOver({ refDiv, open, setOpen }: Props) {
   const [isCategoryMenuVisible, setCategoryMenuVisible] = useState(false);
   const [isMainMenuVisible, setMainMenuVisible] = useState('');
 

@@ -1,7 +1,13 @@
 // @ts-ignore
 import menuIcon from '../images/icons/menu-alt-outlined.svg';
 
-export default function MenuButton({ classes, label, clickHandler }) {
+type Props = {
+  classes: string;
+  label: string;
+  clickHandler: Function;
+};
+
+export default function MenuButton({ classes, label, clickHandler }: Props) {
   return (
     <button
       type="button"

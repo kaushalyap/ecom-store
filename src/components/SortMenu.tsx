@@ -4,7 +4,7 @@ import sortOptions from '../constants/SortOptions';
 // @ts-ignore
 import chevronDownIcon from '../images/icons/chevron-down-outlined.svg';
 
-function classNames(...classes) {
+function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ');
 }
 

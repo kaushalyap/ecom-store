@@ -2,7 +2,11 @@ import { Link } from 'gatsby';
 // @ts-ignore
 import shoppingBagIcon from '../images/icons/shopping-bag-outlined.svg';
 
-export default function ShoppingBag({ noItemsInCart }) {
+type Props = {
+  noItemsInCart: number;
+};
+
+export default function ShoppingBag({ noItemsInCart }: Props) {
   return (
     <Link
       to="/bag"

@@ -1,5 +1,14 @@
 import { Link } from 'gatsby';
-import { GatsbyImage } from 'gatsby-plugin-image';
+import { GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image';
+
+type Props = {
+  id: string;
+  href: string;
+  imageSrc: IGatsbyImageData;
+  imageAlt: string;
+  name: string;
+  price: string;
+};
 
 export default function ShortProductCard({
   id,
@@ -8,7 +17,7 @@ export default function ShortProductCard({
   imageAlt,
   name,
   price,
-}) {
+}: Props) {
   return (
     <Link key={id} to={href} className="group" target="_blank">
       <div className="overflow-hidden w-full bg-gray-200 rounded-lg aspect-w-1 aspect-h-1 xl:aspect-w-7 xl:aspect-h-8">

@@ -1,7 +1,11 @@
 // @ts-ignore
 import searchIcon from '../images/icons/search-outlined.svg';
 
-export default function SearchBox({ classes }) {
+type Props = {
+  classes: string;
+};
+
+export default function SearchBox({ classes }: Props) {
   return (
     <div id="search-box" className={`flex h-16 ${classes} p-2`}>
       <form

@@ -17,7 +17,13 @@ const itemCount = [
   },
 ];
 
-export default function ShoppingItemCard({ title, price, editable }) {
+type Props = {
+  title: string;
+  price: number;
+  editable: boolean;
+};
+
+export default function ShoppingItemCard({ title, price, editable }: Props) {
   return (
     <div className="flex gap-4 mb-4 bg-green-50 rounded-lg shadow-lg md:mb-6 md:h-44">
       <img
