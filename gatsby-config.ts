@@ -1,3 +1,5 @@
+import PrismicTypes from './custom_types/categories';
+
 require('dotenv').config({ path: `.env.${process.env.NODE_ENV}` });
 
 module.exports = {
@@ -55,8 +57,7 @@ module.exports = {
       options: {
         repositoryName: process.env.GATSBY_PRISMIC_REPO_NAME,
         schemas: {
-          // eslint-disable-next-line global-require
-          categories: require('./custom_types/categories.json'),
+          categories: PrismicTypes,
         },
       },
     },
@@ -68,7 +69,7 @@ module.exports = {
           type: 'service_account',
           project_id: process.env.PROJECT_ID,
           private_key_id: process.env.PRIVATE_KEY_ID,
-          private_key: process.env.PRIVATE_KEY.replace(/(\\r)|(\\n)/g, '\n'),
+          private_key: process.env.PRIVATE_KEY!.replace(/(\\r)|(\\n)/g, '\n'),
           client_email: process.env.CLIENT_EMAIL,
           client_id: '',
           auth_uri: 'https://accounts.google.com/o/oauth2/auth',
