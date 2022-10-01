@@ -1,14 +1,10 @@
 import { Dialog, Transition } from '@headlessui/react';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-// @ts-ignore
 import { Fragment, MutableRefObject, useState } from 'react';
 import categories from '../constants/ProductCategories';
-// @ts-ignore
 import cheveronLeftIcon from '../images/icons/chevron-left-outlined.svg';
-// @ts-ignore
 import cheveronRightIcon from '../images/icons/chevron-right-outlined.svg';
-// @ts-ignore
 import closeIcon from '../images/icons/close-dark-outlined.svg';
 import FollowUs from './FollowUs';
 

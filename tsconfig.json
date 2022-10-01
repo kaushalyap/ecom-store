@@ -21,8 +21,10 @@
   },
   "include": [
     "./src/**/*",
+    "src/custom.d.ts",
     "./gatsby-node.ts",
-    "gatsby-config.js",
+    "gatsby-config.ts",
+    "gatsby-browser.ts",
     "./plugins/**/*"
   ],
   "exclude": [".cache", ".public", "node_modules", ".husky/_"]

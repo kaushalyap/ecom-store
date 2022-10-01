@@ -1,14 +1,11 @@
 import { Link } from 'gatsby';
 import { useRef, useState } from 'react';
-// @ts-ignore
 import logoFull from '../images/logos/full-logo.svg';
 import MenuButton from './MenuButton';
 import SearchBox from './SearchBox';
 import ShoppingBag from './ShoppingBag';
 import SideOver from './SideOver';
 import SubNav from './SubNav';
-
-// import categories from '../../../data/product-categories.json';
 
 export default function NavBar() {
   const refDiv = useRef(null);

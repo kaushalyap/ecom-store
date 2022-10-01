@@ -1,5 +1,4 @@
 import { Link } from 'gatsby';
-// @ts-ignore
 import shoppingBagIcon from '../images/icons/shopping-bag-outlined.svg';
 
 type Props = {

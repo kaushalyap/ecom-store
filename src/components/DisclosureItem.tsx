@@ -1,6 +1,5 @@
 import { Disclosure } from '@headlessui/react';
 import { ReactElement } from 'react';
-// @ts-ignore
 import chevronDown from '../images/icons/chevron-down-outlined.svg';
 
 type Props = {

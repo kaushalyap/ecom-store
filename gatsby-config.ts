@@ -1,6 +1,8 @@
 import PrismicTypes from './custom_types/categories';
 
-require('dotenv').config({ path: `.env.${process.env.NODE_ENV}` });
+import * as dotenv from 'dotenv';
+
+dotenv.config({ path: `.env.${process.env.NODE_ENV}` });
 
 module.exports = {
   siteMetadata: {
@@ -18,7 +20,7 @@ module.exports = {
     facebookUsername: 'solidtech',
   },
   jsxRuntime: 'automatic',
-  graphqlTypegen: true,
+  // graphqlTypegen: true,
   plugins: [
     'gatsby-plugin-image',
     'gatsby-plugin-sitemap',
@@ -70,7 +72,7 @@ module.exports = {
           type: 'service_account',
           project_id: process.env.PROJECT_ID,
           private_key_id: process.env.PRIVATE_KEY_ID,
-          private_key: process.env.PRIVATE_KEY!.replace(/(\\r)|(\\n)/g, '\n'),
+          private_key: process.env.PRIVATE_KEY?.replace(/(\\r)|(\\n)/g, '\n'),
           client_email: process.env.CLIENT_EMAIL,
           client_id: '',
           auth_uri: 'https://accounts.google.com/o/oauth2/auth',

@@ -33,7 +33,6 @@ export default function ProductCarousel() {
       {loaded && instanceRef.current && (
         <div className="flex justify-center py-2">
           {[
-            // @ts-ignore
             ...Array(instanceRef.current.track.details.slides.length).keys(),
           ].map((idx) => (
             <button

@@ -1,10 +1,9 @@
-// @ts-ignore
 import menuIcon from '../images/icons/menu-alt-outlined.svg';
 
 type Props = {
   classes: string;
   label: string;
-  clickHandler: Function;
+  clickHandler: (value: boolean) => void;
 };
 
 export default function MenuButton({ classes, label, clickHandler }: Props) {

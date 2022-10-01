@@ -1,4 +1,3 @@
-// @ts-ignore
 import searchIcon from '../images/icons/search-outlined.svg';
 
 type Props = {

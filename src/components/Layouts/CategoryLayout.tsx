@@ -1,9 +1,7 @@
 import { useState } from 'react';
-// @ts-ignore
-import filterIcon from '../images/icons/filter-outlined.svg';
 import DesktopFilters from '../DesktopFilters';
+import filterIcon from '../images/icons/filter-outlined.svg';
 import MobileFilterDialog from '../MobileFilterDialog';
-import ProductGrid from '../ProductGrid';
 import SortMenu from '../SortMenu';
 
 export default function CategoryLayout() {
@@ -41,7 +39,7 @@ export default function CategoryLayout() {
               </h2>
               <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-4">
                 <DesktopFilters />
-                <ProductGrid />
+                {/* <ProductGrid /> */}
               </div>
             </section>
           </main>

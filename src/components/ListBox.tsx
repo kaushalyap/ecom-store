@@ -1,6 +1,5 @@
 import { Listbox, Transition } from '@headlessui/react';
 import { Fragment, useState } from 'react';
-// @ts-ignore
 import chevronDownIcon from '../images/icons/chevron-down-outlined.svg';
 
 type Item = {

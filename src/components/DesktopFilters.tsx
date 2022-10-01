@@ -1,8 +1,6 @@
 import { Disclosure } from '@headlessui/react';
 import filters from '../constants/Filters';
-// @ts-ignore
 import minusSmIcon from '../images/icons/minus-sm-outlined.svg';
-// @ts-ignore
 import plusSmIcon from '../images/icons/plus-sm-outlined.svg';
 
 const subCategories = [

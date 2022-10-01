@@ -1,8 +1,9 @@
 import { Link } from 'gatsby';
+import { Dispatch, SetStateAction } from 'react';
 import MenuButton from './MenuButton';
 
 type Props = {
-  menuClickHandler: Function;
+  menuClickHandler: Dispatch<SetStateAction<boolean>>;
 };
 
 export default function SubNav({ menuClickHandler }: Props) {

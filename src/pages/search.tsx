@@ -5,7 +5,6 @@ import MainLayout from '../components/Layouts/MainLayout';
 import MobileFilterDialog from '../components/MobileFilterDialog';
 import SEO from '../components/SEO';
 import SortMenu from '../components/SortMenu';
-// @ts-ignore
 import filterIcon from '../images/icons/filter-outlined.svg';
 
 export default function SearchResults() {

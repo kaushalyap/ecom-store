@@ -1,5 +1,5 @@
-const path = require('path');
-const { copyLibFiles } = require('@builder.io/partytown/utils');
+import { copyLibFiles } from '@builder.io/partytown/utils';
+import * as path from 'path';
 
 exports.onPreBuild = async () => {
   await copyLibFiles(path.join(__dirname, 'static', '~partytown'));
