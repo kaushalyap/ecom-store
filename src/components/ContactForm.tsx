@@ -4,7 +4,7 @@ export default function ContactForm() {
       id="contact-form"
       method="POST"
       className="w-full md:max-w-md lg:max-w-lg xl:max-w-none"
-      action="https://formspree.io/techstacklk+contactform@gmail.com"
+      action="https://formspree.io/solidtechlk+contactform@gmail.com"
     >
       <label htmlFor="first-name">
         <input

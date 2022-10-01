@@ -39,7 +39,7 @@ export default function About() {
               </p>
               <p className="font-light tracking-wide lg:text-2xl xl:text-3xl">
                 <Link to="/" className="text-blue-600">
-                  TechStack.LK
+                  SolidTech.LK
                 </Link>
                 &nbsp; is a Sri Lankan owned business run by young
                 entrepreneurs.

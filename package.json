@@ -1,8 +1,8 @@
 {
-  "name": "tech-stack-lk",
+  "name": "solid-tech-lk",
   "version": "1.0.0",
   "private": true,
-  "description": "Tech Stack LK",
+  "description": "Solid Tech LK",
   "author": "kaushalyap",
   "keywords": [
     "gatsby"
@@ -78,6 +78,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/TechStackLK/front-end"
+    "url": "https://github.com/SolidTechLK/front-end"
   }
 }

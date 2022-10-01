@@ -11,9 +11,9 @@ export default function Terms() {
         <HeadingPage>Terms and Conditions</HeadingPage>
         <HeadingSection extraClasses="uppercase">OVERVIEW</HeadingSection>
         <p className="mb-2 tracking-wide text-justify">
-          This website is operated by TechStack Holdings (Pvt) Ltd. Throughout
-          the site, the terms “we”, “us” and “our” refer to TechStack Holdings
-          (Pvt) Ltd. TechStack Holdings (Pvt) Ltd offers this website, including
+          This website is operated by SolidTech Holdings (Pvt) Ltd. Throughout
+          the site, the terms “we”, “us” and “our” refer to SolidTech Holdings
+          (Pvt) Ltd. SolidTech Holdings (Pvt) Ltd offers this website, including
           all information, tools and services available from this site to you,
           the user, conditioned upon your acceptance of all terms, conditions,
           policies and notices stated here.
@@ -373,7 +373,7 @@ export default function Terms() {
           particular purpose, durability, title, and non-infringement.
         </p>
         <p className="mb-2 tracking-wide text-justify">
-          In no case shall TechStack Holdings (Pvt) Ltd, our directors,
+          In no case shall SolidTech Holdings (Pvt) Ltd, our directors,
           officers, employees, affiliates, agents, contractors, interns,
           suppliers, service providers or licensors be liable for any injury,
           loss, claim, or any direct, indirect, incidental, punitive, special,
@@ -399,7 +399,7 @@ export default function Terms() {
           SECTION 14 - INDEMNIFICATION
         </HeadingSection>
         <p>
-          You agree to indemnify, defend and hold harmless TechStack Holdings
+          You agree to indemnify, defend and hold harmless SolidTech Holdings
           (Pvt) Ltd and our parent, subsidiaries, affiliates, partners,
           officers, directors, agents, contractors, licensors, service
           providers, subcontractors, suppliers, interns and employees, harmless
@@ -489,8 +489,8 @@ export default function Terms() {
         <p className="tracking-wide">
           Questions about the Terms of Service should be sent to us at
         </p>
-        <a className="tracking-wide" href="mailto:techstacklk+legal@gmail.com">
-          techstacklk+legal@gmail.com
+        <a className="tracking-wide" href="mailto:solidtechlk+legal@gmail.com">
+          solidtechlk+legal@gmail.com
         </a>
       </main>
     </MainLayout>
@@ -500,7 +500,7 @@ export default function Terms() {
 export const Head = ({ location }: HeadProps) => (
   <SEO
     title="Terms & Conditions"
-    description="Terms and conditions that you should adhere when using TechStack.LK"
+    description="Terms and conditions that you should adhere when using SolidTech.LK"
     pathname={location.pathname}
   />
 );

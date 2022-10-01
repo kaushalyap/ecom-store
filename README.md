@@ -1,4 +1,4 @@
-## Tech Stack LK
+## Solid Tech LK
 
 - React
 - Gatsby

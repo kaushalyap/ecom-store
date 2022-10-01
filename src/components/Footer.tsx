@@ -16,7 +16,7 @@ export default function Footer() {
             <StaticImage
               src="../images/logos/logo-name-below.svg"
               className="w-52 md:mx-0"
-              alt="techstack.lk logo"
+              alt="solidtech.lk logo"
               loading="eager"
               placeholder="tracedSVG"
             />
@@ -95,7 +95,7 @@ export default function Footer() {
       </div>
       <div className="pt-5 text-sm text-gray-600 border-t border-gray-300 border-solid">
         <div className="tracking-wider md:flex md:justify-between">
-          <p>{`©  ${new Date().getFullYear()} TechStack Holdings, (Pvt) Ltd.`}</p>
+          <p>{`©  ${new Date().getFullYear()} SolidTech Holdings, (Pvt) Ltd.`}</p>
           <p className="mt-2 md:mt-0">
             <Link to="/terms/" className="mr-2 md:mr-3 lg:mr-4">
               Terms

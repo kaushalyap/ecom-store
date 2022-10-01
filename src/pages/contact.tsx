@@ -31,25 +31,25 @@ export default function Contact() {
                     className="w-8 h-8 opacity-70 hover:opacity-100 md:w-12 md:h-12"
                   />
                 </a>
-                <a href="https://facebook.com/techstacklk">
+                <a href="https://facebook.com/solidtechlk">
                   <Facebook
                     color="#1877F2"
                     className="w-8 h-8 opacity-70 hover:opacity-100 md:w-12 md:h-12"
                   />
                 </a>
-                <a href="https://instagram.com/techstacklk">
+                <a href="https://instagram.com/solidtechlk">
                   <Instagram
                     color="#E4405F"
                     className="w-8 h-8 opacity-70 hover:opacity-100 md:w-12 md:h-12"
                   />
                 </a>
-                <a href="https://pinterest.com/techstacklk">
+                <a href="https://pinterest.com/solidtechlk">
                   <Pinterest
                     color="#BD081C"
                     className="w-8 h-8 opacity-50 hover:opacity-100 md:w-12 md:h-12"
                   />
                 </a>
-                <a href="https://twitter.com/techstacklk">
+                <a href="https://twitter.com/solidtechlk">
                   <Twitter
                     color="#1DA1F2"
                     className="w-8 h-8 opacity-70 hover:opacity-100 md:w-12 md:h-12"

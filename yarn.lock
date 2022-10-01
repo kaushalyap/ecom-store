@@ -10214,18 +10214,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-transformer-json@npm:^4.24.0":
-  version: 4.24.0
-  resolution: "gatsby-transformer-json@npm:4.24.0"
-  dependencies:
-    "@babel/runtime": ^7.15.4
-    bluebird: ^3.7.2
-  peerDependencies:
-    gatsby: ^4.0.0-next
-  checksum: 10612013309d589cc1ed91fbfdf9787e839160ad62fbbcaf509479260fcd64d7280013fc49c3d7b468e554b72fe072d56f02ab033924918af9753ab4b718ca17
-  languageName: node
-  linkType: hard
-
 "gatsby-transformer-sharp@npm:^4.24.0":
   version: 4.24.0
   resolution: "gatsby-transformer-sharp@npm:4.24.0"
@@ -16869,6 +16857,59 @@ __metadata:
   languageName: node
   linkType: hard
 
+"solid-tech-lk@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "solid-tech-lk@workspace:."
+  dependencies:
+    "@builder.io/partytown": ^0.7.0
+    "@headlessui/react": ^1.7.2
+    "@icons-pack/react-simple-icons": ^4.7.2
+    "@ls-lint/ls-lint": ^1.11.2
+    "@playwright/test": ^1.26.1
+    "@prismicio/react": ^2.5.0
+    "@reach/router": ^1.3.4
+    "@sentry/gatsby": ^6.19.7
+    "@tailwindcss/aspect-ratio": ^0.4.2
+    "@tailwindcss/forms": ^0.4.1
+    "@tailwindcss/line-clamp": ^0.3.1
+    "@tailwindcss/typography": ^0.5.7
+    "@types/react": ^18.0.21
+    "@types/react-dom": ^18.0.6
+    autoprefixer: ^10.4.12
+    eslint: ^8.24.0
+    eslint-config-airbnb: ^19.0.4
+    eslint-config-prettier: ^8.5.0
+    eslint-config-react-app: ^7.0.1
+    eslint-plugin-tailwindcss: ^1.17.2
+    gatsby: ^4.24.0
+    gatsby-plugin-image: ^2.24.0
+    gatsby-plugin-manifest: ^4.24.0
+    gatsby-plugin-page-creator: ^4.24.0
+    gatsby-plugin-postcss: ^5.24.0
+    gatsby-plugin-prismic-previews: ^5.2.10
+    gatsby-plugin-robots-txt: ^1.7.1
+    gatsby-plugin-sharp: ^4.24.0
+    gatsby-plugin-sitemap: ^5.24.0
+    gatsby-plugin-webpack-bundle-analyser-v2: ^1.1.27
+    gatsby-source-filesystem: ^4.24.0
+    gatsby-source-google-spreadsheets: ^3.0.8
+    gatsby-source-prismic: ^5.2.10
+    gatsby-transformer-sharp: ^4.24.0
+    husky: ^7.0.4
+    keen-slider: ^6.8.2
+    lint-staged: ">=12.1.2"
+    postcss: ^8.4.16
+    postcss-cli: ^9.1.0
+    prettier: ^2.7.1
+    pretty-quick: ^3.1.3
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    tailwindcss: ^3.1.8
+    tailwindcss-debug-screens: ^2.2.1
+    vitest: ^0.23.4
+  languageName: unknown
+  linkType: soft
+
 "source-list-map@npm:^2.0.0":
   version: 2.0.1
   resolution: "source-list-map@npm:2.0.1"
@@ -17619,60 +17660,6 @@ __metadata:
   checksum: a04c07bb9e2d8f46776517d4618f2406fb977a74d914ad98b264fc3db0fe8224da5bec11e5f8902c5b9bcb8ace22d95fbe3c7b36b8593b7dfc8391a25898f32f
   languageName: node
   linkType: hard
-
-"tech-stack-lk@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "tech-stack-lk@workspace:."
-  dependencies:
-    "@builder.io/partytown": ^0.7.0
-    "@headlessui/react": ^1.7.2
-    "@icons-pack/react-simple-icons": ^4.7.2
-    "@ls-lint/ls-lint": ^1.11.2
-    "@playwright/test": ^1.26.1
-    "@prismicio/react": ^2.5.0
-    "@reach/router": ^1.3.4
-    "@sentry/gatsby": ^6.19.7
-    "@tailwindcss/aspect-ratio": ^0.4.2
-    "@tailwindcss/forms": ^0.4.1
-    "@tailwindcss/line-clamp": ^0.3.1
-    "@tailwindcss/typography": ^0.5.7
-    "@types/react": ^18.0.21
-    "@types/react-dom": ^18.0.6
-    autoprefixer: ^10.4.12
-    eslint: ^8.24.0
-    eslint-config-airbnb: ^19.0.4
-    eslint-config-prettier: ^8.5.0
-    eslint-config-react-app: ^7.0.1
-    eslint-plugin-tailwindcss: ^1.17.2
-    gatsby: ^4.24.0
-    gatsby-plugin-image: ^2.24.0
-    gatsby-plugin-manifest: ^4.24.0
-    gatsby-plugin-page-creator: ^4.24.0
-    gatsby-plugin-postcss: ^5.24.0
-    gatsby-plugin-prismic-previews: ^5.2.10
-    gatsby-plugin-robots-txt: ^1.7.1
-    gatsby-plugin-sharp: ^4.24.0
-    gatsby-plugin-sitemap: ^5.24.0
-    gatsby-plugin-webpack-bundle-analyser-v2: ^1.1.27
-    gatsby-source-filesystem: ^4.24.0
-    gatsby-source-google-spreadsheets: ^3.0.8
-    gatsby-source-prismic: ^5.2.10
-    gatsby-transformer-json: ^4.24.0
-    gatsby-transformer-sharp: ^4.24.0
-    husky: ^7.0.4
-    keen-slider: ^6.8.2
-    lint-staged: ">=12.1.2"
-    postcss: ^8.4.16
-    postcss-cli: ^9.1.0
-    prettier: ^2.7.1
-    pretty-quick: ^3.1.3
-    react: ^18.2.0
-    react-dom: ^18.2.0
-    tailwindcss: ^3.1.8
-    tailwindcss-debug-screens: ^2.2.1
-    vitest: ^0.23.4
-  languageName: unknown
-  linkType: soft
 
 "term-size@npm:^2.1.0":
   version: 2.2.1

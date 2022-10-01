@@ -4,20 +4,21 @@ require('dotenv').config({ path: `.env.${process.env.NODE_ENV}` });
 
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://techstack.lk',
-    title: 'TechStack LK',
-    titleTemplate: '%s - TechStack.LK',
+    siteUrl: 'https://solidtech.lk',
+    title: 'SolidTech LK',
+    titleTemplate: '%s - SolidTech.LK',
     headline: 'headline',
     description:
       'Sri Lankan owned online only electronic store with free deliveries for which value customer happiness over sales',
     siteLanguage: 'en',
     image: 'src/images/logos/logo.svg',
     ogLanguage: 'en_US',
-    author: 'TechStack.LK',
-    twitterUsername: '@techstacklk',
-    facebookUsername: 'techstacklk',
+    author: 'SolidTech.LK',
+    twitterUsername: '@solidtech',
+    facebookUsername: 'solidtech',
   },
   jsxRuntime: 'automatic',
+  graphqlTypegen: true,
   plugins: [
     'gatsby-plugin-image',
     'gatsby-plugin-sitemap',

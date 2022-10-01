@@ -67,11 +67,11 @@ const Faqs = [
   },
   {
     key: 6,
-    question: 'Can TechStack.LK be trusted?',
+    question: 'Can SolidTech.LK be trusted?',
     answer: (
       <p className="text-justify">
         <b>Absolutely you can trust us</b>, we are a Sri Lankan registered
-        business with the name TechStack Holdings (Pvt) Ltd.
+        business with the name SolidTech Holdings (Pvt) Ltd.
       </p>
     ),
   },

@@ -80,7 +80,7 @@ export default function Index() {
 
 export const Head = ({ location }: HeadProps) => (
   <SEO
-    title="TechStack.LK"
+    title="SolidTech.LK"
     description="All your tech gear satisfied and freely delivered to your doorstep"
     pathname={location.pathname}
   />

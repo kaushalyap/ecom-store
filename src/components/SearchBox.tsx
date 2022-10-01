@@ -14,7 +14,7 @@ export default function SearchBox({ classes }: Props) {
       >
         <input
           type="text"
-          placeholder="Search Tech Stack LK"
+          placeholder="Search Solid Tech LK"
           className="flex-grow pl-5 text-black rounded-2xl outline-none 2xl:pl-8"
         />
         <button

@@ -52,7 +52,7 @@ export default function PrivacyPolicy() {
           disclosure of your information, at anytime, by contacting us by
           emailing:
         </p>
-        <p>techstacklk@gmail.com</p>
+        <p>solidtechlk@gmail.com</p>
 
         <HeadingSection extraClasses="uppercase">
           SECTION 3 - DISCLOSURE
@@ -226,8 +226,8 @@ export default function PrivacyPolicy() {
           information we have about you, register a complaint, or simply want
           more information send us an email to following address :
         </p>
-        <a className="tracking-wide" href="mailto:techstacklk+legal@gmail.com">
-          techstacklk+legal@gmail.com
+        <a className="tracking-wide" href="mailto:solidtechlk+legal@gmail.com">
+          solidtechlk+legal@gmail.com
         </a>
       </main>
     </MainLayout>
@@ -237,7 +237,7 @@ export default function PrivacyPolicy() {
 export const Head = ({ location }: HeadProps) => (
   <SEO
     title="Privacy Policy"
-    description="Know how we protect your privacy when you are on TechStack.LK"
+    description="Know how we protect your privacy when you are on SolidTech.LK"
     pathname={location.pathname}
   />
 );

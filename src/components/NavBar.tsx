@@ -27,7 +27,7 @@ export default function NavBar() {
               <img
                 className="h-7 2xl:h-8"
                 src={logoFull}
-                alt="techstack.lk logo"
+                alt="solidtech.lk logo"
               />
             </Link>
           </div>

@@ -25,7 +25,7 @@ export default function Blog() {
 export const Head = ({ location }: HeadProps) => (
   <SEO
     title="Blog"
-    description="Learn tips and tricks buying good electronics for your use case and keep upto date with latest news about TechStack.LK"
+    description="Learn tips and tricks buying good electronics for your use case and keep upto date with latest news about SolidTech.LK"
     pathname={location.pathname}
   />
 );
