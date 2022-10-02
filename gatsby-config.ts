@@ -20,7 +20,7 @@ module.exports = {
     facebookUsername: 'solidtech',
   },
   jsxRuntime: 'automatic',
-  graphqlTypegen: true,
+  // graphqlTypegen: true,
   plugins: [
     'gatsby-plugin-image',
     'gatsby-plugin-sitemap',
