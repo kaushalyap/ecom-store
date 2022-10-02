@@ -1,14 +1,14 @@
 import { graphql, HeadProps, StaticQuery } from 'gatsby';
-import CategoryCard from '../components/CategoryCard';
 import HeadingPage from '../components/HeadingPage';
 import MainLayout from '../components/Layouts/MainLayout';
 import SEO from '../components/SEO';
+import { CategoryCard } from '../features/marketing/';
 
 export default function Smartphones() {
   return (
     <StaticQuery
       query={graphql`
-        query MobilePhonesCategoriesQuery {
+        query MobilePhonesCategories {
           allPrismicCategories(
             filter: { id: { eq: "e581c59a-50b2-5f44-a242-ed9fbbc5aff2" } }
           ) {

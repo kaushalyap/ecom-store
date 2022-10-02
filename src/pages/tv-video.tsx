@@ -1,14 +1,14 @@
 import { graphql, HeadProps, StaticQuery } from 'gatsby';
-import CategoryCard from '../components/CategoryCard';
 import HeadingPage from '../components/HeadingPage';
 import MainLayout from '../components/Layouts/MainLayout';
 import SEO from '../components/SEO';
+import { CategoryCard } from '../features/marketing/';
 
 export default function TvVideo() {
   return (
     <StaticQuery
       query={graphql`
-        query TvVideoCategoriesQuery {
+        query TvVideoCategories {
           allPrismicCategories(
             filter: { id: { eq: "99714dd9-ec2f-5167-934d-78a7385e8352" } }
           ) {

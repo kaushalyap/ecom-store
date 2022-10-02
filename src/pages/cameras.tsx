@@ -1,14 +1,14 @@
 import { graphql, HeadProps, StaticQuery } from 'gatsby';
-import CategoryCard from '../components/CategoryCard';
 import HeadingPage from '../components/HeadingPage';
 import MainLayout from '../components/Layouts/MainLayout';
 import SEO from '../components/SEO';
+import { CategoryCard } from '../features/marketing/';
 
 export default function Camera() {
   return (
     <StaticQuery
       query={graphql`
-        query CameraPhotoCategoriesQuery {
+        query CameraPhotoCategories {
           allPrismicCategories(
             filter: { id: { eq: "270f9891-f6ef-542b-8b18-2ae292cf6bc2" } }
           ) {

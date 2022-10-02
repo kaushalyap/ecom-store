@@ -7,9 +7,9 @@ import {
 } from '@icons-pack/react-simple-icons';
 import { HeadProps } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import ContactForm from '../components/ContactForm';
 import MainLayout from '../components/Layouts/MainLayout';
 import SEO from '../components/SEO';
+import { ContactForm } from '../features/contact';
 
 export default function Contact() {
   return (

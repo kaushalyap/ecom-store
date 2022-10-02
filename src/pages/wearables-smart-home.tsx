@@ -1,14 +1,14 @@
 import { graphql, HeadProps, StaticQuery } from 'gatsby';
-import CategoryCard from '../components/CategoryCard';
 import HeadingPage from '../components/HeadingPage';
 import MainLayout from '../components/Layouts/MainLayout';
 import SEO from '../components/SEO';
+import { CategoryCard } from '../features/marketing/';
 
 export default function WearablesSmartHome() {
   return (
     <StaticQuery
       query={graphql`
-        query WearablesCategoriesQuery {
+        query WearablesCategories {
           allPrismicCategories(
             filter: { id: { eq: "990f719f-335a-52d8-8511-15412ddffeb6" } }
           ) {

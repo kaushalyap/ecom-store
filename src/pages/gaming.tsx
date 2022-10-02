@@ -1,14 +1,14 @@
 import { graphql, HeadProps, StaticQuery } from 'gatsby';
-import CategoryCard from '../components/CategoryCard';
 import HeadingPage from '../components/HeadingPage';
 import MainLayout from '../components/Layouts/MainLayout';
 import SEO from '../components/SEO';
+import { CategoryCard } from '../features/marketing/';
 
 export default function Gaming() {
   return (
     <StaticQuery
       query={graphql`
-        query GamingCategoriesQuery {
+        query GamingCategories {
           allPrismicCategories(
             filter: { id: { eq: "68cd1826-ef32-5e1a-aa1c-ce78705a0bfc" } }
           ) {

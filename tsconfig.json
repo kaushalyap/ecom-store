@@ -20,7 +20,8 @@
     }
   },
   "include": [
-    "./src/**/*",
+    "**/*.ts",
+    "**/*.tsx",
     "src/custom.d.ts",
     "./gatsby-node.ts",
     "gatsby-config.ts",

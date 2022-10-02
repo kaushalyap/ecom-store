@@ -6,7 +6,7 @@ type Props = {
   title: string;
   image: IGatsbyImageData;
   alt: string;
-  objectFit: any | undefined; // TODO: remove any
+  objectFit: any; // TODO: remove any
   objectPosition: string;
 };
 

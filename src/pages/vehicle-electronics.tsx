@@ -1,14 +1,14 @@
 import { graphql, HeadProps, StaticQuery } from 'gatsby';
-import CategoryCard from '../components/CategoryCard';
 import HeadingPage from '../components/HeadingPage';
 import MainLayout from '../components/Layouts/MainLayout';
 import SEO from '../components/SEO';
+import { CategoryCard } from '../features/marketing/';
 
 export default function VehicleElectronics() {
   return (
     <StaticQuery
       query={graphql`
-        query VehicleElectronicsCategoriesQuery {
+        query VehicleElectronicsCategories {
           allPrismicCategories(
             filter: { id: { eq: "106d79a0-adc4-56e5-8d13-9af0df9b8dae" } }
           ) {

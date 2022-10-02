@@ -1,6 +1,6 @@
 import { Disclosure } from '@headlessui/react';
 import { ReactElement } from 'react';
-import chevronDown from '../images/icons/chevron-down-outlined.svg';
+import chevronDown from '../../common/images/icons/chevron-down-outlined.svg';
 
 type Props = {
   question: string;

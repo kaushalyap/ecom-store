@@ -1,8 +1,10 @@
 import { useState } from 'react';
-import DesktopFilters from '../DesktopFilters';
+import {
+  DesktopFilters,
+  MobileFilterDialog,
+  SortMenu,
+} from '../../features/search';
 import filterIcon from '../images/icons/filter-outlined.svg';
-import MobileFilterDialog from '../MobileFilterDialog';
-import SortMenu from '../SortMenu';
 
 export default function CategoryLayout() {
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);

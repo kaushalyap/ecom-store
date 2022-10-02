@@ -1,15 +1,14 @@
 import { graphql, HeadProps, StaticQuery } from 'gatsby';
-import HomeCarousel from '../components/Carousel/HomeCarousel';
-import CategoryCard from '../components/CategoryCard';
 import HeadingPage from '../components/HeadingPage';
 import MainLayout from '../components/Layouts/MainLayout';
 import SEO from '../components/SEO';
+import { CategoryCard, HomeCarousel } from '../features/marketing/';
 
 export default function Index() {
   return (
     <StaticQuery
       query={graphql`
-        query MainCategoriesQuery {
+        query MainCategories {
           allPrismicCategories(
             filter: { id: { eq: "ff87bf10-db57-5b54-a7f4-6a9da8976b54" } }
           ) {

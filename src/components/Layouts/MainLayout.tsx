@@ -1,7 +1,5 @@
-import React from 'react';
-import { ReactElement } from 'react';
-import Footer from '../Footer';
-import NavBar from '../NavBar';
+import React, { ReactElement } from 'react';
+import { Footer, NavBar } from '../../features/navigation';
 
 type Props = {
   children: ReactElement;

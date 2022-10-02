@@ -2,10 +2,11 @@ import { Dialog, Transition } from '@headlessui/react';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import { Fragment, MutableRefObject, useState } from 'react';
-import categories from '../constants/ProductCategories';
+import { ProductCategories } from '../../common';
+
+import closeIcon from '../../common/images/icons/close-dark-outlined.svg';
 import cheveronLeftIcon from '../images/icons/chevron-left-outlined.svg';
 import cheveronRightIcon from '../images/icons/chevron-right-outlined.svg';
-import closeIcon from '../images/icons/close-dark-outlined.svg';
 import FollowUs from './FollowUs';
 
 type Props = {
@@ -137,7 +138,7 @@ export default function SideOver({ refDiv, open, setOpen }: Props) {
                         </button>
                         <nav className="list-none text-gray-600">
                           <ul>
-                            {categories.map((category) => (
+                            {ProductCategories.map((category) => (
                               <li className="py-1" key={category.path}>
                                 <Link
                                   to={category.path}

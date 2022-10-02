@@ -1,5 +1,5 @@
 import { Disclosure } from '@headlessui/react';
-import filters from '../constants/Filters';
+import filters from '../constants/filters';
 import minusSmIcon from '../images/icons/minus-sm-outlined.svg';
 import plusSmIcon from '../images/icons/plus-sm-outlined.svg';
 

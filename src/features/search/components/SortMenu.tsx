@@ -1,7 +1,7 @@
 import { Menu, Transition } from '@headlessui/react';
 import { Fragment } from 'react';
+import chevronDownIcon from '../../common/images/icons/chevron-down-outlined.svg';
 import sortOptions from '../constants/SortOptions';
-import chevronDownIcon from '../images/icons/chevron-down-outlined.svg';
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ');

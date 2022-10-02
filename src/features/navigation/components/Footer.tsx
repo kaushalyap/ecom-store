@@ -1,11 +1,10 @@
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
-import categories from '../constants/ProductCategories';
+import { ProductCategories } from '../../common';
 import FollowUs from './FollowUs';
 
 export default function Footer() {
   return (
-    // eslint-disable-next-line react/jsx-props-no-spreading
     <footer className="p-6 bg-blue-50 md:p-10">
       <div className="container mx-auto md:flex md:flex-wrap lg:flex lg:flex-nowrap">
         <div
@@ -36,7 +35,7 @@ export default function Footer() {
           </h2>
           <nav className="list-none text-gray-600">
             <ul>
-              {categories.map((category) => (
+              {ProductCategories.map((category: any) => (
                 <li className="py-1" key={category.path}>
                   <Link to={category.path} className="tracking-wide">
                     {category.name}

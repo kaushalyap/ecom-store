@@ -1,10 +1,9 @@
 import { Dialog, Disclosure, Transition } from '@headlessui/react';
 import { Fragment } from 'react';
-import Filters from '../constants/Filters';
-import closeDarkIcon from '../images/icons/close-dark-outlined.svg';
+import closeDarkIcon from '../../common/images/icons/close-dark-outlined.svg';
+import Filters from '../constants/filters';
 import minusSmIcon from '../images/icons/minus-sm-outlined.svg';
 import plusSmIcon from '../images/icons/plus-sm-outlined.svg';
-
 const subCategories = [
   {
     name: 'Totes',

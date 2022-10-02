@@ -2,7 +2,7 @@
 import 'keen-slider/keen-slider.min.css';
 import { useKeenSlider } from 'keen-slider/react';
 import { useState } from 'react';
-import './styles.css';
+import '../styles/styles.css';
 
 export default function ProductCarousel() {
   const [currentSlide, setCurrentSlide] = useState(0);

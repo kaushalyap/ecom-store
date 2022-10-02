@@ -1,14 +1,14 @@
 import { graphql, HeadProps, StaticQuery } from 'gatsby';
-import CategoryCard from '../components/CategoryCard';
 import HeadingPage from '../components/HeadingPage';
 import MainLayout from '../components/Layouts/MainLayout';
 import SEO from '../components/SEO';
+import { CategoryCard } from '../features/marketing/';
 
 export default function Office() {
   return (
     <StaticQuery
       query={graphql`
-        query OfficeElectronicsCategoriesQuery {
+        query OfficeElectronicsCategories {
           allPrismicCategories(
             filter: { id: { eq: "80fe99d9-e67f-59b5-93b8-54b024e88fc8" } }
           ) {

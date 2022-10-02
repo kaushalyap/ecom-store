@@ -47,13 +47,13 @@ export default function HomeCarousel() {
         <Link to="/why-us#free-delivery">
           <StaticImage
             className="hidden w-full md:block"
-            src="../../images/banners/Slide Free Delivery.webp"
+            src="../images/banners/Slide Free Delivery.webp"
             placeholder="blurred"
             alt="free delivery for every item"
           />
           <StaticImage
             className="w-full md:hidden"
-            src="../../images/banners/Slide Free Delivery Mobile.webp"
+            src="../images/banners/Slide Free Delivery Mobile.webp"
             placeholder="blurred"
             alt="free delivery for every item"
           />
@@ -63,13 +63,13 @@ export default function HomeCarousel() {
         <Link to="/why-us#competitive-pricing">
           <StaticImage
             className="hidden md:block"
-            src="../../images/banners/Slide Competitive Pricing.webp"
+            src="../images/banners/Slide Competitive Pricing.webp"
             alt="competitive pricing, no lowest price marketing lies"
             placeholder="blurred"
           />
           <StaticImage
             className="md:hidden"
-            src="../../images/banners/Slide Competitive Pricing Mobile.webp"
+            src="../images/banners/Slide Competitive Pricing Mobile.webp"
             alt="competitive pricing, no lowest price marketing lies"
             placeholder="blurred"
           />
@@ -79,13 +79,13 @@ export default function HomeCarousel() {
         <Link to="/why-us#help-your-own">
           <StaticImage
             className="hidden md:block"
-            src="../../images/banners/Slide Help Your Own.webp"
+            src="../images/banners/Slide Help Your Own.webp"
             alt="help your own instead of instead of draining profits outside of the country"
             placeholder="blurred"
           />
           <StaticImage
             className="md:hidden"
-            src="../../images/banners/Slide Help Your Own Mobile.webp"
+            src="../images/banners/Slide Help Your Own Mobile.webp"
             alt="help your own instead of instead of draining profits outside of the country"
             placeholder="blurred"
           />
@@ -95,13 +95,13 @@ export default function HomeCarousel() {
         <Link to="/why-us#honest-customer-support">
           <StaticImage
             className="hidden md:block"
-            src="../../images/banners/Slide Honest Customer Support.webp"
+            src="../images/banners/Slide Honest Customer Support.webp"
             alt="honest customer support, we are customer happiness driven"
             placeholder="blurred"
           />
           <StaticImage
             className="md:hidden"
-            src="../../images/banners/Slide Honest Customer Support Mobile.webp"
+            src="../images/banners/Slide Honest Customer Support Mobile.webp"
             alt="honest customer support, we are customer happiness driven"
             placeholder="blurred"
           />

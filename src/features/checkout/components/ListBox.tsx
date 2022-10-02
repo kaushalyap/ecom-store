@@ -1,6 +1,6 @@
 import { Listbox, Transition } from '@headlessui/react';
 import { Fragment, useState } from 'react';
-import chevronDownIcon from '../images/icons/chevron-down-outlined.svg';
+import chevronDownIcon from '../../common/images/icons/chevron-down-outlined.svg';
 
 type Item = {
   id: number;

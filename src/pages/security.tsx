@@ -1,14 +1,14 @@
 import { graphql, HeadProps, StaticQuery } from 'gatsby';
-import CategoryCard from '../components/CategoryCard';
 import HeadingPage from '../components/HeadingPage';
 import MainLayout from '../components/Layouts/MainLayout';
 import SEO from '../components/SEO';
+import { CategoryCard } from '../features/marketing/';
 
 export default function Security() {
   return (
     <StaticQuery
       query={graphql`
-        query SecurityCategoriesQuery {
+        query SecurityCategories {
           allPrismicCategories(
             filter: { id: { eq: "831c339e-4ea6-5206-8426-3494ce573826" } }
           ) {

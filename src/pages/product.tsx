@@ -1,5 +1,5 @@
-import ProductCarousel from '../components/Carousel/ProductCarousel';
 import MainLayout from '../components/Layouts/MainLayout';
+import { ProductCarousel } from '../features/marketing';
 
 export default function Product() {
   return (

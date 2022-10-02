@@ -1,14 +1,14 @@
 import { graphql, HeadProps, StaticQuery } from 'gatsby';
-import CategoryCard from '../components/CategoryCard';
 import HeadingPage from '../components/HeadingPage';
 import MainLayout from '../components/Layouts/MainLayout';
 import { SEO } from '../components/SEO';
+import { CategoryCard } from '../features/marketing/';
 
 export default function Audio() {
   return (
     <StaticQuery
       query={graphql`
-        query AudioElectronicsCategoriesQuery {
+        query AudioElectronicsCategories {
           allPrismicCategories(
             filter: { id: { eq: "69ebf7cb-86a1-5942-b70f-609be59128cf" } }
           ) {
