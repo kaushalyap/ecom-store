@@ -2,7 +2,7 @@ import { graphql, HeadProps, StaticQuery } from 'gatsby';
 import HeadingPage from '../components/HeadingPage';
 import MainLayout from '../components/Layouts/MainLayout';
 import SEO from '../components/SEO';
-import { CategoryCard, HomeCarousel } from '../features/marketing/';
+import { CategoryCard, HomeCarousel } from '../features/marketing';
 
 export default function Index() {
   return (

@@ -1,6 +1,6 @@
-import PrismicTypes from './custom_types/categories';
-
+/* eslint-disable import/no-import-module-exports */
 import * as dotenv from 'dotenv';
+import PrismicTypes from './custom_types/categories';
 
 dotenv.config({ path: `.env.${process.env.NODE_ENV}` });
 

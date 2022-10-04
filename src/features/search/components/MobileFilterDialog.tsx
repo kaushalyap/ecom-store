@@ -4,6 +4,7 @@ import closeDarkIcon from '../../common/images/icons/close-dark-outlined.svg';
 import Filters from '../constants/filters';
 import minusSmIcon from '../images/icons/minus-sm-outlined.svg';
 import plusSmIcon from '../images/icons/plus-sm-outlined.svg';
+
 const subCategories = [
   {
     name: 'Totes',

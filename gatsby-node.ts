@@ -1,3 +1,4 @@
+/* eslint-disable import/no-import-module-exports */
 import { copyLibFiles } from '@builder.io/partytown/utils';
 import * as path from 'path';
 

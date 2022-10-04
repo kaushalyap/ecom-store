@@ -1,21 +1,14 @@
 {
   "extends": [
+    "airbnb-base",
     "react-app",
     "plugin:jsx-a11y/recommended",
-    "prettier",
-    "plugin:tailwindcss/recommended"
-    // "airbnb"
+    "plugin:prettier/recommended"
   ],
+
   "plugins": ["jsx-a11y"],
   "rules": {
-    "no-restricted-imports": [
-      "error",
-      {
-        "patterns": ["@/features/*/*"]
-      }
-    ],
-    "tailwindcss/classnames-order": "error",
-    "tailwindcss/no-custom-classname": "error"
+    "import/no-extraneous-dependencies": "warn"
   },
   "settings": {
     "tailwindcss": {
@@ -27,10 +20,38 @@
       "files": ["*.ts", "*.tsx"],
       // "processor": "@graphql-eslint/graphql",
       "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "project": "./tsconfig.json"
+      },
+      "plugins": ["@typescript-eslint", "tailwindcss"],
       "extends": [
+        "plugin:tailwindcss/recommended",
+        "airbnb-typescript",
         "eslint:recommended",
-        "plugin:@typescript-eslint/recommended"
+        "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended"
       ],
+      "rules": {
+        "@typescript-eslint/no-use-before-define": "warn",
+        "import/prefer-default-export": "off",
+        "tailwindcss/classnames-order": "error",
+        "tailwindcss/no-custom-classname": "error",
+        "import/no-named-as-default": "off",
+        "no-restricted-imports": [
+          "error",
+          {
+            "patterns": ["@/features/*/*"]
+          }
+        ],
+        "import/no-extraneous-dependencies": [
+          "warn",
+          {
+            "devDependencies": true,
+            "optionalDependencies": true,
+            "peerDependencies": true
+          }
+        ]
+      },
       "env": {
         "es6": true
       }
@@ -38,6 +59,9 @@
     {
       "files": ["*.graphql"],
       "parser": "@graphql-eslint/eslint-plugin",
+      "parserOptions": {
+        "project": "./tsconfig.json"
+      },
       "plugins": ["@graphql-eslint"],
       "rules": {
         "@graphql-eslint/no-anonymous-operations": "error",

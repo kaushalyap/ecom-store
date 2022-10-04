@@ -2,7 +2,7 @@ import { HeadProps } from 'gatsby';
 import HeadingPage from '../components/HeadingPage';
 import MainLayout from '../components/Layouts/MainLayout';
 import SEO from '../components/SEO';
-import { CheckoutForm, ShoppingSummary } from '../features/checkout/';
+import { CheckoutForm, ShoppingSummary } from '../features/checkout';
 
 export default function Checkout() {
   return (

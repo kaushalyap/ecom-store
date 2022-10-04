@@ -1,7 +1,7 @@
 import { HeadProps } from 'gatsby';
 import MainLayout from '../components/Layouts/MainLayout';
 import SEO from '../components/SEO';
-import { FaqList } from '../features/marketing/';
+import { FaqList } from '../features/marketing';
 
 export default function Faq() {
   return (

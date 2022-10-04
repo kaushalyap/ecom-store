@@ -82,34 +82,30 @@ export const SEO = ({
 
 // TODO: check social previews of products
 
-const TwitterMeta = ({ seo }: any) => {
-  return (
-    <>
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={seo.title} />
-      <meta name="twitter:url" content={seo.url} />
-      <meta name="twitter:description" content={seo.description} />
-      <meta name="twitter:image" content={seo.imageType} />
-      <meta name="twitter:image" content={seo.image} />
-      <meta name="twitter:image:alt" content={seo.imageAlt} />
-      <meta name="twitter:creator" content={seo.twitterUsername} />
-    </>
-  );
-};
+const TwitterMeta = ({ seo }: any) => (
+  <>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={seo.title} />
+    <meta name="twitter:url" content={seo.url} />
+    <meta name="twitter:description" content={seo.description} />
+    <meta name="twitter:image" content={seo.imageType} />
+    <meta name="twitter:image" content={seo.image} />
+    <meta name="twitter:image:alt" content={seo.imageAlt} />
+    <meta name="twitter:creator" content={seo.twitterUsername} />
+  </>
+);
 
-const FacebookMeta = ({ seo }: any) => {
-  return (
-    <>
-      <meta property="og:site_name" content={seo.facebookUsername} />
-      <meta property="og:locale" content={seo.locale} />
-      <meta property="og:url" content={seo.url} />
-      <meta property="og:type" content={seo.type} />
-      <meta property="og:title" content={seo.title} />
-      <meta property="og:description" content={seo.desc} />
-      <meta property="og:image" content={seo.image} />
-      <meta property="og:image:alt" content={seo.imageAlt} />
-    </>
-  );
-};
+const FacebookMeta = ({ seo }: any) => (
+  <>
+    <meta property="og:site_name" content={seo.facebookUsername} />
+    <meta property="og:locale" content={seo.locale} />
+    <meta property="og:url" content={seo.url} />
+    <meta property="og:type" content={seo.type} />
+    <meta property="og:title" content={seo.title} />
+    <meta property="og:description" content={seo.desc} />
+    <meta property="og:image" content={seo.image} />
+    <meta property="og:image:alt" content={seo.imageAlt} />
+  </>
+);
 
 export default SEO;
