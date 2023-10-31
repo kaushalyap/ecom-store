@@ -1,4 +1,4 @@
-## Solid Tech LK
+## Ecom Store
 
 - React
 - Gatsby
